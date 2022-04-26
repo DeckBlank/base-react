@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import './Login.css';
 
 async function loginUser(credentials) {
+  console.log(process.env.REACT_APP_URL_BACKEND);
   return {token:'eltoken'};
  return fetch('http://localhost:8080/login', {
    method: 'POST',
