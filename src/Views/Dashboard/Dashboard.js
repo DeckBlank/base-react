@@ -1,63 +1,34 @@
-import React from "react";
+import React ,{useState,useCallback} from "react";
 import Table from "../../components/Table/Table";
-const handleSubmit = async (e) => {
-  e.preventDefault();
+import './_Dashboard.scss';
 
-  console.log("eliminar token");
-};
 
 export default function Dashboard() {
-  const columns = React.useMemo(
-    () => [
-      {
-        Header: "Name",
-        columns: [
-          {
-            Header: "First Name",
-            accessor: "firstName",
-          },
-          {
-            Header: "Last Name",
-            accessor: "lastName",
-          },
-        ],
-      },
-      {
-        Header: "Info",
-        columns: [
-          {
-            Header: "Age",
-            accessor: "age",
-          },
-          {
-            Header: "Visits",
-            accessor: "visits",
-          },
-          {
-            Header: "Status",
-            accessor: "status",
-          },
-          {
-            Header: "Profile Progress",
-            accessor: "progress",
-          },
-        ],
-      },
-    ],
-    []
-  );
-
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [pageCount, setPageCount] = React.useState(0);
   const fetchIdRef = React.useRef(0);
 
-  const fetchData = React.useCallback(({ pageSize, pageIndex }) => {
+  const fetchData = useCallback(async ({ pageSize, pageIndex }) => {
     const fetchId = ++fetchIdRef.current;
-
     setLoading(true);
-
-    setTimeout(() => {
+    let data = await fetch(`http://localhost:3012/v1/courses?page=${pageIndex}&limit=${pageSize}`, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      //body: JSON.stringify(credentials)
+    })
+    .then(data => data.json())
+    .catch(error => console.log(error));
+    console.log(data);
+    if (data.status==='success') {
+      console.log(data.data);
+      setData(data.data);
+      setPageCount(Math.ceil(data.paginationInfo.total / pageSize));
+      setLoading(false);
+    }
+    /* setTimeout(() => {
       if (fetchId === fetchIdRef.current) {
         const startRow = pageSize * pageIndex;
         const endRow = startRow + pageSize;
@@ -77,18 +48,46 @@ export default function Dashboard() {
 
         setLoading(false);
       }
-    }, 1000);
+    }, 1000); */
   }, []);
-
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "Curso",
+        columns: [
+          {
+            Header: "ID",
+            accessor: "id",
+          },
+          {
+            Header: "Nombre curso",
+            accessor: "name",
+          },
+        ],
+      },
+      {
+        Header: "Información",
+        columns: [
+          {
+            Header: "Matriculados",
+            accessor: "enrolled",
+          },
+          {
+            Header: "Estado",
+            accessor: "status",
+          },
+          {
+            Header: "Costo",
+            accessor: "price",
+          },
+        ],
+      },
+    ],
+    []
+  );
   return (
     <div className="login-wrapper">
-      <h2>Dashboard</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <button type="submit">Signout</button>
-        </div>
-      </form>
-      <br />
+      {'sdsd'}
       <Table
         columns={columns}
         data={data}

@@ -35,23 +35,9 @@ export default function Table({
       usePagination
     )
 
-
     React.useEffect(() => {
       fetchData({ pageIndex, pageSize })
     }, [fetchData, pageIndex, pageSize])
-    headerGroups.map(headerGroup => {
-            console.log( headerGroup.getHeaderGroupProps());
-            headerGroup.headers.map(column => {
-                console.log('column',column);
-            console.log( column.getHeaderProps());
-                console.log(column.render('Header'));
-                console.log(column.isSorted
-                    ? column.isSortedDesc
-                    ? ' 🔽'
-                    : ' 🔼'
-                    : '')
-                })
-            })
 
     return (
       <>

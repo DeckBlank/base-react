@@ -11,7 +11,7 @@ import { CartContextProvider } from './context/CartContext';
 
 function App() {
 
-  const { token, setToken } = useToken();
+  const { token, setToken , deleteToken } = useToken();
 
   if(!token) {
     return <Login setToken={setToken} />
@@ -22,7 +22,7 @@ function App() {
       <FavoritesContextProvider>
       <div className="wrapper">
         <BrowserRouter>
-          <NavBar></NavBar>
+          <NavBar deleteToken={deleteToken}></NavBar>
           <Routes>
             <Route exact path="/" element={<Dashboard/>}>
             </Route>
