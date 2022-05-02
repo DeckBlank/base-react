@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import './Login.css';
+import './_Login.scss';
 
 async function loginUser(credentials) {
   console.log(process.env.REACT_APP_URL_BACKEND);
-  return {token:'eltoken'};
+  return {token: credentials.username};
  return fetch('http://localhost:8080/login', {
    method: 'POST',
    headers: {
@@ -16,6 +16,7 @@ async function loginUser(credentials) {
 }
 
 export default function Login({ setToken }) {
+  
   const [username, setUserName] = useState();
   const [password, setPassword] = useState();
 
