@@ -2,6 +2,7 @@ import React ,{useState,useCallback,useEffect} from "react";
 import { Link, useParams ,useNavigate} from "react-router-dom";
 import CRUDEdit from "../../components/CRUDEdit/CRUDEdit";
 import { getCourse, getUnitsTable } from "../../requests/courses";
+import Button from "../../uiKitRelease/Button/Button";
 import './_Home.scss';
 
 
@@ -47,6 +48,9 @@ export default function Home() {
   const updateRowUnits = async (row) => {
     navigate(`/unit/${row.unitIndex}`);
   }
+  const sendCourse = ()=>{
+    alert('hola')
+  }
   /* 
   const deleteRowUnits = async () => {
 
@@ -54,10 +58,21 @@ export default function Home() {
   const createRowUnits = async () => {
 
   } */
+  let obj = {
+    value : 'hola',
+    item2 : 'mundo',
+  }
+  const hola = ({value,item2}) => { 
+    console.log(item2);
+    console.log(value)
+  }
+  hola(obj)
  
   return (
     <div className="login-wrapper">
      {/*  <div>{course}</div> */}
+      <button onClick={sendCourse} >Publicar</button>
+      <Button  color="oranje" className="dot" text="hola mundo" onClick={sendCourse}/>
       <CRUDEdit 
         title = {course.titleCourse}
         columnsNames={columnsNamesUnits} 

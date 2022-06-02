@@ -1,32 +1,26 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import './_Login.scss';
-
-async function loginUser(credentials) {
-  console.log(process.env.REACT_APP_URL_BACKEND);
-  return {token: credentials.username};
- return fetch('http://localhost:8080/login', {
-   method: 'POST',
-   headers: {
-     'Content-Type': 'application/json'
-   },
-   body: JSON.stringify(credentials)
- })
-   .then(data => data.json())
-}
+import {loginUser, setDefaultHeader} from '../../requests/login';
 
 export default function Login({ setToken }) {
+
   
-  const [username, setUserName] = useState();
+  const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const token = await loginUser({
-      username,
+    const response = await loginUser({
+      email,
       password
     });
-    setToken(token);
+    console.log(response);
+    const {data, status , message} = response;
+    if(!data) alert('Usuario o contraseña incorrectos');
+    else {
+      setToken(data);
+    }
   }
 
   return(
@@ -35,7 +29,7 @@ export default function Login({ setToken }) {
       <form onSubmit={handleSubmit}>
         <label>
           <p>Email</p>
-          <input type="email" onChange={e => setUserName(e.target.value)} />
+          <input type="email" onChange={e => setEmail(e.target.value)} />
         </label>
         <label>
           <p>Clave</p>
