@@ -5,7 +5,6 @@ import { CartContextProvider } from './context/CartContext';
 import useToken from './useToken'
 import './App.scss'
 
-
 const loading = (
   <div className="pt-3 text-center">
     <div className="sk-spinner sk-spinner-pulse">Cargando...</div>
@@ -13,7 +12,7 @@ const loading = (
 )
 
 // Container
-const MainContent = React.lazy(() => import('./Views/Layout/MainContent.js'))
+const MainContent = React.lazy(() => import('./MainContent/MainContent.js'))
 
 // Pages
 const Login = React.lazy(() => import('./Views/Login/Login'))
@@ -23,14 +22,7 @@ const Page500 = React.lazy(() => import('./Views/Page500/Page500'))
 
 
 function App() { 
-
     const { token, setToken } = useToken();
-    
-    if(!token) 
-    {
-      return <Login setToken={setToken} />
-    }       
-    
     return (       
       <CartContextProvider>
         <FavoritesContextProvider>
@@ -38,11 +30,19 @@ function App() {
           <BrowserRouter>
               <Suspense fallback={loading}>
                   <Routes>
-                    <Route exact path="/login" name="Login Page" element={<Login />} />
-                    <Route exact path="/register" name="Register Page" element={<Register />} />
-                    <Route exact path="/404" name="Page 404" element={<Page404 />} />
-                    <Route exact path="/500" name="Page 500" element={<Page500 />} />
-                    <Route path="*" name="Home" element={<MainContent />} />
+                    {!token&&(
+                      <>
+                        <Route exact path="/*" name="Login Page" element={<Login  setToken={setToken}/>} />
+                      </>
+                    )}
+                    {token&&(
+                      <>
+                      <Route exact path="/register" name="Register Page" element={<Register />} />
+                      <Route exact path="/404" name="Page 404" element={<Page404 />} />
+                      <Route exact path="/500" name="Page 500" element={<Page500 />} />
+                      <Route path="*" name="MainContent" element={<MainContent />} />
+                      </>
+                    )}
                   </Routes>
                 </Suspense>
           </BrowserRouter>

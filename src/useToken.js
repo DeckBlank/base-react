@@ -1,10 +1,13 @@
 import { useState } from 'react';
+import { setDefaultHeader } from './requests/login';
 
 export default function useToken() {
   const getToken = () => {
     const tokenString = localStorage.getItem('token');
     const userToken = JSON.parse(tokenString);
-    return userToken?.token
+    if(!userToken) return null;
+    setDefaultHeader({header:'Authorization',value:`Bearer ${userToken.token}`});
+    return userToken.token
   };
 
   const [token, setToken] = useState(getToken());
@@ -13,7 +16,7 @@ export default function useToken() {
     localStorage.setItem('token', JSON.stringify(userToken));
     setToken(userToken.token);
   };
-  const deleteToken = userToken => {
+  const deleteToken = () => {
     localStorage.removeItem('token');
     setToken(null);
   };

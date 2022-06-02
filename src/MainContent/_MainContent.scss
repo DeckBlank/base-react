@@ -1,0 +1,18 @@
+.flex
+{
+    display: flex;
+}
+
+.maincontent
+{
+    margin-left: 25px;    
+}
+.wrapper{
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  width: 100%;
+}

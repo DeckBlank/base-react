@@ -8,15 +8,11 @@ import FavoritesWidget from '../FavoritesWidget/FavoritesWidget'
 import CartWidget from '../CartWidget/CartWidget'
 import "./_NavBar.scss"
 
-function NavBar({deleteToken}){
+function NavBar({closeSession}){
     const[menu, setMenu] = useState(false)
     
     const openMenu = () => setMenu(true)
     const closeMenu = () => setMenu(false)
-    
-    const closeSession = async () => {
-        deleteToken();
-    };
     return(
     <nav className="nav">
         <OpenMenuWidget onClick={openMenu} />
@@ -31,12 +27,13 @@ function NavBar({deleteToken}){
             <ul className="navLinks_ul">
                 <NavBarLink className="navLinks_ul_li" link="/" name="Todos los cursos" onClick={closeMenu}/>
                 <li className="navLinks_ul_li">
-                    <Link to="/">Curso<span className="fas fa-chevron-down arrow navLinks_ul_li_span" /></Link>
+                    <Link to="/">Subir Curso<span className="fas fa-chevron-down arrow navLinks_ul_li_span" /></Link>
                     <ul className="navLinks_ul_li_ul">
-                        <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Portada" onClick={closeMenu} />
+                        <NavBarLink className="navLinks_ul_li_ul_li" link="/subir-curso-json" name="Con archivo" onClick={closeMenu} />
+                        {/* <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Portada" onClick={closeMenu} />
                         <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Speaker" onClick={closeMenu} />
                         <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Precio" onClick={closeMenu} />
-                        <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Matriculados" onClick={closeMenu} />
+                        <NavBarLink className="navLinks_ul_li_ul_li" link="/" name="Matriculados" onClick={closeMenu} /> */}
 {/*                         <NavBarLink className="navLinks_ul_li_ul_li" link="/category/computadoras" name="Computadoras" onClick={closeMenu} />
                         <NavBarLink className="navLinks_ul_li_ul_li" link="/category/monitores" name="Monitores" onClick={closeMenu} /> */}
                     </ul>
