@@ -1,21 +1,19 @@
-import React, { useState } from "react";
-import LogoMab from "../../../../assets/images/Logo de MAB.png";
+import React from "react";
 import "./_NavBar.scss";
 
 const NavBar = (props) => {
 
-  let {
-    mostrar
-  } = props
+  let{
+    logo, show, onclick
+  }=props
 
-  const [show, setShow] = useState(props.mostrar);
   return (
     <header className={`header ${show ? "space-toggle" : null}`}>
-      <div className="header-toggle" onClick={() => setShow(!show)}>
+      <div className="header-toggle" onClick={onclick}>
         <i className="fas fa-solid fa-bars"></i>
       </div>
 
-      <img className="nav-logo-img" src={LogoMab} alt="Logo de MAB" />
+      <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
 
       <div>
         <button>

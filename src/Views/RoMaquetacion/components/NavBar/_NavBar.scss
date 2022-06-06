@@ -1,0 +1,102 @@
+@import "../../../../App.scss";
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: $header-height;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $white;
+    padding: 0 1rem;
+    transition: 0.5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  
+  }
+  
+.header-toggle {
+  font-size: 1.25rem;
+  cursor: pointer;
+  color: $gray;
+}
+  
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 100%;
+}
+
+.nav-logo, 
+.nav-link {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  column-gap: 2rem;
+}
+ 
+.nav-link {
+  padding: 0.5rem 0 0.5rem 1.2rem;
+}
+
+.nav-logo {
+  padding: 0.5rem 0 0.5rem 1.4rem;
+}
+
+.nav-logo{
+  align-items: center;
+  height: 4rem;
+  border-bottom: 1px solid $silver;
+}
+
+.nav-logo-icon {
+  font-size: 1.25rem;
+  color: $white;
+  cursor: pointer;
+}
+
+.nav-logo-img {
+  width: 4rem;
+}
+
+.nav-logo-name {
+  font-weight: 700;
+  color: $white;
+}
+
+.nav-link {
+  position: relative;
+  color: $white;
+  transition: 0.5s;
+  height: 3rem;
+  align-items: center;
+  margin: 0.4rem;
+  border-radius: 10px;
+}
+
+.nav-link:hover {
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.active {
+  color: $white;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.space-toggle {
+  padding-left: calc($nav-width + 1.4rem);
+}
+
+@media screen and(min-width:768px){  
+  .header {
+    height: 4rem;
+    padding-left: calc(64px + 1.4rem);
+  } 
+
+  .space-toggle {
+    padding-left: calc($nav-width + 170px);
+  }
+}
