@@ -1,14 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import SideBar from "./components/Sidebar/SideBar";
-import "./_App.scss";
+import LogoMab from "../../assets/images/Logo de MAB.png";
 
 const App = () => {
+
+  const [show, setShow] = useState(true);
+
+  const onShow = () => {
+    show==true ? setShow(false) :  setShow(true);   
+  }
+
+
+
   return (
     <>
-      {/* <NavBar /> */}
-      <SideBar>
+      <NavBar logo={LogoMab} show={show} onclick={onShow}  /> 
+      <SideBar show={show} bgcolor="bg-gray" >
         <div>
           <Link to="/ro-maquetacion" className="nav-logo">
             <i className="fa fa-solid fa-home nav-logo-icon"></i>
@@ -32,6 +41,7 @@ const App = () => {
           <i className="fas fa-solid fa-bell nav-link-icon"></i>
           <span className="nav-link-name">Cerrar Sesión</span>
         </Link>
+
       </SideBar>
     </>
   );
