@@ -1,17 +1,91 @@
-.Button {
-    border: 1px solid red;
+@import "../../Settings.scss";
+
+/* VARIABLES GENERALES DE BOTONES */
+$border-radius: 5px;
+$padding: 0.5em 1em;
+$font-weight: bold;
+
+/* .............................. */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.disabled {
-    opacity: 0.5;
+.btn-white {
+  background-color: $white;
 }
 
-.primary{
-    background-color: #0070f3;
-    color: #fff;
+.btn-red {
+  background-color: $red;
 }
 
-.secondary{
-    background-color: #f3f3f3;
-    color: #0070f3;
+.btn-turquoise {
+  background-color: $turquoise;
+}
+
+.btn-blue {
+  background-color: $blue;
+}
+
+.btn-yellow {
+  background-color: $yellow;
+  border-radius: $border-radius;
+  padding: $padding;
+  border: 0px;
+  font-weight: $font-weight;
+}
+
+.btn-orange {
+  background-color: $orange;
+}
+
+.btn-green {
+  background-color: $green;
+}
+
+.btn-magenta {
+  background-color: $magenta;
+}
+
+.btn-black {
+  background-color: $black;
+}
+
+.btn-fuchsia {
+  background-color: $fuchsia;
+  border-radius: $border-radius;
+  padding: $padding;
+  border: 0px;
+  font-weight: $font-weight;
+  color: $white;
+  letter-spacing: 0.5px;
+  font-family: $din-round-pro;
+}
+
+.btn-lightblue {
+  background-color: $lightblue;
+}
+
+.btn-silver {
+  background-color: $silver;
+}
+
+.btn-gray {
+  background-color: $gray;
 }
