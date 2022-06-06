@@ -1,0 +1,46 @@
+@import "../../App.scss";
+
+.sidebar-container {
+  position: relative;
+  margin: $header-height 0 0 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  transition: 0.5s;
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+  }
+}
+
+.sidebar {
+  position: fixed; /*fixed*/
+  top: $header-height;
+  left: -30%;
+  height: calc(100vh - $header-height); /*100vh*/
+  width: $nav-width;
+  /*background-color: $gray;*/
+  transition: 0.5s;
+}
+
+.show {
+  left: 0;
+}
+
+@media screen and(min-width:768px){
+  .sidebar-container {
+    margin: calc($header-height) 0 0 0; /*calc($header-height + 1rem) 0 0 0*/
+    padding: 0 1rem 0 calc($nav-width + 1.4rem); 
+  }
+
+  .sidebar {
+    left: 0;
+  }
+
+  .show {
+    width: calc($header-height + 156px);
+  }
+  
+}

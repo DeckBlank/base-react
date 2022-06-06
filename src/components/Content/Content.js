@@ -1,9 +1,10 @@
 import React from 'react'
 import ContainerTable from '../ContainerTable/ContainerTable'
 
-const Content = () => {
+const Content = (props) => {
   return (
-    <div>
+    <div >
+        {props.children}
         <ContainerTable/>
     </div>
     

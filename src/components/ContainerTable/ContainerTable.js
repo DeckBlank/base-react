@@ -1,7 +1,7 @@
 import React from 'react'
 import Table from '../Table/Table'
 import './_ContainerTable.scss'
-import customerList from '../../../../assets/Jsons/customers-list.json'
+import customerList from '../../assets/Jsons/customers-list.json'
 import SearchBtn from '../SearchBtn/SearchBtn'
 
 const customerTableHead = [

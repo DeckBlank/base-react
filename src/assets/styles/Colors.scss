@@ -80,3 +80,68 @@
 .txt-gray {
   color: $gray;
 }
+
+/*BOTONES*/
+
+.btn-white {
+  background-color: $white;
+}
+
+.btn-red {
+  background-color: $red;
+}
+
+.btn-turquoise {
+  background-color: $turquoise;
+}
+
+.btn-blue {
+  background-color: $blue;
+}
+
+.btn-yellow {
+  background-color: $yellow;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  border: 0px;
+  font-weight: $btn-font-weight;
+}
+
+.btn-orange {
+  background-color: $orange;
+}
+
+.btn-green {
+  background-color: $green;
+}
+
+.btn-magenta {
+  background-color: $magenta;
+}
+
+.btn-black {
+  background-color: $black;
+}
+
+.btn-fuchsia {
+  background-color: $fuchsia;
+  border-radius: $btn-border-radius;
+  padding: $btn-padding;
+  border: 0px;
+  font-weight: $btn-font-weight;
+  color: $white;
+  letter-spacing: 0.5px;
+  font-family: $din-round-pro;
+}
+
+.btn-lightblue {
+  background-color: $lightblue;
+}
+
+.btn-silver {
+  background-color: $silver;
+}
+
+.btn-gray {
+  background-color: $gray;
+}

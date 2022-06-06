@@ -1,9 +1,4 @@
-@import "../../Settings.scss";
-
-/* VARIABLES GENERALES DE BOTONES */
-$border-radius: 5px;
-$padding: 0.5em 1em;
-$font-weight: bold;
+@import "../../App.scss";
 
 /* .............................. */
 .btn {
@@ -25,67 +20,4 @@ $font-weight: bold;
   border-radius: 0.25rem;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-.btn-white {
-  background-color: $white;
-}
-
-.btn-red {
-  background-color: $red;
-}
-
-.btn-turquoise {
-  background-color: $turquoise;
-}
-
-.btn-blue {
-  background-color: $blue;
-}
-
-.btn-yellow {
-  background-color: $yellow;
-  border-radius: $border-radius;
-  padding: $padding;
-  border: 0px;
-  font-weight: $font-weight;
-}
-
-.btn-orange {
-  background-color: $orange;
-}
-
-.btn-green {
-  background-color: $green;
-}
-
-.btn-magenta {
-  background-color: $magenta;
-}
-
-.btn-black {
-  background-color: $black;
-}
-
-.btn-fuchsia {
-  background-color: $fuchsia;
-  border-radius: $border-radius;
-  padding: $padding;
-  border: 0px;
-  font-weight: $font-weight;
-  color: $white;
-  letter-spacing: 0.5px;
-  font-family: $din-round-pro;
-}
-
-.btn-lightblue {
-  background-color: $lightblue;
-}
-
-.btn-silver {
-  background-color: $silver;
-}
-
-.btn-gray {
-  background-color: $gray;
 }

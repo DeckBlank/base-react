@@ -1,133 +1,73 @@
-import React from 'react'
-import { useTable, usePagination , useSortBy} from 'react-table'
-import "./_Table.scss"
+import React, { useState } from "react";
 
-export default function Table({
-    columns,
-    data,
-    fetchData,
-    loading,
-    pageCount: controlledPageCount,
-  }) {
-    const {
-      getTableProps,
-      getTableBodyProps,
-      headerGroups,
-      prepareRow,
-      page,
-      canPreviousPage,
-      canNextPage,
-      pageOptions,
-      pageCount,
-      gotoPage,
-      nextPage,
-      previousPage,
-      setPageSize,
-      state: { pageIndex, pageSize },
-    } = useTable(
-      {
-        columns,
-        data,
-        initialState: { pageIndex: 0 }, 
-        manualPagination: true, 
-        pageCount: controlledPageCount,
-      },
-      usePagination
-    )
+import "./_Table.scss";
 
-    React.useEffect(() => {
-      fetchData({ pageIndex, pageSize })
-    }, [fetchData, pageIndex, pageSize])
+const Table = (props) => {
+  const initDataShow =
+    props.limit && props.bodyData
+      ? props.bodyData.slice(0, Number(props.limit))
+      : props.bodyData;
 
-    return (
-      <div className='table-container'>
-        <table {...getTableProps()}>
-          <thead>
-            {headerGroups.map(headerGroup => (
-              <tr {...headerGroup.getHeaderGroupProps()}>
-                {headerGroup.headers.map(column => (
-                  <th {...column.getHeaderProps()}>
-                    {column.render('Header')}
-                    <span>
-                      {column.isSorted
-                        ? column.isSortedDesc
-                          ? ' 🔽'
-                          : ' 🔼'
-                        : ''}
-                    </span>
-                  </th>
-                ))}
-              </tr>
-            ))}
-          </thead>
-          <tbody {...getTableBodyProps()}>
-            {page.map((row, i) => {
-              prepareRow(row)
-              return (
-                <tr {...row.getRowProps()}>
-                  {row.cells.map(cell => {
-                    return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
-                  })}
-                </tr>
-              )
-            })}
-            <tr>
-              {loading ? (
-                
-                <td colSpan="10000">Loading...</td>
-              ) : (
-                <td colSpan="10000">
-                  Showing {page.length} of ~{controlledPageCount * pageSize}{' '}
-                  results
-                </td>
-              )}
-            </tr>
-          </tbody>
-        </table>
-        <div className="pagination">
-          <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-            {'<<'}
-          </button>{' '}
-          <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-            {'<'}
-          </button>{' '}
-          <button onClick={() => nextPage()} disabled={!canNextPage}>
-            {'>'}
-          </button>{' '}
-          <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-            {'>>'}
-          </button>{' '}
-          <span>
-            Page{' '}
-            <strong>
-              {pageIndex + 1} of {pageOptions.length}
-            </strong>{' '}
-          </span>
-          <span>
-            | Go to page:{' '}
-            <input
-              type="number"
-              defaultValue={pageIndex + 1}
-              onChange={e => {
-                const page = e.target.value ? Number(e.target.value) - 1 : 0
-                gotoPage(page)
-              }}
-              style={{ width: '100px' }}
-            />
-          </span>{' '}
-          <select
-            value={pageSize}
-            onChange={e => {
-              setPageSize(Number(e.target.value))
-            }}
-          >
-            {[10, 20, 30, 40, 50].map(pageSize => (
-              <option key={pageSize} value={pageSize}>
-                Show {pageSize}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-    )
+  const [dataShow, setDataShow] = useState(initDataShow);
+
+  let pages = 1;
+
+  let range = [];
+
+  if (props.limit !== undefined) {
+    let page = Math.floor(props.bodyData.length / Number(props.limit));
+    pages = props.bodyData.length % Number(props.limit) === 0 ? page : page + 1;
+    range = [...Array(pages).keys()];
   }
+
+  const [currPage, setCurrPage] = useState(0);
+
+  const selectPage = (page) => {
+    const start = Number(props.limit) * page;
+    const end = start + Number(props.limit);
+
+    setDataShow(props.bodyData.slice(start, end));
+
+    setCurrPage(page);
+  };
+
+  return (
+    <div>
+      <div className="table-wrapper">
+        <table>
+          {props.headData && props.renderHead ? (
+            <thead>
+              <tr>
+                {props.headData.map((item, index) =>
+                  props.renderHead(item, index)
+                )}
+              </tr>
+            </thead>
+          ) : null}
+          {props.bodyData && props.renderBody ? (
+            <tbody>
+              {dataShow.map((item, index) => props.renderBody(item, index))}
+            </tbody>
+          ) : null}
+        </table>
+      </div>
+      {pages > 1 ? (
+        <div className="table__pagination">
+          {range.map((item, index) => (
+            <div
+              key={index}
+              className={`table__pagination-item ${
+                currPage === index ? "active" : ""
+              }`}
+              onClick={() => selectPage(index)}
+            >
+              {item + 1}
+            </div>
+          ))}
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+export default Table;

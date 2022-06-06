@@ -1,12 +1,21 @@
-import React from 'react'
-import './_SideBar.scss';
+import React from "react";
+import "./_SideBar.scss";
 
-const SideBar = () => {
+import NavBar from "../NavBar/NavBar";
+
+const SideBar = (props) => {
+
+  let{
+    show, bgcolor
+  }=props
+
   return (
-    <div>
-        SideBar
-    </div>
-  )
-}
+      <aside className={`sidebar ${show ? "show" : null} ${bgcolor}`}>
+        <nav className="nav">
+          {props.children}
+        </nav>
+      </aside>
+  );
+};
 
-export default SideBar
+export default SideBar;
