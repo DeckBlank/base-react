@@ -40,7 +40,7 @@ export default function Table({
     }, [fetchData, pageIndex, pageSize])
 
     return (
-      <>
+      <div className='table-container'>
         <table {...getTableProps()}>
           <thead>
             {headerGroups.map(headerGroup => (
@@ -128,6 +128,6 @@ export default function Table({
             ))}
           </select>
         </div>
-      </>
+      </div>
     )
   }

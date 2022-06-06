@@ -1,0 +1,81 @@
+/* :::COLORES::: */
+
+$white: #f9f6f2;
+$red: #ff3333;
+$turquoise: #36c9cc;
+$blue: #3366cc;
+$yellow: #f9cf1c;
+$orange: #ff6700;
+$green: #22bc22;
+$magenta: #eb3cec;
+$black: #0f0f0f;
+$fuchsia: #de0d45;
+$lightblue: #deebff;
+$silver: #c4c4c4;
+$gray: #303c54;
+
+.table-wrapper {
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  min-width: 400px;
+  border-spacing: 0;
+  border: 1px solid $silver;
+  border-radius: 10px;
+}
+
+thead {
+  background-color: $white;
+}
+
+tr {
+  text-align: left;
+}
+
+th,
+td {
+  text-transform: capitalize;
+  padding: 15px 10px;
+}
+
+tbody > tr:hover {
+  background-color: $fuchsia;
+  color: $white;
+}
+
+.table__pagination {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.table__pagination-item ~ .table__pagination-item {
+  margin-left: 10px;
+}
+
+.table__pagination-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.table__pagination-item.active,
+.table__pagination-item.active:hover {
+  background-color: $fuchsia;
+  color: $white;
+  font-weight: 600;
+}
+
+.table__pagination-item:hover {
+  color: $white;
+  background-color: $fuchsia;
+  border-radius: 50%;
+}
