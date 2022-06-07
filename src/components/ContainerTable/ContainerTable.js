@@ -2,7 +2,7 @@ import React from "react";
 import Table from "../Table/Table";
 import "./_ContainerTable.scss";
 import customerList from "../../assets/Jsons/customers-list.json";
-import SearchBtn from "../SearchBtn/SearchBtn";
+import SearchBtn from "../../uiKit/SearchBtn/SearchBtn";
 import Button from "../../uiKit/Button/Button";
 
 const customerTableHead = [
@@ -40,21 +40,13 @@ const CustomersList = () => {
         Filtro
       </Button>
       <SearchBtn />
-      <div className="row">
-        <div className="col-12">
-          <div className="card">
-            <div className="card__body">
-              <Table
-                limit="10"
-                headData={customerTableHead}
-                renderHead={(item, index) => renderHead(item, index)}
-                bodyData={customerList}
-                renderBody={(item, index) => renderBody(item, index)}
-              />
-            </div>
-          </div>
-        </div>
-      </div>
+      <Table
+        limit="10"
+        headData={customerTableHead}
+        renderHead={(item, index) => renderHead(item, index)}
+        bodyData={customerList}
+        renderBody={(item, index) => renderBody(item, index)}
+      />
       <Button className="btn btn-radius txt-white btn-green btn-hover-green btn-flex-row">
         <i className="fas fa-solid fa-bell"></i>
         Excel

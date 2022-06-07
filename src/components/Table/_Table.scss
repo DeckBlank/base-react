@@ -1,21 +1,16 @@
-/* :::COLORES::: */
-
-$white: #f9f6f2;
-$red: #ff3333;
-$turquoise: #36c9cc;
-$blue: #3366cc;
-$yellow: #f9cf1c;
-$orange: #ff6700;
-$green: #22bc22;
-$magenta: #eb3cec;
-$black: #0f0f0f;
-$fuchsia: #de0d45;
-$lightblue: #deebff;
-$silver: #c4c4c4;
-$gray: #303c54;
+@import "../../App.scss";
 
 .table-wrapper {
   overflow-y: auto;
+}
+
+.table-container {
+  background-color: white;
+  margin: 1rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  font-size: small;
 }
 
 table {

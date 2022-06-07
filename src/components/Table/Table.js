@@ -32,7 +32,7 @@ const Table = (props) => {
   };
 
   return (
-    <div>
+    <div className="table-container">
       <div className="table-wrapper">
         <table>
           {props.headData && props.renderHead ? (
