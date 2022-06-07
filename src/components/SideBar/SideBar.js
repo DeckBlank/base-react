@@ -1,8 +1,6 @@
 import React from "react";
 import "./_SideBar.scss";
 
-import NavBar from "../NavBar/NavBar";
-
 const SideBar = (props) => {
 
   let{

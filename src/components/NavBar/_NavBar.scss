@@ -52,7 +52,7 @@
 }
 
 .nav-logo-icon {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: $white;
   cursor: pointer;
 }
@@ -62,7 +62,7 @@
 }
 
 .nav-logo-name {
-  font-weight: 700;
+  // font-weight: 700;
   color: $white;
 }
 
@@ -84,21 +84,4 @@
 .active {
   color: $white;
   background-color: rgba(0, 0, 0, 0.1);
-}
-
-.space-toggle {
-  padding-left: calc($nav-width + 1.4rem);
-}
-
-@media screen and(min-width:768px){  
-  .header {
-    height: 4rem;
-    padding-left: calc(64px + 1.4rem);
-  } 
-
-  .space-toggle {
-    padding-left: calc($nav-width + 170px);
-  }
-  
-  
 }
