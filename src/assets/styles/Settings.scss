@@ -27,3 +27,7 @@ $btn-font-weight: bold;
 .btn-radius {
   border-radius: $btn-border-radius;
 }
+
+.btn-width {
+  width: min-content;
+}
