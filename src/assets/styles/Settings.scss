@@ -20,6 +20,10 @@ $header-height: 4rem;
 $nav-width: 64px;
 
 /*botones*/
-$btn-border-radius: 5px;
+$btn-border-radius: 15px;
 $btn-padding: 0.5em 1em;
 $btn-font-weight: bold;
+
+.btn-radius {
+  border-radius: $btn-border-radius;
+}

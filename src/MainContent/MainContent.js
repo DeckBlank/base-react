@@ -36,7 +36,7 @@ const MainContent = () => {
   return (
     <div>   
       
-      <div className={`sidebar-container ${show ? "space-toggle" : null} `}> 
+      <div className={`sidebar-container ${show ? "space-toggle sidebar-container-open" : null} `}> 
       <NavBar logo={LogoMab} show={show} onclick={onShow} closeSession={closeSession} /> 
       <SideBar show={show} bgcolor="bg-gray" >
         <Suspense fallback={loading}>

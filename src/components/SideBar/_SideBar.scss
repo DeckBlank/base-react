@@ -32,7 +32,11 @@
 @media screen and(min-width:768px){
   .sidebar-container {
     // margin: calc($header-height) 0 0 0; /*calc($header-height + 1rem) 0 0 0*/
-    padding: 1rem 1rem 0 calc($nav-width + 1.4rem); 
+    padding: 1rem 1rem 1rem calc(64px + 1.4rem);
+  }
+
+  .sidebar-container-open {
+    padding: 1rem 1rem 1rem calc(220px + 1.4rem);
   }
 
   .sidebar {

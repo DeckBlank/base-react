@@ -101,10 +101,6 @@
 
 .btn-yellow {
   background-color: $yellow;
-  border-radius: $btn-border-radius;
-  padding: $btn-padding;
-  border: 0px;
-  font-weight: $btn-font-weight;
 }
 
 .btn-orange {
@@ -125,13 +121,6 @@
 
 .btn-fuchsia {
   background-color: $fuchsia;
-  border-radius: $btn-border-radius;
-  padding: $btn-padding;
-  border: 0px;
-  font-weight: $btn-font-weight;
-  color: $white;
-  letter-spacing: 0.5px;
-  font-family: $din-round-pro;
 }
 
 .btn-lightblue {
@@ -144,4 +133,27 @@
 
 .btn-gray {
   background-color: $gray;
+}
+
+/*HOVERS*/
+
+.btn-hover-yellow {
+  &:hover {
+    background-color: $yellow;
+    color: $black;
+  }
+}
+
+.btn-hover-fuchsia {
+  &:hover {
+    background-color: $fuchsia;
+    color: $black;
+  }
+}
+
+.btn-hover-green {
+  &:hover {
+    background-color: $green;
+    color: $black;
+  }
 }

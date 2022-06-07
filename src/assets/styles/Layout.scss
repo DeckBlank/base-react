@@ -5,3 +5,10 @@
     box-sizing: border-box;
   }
   
+/*FLEX BTN*/
+
+.btn-flex-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
