@@ -15,6 +15,21 @@ $gray: #303c54;
 
 $din-round-pro: DIN Round Pro;
 
+/*SCROLL*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: $silver;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+  background: rgba(128, 128, 128, 0);
+}
+
 /*NAVBAR Y SIDEBAR*/
 $header-height: 4rem;
 $nav-width: 64px;

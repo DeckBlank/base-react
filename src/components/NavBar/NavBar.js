@@ -16,7 +16,7 @@ const NavBar = (props) => {
       <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
 
       <div>
-        <Button className="btn txt-silver btn-white position-relative btn-hover-yellow">
+        <Button className="btn btn-width btn-radius txt-silver btn-white position-relative btn-hover-yellow">
           <i className="fas fa-solid fa-bell"></i>
           <Badge className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-red txt-white">
             +99
