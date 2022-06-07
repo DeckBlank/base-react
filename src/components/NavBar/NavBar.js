@@ -1,8 +1,9 @@
 import React from "react";
 import Button from "../../uiKit/Button/Button";
 import Badge from "../../uiKit/Badge/Badge";
-
+import Dropdown from "../../uiKitRelease/Dropdown/Dropdown";
 import "./_NavBar.scss";
+
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;

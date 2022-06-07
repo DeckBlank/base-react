@@ -4,6 +4,7 @@ import "./_ContainerTable.scss";
 import customerList from "../../assets/Jsons/customers-list.json";
 import SearchBtn from "../../uiKit/SearchBtn/SearchBtn";
 import Button from "../../uiKit/Button/Button";
+import Dropdown from "../../uiKitRelease/Dropdown/Dropdown";
 
 const customerTableHead = [
   "id",
