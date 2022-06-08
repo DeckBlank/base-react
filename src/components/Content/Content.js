@@ -6,8 +6,7 @@ const Content = (props) => {
     <div >
         {props.children}
         <ContainerTable/>
-    </div>
-    
+    </div>    
   )
 }
 
