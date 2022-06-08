@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import { Route, Routes ,useNavigate, Link } from 'react-router-dom';
 import NavBar from "../components/NavBar/NavBar";
-import SideBar from "../components/Sidebar/SideBar";
+import SideBar from "../components/SideBar/SideBar";
 import Content from "../components/Content/Content";
 import LogoMab from "../assets/images/Logo de MAB.png";
 import useToken from '../useToken';
@@ -64,13 +64,13 @@ const MainContent = () => {
             </div>
           </div>
           <Link to="/ro-maquetacion" className="nav-link">
+          {/* <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-arc" /> */}
             <i className="fas fa-solid fa-arrow-right-from-arc"></i>
             <span className="nav-link-name">Cerrar Sesión</span>
           </Link>
           
         </Suspense>    
       </SideBar>
-
       <Content/>
       </div>        
   )
