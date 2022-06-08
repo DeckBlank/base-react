@@ -10,7 +10,10 @@ const Button = (props) => {
         type,  
         bgcolor,
         txtcolor,     
-        position,   
+        position, 
+        dropdown,
+        databstoggle,
+        ariaexpanded,
         onClick 
     }=props
 
@@ -19,7 +22,9 @@ const Button = (props) => {
             id={id} 
             name={name} 
             type={type} 
-            className={`btn bg-${bgcolor} txt-${txtcolor} position-${position}`} 
+            className={`btn bg-${bgcolor} txt-${txtcolor} position-${position} dropdown-${dropdown}`} 
+            data-bs-toggle={databstoggle}
+            aria-expanded={ariaexpanded}
             onClick={onClick} 
            >
             {props.children}      

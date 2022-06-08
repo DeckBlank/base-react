@@ -5,6 +5,7 @@ import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from '../../useToken';
+import Dropdown from '../../uiKitRelease/Dropdown/Dropdown';
 
 const loading = (
   <div className="pt-3 text-center">
@@ -16,6 +17,7 @@ const loading = (
 //PageDocs
 const DocsButton = React.lazy(() => import('./DocsButton'))
 const DocsBadge = React.lazy(() => import('./DocsBadge'))
+const DocsDropdown = React.lazy(() => import('./DocsDropdown'))
 const DocsGroupButton = React.lazy(() => import('./DocsGroupButton'))
 const DocsTable = React.lazy(() => import('./DocsTable'))
 
@@ -64,6 +66,12 @@ const Docs = (props) => {
                     <i class="fa fa-light fa-file-lines nav-link-icon"></i>
                     <span className="nav-link-name">Group button</span>
                 </Link> 
+                <hr className='hr-sidebar'/> 
+
+                <Link to="/dropdown" className="nav-link">
+                    <i class="fa fa-light fa-file-lines nav-link-icon"></i>
+                    <span className="nav-link-name">Dropdown</span>
+                </Link> 
                 <hr className='hr-sidebar'/>   
 
                 <Link to="/table" className="nav-link">
@@ -90,6 +98,7 @@ const Docs = (props) => {
                     <Route exact path="/button" name="Button" element={<DocsButton/>} />
                     <Route exact path="/badge" name="Badge" element={<DocsBadge/>} />   
                     <Route exact path="/table" name="Table" element={<DocsTable/>} />                      
+                    <Route exact path="/dropdown" name="Dropdown" element={<Dropdown/>} />                      
                     <Route exact path="/buttongroup" name="ButtonGroup" element={<DocsGroupButton/>} /> 
                     </>     
                 </Routes>
