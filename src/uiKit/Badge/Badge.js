@@ -3,22 +3,19 @@ import PropTypes from "prop-types";
 import "./_Badge.scss";
 
 const Badge = (props) => {
-  const { id, name, type, className, onClick, dataToggle, dataTarget } = props;
+  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick} = props;
 
   return (
-    <span
+    <span 
       id={id}
       name={name}
-      type={type}
-      className={className}
-      onClick={onClick}
-      data-toggle={dataToggle}
-      data-target={dataTarget}
+      className={`badge rounded-pill bg-${bgcolor} txt-${txtcolor} position-${position} top-${top} start-${start}  translate-${translate}`}
+      onClick={onClick}      
     >
       {props.children}
     </span>
   );
-};
+};    
 
 Badge.propTypes = {
   id: PropTypes.string,
