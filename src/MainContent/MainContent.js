@@ -64,7 +64,7 @@ const MainContent = () => {
             </div>
           </div>
           <Link to="/ro-maquetacion" className="nav-link">
-            <i className="fas fa-solid fa-bell nav-link-icon"></i>
+            <i className="fas fa-solid fa-arrow-right-from-arc"></i>
             <span className="nav-link-name">Cerrar Sesión</span>
           </Link>
           
