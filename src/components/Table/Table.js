@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./_Table.scss";
 
 const Table = (props) => {
@@ -32,7 +31,7 @@ const Table = (props) => {
   };
 
   return (
-    <div className="table-container">
+    <div>
       <div className="table-wrapper">
         <table>
           {props.headData && props.renderHead ? (

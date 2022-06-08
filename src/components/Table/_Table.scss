@@ -2,37 +2,36 @@
 
 .table-wrapper {
   overflow-y: auto;
-}
-
-.table-container {
-  background-color: white;
-  // margin: 1rem;
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  background-color: $white;
   font-size: small;
 }
 
 table {
   width: 100%;
   min-width: 400px;
-  border-spacing: 0;
-  border: 1px solid $silver;
-  border-radius: 10px;
+  border-spacing: 0; 
 }
 
 thead {
   background-color: $white;
+  color: $gray;
+  font-weight: bolder;
+  
 }
 
 tr {
   text-align: left;
 }
 
+th {
+  font-weight: 900;
+}
+
 th,
 td {
   text-transform: capitalize;
-  padding: 15px 10px;
+  padding: 0.4rem;
+  border: 1px solid $silver;
 }
 
 tbody > tr:hover {
