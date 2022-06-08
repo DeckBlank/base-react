@@ -1,9 +1,11 @@
 import React from 'react'
+import Table from '../../components/ContainerTable/ContainerTable'
 
 const DocsTable = () => {
   return (
     <div>
-        Table
+      as
+      <Table/>
     </div>
   )
 }

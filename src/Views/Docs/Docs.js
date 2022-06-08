@@ -1,7 +1,7 @@
 import React, { Component, Suspense, useState } from 'react'
 import { Route, Routes, useNavigate, Link } from 'react-router-dom'
 import NavBar from "../../components/NavBar/NavBar";
-import SideBar from "../../components/Sidebar/SideBar";
+import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from '../../useToken';
@@ -16,6 +16,8 @@ const loading = (
 //PageDocs
 const DocsButton = React.lazy(() => import('./DocsButton'))
 const DocsBadge = React.lazy(() => import('./DocsBadge'))
+const DocsGroupButton = React.lazy(() => import('./DocsGroupButton'))
+const DocsTable = React.lazy(() => import('./DocsTable'))
 
 const Docs = (props) => {
 
@@ -64,7 +66,7 @@ const Docs = (props) => {
                 </Link> 
                 <hr className='hr-sidebar'/>   
 
-                <Link to="/buttongroup" className="nav-link">
+                <Link to="/table" className="nav-link">
                     <i class="fa fa-light fa-file-lines nav-link-icon"></i>
                     <span className="nav-link-name">Table</span>
                 </Link> 
@@ -86,7 +88,9 @@ const Docs = (props) => {
                 <Routes>
                     <>
                     <Route exact path="/button" name="Button" element={<DocsButton/>} />
-                    <Route exact path="/badge" name="Badge" element={<DocsBadge/>} />                        
+                    <Route exact path="/badge" name="Badge" element={<DocsBadge/>} />   
+                    <Route exact path="/table" name="Table" element={<DocsTable/>} />                      
+                    <Route exact path="/buttongroup" name="ButtonGroup" element={<DocsGroupButton/>} /> 
                     </>     
                 </Routes>
             </Suspense>               

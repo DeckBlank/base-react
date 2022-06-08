@@ -45,8 +45,7 @@ function App() {
                       <Route exact path="/register" name="RegisterPage" element={<Register />} />
                       <Route exact path="/404" name="Page404" element={<Page404 />} />
                       <Route exact path="/500" name="Page500" element={<Page500 />} />
-                      <Route exact path="*" name="Docs" element={<Docs />} />                        
-                                        
+                      <Route exact path="*" name="Docs" element={<Docs />} />  
                       </>
                     )}                       
                   </Routes>
