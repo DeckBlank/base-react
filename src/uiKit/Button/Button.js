@@ -7,11 +7,11 @@ const Button = (props) => {
     let {
         id, 
         name, 
-        type, 
-        className, 
-        onClick, 
-        dataToggle, 
-        dataTarget, 
+        type,  
+        bgcolor,
+        txtcolor,     
+        position,   
+        onClick 
     }=props
 
     return(
@@ -19,10 +19,9 @@ const Button = (props) => {
             id={id} 
             name={name} 
             type={type} 
-            className={className} 
+            className={`btn bg-${bgcolor} txt-${txtcolor} position-${position}`} 
             onClick={onClick} 
-            data-toggle={dataToggle} 
-            data-target={dataTarget}>  
+           >
             {props.children}      
         </button>
     )
@@ -33,7 +32,6 @@ Button.propTypes = {
   text: PropTypes.string,
   type: PropTypes.string,
   name: PropTypes.string,
-  className: PropTypes.string,
 }
 
 export default Button

@@ -1,7 +1,7 @@
 import React, { Suspense, useState } from 'react';
 import { Route, Routes ,useNavigate, Link } from 'react-router-dom';
 import NavBar from "../components/NavBar/NavBar";
-import SideBar from "../components/SideBar/SideBar";
+import SideBar from "../components/Sidebar/SideBar";
 import Content from "../components/Content/Content";
 import LogoMab from "../assets/images/Logo de MAB.png";
 import useToken from '../useToken';
@@ -22,7 +22,7 @@ const MainContent = () => {
   const [show, setShow] = useState(true);
 
   const onShow = () => {
-    show==true ? setShow(false) :  setShow(true);   
+    setShow(!show)  
   } 
   const navigate = useNavigate();
 
@@ -33,9 +33,7 @@ const MainContent = () => {
     window.location = '/';
   };
 
-  return (
-    <div>   
-      
+  return (         
       <div className={`sidebar-container ${show ? "space-toggle sidebar-container-open" : null} `}> 
       <NavBar logo={LogoMab} show={show} onclick={onShow} closeSession={closeSession} /> 
       <SideBar show={show} bgcolor="bg-gray" >
@@ -66,16 +64,15 @@ const MainContent = () => {
             </div>
           </div>
           <Link to="/ro-maquetacion" className="nav-link">
-            <i className="fas fa-solid fa-bell nav-link-icon"></i>
+          {/* <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-arc" /> */}
+            <i className="fas fa-solid fa-arrow-right-from-arc"></i>
             <span className="nav-link-name">Cerrar Sesión</span>
           </Link>
           
         </Suspense>    
       </SideBar>
-
       <Content/>
-      </div>      
-    </div>    
+      </div>        
   )
 }
 

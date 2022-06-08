@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../../uiKit/Button/Button";
 import Badge from "../../uiKit/Badge/Badge";
-import Dropdown from "../../uiKitRelease/Dropdown/Dropdown";
 import "./_NavBar.scss";
 
 
@@ -17,16 +16,12 @@ const NavBar = (props) => {
       <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
 
       <div>
-        <Button className="btn btn-width btn-radius txt-silver btn-white position-relative btn-hover-yellow">
+        <Button bgcolor="white" txtcolor="black" position="relative"  >
           <i className="fas fa-solid fa-bell"></i>
-          <Badge className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-red txt-white">
+          <Badge bgcolor="red" txtcolor="white" position='absolute' top="0" start="100" translate="middle">
             +99
           </Badge>
         </Button>
-        {/* <button>
-          <i className="fas fa-solid fa-bell"></i>
-          Karina
-        </button> */}
       </div>
     </header>
   );

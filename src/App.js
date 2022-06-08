@@ -1,9 +1,10 @@
 import React, { Component, Suspense } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import { FavoritesContextProvider } from './context/FavoritesContext';
 import { CartContextProvider } from './context/CartContext';
 import useToken from './useToken'
 import './App.scss'
+
 
 const loading = (
   <div className="pt-3 text-center">
@@ -20,18 +21,18 @@ const Register = React.lazy(() => import('./Views/Register/Register.js'))
 const Page404 = React.lazy(() => import('./Views/Page404/Page404'))
 const Page500 = React.lazy(() => import('./Views/Page500/Page500'))
 
-
+//PageDocs
+const Docs = React.lazy(() => import('./Views/Docs/Docs'))
 
 function App() { 
 
-    const { token, setToken } = useToken();
-    
+    const { token, setToken } = useToken();    
 
     return (       
       <CartContextProvider>
         <FavoritesContextProvider>
           <div className="wrapper"> 
-          <BrowserRouter>
+          <Router >
               <Suspense fallback={loading}>
                   <Routes>
                     {!token&&(
@@ -41,15 +42,16 @@ function App() {
                     )}
                     {token&&(
                       <>
-                      <Route exact path="/register" name="Register Page" element={<Register />} />
-                      <Route exact path="/404" name="Page 404" element={<Page404 />} />
-                      <Route exact path="/500" name="Page 500" element={<Page500 />} />
-                      <Route path="*" name="MainContent" element={<MainContent />} />                      
+                      <Route exact path="/register" name="RegisterPage" element={<Register />} />
+                      <Route exact path="/404" name="Page404" element={<Page404 />} />
+                      <Route exact path="/500" name="Page500" element={<Page500 />} />
+                      <Route exact path="*" name="Docs" element={<Docs />} />                        
+                                        
                       </>
-                    )}
+                    )}                       
                   </Routes>
                 </Suspense>
-          </BrowserRouter>
+          </Router>
           </div>
         </FavoritesContextProvider>
       </CartContextProvider>    
