@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../../uiKit/Button/Button";
 import Badge from "../../uiKit/Badge/Badge";
-import Dropdown from "../../uiKitRelease/Dropdown/Dropdown";
 import "./_NavBar.scss";
 
 
@@ -23,10 +22,6 @@ const NavBar = (props) => {
             +99
           </Badge>
         </Button>
-        {/* <button>
-          <i className="fas fa-solid fa-bell"></i>
-          Karina
-        </button> */}
       </div>
     </header>
   );
