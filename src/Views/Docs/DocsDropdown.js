@@ -1,5 +1,5 @@
 import React from 'react'
-import Dropdown from '../../uiKitRelease/Dropdown/Dropdown'
+import Dropdown from '../../uiKit/Dropdown/Dropdown'
 
 const DocsDropdown = () => {
   
@@ -13,7 +13,8 @@ const DocsDropdown = () => {
             txtcolor="white"
             dropdown="toggle"
             databstoggle="dropdown"
-            ariaexpanded="false"              >            
+            ariaexpanded="false"             
+        >           
         </Dropdown>    
     </div>
   )
