@@ -5,6 +5,8 @@ import SideBar from "../components/SideBar/SideBar";
 import Content from "../components/Content/Content";
 import LogoMab from "../assets/images/Logo de MAB.png";
 import useToken from '../useToken';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines } from "@fortawesome/free-solid-svg-icons";
 import './_MainContent.scss';
 
 
@@ -41,7 +43,7 @@ const MainContent = () => {
           <div>       
             
             <Link to="/ro-maquetacion" className="nav-link">
-              <i className="fa fa-solid fa-home nav-link-icon"></i>
+             <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
               <span className="nav-link-name">Inicio</span>
             </Link> 
   
@@ -49,14 +51,14 @@ const MainContent = () => {
 
             <div className="nav-list">
               <Link to="/ro-maquetacion" className="nav-link">
-                <i class="fa fa-light fa-file-lines nav-link-icon"></i>
+               <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
                 <span className="nav-link-name">Lista</span>
               </Link> 
               
               <hr className='hr-sidebar'/>
 
               <Link to="/ro-maquetacion" className="nav-link">
-                <i className="fas fa-solid fa-bell nav-link-icon"></i>
+               <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
                 <span className="nav-link-name">Reportes</span>
               </Link> 
               
@@ -64,8 +66,7 @@ const MainContent = () => {
             </div>
           </div>
           <Link to="/ro-maquetacion" className="nav-link">
-          {/* <FontAwesomeIcon icon="fa-solid fa-arrow-right-from-arc" /> */}
-            <i className="fas fa-solid fa-arrow-right-from-arc"></i>
+           <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
             <span className="nav-link-name">Cerrar Sesión</span>
           </Link>
           

@@ -1,14 +1,13 @@
 import React from 'react'
 import Table from '../../components/TableOri/Table'
 import customerList from "../../assets/Jsons/customers-list.json";
-import { setDefaultHeader } from '../../requests/login';
 
 const DocsTable = () => {
 
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [pageCount, setPageCount] = React.useState(0);
-  const fetchIdRef = React.useRef(0);
+  // const fetchIdRef = React.useRef(0);
 
   const  fetchData = () => {
       setLoading(true);
@@ -23,12 +22,28 @@ const DocsTable = () => {
         Header: "Curso",
         columns: [
           {
-            Header: "ID",
+            Header: "id",
             accessor: "id",
           },
           {
-            Header: "Alumno",
-            accessor: "alumno",
+            Header: "tutor",
+            accessor: "tutor",
+          },
+          {
+            Header: "fecha",
+            accessor: "fecha",
+          },
+          {
+            Header: "hora",
+            accessor: "hora",
+          },
+          {
+            Header: "curso",
+            accessor: "curso",
+          },
+          {
+            Header: "modalidad",
+            accessor: "modalidad",
           },
         ],
       }

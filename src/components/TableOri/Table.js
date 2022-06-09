@@ -1,5 +1,7 @@
 import React from 'react'
 import { useTable, usePagination , useSortBy} from 'react-table'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines, faBell, faAngleRight, faAngleLeft, faAnglesLeft, faAnglesRight  } from "@fortawesome/free-solid-svg-icons";
 import "./_Table.scss"
 
 export default function Table({
@@ -86,16 +88,16 @@ export default function Table({
         </table>
         <div className="table__pagination">
           <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-            {'<<'}
+          <FontAwesomeIcon icon={faAnglesLeft} className="nav-link-icon" />
           </button>{' '}
           <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-            {'<'}
+          <FontAwesomeIcon icon={faAngleLeft} className="nav-link-icon" />
           </button>{' '}
           <button onClick={() => nextPage()} disabled={!canNextPage}>
-            {'>'}
+          <FontAwesomeIcon icon={faAngleRight} className="nav-link-icon" />
           </button>{' '}
           <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
-            {'>>'}
+          <FontAwesomeIcon icon={faAnglesRight} className="nav-link-icon" />
           </button>{' '}
           <span>
             Página{' '}
@@ -107,6 +109,7 @@ export default function Table({
             | Ir a la página:{' '}
             <input
               type="number"
+              min="1"
               defaultValue={pageIndex + 1}
               onChange={e => {
                 const page = e.target.value ? Number(e.target.value) - 1 : 0
@@ -123,7 +126,7 @@ export default function Table({
           >
             {[10, 20, 30, 40, 50].map(pageSize => (
               <option key={pageSize} value={pageSize}>
-                Show {pageSize}
+                Mostrar {pageSize}
               </option>
             ))}
           </select>
