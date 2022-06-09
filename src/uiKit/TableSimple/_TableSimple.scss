@@ -1,0 +1,122 @@
+@import "../../App.scss";
+
+.table__wrapper {
+  overflow-y: auto;
+  background-color: $white;
+  font-size: small;
+  border: 1px solid $silver;
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  min-width: 400px;
+  border-spacing: 0; 
+  border-radius: 10px;
+}
+
+thead {
+  background-color: $white;
+  color: $gray;
+  font-weight: bolder;
+  
+}
+
+tr {
+  text-align: left;
+}
+
+th {
+  font-weight: 900;
+}
+
+th,
+td {
+  text-transform: capitalize;
+  padding: 0.4rem;
+  // border: 1px solid $silver;
+}
+
+tbody > tr:hover {
+  background-color: $fuchsia;
+  color: $white;
+}
+
+.table__pagination-simple {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  align-items: center;
+  margin-top: 20px;
+
+}
+
+.table__pagination-item ~ .table__pagination-item {
+  margin-left: 10px;
+}
+
+.table__pagination-item {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.table__pagination-item.active,
+.table__pagination-item.active:hover {
+  background-color: $fuchsia;
+  color: $white;
+  font-weight: 600;
+}
+
+.table__pagination-item:hover {
+  color: $white;
+  background-color: $fuchsia;
+  border-radius: 50%;
+}
+
+.section-table {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.span-state-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-break: anywhere;
+  gap: 1rem;
+}
+
+.span-flex-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.btn-state {
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  &:hover {
+    color: $black;
+  }
+}
+
+.tutor-flex-td {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

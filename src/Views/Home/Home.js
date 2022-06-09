@@ -2,7 +2,7 @@ import React ,{useState,useCallback,useEffect} from "react";
 import { Link, useParams ,useNavigate} from "react-router-dom";
 import CRUDEdit from "../../components/CRUDEdit/CRUDEdit";
 import { getCourse, getUnitsTable } from "../../requests/courses";
-import Button from "../../uiKitRelease/Button/Button";
+import Button from "../../uiKit/Button/Button";
 import './_Home.scss';
 
 

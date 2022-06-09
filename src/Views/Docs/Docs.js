@@ -1,12 +1,12 @@
 import React, { Component, Suspense, useState } from "react";
 import { Route, Routes, useNavigate, Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFileLines, faBell  } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar/NavBar";
 import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFileLines, faBell  } from "@fortawesome/free-solid-svg-icons";
 
 const loading = (
   <div className="pt-3 text-center">

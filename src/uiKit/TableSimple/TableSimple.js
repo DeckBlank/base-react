@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./_Table.scss";
+import "./_TableSimple.scss";
 
-const Table = (props) => {
+const TableSimple = (props) => {
   const initDataShow =
     props.limit && props.bodyData
       ? props.bodyData.slice(0, Number(props.limit))
@@ -32,7 +32,7 @@ const Table = (props) => {
 
   return (
     <div>
-      <div className="table-wrapper">
+      <div className="table__wrapper">
         <table border="0" rules="all">
           {props.headData && props.renderHead ? (
             <thead>
@@ -51,7 +51,7 @@ const Table = (props) => {
         </table>
       </div>
       {pages > 1 ? (
-        <div className="table__pagination">
+        <div className="table__pagination-simple">
           {range.map((item, index) => (
             <div
               key={index}
@@ -69,4 +69,4 @@ const Table = (props) => {
   );
 };
 
-export default Table;
+export default TableSimple;

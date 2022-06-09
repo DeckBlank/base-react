@@ -4,8 +4,8 @@ import Dropdown from '../../uiKit/Dropdown/Dropdown'
 const DocsDropdown = () => {
   
   return (      
-    <div>
-        <h1>DROPDOWN</h1><br/>     
+    <div className="views-docs">
+        <h1>DROPDOWN</h1>    
         <Dropdown 
             type="button"
             id="dropdownMenuButton1"        
