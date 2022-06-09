@@ -3,7 +3,7 @@ import React from 'react'
 const DocsGroupButton = () => {
   return (
     <div>
-        Group Buttons fgdfgdfg
+       <h1>GROUP BUTTON</h1><br/> 
     </div>
   )
 }

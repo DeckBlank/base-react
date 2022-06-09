@@ -36,6 +36,7 @@ const DocsTable = () => {
 
   return (
     <div>    
+      <h1>TABLE CON PAGINACIÓN</h1><br/> 
       <Table
          columns={columns}
          data={data}

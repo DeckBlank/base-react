@@ -98,7 +98,7 @@ const Docs = (props) => {
                     <Route exact path="/button" name="Button" element={<DocsButton/>} />
                     <Route exact path="/badge" name="Badge" element={<DocsBadge/>} />   
                     <Route exact path="/table" name="Table" element={<DocsTable/>} />                      
-                    <Route exact path="/dropdown" name="Dropdown" element={<Dropdown/>} />                      
+                    <Route exact path="/dropdown" name="Dropdown" element={<DocsDropdown/>} />                      
                     <Route exact path="/buttongroup" name="ButtonGroup" element={<DocsGroupButton/>} /> 
                     </>     
                 </Routes>
