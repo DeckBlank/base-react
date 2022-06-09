@@ -1,60 +1,37 @@
 import React from "react";
-import './_Dropdown.scss'
+import { useState } from 'react'
+import { Link } from "react-router-dom";
+import "./_Dropdown.scss";
 
 const Dropdown = (props) => {
-
-  let {
-    arialabelledby, 
-    dropdown
-  }=props
-
+  let { arialabelledby } = props;
+  const [dropdown, setDropdown] = useState(false)
+  const showDropdown =() => {
+    setDropdown(!dropdown);
+  }
   return (
-    <div className="dropdown">         
-        {props.children}     
-        <ul className={`dropdown-${dropdown} `}  aria-labelledby={arialabelledby}>
-          <li>
-            <a class="dropdown-item" href="#.">
-              Item 1
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#.">
-              Item 2
-            </a>
-          </li>
-          <li>
-            <a class="dropdown-item" href="#.">
-              Item 3
-            </a>
-          </li>
-        </ul>
+    <div className="dropdown">
+      {props.children}
+      <ul className={`dropdown-${dropdown} `} aria-labelledby={arialabelledby}>
+        <li>
+          <Link className="dropdown-item" to="./">
+            Item 1
+          </Link>
+        </li>
+        <li>
+          <Link className="dropdown-item" to="./">
+            Item 2
+          </Link>
+        </li>
+        <li>
+          <Link  className="dropdown-item" to="./">
+            Item 3
+          </Link>
+        </li>
+      </ul>
     </div>
   );
 };
 
 export default Dropdown;
 
-/*
-const Dropdown = (props) => {
-
-    let {
-        id, name,className, onClick, 
-    }=props
-
-    return(
-        <div id={id} name={name} className={className} onClick={onClick}>  
-            {props.children}      
-        </div>
-        
-    )
-}
-
-
-Dropdown.propTypes = {
-  id: PropTypes.string,
-  name: PropTypes.string,
-  className: PropTypes.string,
-}
-
-export default Dropdown
- */
