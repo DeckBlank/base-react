@@ -42,12 +42,13 @@ tbody > tr:hover {
   color: $white;
 }
 
-.table__pagination {
+.table__pagination-simple {
   display: flex;
-  width: 100%;
   justify-content: flex-end;
+  width: 100%;
   align-items: center;
   margin-top: 20px;
+
 }
 
 .table__pagination-item ~ .table__pagination-item {

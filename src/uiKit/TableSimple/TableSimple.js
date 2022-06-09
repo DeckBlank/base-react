@@ -51,7 +51,7 @@ const TableSimple = (props) => {
         </table>
       </div>
       {pages > 1 ? (
-        <div className="table__pagination">
+        <div className="table__pagination-simple">
           {range.map((item, index) => (
             <div
               key={index}
