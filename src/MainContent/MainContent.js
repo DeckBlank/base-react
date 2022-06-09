@@ -1,12 +1,11 @@
 import React, { Suspense, useState } from 'react';
 import { Route, Routes ,useNavigate, Link } from 'react-router-dom';
-import NavBar from "../components/NavBar/NavBar";
-import SideBar from "../components/SideBar/SideBar";
-import Content from "../components/Content/Content";
-import LogoMab from "../assets/images/Logo de MAB.png";
-import useToken from '../useToken';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
+import NavBar from "../components/NavBar/NavBar";
+import SideBar from "../components/SideBar/SideBar";
+import LogoMab from "../assets/images/Logo de MAB.png";
+import useToken from '../useToken';
 import './_MainContent.scss';
 
 
@@ -68,11 +67,9 @@ const MainContent = () => {
           <Link to="/ro-maquetacion" className="nav-link">
            <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
             <span className="nav-link-name">Cerrar Sesión</span>
-          </Link>
-          
+          </Link>          
         </Suspense>    
       </SideBar>
-      <Content/>
       </div>        
   )
 }

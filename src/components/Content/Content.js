@@ -1,5 +1,5 @@
 import React from 'react'
-import ContainerTable from '../ContainerTable/ContainerTable'
+
 
 const Content = (props) => {
   return (

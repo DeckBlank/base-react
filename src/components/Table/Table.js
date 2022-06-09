@@ -1,72 +1,138 @@
-import React, { useState } from "react";
-import "./_Table.scss";
+import React from 'react'
+import { useTable, usePagination , useSortBy} from 'react-table'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft, faAnglesLeft, faAnglesRight  } from "@fortawesome/free-solid-svg-icons";
+import "./_Table.scss"
 
-const Table = (props) => {
-  const initDataShow =
-    props.limit && props.bodyData
-      ? props.bodyData.slice(0, Number(props.limit))
-      : props.bodyData;
+export default function TablePaginations({
+    columns,
+    data,
+    fetchData,
+    loading,
+    pageCount: controlledPageCount,
+  }) {
+    const {
+      getTableProps,
+      getTableBodyProps,
+      headerGroups,
+      prepareRow,
+      page,
+      canPreviousPage,
+      canNextPage,
+      pageOptions,
+      pageCount,
+      gotoPage,
+      nextPage,
+      previousPage,
+      setPageSize,
+      state: { pageIndex, pageSize },
+    } = useTable(
+      {
+        columns,
+        data,
+        initialState: { pageIndex: 0 }, 
+        manualPagination: true, 
+        pageCount: controlledPageCount,
+      },
+      usePagination
+    )
 
-  const [dataShow, setDataShow] = useState(initDataShow);
+    React.useEffect(() => {
+      fetchData({ pageIndex, pageSize })
+    }, [fetchData, pageIndex, pageSize])
 
-  let pages = 1;
-
-  let range = [];
-
-  if (props.limit !== undefined) {
-    let page = Math.floor(props.bodyData.length / Number(props.limit));
-    pages = props.bodyData.length % Number(props.limit) === 0 ? page : page + 1;
-    range = [...Array(pages).keys()];
-  }
-
-  const [currPage, setCurrPage] = useState(0);
-
-  const selectPage = (page) => {
-    const start = Number(props.limit) * page;
-    const end = start + Number(props.limit);
-
-    setDataShow(props.bodyData.slice(start, end));
-
-    setCurrPage(page);
-  };
-
-  return (
-    <div>
-      <div className="table-wrapper">
-        <table border="0" rules="all">
-          {props.headData && props.renderHead ? (
-            <thead>
-              <tr>
-                {props.headData.map((item, index) =>
-                  props.renderHead(item, index)
-                )}
+    return (
+      <div className='table-container '>
+        <div className='table__wrapper'>
+        <table border="0" rules="all" {...getTableProps()}>
+          <thead>
+            {headerGroups.map(headerGroup => (
+              <tr {...headerGroup.getHeaderGroupProps()}>
+                {headerGroup.headers.map(column => (
+                  <th {...column.getHeaderProps()}>
+                    {column.render('Header')}
+                    <span>
+                      {column.isSorted
+                        ? column.isSortedDesc
+                          ? ' 🔽'
+                          : ' 🔼'
+                        : ''}
+                    </span>
+                  </th>
+                ))}
               </tr>
-            </thead>
-          ) : null}
-          {props.bodyData && props.renderBody ? (
-            <tbody>
-              {dataShow.map((item, index) => props.renderBody(item, index))}
-            </tbody>
-          ) : null}
+            ))}
+          </thead>
+          <tbody {...getTableBodyProps()}>
+            {page.map((row, i) => {
+              prepareRow(row)
+              return (
+                <tr {...row.getRowProps()}>
+                  {row.cells.map(cell => {
+                    return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                  })}
+                </tr>
+              )
+            })}
+            <tr>
+              {loading ? (
+                
+                <td colSpan="10000">Cargando...</td>
+              ) : (
+                <td colSpan="10000">
+                  Muestra <strong>{page.length}</strong>  de <strong>{controlledPageCount * pageSize}{' '}</strong>
+                  resultados
+                </td>
+              )}
+            </tr>
+          </tbody>
         </table>
-      </div>
-      {pages > 1 ? (
-        <div className="table__pagination">
-          {range.map((item, index) => (
-            <div
-              key={index}
-              className={`table__pagination-item ${
-                currPage === index ? "active" : ""
-              }`}
-              onClick={() => selectPage(index)}
-            >
-              {item + 1}
-            </div>
-          ))}
         </div>
-      ) : null}
-    </div>
-  );
-};
-
-export default Table;
+        <div className="table__pagination">
+          <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+          <FontAwesomeIcon icon={faAnglesLeft} className="nav-link-icon" />
+          </button>{' '}
+          <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+          <FontAwesomeIcon icon={faAngleLeft} className="nav-link-icon" />
+          </button>{' '}
+          <button onClick={() => nextPage()} disabled={!canNextPage}>
+          <FontAwesomeIcon icon={faAngleRight} className="nav-link-icon" />
+          </button>{' '}
+          <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+          <FontAwesomeIcon icon={faAnglesRight} className="nav-link-icon" />
+          </button>{' '}
+          <span>
+            Página{' '}
+            <strong>
+              {pageIndex + 1} de {pageOptions.length}
+            </strong>{' '}
+          </span>
+          <span>
+            | Ir a la página:{' '}
+            <input
+              type="number"
+              min="1"
+              defaultValue={pageIndex + 1}
+              onChange={e => {
+                const page = e.target.value ? Number(e.target.value) - 1 : 0
+                gotoPage(page)
+              }}
+              style={{ width: '100px' }}
+            />
+          </span>{' '}
+          <select
+            value={pageSize}
+            onChange={e => {
+              setPageSize(Number(e.target.value))
+            }}
+          >
+            {[10, 20, 30, 40, 50].map(pageSize => (
+              <option key={pageSize} value={pageSize}>
+                Mostrar {pageSize}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+    )
+  }
