@@ -40,8 +40,8 @@ export default function Table({
     }, [fetchData, pageIndex, pageSize])
 
     return (
-      <div className='table-container'>
-        <table {...getTableProps()}>
+      <div className='table-container '>
+        <table border="0" rules="all" {...getTableProps()}>
           <thead>
             {headerGroups.map(headerGroup => (
               <tr {...headerGroup.getHeaderGroupProps()}>
@@ -74,17 +74,17 @@ export default function Table({
             <tr>
               {loading ? (
                 
-                <td colSpan="10000">Loading...</td>
+                <td colSpan="10000">Cargando...</td>
               ) : (
                 <td colSpan="10000">
-                  Showing {page.length} of ~{controlledPageCount * pageSize}{' '}
-                  results
+                  Muestra <strong>{page.length}</strong>  de <strong>{controlledPageCount * pageSize}{' '}</strong>
+                  resultados
                 </td>
               )}
             </tr>
           </tbody>
         </table>
-        <div className="pagination">
+        <div className="table__pagination">
           <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
             {'<<'}
           </button>{' '}
@@ -98,13 +98,13 @@ export default function Table({
             {'>>'}
           </button>{' '}
           <span>
-            Page{' '}
+            Página{' '}
             <strong>
-              {pageIndex + 1} of {pageOptions.length}
+              {pageIndex + 1} de {pageOptions.length}
             </strong>{' '}
           </span>
           <span>
-            | Go to page:{' '}
+            | Ir a la página:{' '}
             <input
               type="number"
               defaultValue={pageIndex + 1}

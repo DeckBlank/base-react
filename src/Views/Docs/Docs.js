@@ -50,13 +50,13 @@ const Docs = (props) => {
                 </Link>                 
                 <hr className='hr-sidebar'/>
 
-                <Link to="/badge" className="nav-link active" >
+                <Link to="/badge" className="nav-link" >
                 <i className="fa fa-solid fa-home nav-link-icon"></i>
                 <span className="nav-link-name">Badge</span>
                 </Link>                 
                 <hr className='hr-sidebar'/>
 
-                <Link to="/button" className="nav-link active">
+                <Link to="/button" className="nav-link">
                 <i className="fa fa-solid fa-home nav-link-icon"></i>
                 <span className="nav-link-name">Buttons</span>
                 </Link>

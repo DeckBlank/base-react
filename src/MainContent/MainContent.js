@@ -40,11 +40,11 @@ const MainContent = () => {
         <Suspense fallback={loading}>
           <div>       
             
-            <Link to="/ro-maquetacion" className="nav-link active">
+            <Link to="/ro-maquetacion" className="nav-link">
               <i className="fa fa-solid fa-home nav-link-icon"></i>
               <span className="nav-link-name">Inicio</span>
             </Link> 
-            
+  
             <hr className='hr-sidebar'/>
 
             <div className="nav-list">
