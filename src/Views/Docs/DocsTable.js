@@ -6,7 +6,6 @@ import Button from "../../uiKit/Button/Button";
 import IconoTutor from "../../assets/images/icono de tutor.png";
 
 const DocsTable = () => {
-
   // Table Multi Pagination
 
   const [data, setData] = React.useState([]);
@@ -64,9 +63,9 @@ const DocsTable = () => {
     "curso",
     "modalidad",
   ];
-  
+
   const renderHead = (item, index) => <th key={index}>{item}</th>;
-  
+
   const renderBody = (item, index) => (
     <tr key={index}>
       <td>{item.id}</td>
@@ -93,16 +92,6 @@ const DocsTable = () => {
 
   return (
     <div className="views-docs">
-      <h1>TABLA CON MULTI PAGINACIÓN </h1>
-
-      <Table
-        columns={columns}
-        data={data}
-        fetchData={fetchData}
-        loading={loading}
-        pageCount={pageCount}
-      />
-       
       <h1>TABLA CON PAGINACIÓN SIMPLE </h1>
 
       <TableSimple
@@ -111,6 +100,16 @@ const DocsTable = () => {
         renderHead={(item, index) => renderHead(item, index)}
         bodyData={customerList}
         renderBody={(item, index) => renderBody(item, index)}
+      />
+
+      <h1>TABLA CON MULTI PAGINACIÓN </h1>
+
+      <Table
+        columns={columns}
+        data={data}
+        fetchData={fetchData}
+        loading={loading}
+        pageCount={pageCount}
       />
     </div>
   );

@@ -36,8 +36,8 @@
   list-style: none;
   background-color: $white;
   background-clip: padding-box;
-  border: 1px solid $silver;
   border-radius: 0 0 10px 10px;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
 }
 
 .dropdown-item {
