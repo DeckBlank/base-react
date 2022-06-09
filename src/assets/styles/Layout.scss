@@ -18,4 +18,15 @@
   gap: 2rem;
 }
 
+.flex-avatar-nav {
+  display: flex;
+  gap: 2rem;
+  margin-right: 1rem;
+}
 
+.flex-logo-avatar-nav {
+  display: flex;
+  align-items: center;
+  width: -webkit-fill-available;
+  justify-content: space-between;
+}

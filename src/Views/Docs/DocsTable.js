@@ -1,7 +1,7 @@
 import React from "react";
-import Table from "../../components/Table/Table";
+import Table from "../../uiKit/Table/Table";
 import customerList from "../../assets/Jsons/customers-list.json";
-import TableSimple from "../../components/TableSimple/TableSimple";
+import TableSimple from "../../uiKit/TableSimple/TableSimple";
 import Button from "../../uiKit/Button/Button";
 import IconoTutor from "../../assets/images/icono de tutor.png";
 
@@ -58,13 +58,11 @@ const DocsTable = () => {
 
   const customerTableHead = [
     "id",
-    "tutor",
     "alumno",
     "fecha",
     "hora",
     "curso",
     "modalidad",
-    "estado",
   ];
   
   const renderHead = (item, index) => <th key={index}>{item}</th>;
@@ -72,24 +70,24 @@ const DocsTable = () => {
   const renderBody = (item, index) => (
     <tr key={index}>
       <td>{item.id}</td>
-      <td>
+      {/* <td>
         <div className="tutor-flex-td">
           <img src={IconoTutor} alt="Logo del Tutor" /> {item.tutor}
         </div>
-      </td>
+      </td> */}
       <td>{item.alumno}</td>
       <td>{item.fecha}</td>
       <td>{item.hora}</td>
       <td>{item.curso}</td>
       <td>{item.modalidad}</td>
-      <td className="span-state-container">
+      {/* <td className="span-state-container">
         <span className="span span-width btn-radius span-flex-state bg-green">
           {item.estado}
         </span>
         <Button className="btn-state btn-width btn-radius txt-silver">
           <i className="fas fa-solid fa-bell"></i>
         </Button>
-      </td>
+      </td> */}
     </tr>
   );
 

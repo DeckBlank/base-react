@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../uiKit/Button/Button";
 import Badge from "../../uiKit/Badge/Badge";
 import "./_NavBar.scss";
-
+import Dropdown from "../../uiKit/Dropdown/Dropdown";
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;
@@ -12,16 +12,32 @@ const NavBar = (props) => {
       <div className="header-toggle" onClick={onclick}>
         <i className="fas fa-solid fa-bars"></i>
       </div>
-
-      <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
-
-      <div>
-        <Button bgcolor="white" txtcolor="silver" position="relative"  >
-          <i className="fas fa-solid fa-bell"></i>
-          <Badge bgcolor="red" txtcolor="white" position='absolute' top="0" start="100" translate="middle">
-            +99
-          </Badge>
-        </Button>
+      <div className="flex-logo-avatar-nav">
+        <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
+        <div className="flex-avatar-nav">
+          <Button bgcolor="white" txtcolor="silver" position="relative">
+            <i className="fas fa-solid fa-bell"></i>
+            <Badge
+              bgcolor="red"
+              txtcolor="white"
+              position="absolute"
+              top="0"
+              start="100"
+              translate="middle"
+            >
+              +99
+            </Badge>
+          </Button>
+          <Dropdown
+            type="button"
+            id="dropdownMenuButton1"
+            bgcolor="white"
+            txtcolor="black"
+            dropdown="toggle"
+            databstoggle="dropdown"
+            ariaexpanded="false"
+          />
+        </div>
       </div>
     </header>
   );
