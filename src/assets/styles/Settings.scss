@@ -1,4 +1,5 @@
 /* :::COLORES::: */
+
 $white: #f9f6f2;
 $red: #ff3333;
 $turquoise: #36c9cc;
@@ -15,26 +16,39 @@ $gray: #303c54;
 
 $din-round-pro: DIN Round Pro;
 
-/*SCROLL*/
+/* :::FONT SIZE::: */
+
+$small: small;
+$x-small: x-small;
+$xx-small: xx-small;
+$medium: medium;
+$large: large;
+$x-large: x-large;
+$xx-large: xx-large;
+
+/* :::SCROLL::: */
+
 ::-webkit-scrollbar {
   width: 5px;
   height: 5px;
 }
 
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background: $silver;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: rgba(128, 128, 128, 0);
 }
 
-/*NAVBAR Y SIDEBAR*/
+/* :::NAVBAR Y SIDEBAR::: */
+
 $header-height: 4rem;
 $nav-width: 64px;
 
-/*botones*/
+/* :::BUTTONS::: */
+
 $btn-border-radius: 15px;
 $btn-padding: 0.375rem 0.75rem;
 $btn-font-weight: bold;
@@ -43,7 +57,7 @@ $btn-font-weight: bold;
   width: min-content;
 }
 
-/*SPAN*/
+/* :::SPAN::: */
 
 .span {
   padding: 0.3rem;
@@ -52,6 +66,3 @@ $btn-font-weight: bold;
 .span-width {
   width: 100%;
 }
-
-
-

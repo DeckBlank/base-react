@@ -8,34 +8,34 @@
     scroll-behavior: smooth;
 }
 
-/* FONT SIZE */
+/* :::MEDIDAS FONT SIZE::: */
 
-.font-small {
-    font-size: small;
+.font-s {
+    font-size: $small;
 }
 
 .font-xs {
-    font-size: x-small;
+    font-size: $x-small;
 }
 
 .font-xxs {
-    font-size: xx-small;
+    font-size: $xx-small;
 }
 
-.font-medium {
-    font-size: medium;
+.font-m {
+    font-size: $medium;
 }
 
-.font-large {
-    font-size: large;
+.font-l {
+    font-size: $large;
 }
 
 .font-xl {
-    font-size: x-large;
+    font-size: $x-large;
 }
 
 .font-xxl {
-    font-size: xx-large;
+    font-size: $xx-large;
 }
 
 

@@ -4,7 +4,9 @@ import Button from "../../uiKit/Button/Button";
 const DocsButton = () => {
   return (
     <div>
-      <h2>BUTTON COLORES</h2> <br />
+      <h2>BUTTON COLORES</h2> 
+      <br /> 
+      <br />
       <Button bgcolor="white" txtcolor="black">
         white
       </Button>
@@ -44,8 +46,12 @@ const DocsButton = () => {
       <Button bgcolor="gray" txtcolor="white">
         gray
       </Button>
-      <br /> <br />
-      <h2>HOVERS PARA BACKGROUND</h2> <br />
+      <br /> 
+      <br /> 
+      <br />
+      <h2>HOVERS PARA BACKGROUND</h2> 
+      <br />
+      <br />
       <Button hoverbgcolor="white" bgcolor="silver" txtcolor="black">
         white
       </Button>
@@ -94,8 +100,12 @@ const DocsButton = () => {
       <Button hoverbgcolor="opacity8" bgcolor="red" txtcolor="white">
         opacity 8
       </Button>
-      <br /> <br />
-      <h2>HOVERS PARA TEXTO</h2> <br />
+      <br /> 
+      <br /> 
+      <br />
+      <h2>HOVERS PARA TEXTO</h2> 
+      <br />
+      <br />
       <Button hovertxtcolor="white" bgcolor="black" txtcolor="black">
         white
       </Button>

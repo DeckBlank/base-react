@@ -92,7 +92,7 @@ const DocsTable = () => {
 
   return (
     <div className="views-docs">
-      <h1>TABLA CON PAGINACIÓN SIMPLE </h1>
+      <h2>TABLA CON PAGINACIÓN SIMPLE </h2>
 
       <TableSimple
         limit="10"
@@ -102,7 +102,7 @@ const DocsTable = () => {
         renderBody={(item, index) => renderBody(item, index)}
       />
 
-      <h1>TABLA CON MULTI PAGINACIÓN </h1>
+      <h2>TABLA CON MULTI PAGINACIÓN </h2>
 
       <Table
         columns={columns}

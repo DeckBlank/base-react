@@ -81,9 +81,7 @@
   transform: translateY(-50%) !important;
 }
 
-/* :::POSSITIONS::: */
-
-// Container Dropdown
+/* :::DROPDOWN DORECTIONS / CONTAINER::: */
 
 .dropup,
 .dropend,
@@ -194,38 +192,4 @@
   .dropdown-toggle::before {
     vertical-align: 0;
   }
-}
-
-// UL dropdown
-
-.dropdown-menu-end {
-  --bs-position: end;
-  .dropdown-menu-end[data-bs-popper] {
-    right: 0;
-    left: auto;
-  }
-}
-
-
-
-.dropdown-menu-start {
-  --bs-position: start;   
-    right: auto;
-    left: 0;
-  }
-
-
-
-.dropdown-menu-lg-end {
-  --bs-position: end;  
-    right: 0;
-    left: auto;
-  }
-  
-
-
-.dropdown-menu-lg-start {
-  --bs-position: start;  
-    right: auto;
-    left: 0; 
 }
