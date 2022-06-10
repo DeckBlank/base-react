@@ -5,16 +5,16 @@ import Button from '../Button/Button'
 import "./_DropdownAvatar.scss";
 
 const DropdownAvatar = (props) => {
-    
-  let { id, type, bgcolor, txtcolor, dropdown, databstoggle, ariaexpanded } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
   const showDropdown = () => {
       setsDropdown(!sdropdown);
     };
+ 
   return (
-    <div className="dropdown">
+    <div className={`dropdown-group ${direction}`}>
       <div className="avatar-dropdown">
       <Button        
         type={type}
@@ -22,15 +22,15 @@ const DropdownAvatar = (props) => {
         bgcolor={bgcolor}
         txtcolor={txtcolor}
         dropdown={dropdown}
-        databstoggle={databstoggle}
-        ariaexpanded={ariaexpanded}
+        data-bs-toggle="dropdown"
+        ariaexpanded="false"
         onclick={showDropdown}
       >
         <Avatar/>
-        <p>Karina</p>
+        <p>Usuario</p>
       </Button>
       </div>
-      <ul className='dropdown-menu' aria-labelledby={id} Style={`display: ${ sdropdown ? "block" : "none"};`}>
+      <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
         <li>
           <Link className="dropdown-item" to="./">
             Item 1
@@ -48,7 +48,8 @@ const DropdownAvatar = (props) => {
         </li>
       </ul>
     </div>
-  )
+    
+  );
 }
 
 export default DropdownAvatar

@@ -9,15 +9,48 @@ const DocsDropdown = () => {
       <h2>AVATAR</h2>
       <Avatar />
       <h2>DROPDOWN AVATAR</h2>
-      <DropdownAvatar
-        type="button"
-        bgcolor="transparent"
-        txtcolor="black"
-        dropdown="toggle"
-        data-bs-toggle="dropdown"
-        direction="dropdown"
-        id="idDropdown"
-      />
+      <div className="grid-responsive-docs">
+        
+        <DropdownAvatar
+          type="button"
+          bgcolor="transparent"
+          txtcolor="black"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropdown"
+        />
+        
+        <DropdownAvatar
+          type="button"
+          bgcolor="black"
+          txtcolor="white"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropup"
+        />
+
+        <DropdownAvatar
+          type="button"
+          bgcolor="black"
+          txtcolor="white"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropend"
+        />
+
+        <DropdownAvatar
+          type="button"
+          bgcolor="black"
+          txtcolor="white"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropstart"
+        />
+      </div>
       <br />
       <br />
       <h2>DROPDOWN SIMPLE</h2>
@@ -32,6 +65,7 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
         />
+
         <Dropdown
           type="button"
           bgcolor="red"
@@ -44,20 +78,20 @@ const DocsDropdown = () => {
 
         <Dropdown
           type="button"
-          bgcolor="blue"
+          bgcolor="green"
           txtcolor="white"
           dropdown="toggle"
-          direction="dropstart"
+          direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
         />
 
         <Dropdown
           type="button"
-          bgcolor="green"
+          bgcolor="blue"
           txtcolor="white"
           dropdown="toggle"
-          direction="dropend"
+          direction="dropstart"
           id="idDropdown"
           data-bs-toggle="dropdown"
         />
