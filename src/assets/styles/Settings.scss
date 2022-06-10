@@ -36,12 +36,8 @@ $nav-width: 64px;
 
 /*botones*/
 $btn-border-radius: 15px;
-$btn-padding: 0.5em 1em;
+$btn-padding: 0.375rem 0.75rem;
 $btn-font-weight: bold;
-
-.btn-radius {
-  border-radius: $btn-border-radius;
-}
 
 .btn-width {
   width: min-content;
@@ -56,5 +52,6 @@ $btn-font-weight: bold;
 .span-width {
   width: 100%;
 }
+
 
 

@@ -117,7 +117,7 @@ const DocsBadge = () => {
           position="absolute"
           top="100"
           start="0"
-          translate="middle"
+          translate="middle"          
         >
           +99
         </Badge>

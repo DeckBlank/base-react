@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Avatar from "../Avatar/Avatar";
 import Button from '../Button/Button'
 import "./_Dropdown.scss";
 
@@ -15,7 +16,8 @@ const Dropdown = (props) => {
  
   return (
     <div className="dropdown">
-      <Button
+      <div className="avatar-dropdown">
+      <Button        
         type={type}
         id={id}
         bgcolor={bgcolor}
@@ -25,8 +27,10 @@ const Dropdown = (props) => {
         ariaexpanded={ariaexpanded}
         onclick={showDropdown}
       >
-        Karina
+        <Avatar/>
+        <p>Karina</p>
       </Button>
+      </div>
       <ul className='dropdown-menu' aria-labelledby={id} Style={`display: ${ sdropdown ? "block" : "none"};`}>
         <li>
           <Link className="dropdown-item" to="./">

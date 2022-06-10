@@ -32,7 +32,7 @@
   margin: 0;
   font-size: small;
   color: $black;
-  text-align: left;
+  text-align: right;
   list-style: none;
   background-color: $white;
   background-clip: padding-box;
@@ -67,4 +67,31 @@
     background-color: transparent;
   }
 }
+
+.avatar-dropdown {
+  display: flex;
+  align-items: center;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    // padding: 0;
+    p {
+      display: block;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .avatar-dropdown {
+    button {
+      gap: 0;
+      p {
+        display: none;
+      }      
+    }
+  }
+}
+
 
