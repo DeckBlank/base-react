@@ -88,11 +88,11 @@ const DocsButton = () => {
       <Button hoverbgcolor="opacity0" bgcolor="red" txtcolor="white">
         opacity 0
       </Button>
-      <Button hoverbgcolor="opacity5" bgcolor="red" txtcolor="white">
-        opacity 5
+      <Button hoverbgcolor="opacity4" bgcolor="red" txtcolor="white">
+        opacity 4
       </Button>
-      <Button hoverbgcolor="opacity1" bgcolor="red" txtcolor="white">
-        opacity 1
+      <Button hoverbgcolor="opacity8" bgcolor="red" txtcolor="white">
+        opacity 8
       </Button>
       <br /> <br />
       <h2>HOVERS PARA TEXTO</h2> <br />
@@ -126,7 +126,7 @@ const DocsButton = () => {
       <Button hovertxtcolor="fuchsia" bgcolor="black" txtcolor="white">
         fuchsia
       </Button>
-      <Button hovertxtcolor="lightblue" bgcolor="black" txtcolor="black">
+      <Button hovertxtcolor="lightblue" bgcolor="black" txtcolor="white">
         lightblue
       </Button>
       <Button hovertxtcolor="silver" bgcolor="black" txtcolor="white">
