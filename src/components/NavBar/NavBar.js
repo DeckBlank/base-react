@@ -2,9 +2,7 @@ import React from "react";
 import Button from "../../uiKit/Button/Button";
 import Badge from "../../uiKit/Badge/Badge";
 import "./_NavBar.scss";
-import Dropdown from "../../uiKit/Dropdown/Dropdown";
-import Avatar from "../../uiKit/Avatar/Avatar";
-import AvatarKarina from "../../assets/images/Avatar de Karina.png"
+import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;
@@ -31,7 +29,7 @@ const NavBar = (props) => {
               +99
             </Badge>
           </Button>
-          <Dropdown
+          <DropdownAvatar
             type="button"
             id="dropdownMenuButton1"
             bgcolor="transparent"

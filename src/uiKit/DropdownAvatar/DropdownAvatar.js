@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, {useState} from 'react'
 import { Link } from "react-router-dom";
+import Avatar from '../Avatar/Avatar'
 import Button from '../Button/Button'
-import "./_Dropdown.scss";
+import "./_DropdownAvatar.scss";
 
-const Dropdown = (props) => {
-  
+const DropdownAvatar = (props) => {
+    
   let { id, type, bgcolor, txtcolor, dropdown, databstoggle, ariaexpanded } =
     props;  
   
@@ -12,9 +13,9 @@ const Dropdown = (props) => {
   const showDropdown = () => {
       setsDropdown(!sdropdown);
     };
- 
   return (
     <div className="dropdown">
+      <div className="avatar-dropdown">
       <Button        
         type={type}
         id={id}
@@ -25,8 +26,10 @@ const Dropdown = (props) => {
         ariaexpanded={ariaexpanded}
         onclick={showDropdown}
       >
-        Lorem Ipsum
+        <Avatar/>
+        <p>Karina</p>
       </Button>
+      </div>
       <ul className='dropdown-menu' aria-labelledby={id} Style={`display: ${ sdropdown ? "block" : "none"};`}>
         <li>
           <Link className="dropdown-item" to="./">
@@ -45,8 +48,7 @@ const Dropdown = (props) => {
         </li>
       </ul>
     </div>
-    
-  );
-};
+  )
+}
 
-export default Dropdown;
+export default DropdownAvatar
