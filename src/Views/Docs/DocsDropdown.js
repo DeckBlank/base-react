@@ -6,12 +6,10 @@ import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 const DocsDropdown = () => {
   return (
     <div>
-
       <h2>AVATAR</h2>
       <br />
       <Avatar /> <br />
-
-      <h2>DROPDOWN AVATAR</h2> 
+      <h2>DROPDOWN AVATAR</h2>
       <br />
       <div className="grid-responsive-docs">
         <DropdownAvatar
@@ -60,7 +58,6 @@ const DocsDropdown = () => {
       </div>
       <br />
       <br />
-      
       <h2>DROPDOWN SIMPLE</h2>
       <br />
       <div className="grid-responsive-docs">

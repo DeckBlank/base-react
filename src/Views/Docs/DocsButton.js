@@ -5,43 +5,43 @@ const DocsButton = () => {
   return (
     <div>
       <h1>BUTTON</h1>
-        <Button bgcolor="white" txtcolor="black">
+        <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="black">
           white
         </Button>
-        <Button bgcolor="red" txtcolor="white">
+        <Button hoverbgcolor="opacity1" hovertxtcolor="black" bgcolor="red" txtcolor="white">
           red
         </Button>
-        <Button bgcolor="turquoise" txtcolor="white">
+        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="turquoise" txtcolor="white">
           turquoise
         </Button>
-        <Button bgcolor="blue" txtcolor="white">
+        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="blue" txtcolor="white">
           blue
         </Button>
-        <Button bgcolor="yellow" txtcolor="white">
+        <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="yellow" txtcolor="white">
           yellow
         </Button>
-        <Button bgcolor="orange" txtcolor="white">
+        <Button hoverbgcolor="orange" hovertxtcolor="black" bgcolor="orange" txtcolor="white">
           orange
         </Button>
-        <Button bgcolor="green" txtcolor="white">
+        <Button hoverbgcolor="green" hovertxtcolor="black" bgcolor="green" txtcolor="white">
           green
         </Button>
-        <Button bgcolor="magenta" txtcolor="white">
+        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="magenta" txtcolor="white">
           magenta
         </Button>
-        <Button bgcolor="black" txtcolor="white">
+        <Button hoverbgcolor="opacity5" hovertxtcolor="black" bgcolor="black" txtcolor="white">
           black
         </Button>
-        <Button bgcolor="fuchsia" txtcolor="white">
+        <Button hoverbgcolor="fuchsia" hovertxtcolor="black" bgcolor="fuchsia" txtcolor="white">
           fuchsia
         </Button>
-        <Button bgcolor="lightblue" txtcolor="black">
+        <Button hoverbgcolor="lightblue" hovertxtcolor="black" bgcolor="lightblue" txtcolor="black">
           lightblue
         </Button>
-        <Button bgcolor="silver" txtcolor="white">
+        <Button hoverbgcolor="gray" hovertxtcolor="white" bgcolor="silver" txtcolor="white">
           silver
         </Button>
-        <Button bgcolor="gray" txtcolor="white">
+        <Button hoverbgcolor="black" hovertxtcolor="white" bgcolor="gray" txtcolor="white">
           gray
         </Button>
     </div>

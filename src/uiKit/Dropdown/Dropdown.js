@@ -6,7 +6,7 @@ import "./_Dropdown.scss";
 
 const Dropdown = (props) => {
   
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);

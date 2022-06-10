@@ -3,13 +3,13 @@ import PropTypes from "prop-types";
 import "./_Badge.scss";
 
 const Badge = (props) => {
-  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick, text} = props;
+  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick, text, hoverbgcolor, hovertxtcolor} = props;
 
   return (
     <span 
       id={id}
       name={name}
-      className={`badge rounded-pill bg-${bgcolor} txt-${txtcolor} position-${position} top-${top} start-${start}  translate-${translate}`}
+      className={`badge rounded-pill hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} top-${top} start-${start}  translate-${translate}`}
       onClick={onClick}      
     >
       {text}

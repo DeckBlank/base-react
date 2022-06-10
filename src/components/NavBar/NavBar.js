@@ -15,7 +15,7 @@ const NavBar = (props) => {
       <div className="flex-logo-avatar-nav">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="flex-avatar-nav">
-          <Button bgcolor="white" txtcolor="silver" position="relative">
+          <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="silver" position="relative">
             <i className="fas fa-solid fa-bell"></i>
             <Badge
               bgcolor="red"
@@ -26,7 +26,6 @@ const NavBar = (props) => {
               translate="middle"
               text="+99"
             />
-
           </Button>
           <DropdownAvatar
             type="button"

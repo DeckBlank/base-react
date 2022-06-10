@@ -6,7 +6,7 @@ import Button from '../Button/Button'
 import "./_DropdownAvatar.scss";
 
 const DropdownAvatar = (props) => {
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor} =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
@@ -15,7 +15,7 @@ const DropdownAvatar = (props) => {
     };
  
   return (
-    <div className={`dropdown-group ${direction}`}>
+    <div className={`dropdown-group ${direction} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor}`}>
       <div className="avatar-dropdown">
       <Button        
         type={type}
