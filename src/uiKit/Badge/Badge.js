@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./_Badge.scss";
 
 const Badge = (props) => {
-  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick} = props;
+  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick, text} = props;
 
   return (
     <span 
@@ -12,7 +12,7 @@ const Badge = (props) => {
       className={`badge rounded-pill bg-${bgcolor} txt-${txtcolor} position-${position} top-${top} start-${start}  translate-${translate}`}
       onClick={onClick}      
     >
-      {props.children}
+      {text}
     </span>
   );
 };    
@@ -20,6 +20,7 @@ const Badge = (props) => {
 Badge.propTypes = {
   id: PropTypes.string,
   type: PropTypes.string,
+  text: PropTypes.string,
   name: PropTypes.string,
   className: PropTypes.string,
 };

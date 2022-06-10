@@ -24,9 +24,9 @@ const NavBar = (props) => {
               top="0"
               start="100"
               translate="middle"
-            >
-              +99
-            </Badge>
+              text="+99"
+            />
+
           </Button>
           <DropdownAvatar
             type="button"

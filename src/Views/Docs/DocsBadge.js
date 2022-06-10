@@ -7,43 +7,43 @@ const DocsBadge = () => {
     <div>
       <h1>BADGE</h1>
       <br />
-      <Badge bgcolor="white" txtcolor="black">
+      <Badge bgcolor="white" txtcolor="black" text="white">
         white
       </Badge>
-      <Badge bgcolor="red" txtcolor="white">
+      <Badge bgcolor="red" txtcolor="white" text="red">
         red
       </Badge>
-      <Badge bgcolor="turquoise" txtcolor="white">
+      <Badge bgcolor="turquoise" txtcolor="white" text="turquoise">
         turquoise
       </Badge>
-      <Badge bgcolor="blue" txtcolor="white">
+      <Badge bgcolor="blue" txtcolor="white" text="blue">
         blue
       </Badge>
-      <Badge bgcolor="yellow" txtcolor="white">
+      <Badge bgcolor="yellow" txtcolor="white" text="yellow">
         yellow
       </Badge>
-      <Badge bgcolor="orange" txtcolor="white">
+      <Badge bgcolor="orange" txtcolor="white" text="orange">
         orange
       </Badge>
-      <Badge bgcolor="green" txtcolor="white">
+      <Badge bgcolor="green" txtcolor="white" text="green">
         green
       </Badge>
-      <Badge bgcolor="magenta" txtcolor="white">
+      <Badge bgcolor="magenta" txtcolor="white" text="magenta">
         magenta
       </Badge>
-      <Badge bgcolor="black" txtcolor="white">
+      <Badge bgcolor="black" txtcolor="white" text="black">
         black
       </Badge>
-      <Badge bgcolor="fuchsia" txtcolor="white">
+      <Badge bgcolor="fuchsia" txtcolor="white" text="fuchsia">
         fuchsia
       </Badge>
-      <Badge bgcolor="lightblue" txtcolor="black">
+      <Badge bgcolor="lightblue" txtcolor="black" text="lightblue">
         lightblue
       </Badge>
-      <Badge bgcolor="silver" txtcolor="white">
+      <Badge bgcolor="silver" txtcolor="white" text="silver">
         silver
       </Badge>
-      <Badge bgcolor="gray" txtcolor="white">
+      <Badge bgcolor="gray" txtcolor="white" text="gray">
         gray
       </Badge>
 
@@ -61,8 +61,8 @@ const DocsBadge = () => {
           top="0"
           start="100"
           translate="middle"
+          text="+99"
         >
-          +99
         </Badge>
       </Button>
 
@@ -80,9 +80,8 @@ const DocsBadge = () => {
           top="0"
           start="0"
           translate="middle"
-        >
-          +99
-        </Badge>
+          text="+99"
+        />        
       </Button>
 
       <br />
@@ -99,9 +98,8 @@ const DocsBadge = () => {
           top="100"
           start="100"
           translate="middle"
-        >
-          +99
-        </Badge>
+          text="+99"
+        />
       </Button>
 
       <br />
@@ -117,10 +115,9 @@ const DocsBadge = () => {
           position="absolute"
           top="100"
           start="0"
-          translate="middle"          
-        >
-          +99
-        </Badge>
+          translate="middle"
+          text="+99"          
+        />
       </Button>
     </div>
   );
