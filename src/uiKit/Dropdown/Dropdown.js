@@ -25,6 +25,8 @@ const Dropdown = (props) => {
         data-bs-toggle="dropdown"
         ariaexpanded="false"
         onclick={showDropdown}
+        hoverbgcolor={hoverbgcolor}
+        hovertxtcolor={hovertxtcolor}
       >
         {text}
       </Button>
