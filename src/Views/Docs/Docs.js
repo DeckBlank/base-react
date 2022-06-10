@@ -53,12 +53,6 @@ const Docs = (props) => {
 
       <SideBar show={show} bgcolor="bg-gray">
         <div>
-          <Link to="/avatar" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
-            <span className="nav-link-name">Avatar</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
           <Link to="/badge" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
             <span className="nav-link-name">Badge</span>
