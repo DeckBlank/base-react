@@ -1,4 +1,5 @@
 /* :::COLORES DE FONDO::: */
+
 .bg-white {
   background-color: $white;
 }
@@ -81,7 +82,7 @@
   color: $gray;
 }
 
-/*BOTONES*/
+/* :::COLORES DE BOTONES::: */
 
 .btn-white {
   background-color: $white;
@@ -135,25 +136,196 @@
   background-color: $gray;
 }
 
-/*HOVERS*/
+/* :::COLORES DE HOVERS PARA BACKGROUND::: */
 
-.btn-hover-yellow {
+.hover-bg-opacity0 {
+  &:hover {
+    opacity: 0;
+  }
+}
+
+.hover-bg-opacity4 {
+  &:hover {
+    opacity: 0.4;
+  }
+}
+
+.hover-bg-opacity8 {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.hover-bg-blue {
+  &:hover {
+    background-color: $blue;
+  }
+}
+
+.hover-bg-white {
+  &:hover {
+    background-color: $white;
+  }
+}
+
+.hover-bg-red {
+  &:hover {
+    background-color: $red;
+  }
+}
+
+.hover-bg-orange {
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.hover-bg-yellow {
   &:hover {
     background-color: $yellow;
-    color: $black;
   }
 }
 
-.btn-hover-fuchsia {
+.hover-bg-fuchsia {
   &:hover {
     background-color: $fuchsia;
-    color: $black;
   }
 }
 
-.btn-hover-green {
+.hover-bg-green {
   &:hover {
     background-color: $green;
-    color: $black;
   }
 }
+
+.hover-bg-turquoise {
+  &:hover {
+    background-color: $turquoise;
+  }
+}
+
+.hover-bg-gray {
+  &:hover {
+    background-color: $gray;
+  }
+}
+
+.hover-bg-silver {
+  &:hover {
+    background-color: $silver;
+  }
+}
+
+.hover-bg-lightblue {
+  &:hover {
+    background-color: $lightblue;
+  }
+}
+
+.hover-bg-black {
+  &:hover {
+    background-color: $black;
+  }
+}
+
+.hover-bg-magenta {
+  &:hover {
+    background-color: $magenta;
+  }
+}
+
+/* :::COLORES DE HOVERS PARA TEXTO::: */
+
+.hover-txt-white {
+  &:hover {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-red {
+  &:hover {
+    color: $red;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-orange {
+  &:hover {
+    color: $orange;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-yellow {
+  &:hover {
+    color: $yellow;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-fuchsia {
+  &:hover {
+    color: $fuchsia;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-green {
+  &:hover {
+    color: $green;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-turquoise {
+  &:hover {
+    color: $turquoise;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-gray {
+  &:hover {
+    color: $gray;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-silver {
+  &:hover {
+    color: $silver;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-lightblue {
+  &:hover {
+    color: $lightblue;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-black {
+  &:hover {
+    color: $black;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-magenta {
+  &:hover {
+    color: $magenta;
+    font-weight: bold;
+  }
+}
+
+.hover-txt-blue {
+  &:hover {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
+
+

@@ -53,12 +53,6 @@ const Docs = (props) => {
 
       <SideBar show={show} bgcolor="bg-gray">
         <div>
-          <Link to="/avatar" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
-            <span className="nav-link-name">Avatar</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
           <Link to="/badge" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
             <span className="nav-link-name">Badge</span>
@@ -71,11 +65,11 @@ const Docs = (props) => {
           </Link>
           <hr className="hr-sidebar" />
 
-          <Link to="/buttongroup" className="nav-link">
+          {/* <Link to="/buttongroup" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
             <span className="nav-link-name">Group button</span>
           </Link>
-          <hr className="hr-sidebar" />
+          <hr className="hr-sidebar" /> */}
 
           <Link to="/dropdown" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
