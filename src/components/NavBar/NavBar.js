@@ -36,6 +36,7 @@ const NavBar = (props) => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             direction="dropdown"
+            text="Karina"
           />
         </div>
       </div>

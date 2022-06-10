@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import Button from '../Button/Button'
 import "./_Dropdown.scss";
 
 const Dropdown = (props) => {
   
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
@@ -25,7 +26,7 @@ const Dropdown = (props) => {
         ariaexpanded="false"
         onclick={showDropdown}
       >
-        Lorem Ipsum
+        {text}
       </Button>
       <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
         <li>
@@ -47,6 +48,10 @@ const Dropdown = (props) => {
     </div>
     
   );
+};
+
+Dropdown.propTypes = {
+  text: PropTypes.string,
 };
 
 export default Dropdown;

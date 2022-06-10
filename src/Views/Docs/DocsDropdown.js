@@ -7,10 +7,10 @@ const DocsDropdown = () => {
   return (
     <div>
       <h2>AVATAR</h2>
-      <Avatar />
+      <br />
+      <Avatar /> <br />
       <h2>DROPDOWN AVATAR</h2>
       <div className="grid-responsive-docs">
-
         <DropdownAvatar
           type="button"
           bgcolor="transparent"
@@ -19,8 +19,9 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropdown"
+          text="Usuario 1"
         />
-        
+
         <DropdownAvatar
           type="button"
           bgcolor="black"
@@ -29,6 +30,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropup"
+          text="Usuario 2"
         />
 
         <DropdownAvatar
@@ -39,6 +41,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropend"
+          text="Usuario 3"
         />
 
         <DropdownAvatar
@@ -49,6 +52,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropstart"
+          text="Usuario 4"
         />
       </div>
       <br />
@@ -64,6 +68,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropdown"
+          text="Despliegue hacia Abajo"
         />
 
         <Dropdown
@@ -74,6 +79,7 @@ const DocsDropdown = () => {
           direction="dropup"
           id="idDropdown"
           data-bs-toggle="dropdown"
+          text="Despliegue hacia Arriba"
         />
 
         <Dropdown
@@ -84,6 +90,7 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
+          text="Despliegue hacia derecha"
         />
 
         <Dropdown
@@ -94,6 +101,7 @@ const DocsDropdown = () => {
           direction="dropstart"
           id="idDropdown"
           data-bs-toggle="dropdown"
+          text="Despliegue hacia izquierda"
         />
       </div>
     </div>

@@ -1,11 +1,12 @@
 import React, {useState} from 'react'
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 import Avatar from '../Avatar/Avatar'
 import Button from '../Button/Button'
 import "./_DropdownAvatar.scss";
 
 const DropdownAvatar = (props) => {
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
@@ -27,7 +28,7 @@ const DropdownAvatar = (props) => {
         onclick={showDropdown}
       >
         <Avatar/>
-        <p>Usuario</p>
+        {text}
       </Button>
       </div>
       <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
@@ -51,5 +52,9 @@ const DropdownAvatar = (props) => {
     
   );
 }
+
+DropdownAvatar.propTypes = {
+  text: PropTypes.string,
+};
 
 export default DropdownAvatar
