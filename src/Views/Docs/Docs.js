@@ -65,17 +65,17 @@ const Docs = (props) => {
           </Link>
           <hr className="hr-sidebar" />
 
-          <Link to="/buttongroup" className="nav-link">
+          {/* <Link to="/buttongroup" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
             <span className="nav-link-name">Group button</span>
           </Link>
-          <hr className="hr-sidebar" />
+          <hr className="hr-sidebar" /> */}
 
-          {/* <Link to="/dropdown" className="nav-link">
+          <Link to="/dropdown" className="nav-link">
             <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
             <span className="nav-link-name">Dropdown</span>
           </Link>
-          <hr className="hr-sidebar" /> */}
+          <hr className="hr-sidebar" />
 
           <Link to="/table" className="nav-link">
             <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
