@@ -5,7 +5,7 @@ import Button from "../../uiKit/Button/Button";
 const DocsBadge = () => {
   return (
     <div>
-      <h1>BADGE</h1>
+      <h2>BADGE</h2>
       <br />
       <Badge bgcolor="white" txtcolor="black" text="white">
         white
@@ -50,7 +50,7 @@ const DocsBadge = () => {
       <br />
       <br />
       <br />
-      <h1>BADGE ENCIMA DERECHA</h1>
+      <h2>BADGE ENCIMA DERECHA</h2>
       <br />
       <Button bgcolor="silver" txtcolor="white" position="relative">
         red
@@ -69,7 +69,7 @@ const DocsBadge = () => {
       <br />
       <br />
       <br />
-      <h1>BADGE ENCIMA IZQUIERDA</h1>
+      <h2>BADGE ENCIMA IZQUIERDA</h2>
       <br />
       <Button bgcolor="silver" txtcolor="white" position="relative">
         magenta
@@ -87,7 +87,7 @@ const DocsBadge = () => {
       <br />
       <br />
       <br />
-      <h1>BADGE DEBAJO DERECHA</h1>
+      <h2>BADGE DEBAJO DERECHA</h2>
       <br />
       <Button bgcolor="silver" txtcolor="white" position="relative">
         fuchsia
@@ -105,7 +105,7 @@ const DocsBadge = () => {
       <br />
       <br />
       <br />
-      <h1>BADGE DEBAJO IZQUIERDA</h1>
+      <h2>BADGE DEBAJO IZQUIERDA</h2>
       <br />
       <Button bgcolor="silver" txtcolor="white" position="relative">
         turquoise
