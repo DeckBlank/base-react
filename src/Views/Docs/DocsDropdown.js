@@ -4,25 +4,6 @@ import Dropdown from "../../uiKit/Dropdown/Dropdown";
 import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 
 const DocsDropdown = () => {
-<<<<<<< HEAD
-  
-  return (      
-    <div className="views-docs">
-        <h1>DROPDOWN</h1>    
-        <Dropdown 
-            type="button"
-            id="dropdownMenuButton1"        
-            bgcolor="magenta"
-            txtcolor="white"
-            dropdown="toggle"
-            databstoggle="dropdown"
-            ariaexpanded="false"             
-        >           
-        </Dropdown>    
-    </div>
-  )
-}
-=======
   return (
     <div>
       <h2>AVATAR</h2>
@@ -41,7 +22,6 @@ const DocsDropdown = () => {
           direction="dropdown"
           text="Usuario 1"
         />
->>>>>>> d1244469f4a6a8e63546b29e1bb61b802845efeb
 
         <DropdownAvatar
           type="button"
