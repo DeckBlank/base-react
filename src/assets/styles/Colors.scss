@@ -155,9 +155,9 @@
   }
 }
 
-.hover-bg-white {
+.hover-bg-blue {
   &:hover {
-    background-color: $white;
+    background-color: $blue;
   }
 }
 
@@ -318,5 +318,13 @@
     font-weight: bold;
   }
 }
+
+.hover-txt-blue {
+  &:hover {
+    color: $blue;
+    font-weight: bold;
+  }
+}
+
 
 

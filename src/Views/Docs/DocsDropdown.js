@@ -69,7 +69,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropdown"
-          text="Despliegue hacia Abajo"
+          text="Hacia Abajo"
         />
 
         <Dropdown
@@ -80,7 +80,7 @@ const DocsDropdown = () => {
           direction="dropup"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          text="Despliegue hacia Arriba"
+          text="Hacia Arriba"
         />
 
         <Dropdown
@@ -91,7 +91,7 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          text="Despliegue hacia derecha"
+          text="Hacia derecha"
         />
 
         <Dropdown
@@ -102,7 +102,7 @@ const DocsDropdown = () => {
           direction="dropstart"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          text="Despliegue hacia izquierda"
+          text="Hacia izquierda"
         />
       </div>
     </div>

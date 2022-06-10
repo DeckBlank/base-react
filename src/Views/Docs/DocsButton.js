@@ -4,46 +4,137 @@ import Button from "../../uiKit/Button/Button";
 const DocsButton = () => {
   return (
     <div>
-      <h1>BUTTON</h1>
-        <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="black">
-          white
-        </Button>
-        <Button hoverbgcolor="opacity1" hovertxtcolor="black" bgcolor="red" txtcolor="white">
-          red
-        </Button>
-        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="turquoise" txtcolor="white">
-          turquoise
-        </Button>
-        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="blue" txtcolor="white">
-          blue
-        </Button>
-        <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="yellow" txtcolor="white">
-          yellow
-        </Button>
-        <Button hoverbgcolor="orange" hovertxtcolor="black" bgcolor="orange" txtcolor="white">
-          orange
-        </Button>
-        <Button hoverbgcolor="green" hovertxtcolor="black" bgcolor="green" txtcolor="white">
-          green
-        </Button>
-        <Button hoverbgcolor="silver" hovertxtcolor="black" bgcolor="magenta" txtcolor="white">
-          magenta
-        </Button>
-        <Button hoverbgcolor="opacity5" hovertxtcolor="black" bgcolor="black" txtcolor="white">
-          black
-        </Button>
-        <Button hoverbgcolor="fuchsia" hovertxtcolor="black" bgcolor="fuchsia" txtcolor="white">
-          fuchsia
-        </Button>
-        <Button hoverbgcolor="lightblue" hovertxtcolor="black" bgcolor="lightblue" txtcolor="black">
-          lightblue
-        </Button>
-        <Button hoverbgcolor="gray" hovertxtcolor="white" bgcolor="silver" txtcolor="white">
-          silver
-        </Button>
-        <Button hoverbgcolor="black" hovertxtcolor="white" bgcolor="gray" txtcolor="white">
-          gray
-        </Button>
+      <h1>BUTTON COLORES</h1> <br />
+      <Button bgcolor="white" txtcolor="black">
+        white
+      </Button>
+      <Button bgcolor="red" txtcolor="white">
+        red
+      </Button>
+      <Button bgcolor="turquoise" txtcolor="white">
+        turquoise
+      </Button>
+      <Button bgcolor="blue" txtcolor="white">
+        blue
+      </Button>
+      <Button bgcolor="yellow" txtcolor="white">
+        yellow
+      </Button>
+      <Button bgcolor="orange" txtcolor="white">
+        orange
+      </Button>
+      <Button bgcolor="green" txtcolor="white">
+        green
+      </Button>
+      <Button bgcolor="magenta" txtcolor="white">
+        magenta
+      </Button>
+      <Button bgcolor="black" txtcolor="white">
+        black
+      </Button>
+      <Button bgcolor="fuchsia" txtcolor="white">
+        fuchsia
+      </Button>
+      <Button bgcolor="lightblue" txtcolor="black">
+        lightblue
+      </Button>
+      <Button bgcolor="silver" txtcolor="white">
+        silver
+      </Button>
+      <Button bgcolor="gray" txtcolor="white">
+        gray
+      </Button>
+      <br />
+      <h1>HOVERS PARA BACKGROUND</h1> <br />
+      <Button hoverbgcolor="white" bgcolor="silver" txtcolor="black">
+        white
+      </Button>
+      <Button hoverbgcolor="red" bgcolor="silver" txtcolor="white">
+        red
+      </Button>
+      <Button hoverbgcolor="turquoise" bgcolor="silver" txtcolor="white">
+        turquoise
+      </Button>
+      <Button hoverbgcolor="blue" bgcolor="silver" txtcolor="white">
+        blue
+      </Button>
+      <Button hoverbgcolor="yellow" bgcolor="silver" txtcolor="white">
+        yellow
+      </Button>
+      <Button hoverbgcolor="orange" bgcolor="silver" txtcolor="white">
+        orange
+      </Button>
+      <Button hoverbgcolor="green" bgcolor="silver" txtcolor="white">
+        green
+      </Button>
+      <Button hoverbgcolor="magenta" bgcolor="silver" txtcolor="white">
+        magenta
+      </Button>
+      <Button hoverbgcolor="black" bgcolor="silver" txtcolor="white">
+        black
+      </Button>
+      <Button hoverbgcolor="fuchsia" bgcolor="silver" txtcolor="white">
+        fuchsia
+      </Button>
+      <Button hoverbgcolor="lightblue" bgcolor="silver" txtcolor="white">
+        lightblue
+      </Button>
+      <Button hoverbgcolor="silver" bgcolor="silver" txtcolor="white">
+        silver
+      </Button>
+      <Button hoverbgcolor="gray" bgcolor="silver" txtcolor="white">
+        gray
+      </Button>
+      <Button hoverbgcolor="opacity0" bgcolor="red" txtcolor="white">
+        opacity 0
+      </Button>
+      <Button hoverbgcolor="opacity5" bgcolor="red" txtcolor="white">
+        opacity 5
+      </Button>
+      <Button hoverbgcolor="opacity1" bgcolor="red" txtcolor="white">
+        opacity 1
+      </Button>
+      <br />
+      <h1>HOVERS PARA texto</h1> <br />
+      <Button hovertxtcolor="white" bgcolor="black" txtcolor="black">
+        white
+      </Button>
+      <Button hovertxtcolor="red" bgcolor="black" txtcolor="white">
+        red
+      </Button>
+      <Button hovertxtcolor="turquoise" bgcolor="black" txtcolor="white">
+        turquoise
+      </Button>
+      <Button hovertxtcolor="blue" bgcolor="black" txtcolor="white">
+        blue
+      </Button>
+      <Button hovertxtcolor="yellow" bgcolor="black" txtcolor="white">
+        yellow
+      </Button>
+      <Button hovertxtcolor="orange" bgcolor="black" txtcolor="white">
+        orange
+      </Button>
+      <Button hovertxtcolor="green" bgcolor="black" txtcolor="white">
+        green
+      </Button>
+      <Button hovertxtcolor="magenta" bgcolor="black" txtcolor="white">
+        magenta
+      </Button>
+      <Button hovertxtcolor="black" bgcolor="black" txtcolor="white">
+        black
+      </Button>
+      <Button hovertxtcolor="fuchsia" bgcolor="black" txtcolor="white">
+        fuchsia
+      </Button>
+      <Button hovertxtcolor="lightblue" bgcolor="black" txtcolor="black">
+        lightblue
+      </Button>
+      <Button hovertxtcolor="silver" bgcolor="black" txtcolor="white">
+        silver
+      </Button>
+      <Button hovertxtcolor="gray" bgcolor="black" txtcolor="white">
+        gray
+      </Button>
     </div>
   );
 };
