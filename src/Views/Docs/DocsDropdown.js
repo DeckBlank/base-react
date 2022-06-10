@@ -10,7 +10,7 @@ const DocsDropdown = () => {
       <Avatar />
       <h2>DROPDOWN AVATAR</h2>
       <div className="grid-responsive-docs">
-        
+
         <DropdownAvatar
           type="button"
           bgcolor="transparent"
@@ -33,7 +33,7 @@ const DocsDropdown = () => {
 
         <DropdownAvatar
           type="button"
-          bgcolor="black"
+          bgcolor="red"
           txtcolor="white"
           dropdown="toggle"
           id="idDropdown"
@@ -43,7 +43,7 @@ const DocsDropdown = () => {
 
         <DropdownAvatar
           type="button"
-          bgcolor="black"
+          bgcolor="gray"
           txtcolor="white"
           dropdown="toggle"
           id="idDropdown"
@@ -58,7 +58,7 @@ const DocsDropdown = () => {
       <div className="grid-responsive-docs">
         <Dropdown
           type="button"
-          bgcolor="gray"
+          bgcolor="fuchsia"
           txtcolor="white"
           dropdown="toggle"
           id="idDropdown"
@@ -68,7 +68,7 @@ const DocsDropdown = () => {
 
         <Dropdown
           type="button"
-          bgcolor="red"
+          bgcolor="yellow"
           txtcolor="white"
           dropdown="toggle"
           direction="dropup"
