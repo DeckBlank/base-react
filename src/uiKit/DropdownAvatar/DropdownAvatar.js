@@ -28,8 +28,7 @@ const DropdownAvatar = (props) => {
         onclick={showDropdown}
       >
         <Avatar/>
-        <p>{text}</p>
-        
+        <p>{text}</p>       
       </Button>
       </div>
       <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>

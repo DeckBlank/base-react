@@ -15,9 +15,10 @@ const NavBar = (props) => {
       <div className="flex-logo-avatar-nav">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="flex-avatar-nav">
-          <Button hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="silver" position="relative">
-            <i className="fas fa-solid fa-bell"></i>
+          <Button classname="btn-notification" hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="silver" position="relative">
+            <i className="fas fa-solid fa-bell notification-icon"></i>
             <Badge
+              classname="badge-notification"
               bgcolor="red"
               txtcolor="white"
               position="absolute"
