@@ -185,8 +185,8 @@ const DocsButton = () => {
       <Button hoverbordercolor="lightblue" bgcolor="silver" txtcolor="white">
         lightblue
       </Button>
-      <Button hoverbordercolor="silver" bgcolor="silver" txtcolor="white">
-        silver
+      <Button hoverbordercolor="black" bgcolor="white" txtcolor="black">
+        black
       </Button>
       <Button hoverbordercolor="gray" bgcolor="silver" txtcolor="white">
         gray
