@@ -4,7 +4,7 @@ import FilterCardButton from "../../uiKit/FilterCardButton/FilterCardButton";
 const DocsFilterCardBtn = () => {
   return (
     <div>
-      <h2>Filtros en Tarjeta</h2>
+      <h2>FILTROS EN TARJETA</h2>
       <br />
       <div className="grid-responsive-docs-filtercard">
         <FilterCardButton
