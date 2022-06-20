@@ -123,8 +123,8 @@ const Docs = (props) => {
               />
               <Route
                 exact
-                path="/buttongroup"
-                name="ButtonGroup"
+                path="/radiobtn"
+                name="RadioButton"
                 element={<DocsGroupButton />}
               />
             </>

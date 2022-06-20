@@ -52,3 +52,13 @@
 .flex-btns-docs {
   display: flex;
 }
+
+@media screen and (max-width: 768px) {
+  .grid-responsive-docs-filtercard {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    justify-items: center;
+    align-items: center;
+  }
+}

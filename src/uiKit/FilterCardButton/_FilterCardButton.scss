@@ -1,7 +1,6 @@
 @import "../../App.scss";
 
-.btnCard {
-  
+.btnCard { 
   width: 180px;
   /* height: 150px; */
   display: flex;
@@ -34,3 +33,23 @@
     font-weight: bold;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .btnCard { 
+    width: 100px;
+    padding: 1rem;
+    font-size: medium;
+    span {
+      font-size: xx-large;
+      color: $silver;
+    }
+    &:hover {
+      span {
+        color: $white;
+      }
+      color: black;
+      font-weight: bold;
+    }
+  }
+}
+
