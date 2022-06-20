@@ -1,6 +1,9 @@
 import React, { Component, Suspense, useState } from "react";
 import { Route, Routes, useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { AiFillHome } from "react-icons/ai";
+import { IoIosListBox } from "react-icons/io";
+import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
 import { faFileLines, faBell  } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar/NavBar";
 import SideBar from "../../components/SideBar/SideBar";
@@ -54,13 +57,15 @@ const Docs = (props) => {
       <SideBar show={show} bgcolor="bg-gray">
         <div>
           <Link to="/badge" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
+            <AiFillHome className="nav-link-icon"/>
+            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Badge</span>
           </Link>
           <hr className="hr-sidebar" />
 
           <Link to="/button" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
+            <IoIosListBox className="nav-link-icon"/>
+            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Buttons</span>
           </Link>
           <hr className="hr-sidebar" />
@@ -72,7 +77,8 @@ const Docs = (props) => {
           <hr className="hr-sidebar" /> */}
 
           <Link to="/dropdown" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
+            <BsFillFileEarmarkBarGraphFill className="nav-link-icon"/>
+            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Dropdown</span>
           </Link>
           <hr className="hr-sidebar" />

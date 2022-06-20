@@ -4,6 +4,8 @@ import customerList from "../../assets/Jsons/customers-list.json";
 import TableSimple from "../../uiKit/TableSimple/TableSimple";
 import Button from "../../uiKit/Button/Button";
 import IconoTutor from "../../assets/images/icono de tutor.png";
+import { BsThreeDotsVertical } from "react-icons/bs";
+import Badge from "../../uiKit/Badge/Badge";
 
 const DocsTable = () => {
   // Table Multi Pagination
@@ -69,24 +71,25 @@ const DocsTable = () => {
   const renderBody = (item, index) => (
     <tr key={index}>
       <td>{item.id}</td>
-      {/* <td>
+      <td>
         <div className="tutor-flex-td">
           <img src={IconoTutor} alt="Logo del Tutor" /> {item.tutor}
         </div>
-      </td> */}
+      </td> 
       <td>{item.alumno}</td>
       <td>{item.fecha}</td>
       <td>{item.hora}</td>
       <td>{item.curso}</td>
       <td>{item.modalidad}</td>
-      {/* <td className="span-state-container">
+       <td className="span-state-container">
+        {/* <Badge text={item.estado} bgcolor="green" txtcolor="white" classname="span-width" /> */}
         <span className="span span-width btn-radius span-flex-state bg-green">
           {item.estado}
-        </span>
-        <Button className="btn-state btn-width btn-radius txt-silver">
-          <i className="fas fa-solid fa-bell"></i>
+        </span> 
+        <Button  classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
+          <BsThreeDotsVertical/>
         </Button>
-      </td> */}
+      </td> 
     </tr>
   );
 

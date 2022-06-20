@@ -1,42 +1,83 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+// import { images, data } from "../../assets/constants";
 import PropTypes from "prop-types";
-import Avatar from '../Avatar/Avatar'
-import Button from '../Button/Button'
+import Avatar from "../Avatar/Avatar";
+import Button from "../Button/Button";
 import "./_DropdownAvatar.scss";
+// import DropdownLinkAvatar from "./DropdownLinkAvatar";
 
 const DropdownAvatar = (props) => {
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor} =
-    props;  
-  
+  let {
+    id,
+    type,
+    direction,
+    bgcolor,
+    txtcolor,
+    dropdown,
+    ariaLabelledby,
+    text,
+    hoverbgcolor,
+    hovertxtcolor,
+    // onclick
+    // title,
+    // path,
+    // imgUrl,
+    // classname,
+    // options,
+    // option
+  } = props;
+
   const [sdropdown, setsDropdown] = useState(false);
   const showDropdown = () => {
-      setsDropdown(!sdropdown);
-    };
- 
+    setsDropdown(!sdropdown);
+  };
+
+  // function DropdownLinkAvatarB({ dropdownAvatar: { imgUrl, title, path } }) {
+  //   return (
+  //     <li className="flex-dropdown-link">
+  //       <Link to={path} onClick={onclick}>
+  //         <img src={imgUrl} alt={title} />
+  //         {title}
+  //       </Link>
+  //     </li>
+  //   );
+  // }
+
   return (
-    <div className={`dropdown-group ${direction} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor}`}>
+    <div
+      className={`dropdown-group ${direction} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor}`}
+    >
       <div className="avatar-dropdown">
-      <Button        
-        type={type}
-        id={id}
-        bgcolor={bgcolor}
-        txtcolor={txtcolor}
-        dropdown={dropdown}
-        data-bs-toggle="dropdown"
-        ariaexpanded="false"
-        onclick={showDropdown}
-      >
-        <Avatar/>
-        <p>{text}</p>       
-      </Button>
+        <Button
+          type={type}
+          id={id}
+          bgcolor={bgcolor}
+          txtcolor={txtcolor}
+          dropdown={dropdown}
+          data-bs-toggle="dropdown"
+          ariaexpanded="false"
+          onclick={showDropdown}
+        >
+          <Avatar />
+          <p>{text}</p>
+        </Button>
       </div>
-      <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
+      <ul
+        id="dropdownAvatars"
+        className="dropdown-menu"
+        aria-labelledby={ariaLabelledby}
+        Style={`display: ${sdropdown ? "block" : "none"};`}
+      >
+        {/* {
+         data.dropdownAvatar.map((dropdownLinkAvatar) => <DropdownLinkAvatarB dropdownLinkAvatar={dropdownLinkAvatar} path={dropdownLinkAvatar.path} imgUrl={dropdownLinkAvatar.imgUrl} title={dropdownLinkAvatar.title} /> )
+        } */}
+
         <li>
           <Link className="dropdown-item" to="./">
             Item 1
           </Link>
-        </li>
+        </li>        
         <li>
           <Link className="dropdown-item" to="./">
             Item 2
@@ -49,12 +90,11 @@ const DropdownAvatar = (props) => {
         </li>
       </ul>
     </div>
-    
   );
-}
+};
 
 DropdownAvatar.propTypes = {
   text: PropTypes.string,
 };
 
-export default DropdownAvatar
+export default DropdownAvatar;

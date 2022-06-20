@@ -106,6 +106,7 @@ const DocsButton = () => {
       <h2>HOVERS PARA TEXTO</h2> 
       <br />
       <br />
+
       <Button hovertxtcolor="white" bgcolor="black" txtcolor="black">
         white
       </Button>
