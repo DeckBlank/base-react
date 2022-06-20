@@ -4,9 +4,9 @@ import AvatarKarina from "../../assets/images/Avatar de Karina.png"
 import './_Avatar.scss'
 
 const Avatar = (props) => {
-  const {
-    img,
-  } = props
+  // const {
+  //   img,
+  // } = props
 
   return (
     <span className="avatar-container">

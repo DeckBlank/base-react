@@ -10,8 +10,6 @@ const FilterCardButton = (props) => {
     bgcolor,
     txtcolor,
     position,
-    databstoggle,
-    ariaexpanded,
     onclick,
     padding,
     radius,
@@ -29,8 +27,6 @@ const FilterCardButton = (props) => {
       name={name}
       type={type}
       className={`btnCard ${classname} hover-bg-${hoverbgcolor} hover-border-${hoverbordercolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
-      data-bs-toggle={databstoggle}
-      aria-expanded={ariaexpanded}
       onClick={onclick}
     >
       <span>
