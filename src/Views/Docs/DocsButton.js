@@ -146,6 +146,51 @@ const DocsButton = () => {
       <Button hovertxtcolor="gray" bgcolor="black" txtcolor="white">
         gray
       </Button>
+      <br />
+      <br />
+      <h2>HOVERS PARA BORDE</h2> 
+      <br />
+      <br />
+
+      <Button hoverbordercolor="white" bgcolor="silver" txtcolor="white">
+        white
+      </Button>
+      <Button hoverbordercolor="red" bgcolor="silver" txtcolor="white">
+        red
+      </Button>
+      <Button hoverbordercolor="turquoise" bgcolor="silver" txtcolor="white">
+        turquoise
+      </Button>
+      <Button hoverbordercolor="blue" bgcolor="silver" txtcolor="white">
+        blue
+      </Button>
+      <Button hoverbordercolor="yellow" bgcolor="silver" txtcolor="white">
+        yellow
+      </Button>
+      <Button hoverbordercolor="orange" bgcolor="silver" txtcolor="white">
+        orange
+      </Button>
+      <Button hoverbordercolor="green" bgcolor="silver" txtcolor="white">
+        green
+      </Button>
+      <Button hoverbordercolor="magenta" bgcolor="silver" txtcolor="white">
+        magenta
+      </Button>
+      <Button hoverbordercolor="silver" bgcolor="white" txtcolor="black">
+        silver
+      </Button>
+      <Button hoverbordercolor="fuchsia" bgcolor="silver" txtcolor="white">
+        fuchsia
+      </Button>
+      <Button hoverbordercolor="lightblue" bgcolor="silver" txtcolor="white">
+        lightblue
+      </Button>
+      <Button hoverbordercolor="silver" bgcolor="silver" txtcolor="white">
+        silver
+      </Button>
+      <Button hoverbordercolor="gray" bgcolor="silver" txtcolor="white">
+        gray
+      </Button>
     </div>
   );
 };

@@ -28,7 +28,7 @@ const FilterCardButton = (props) => {
       id={id}
       name={name}
       type={type}
-      className={`btnCard ${classname} hover-bg-${hoverbgcolor} hover-txt-${hoverbordercolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
+      className={`btnCard ${classname} hover-bg-${hoverbgcolor} hover-border-${hoverbordercolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
       data-bs-toggle={databstoggle}
       aria-expanded={ariaexpanded}
       onClick={onclick}
