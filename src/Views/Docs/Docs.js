@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { AiFillHome } from "react-icons/ai";
 import { IoIosListBox } from "react-icons/io";
 import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
-import { faFileLines, faBell  } from "@fortawesome/free-solid-svg-icons";
+import { faFileLines, faBell } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar/NavBar";
 import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
@@ -22,8 +22,9 @@ const loading = (
 const DocsButton = React.lazy(() => import("./DocsButton"));
 const DocsBadge = React.lazy(() => import("./DocsBadge"));
 const DocsFilterCardBtn = React.lazy(() => import("./DocsFilterCardBtn"));
+const FormFilter = React.lazy(() => import("./DocsFormFilter"));
 const DocsDropdown = React.lazy(() => import("./DocsDropdown"));
-const DocsGroupButton = React.lazy(() => import("./DocsGroupButton"));
+// const DocsGroupButton = React.lazy(() => import("./DocsGroupButton"));
 const DocsTable = React.lazy(() => import("./DocsTable"));
 
 const Docs = (props) => {
@@ -58,26 +59,31 @@ const Docs = (props) => {
       <SideBar show={show} bgcolor="bg-gray">
         <div>
           <Link to="/badge" className="nav-link">
-            <AiFillHome className="nav-link-icon"/>
+            <AiFillHome className="nav-link-icon" />
             {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Badge</span>
           </Link>
           <hr className="hr-sidebar" />
 
           <Link to="/button" className="nav-link">
-            <IoIosListBox className="nav-link-icon"/>
-            <span className="nav-link-name">Buttons</span>
+            <IoIosListBox className="nav-link-icon" />
+            <span className="nav-link-name">Button</span>
           </Link>
           <hr className="hr-sidebar" />
 
           <Link to="/filtercardbtn" className="nav-link">
-            <IoIosListBox className="nav-link-icon"/>
+            <IoIosListBox className="nav-link-icon" />
             <span className="nav-link-name">FiltersCard</span>
           </Link>
           <hr className="hr-sidebar" />
 
+          <Link to="/formfilter" className="nav-link">
+            <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
+            <span className="nav-link-name">FormFilter</span>
+          </Link>
+          <hr className="hr-sidebar" />
           <Link to="/dropdown" className="nav-link">
-            <BsFillFileEarmarkBarGraphFill className="nav-link-icon"/>
+            <BsFillFileEarmarkBarGraphFill className="nav-link-icon" />
             <span className="nav-link-name">Dropdown</span>
           </Link>
           <hr className="hr-sidebar" />
@@ -123,10 +129,16 @@ const Docs = (props) => {
               />
               <Route
                 exact
+                path="/formfilter"
+                name="FormFilter"
+                element={<FormFilter />}
+              />
+              {/* <Route
+                exact
                 path="/radiobtn"
                 name="RadioButton"
                 element={<DocsGroupButton />}
-              />
+              /> */}
             </>
           </Routes>
         </Suspense>

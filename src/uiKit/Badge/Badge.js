@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./_Badge.scss";
 
 const Badge = (props) => {
-  const { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick, text, hoverbgcolor, hovertxtcolor, classname} = props;
+  let { id, name, bgcolor, txtcolor, position, top, start, translate,  onClick, text, hoverbgcolor, hovertxtcolor, classname} = props;
 
   return (
     <span 

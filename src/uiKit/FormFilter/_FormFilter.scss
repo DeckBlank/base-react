@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.formFilter__container{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  place-content: start;
+  background-color: $lightsilver;
+  border: 2px solid $silver;
+  border-radius: 8px;
+  padding: 0.7em 0 0 0;
+  gap: 0.7em;
+}
