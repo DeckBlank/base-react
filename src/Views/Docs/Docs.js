@@ -21,6 +21,7 @@ const loading = (
 //PageDocs
 const DocsButton = React.lazy(() => import("./DocsButton"));
 const DocsBadge = React.lazy(() => import("./DocsBadge"));
+const DocsFilterCardBtn = React.lazy(() => import("./DocsFilterCardBtn"));
 const DocsDropdown = React.lazy(() => import("./DocsDropdown"));
 const DocsGroupButton = React.lazy(() => import("./DocsGroupButton"));
 const DocsTable = React.lazy(() => import("./DocsTable"));
@@ -65,20 +66,18 @@ const Docs = (props) => {
 
           <Link to="/button" className="nav-link">
             <IoIosListBox className="nav-link-icon"/>
-            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Buttons</span>
           </Link>
           <hr className="hr-sidebar" />
 
-          {/* <Link to="/buttongroup" className="nav-link">
-            <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
-            <span className="nav-link-name">Group button</span>
+          <Link to="/filtercardbtn" className="nav-link">
+            <IoIosListBox className="nav-link-icon"/>
+            <span className="nav-link-name">FiltersCard</span>
           </Link>
-          <hr className="hr-sidebar" /> */}
+          <hr className="hr-sidebar" />
 
           <Link to="/dropdown" className="nav-link">
             <BsFillFileEarmarkBarGraphFill className="nav-link-icon"/>
-            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Dropdown</span>
           </Link>
           <hr className="hr-sidebar" />
@@ -110,6 +109,12 @@ const Docs = (props) => {
               />
               <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
+              <Route
+                exact
+                path="/filtercardbtn"
+                name="DocsFilterCardBtn"
+                element={<DocsFilterCardBtn />}
+              />
               <Route
                 exact
                 path="/dropdown"

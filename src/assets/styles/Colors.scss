@@ -327,5 +327,83 @@
   }
 }
 
+/* :::COLORES DE HOVERS PARA BORDER::: */
 
+.hover-border-white {
+  &:hover {
+    border: 1px solid $white;
+  }
+}
+
+.hover-border-red {
+  &:hover {
+    border: 1px solid $red;
+  }
+}
+
+.hover-border-orange {
+  &:hover {
+    border: 1px solid $orange;
+  }
+}
+
+.hover-border-yellow {
+  &:hover {
+    border: 1px solid $yellow;
+  }
+}
+
+.hover-border-fuchsia {
+  &:hover {
+    border: 1px solid $fuchsia;
+  }
+}
+
+.hover-border-green {
+  &:hover {
+    border: 1px solid $green;
+  }
+}
+
+.hover-border-turquoise {
+  &:hover {
+    border: 1px solid $turquoise;
+  }
+}
+
+.hover-border-gray {
+  &:hover {
+    border: 1px solid $gray;
+  }
+}
+
+.hover-border-silver {
+  &:hover {
+    border: 1px solid $silver;
+  }
+}
+
+.hover-border-lightblue {
+  &:hover {
+    border: 1px solid $lightblue;
+  }
+}
+
+.hover-border-black {
+  &:hover {
+    border: 1px solid $black;
+  }
+}
+
+.hover-border-magenta {
+  &:hover {
+    border: 1px solid $magenta;
+  }
+}
+
+.hover-border-blue {
+  &:hover {
+    border: 1px solid $blue;
+  }
+}
 
