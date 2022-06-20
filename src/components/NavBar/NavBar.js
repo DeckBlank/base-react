@@ -7,21 +7,27 @@ import { GrMenu } from "react-icons/gr";
 import { BsFillBellFill } from "react-icons/bs";
 // import images from "../../assets/constants/images";
 
-
 const NavBar = (props) => {
   let { logo, show, onclick } = props;
 
   return (
     <header className={`header ${show ? "space-toggle" : null}`}>
       <div className="header-toggle" onClick={onclick}>
-        <GrMenu/>
+        <GrMenu />
         {/* <i className="fas fa-solid fa-bars"></i> */}
       </div>
       <div className="flex-logo-avatar-nav">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="flex-avatar-nav">
-          <Button classname="btn-notification" hoverbgcolor="yellow" hovertxtcolor="black" bgcolor="white" txtcolor="silver" position="relative">
-            <BsFillBellFill className="notification-icon"/>
+          <Button
+            classname="btn-notification"
+            hoverbgcolor="yellow"
+            hovertxtcolor="black"
+            bgcolor="white"
+            txtcolor="silver"
+            position="relative"
+          >
+            <BsFillBellFill className="notification-icon" />
             {/* <i className="fas fa-solid fa-bell "></i> */}
             {/* <img src={images.notificacion} alt="" className="notification-icon" /> */}
             {/* <i src={images.notificacion} className="notification-icon"></i> */}
@@ -45,7 +51,7 @@ const NavBar = (props) => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             direction="dropdown"
-            text="Karina"
+            text="Usuario 1"
           />
         </div>
       </div>
