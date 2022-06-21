@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
+import SwitchBtn from "../SwitchBtn/SwitchBtn";
 
 class FormFilterEjm extends Component {
   constructor() {
@@ -26,11 +27,21 @@ class FormFilterEjm extends Component {
     return (
       <section>
         <form className="formFilter__container" onSubmit={this.formSubmit}>
+          <label
+            class="switch"
+            checked={this.state.selectedOption === "Option0"}
+            onChange={this.onValueChange}
+          >
+            Option 0
+            <input type="checkbox" value="Option0" />
+            <span class="slider round"></span>
+          </label>
+
           <label class="form-control">
             <input
               type="radio"
-              value="Male"
-              checked={this.state.selectedOption === "Male"}
+              value="Option1"
+              checked={this.state.selectedOption === "Option1"}
               onChange={this.onValueChange}
             />
             Option 1
@@ -39,8 +50,8 @@ class FormFilterEjm extends Component {
           <label class="form-control">
             <input
               type="radio"
-              value="Female"
-              checked={this.state.selectedOption === "Female"}
+              value="Option2"
+              checked={this.state.selectedOption === "Option2"}
               onChange={this.onValueChange}
             />
             Option 2
@@ -49,8 +60,8 @@ class FormFilterEjm extends Component {
           <label class="form-control">
             <input
               type="radio"
-              value="Other"
-              checked={this.state.selectedOption === "Other"}
+              value="Option3"
+              checked={this.state.selectedOption === "Option3"}
               onChange={this.onValueChange}
             />
             Option 3
