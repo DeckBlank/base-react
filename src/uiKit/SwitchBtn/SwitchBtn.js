@@ -7,13 +7,14 @@ const SwitchBtn = (props) => {
 
   return (
     <label id={id} class="switch">
+      {text}
       <input
         type="checkbox"
         name={name}
         value={value}
       />
       <span class="slider round"></span>
-      {text}
+      
     </label>
   );
 };
