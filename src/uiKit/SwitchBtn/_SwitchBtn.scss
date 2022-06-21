@@ -8,6 +8,11 @@
   font-size: small;
   padding: 0 0.7em 0.7em 0.7em;
   border-bottom: 2px solid $silver;
+  line-height: 1.1;
+  border-bottom: 2px solid #c4c4c4;
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
 
 /* Hide default HTML checkbox */
@@ -29,8 +34,8 @@
   right: 0;
   bottom: 5px;
   // background-color: $lightsilver;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -42,7 +47,7 @@
   bottom: 1.5px;
   transition: 0.4s;
   // background-color: $lightsilver;
-  -webkit-transition: .4s;
+  -webkit-transition: 0.4s;
 }
 
 input:checked + .slider {

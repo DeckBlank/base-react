@@ -1,0 +1,32 @@
+[
+    {
+        "icon": "bx:shopping-bag",
+        "value": "option value 1",
+        "option": "option 1"
+    },
+    {
+        "icon": "bx:cart",
+        "value": "option value 2",
+        "option": "option 2"
+    },
+    {
+        "icon": "bx:dollar-circle",
+        "value": "option value 3",
+        "option": "option 3"
+    },
+    {
+        "icon": "bx:receipt",
+        "value": "option value 4",
+        "option": "option 4"
+    },
+    {
+        "icon": "bx:receipt",
+        "value": "option value 5",
+        "option": "option 5"
+    },
+    {
+        "icon": "bx:receipt",
+        "value": "option value 6",
+        "option": "option 6"
+    }
+]

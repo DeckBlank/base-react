@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
+import RadioBtn from "../RadioBtn/RadioBtn";
 import SwitchBtn from "../SwitchBtn/SwitchBtn";
 
 class FormFilterEjm extends Component {
@@ -27,6 +28,11 @@ class FormFilterEjm extends Component {
     return (
       <section>
         <form className="formFilter__container" onSubmit={this.formSubmit}>
+          {/* <RadioBtn 
+          text="Radio Button" 
+          type="radio" 
+          _onChange={(parametro) => (this.onValueChange(parametro))}
+          /> */}
           <label
             class="switch"
             checked={this.state.selectedOption === "Option0"}
