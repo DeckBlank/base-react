@@ -10,26 +10,48 @@
     font-size: $small;
     text-transform: capitalize;
   }
+}
+
+.content-select {
+  width: 100%;
+  position: relative;
   select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    display: inline-block;
     width: 100%;
-    padding: 0.6em 0.8em;
+    cursor: pointer;
+    padding: 0.6em 2em 0.6em 0.8em;
+    outline: 0;
+    border: 0;
     border: 1px solid $silver;
     background-color: $white;
     border-radius: 8px;
     text-transform: capitalize;
+    position: relative;
+    transition: all 0.25s ease;
+    color: $silver;
+
+    &::-ms-expand {
+      display: none;
+    }
+
+    &:hover{
+      border: 1px solid $gray;
+      color: $gray;
+    }
+  }
+  .icon-select {
+    position: absolute;
+    right: 0.7rem;
+    top: calc(50% - 0.5rem);
+    display: block;
+    color: $silver;
+    // transform: rotate(90deg);
+    transition: all 0.25s ease;
   }
 }
 
-option {
-  padding: 0.8em;
-  border: 1px solid $silver;
-  background-color: $white;
-  color: $black;
-  text-transform: capitalize;
-}
 
-// }
-// .selected-option {
-//   font-size: x-small;
-//   color: $silver;
-// }
