@@ -13,7 +13,7 @@ const SwitchBtn = (props) => {
         name={name}
         value={value}
       />
-      <span class="slider round"></span>
+      <span className="slider round"></span>
       
     </label>
   );

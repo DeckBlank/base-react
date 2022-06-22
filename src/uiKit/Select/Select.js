@@ -8,7 +8,7 @@ const Select = (props) => {
   return (
     <div className="select-flex-column">
       <label for={labelfor}>{labeltext}</label>
-      <select id={id} class="form-select" size={size}>
+      <select id={id} className="form-select" size={size}>
         <option className="selected-option" selected>{selectedtext}</option>
         {props.children}
       </select>
