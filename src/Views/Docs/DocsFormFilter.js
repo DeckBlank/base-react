@@ -44,7 +44,7 @@ const DocsFormFilter = () => {
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
           <FormFilter>
-            <RadioBtn text="Radio Button" type="radio" />
+            <RadioBtn text="Radio Button" type="radio" classname="border-botton-formfilter"/>
             <RadioBtn text="Radio Button" type="radio" />
           </FormFilter>
         </div>
@@ -52,7 +52,7 @@ const DocsFormFilter = () => {
           <h2>FORM FILTERS SWITCHES</h2>
           <br />
           <FormFilter>
-            <SwitchBtn text="Switch Button" />
+            <SwitchBtn text="Switch Button" classname="border-botton-formfilter"/>
             <SwitchBtn text="Switch Button" />
           </FormFilter>
         </div>

@@ -3,16 +3,14 @@ import PropTypes from "prop-types";
 import "./_RadioBtn.scss";
 
 const RadioBtn = (props) => {
-  let { id, name, type, text, value, _onchange } = props;
+  let { id, name, type, text, value, _onchange, classname } = props;
 
   return (
-    <label id={id} class="form-control">
+    <label id={id} className={`form-control ${classname}`}>
       <input
         type={type}
         name={name}
         value={value}
-        // checked={this.state.selectedOption === { value }}
-        // = () => {{this.onValueChange}}
         onChange={_onchange}
       />
       {text}

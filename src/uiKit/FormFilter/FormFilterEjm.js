@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Button from "../Button/Button";
-import RadioBtn from "../RadioBtn/RadioBtn";
-import SwitchBtn from "../SwitchBtn/SwitchBtn";
+// import RadioBtn from "../RadioBtn/RadioBtn";
+// import SwitchBtn from "../SwitchBtn/SwitchBtn";
 
 class FormFilterEjm extends Component {
   constructor() {
@@ -34,7 +34,7 @@ class FormFilterEjm extends Component {
           _onChange={(parametro) => (this.onValueChange(parametro))}
           /> */}
           <label
-            class="switch"
+            class="switch border-botton-formfilter"
             checked={this.state.selectedOption === "Option0"}
             onChange={this.onValueChange}
           >
@@ -43,7 +43,7 @@ class FormFilterEjm extends Component {
             <span class="slider round"></span>
           </label>
 
-          <label class="form-control">
+          <label class="form-control border-botton-formfilter">
             <input
               type="radio"
               value="Option1"
@@ -53,7 +53,7 @@ class FormFilterEjm extends Component {
             Option 1
           </label>
 
-          <label class="form-control">
+          <label class="form-control border-botton-formfilter">
             <input
               type="radio"
               value="Option2"

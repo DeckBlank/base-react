@@ -3,10 +3,10 @@ import PropTypes from "prop-types";
 import "./_SwitchBtn.scss";
 
 const SwitchBtn = (props) => {
-  let { id, name, text, value } = props;
+  let { id, name, text, value, classname } = props;
 
   return (
-    <label id={id} class="switch">
+    <label id={id} className={`switch ${classname}`}>
       {text}
       <input
         type="checkbox"
