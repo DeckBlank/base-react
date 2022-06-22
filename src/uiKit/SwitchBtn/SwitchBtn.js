@@ -13,8 +13,7 @@ const SwitchBtn = (props) => {
         name={name}
         value={value}
       />
-      <span className="slider round"></span>
-      
+      <span className="slider round"></span>      
     </label>
   );
 };
@@ -28,28 +27,3 @@ SwitchBtn.propTypes = {
 };
 
 export default SwitchBtn;
-
-// value="Male"
-// checked={this.state.selectedOption === "Male"}
-// onChange={this.onValueChange}
-
-// import React from "react";
-// import './_RadioBtn.scss'
-
-// const RadioBtn = () => {
-//   return (
-//     <form className="radiobtn__form" action="">
-//       <label class="form-control">
-//         <input type="radio" name="radio" />
-//         Radio
-//       </label>
-
-//       <label class="form-control">
-//         <input type="radio" name="radio" checked />
-//         Radio - checked
-//       </label>
-//     </form>
-//   );
-// };
-
-// export default RadioBtn;

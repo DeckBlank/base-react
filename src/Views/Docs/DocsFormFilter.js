@@ -44,15 +44,15 @@ const DocsFormFilter = () => {
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
           <FormFilter>
-            <RadioBtn text="Radio Button"  classname="border-botton-formfilter"/>
-            <RadioBtn text="Radio Button" type="checkbox" />
+            <RadioBtn text="Radio Button"  classname="border-botton-formfilter" name="name-radio-btn"/>
+            <RadioBtn text="Radio Button" type="checkbox" name="name-radio-btn"/>
           </FormFilter>
         </div>
         <div>
           <h2>FORM FILTERS SWITCHES</h2>
           <br />
           <FormFilter>
-            <SwitchBtn text="Switch Button" classname="border-botton-formfilter"/>
+            <SwitchBtn text="Switch Button" classname="border-botton-formfilter" />
             <SwitchBtn text="Switch Button" />
           </FormFilter>
         </div>
