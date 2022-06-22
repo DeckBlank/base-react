@@ -10,7 +10,7 @@ import Option from "../../uiKit/Select/Option";
 const DocsFormFilter = () => {
   return (
     <div>
-      <div className="grid-responsive-docs-filtercard">
+      <div className="grid-responsive-docs-filterform">
         <div>
           <h2>RADIO BUTTONS</h2>
           <br />
@@ -39,7 +39,7 @@ const DocsFormFilter = () => {
         </div>
       </div>
       <br />
-      <div className="grid-responsive-docs-filtercard">
+      <div className="grid-responsive-docs-filterform">
         <div>
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
@@ -49,7 +49,7 @@ const DocsFormFilter = () => {
           </FormFilter>
         </div>
         <div>
-          <h2>FORM FILTERS SELECTS</h2>
+          <h2>FORM FILTERS SWITCHES</h2>
           <br />
           <FormFilter>
             <SwitchBtn text="Switch Button" />
@@ -57,7 +57,7 @@ const DocsFormFilter = () => {
           </FormFilter>
         </div>
         <div>
-          <h2>FORM FILTERS RADIO BTN</h2>
+          <h2>FORM FILTERS SELECTS </h2>
           <br />
           <Select
             size="1"
@@ -82,7 +82,7 @@ const DocsFormFilter = () => {
           </Select>
         </div>
         <div>
-          <h2>FORM FILTERS RADIO BTN</h2>
+          <h2>FORM FILTERS INPUTS</h2>
           <br />
           <Select
             size="1"
