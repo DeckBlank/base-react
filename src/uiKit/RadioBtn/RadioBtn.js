@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import "./_RadioBtn.scss";
 
 const RadioBtn = (props) => {
-  let { id, name, type, text, value, _onchange, classname } = props;
+  let { id, name, text, value, _onchange, classname } = props;
 
   return (
     <label id={id} className={`form-control ${classname}`}>
       <input
-        type={type}
+        type="radio"
         name={name}
         value={value}
         onChange={_onchange}

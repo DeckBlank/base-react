@@ -14,12 +14,12 @@ const DocsFormFilter = () => {
         <div>
           <h2>RADIO BUTTONS</h2>
           <br />
-          <RadioBtn text="Radio Button" type="radio" />
+          <RadioBtn text="Radio Button"  />
         </div>
         <div>
           <h2>SWITCH BUTTONS</h2>
           <br />
-          <SwitchBtn text="Switch Button" type="radio" />
+          <SwitchBtn text="Switch Button"  />
         </div>
         <div>
           <h2>SELECT / OPTIONS</h2>
@@ -35,7 +35,7 @@ const DocsFormFilter = () => {
         <div>
           <h2>INPUT: CALENDAR</h2>
           <br />
-          <SwitchBtn text="Switch Button" type="radio" />
+          <SwitchBtn text="Switch Button"  />
         </div>
       </div>
       <br />
@@ -44,8 +44,8 @@ const DocsFormFilter = () => {
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
           <FormFilter>
-            <RadioBtn text="Radio Button" type="radio" classname="border-botton-formfilter"/>
-            <RadioBtn text="Radio Button" type="radio" />
+            <RadioBtn text="Radio Button"  classname="border-botton-formfilter"/>
+            <RadioBtn text="Radio Button" type="checkbox" />
           </FormFilter>
         </div>
         <div>
