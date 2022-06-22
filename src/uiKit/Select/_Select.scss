@@ -45,8 +45,9 @@
   }
   .icon-select {
     position: absolute;
+    font-size: x-large;
     right: 0.7rem;
-    top: calc(50% - 0.5rem);
+    top: calc(50% - 0.7rem);
     display: block;
     color: $silver;
     // transform: rotate(90deg);
