@@ -2,13 +2,109 @@ import React from "react";
 import Avatar from "../../uiKit/Avatar/Avatar";
 import Dropdown from "../../uiKit/Dropdown/Dropdown";
 import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
-
+import ListGroup from "../../uiKit/ListGroup/ListGroup";
+import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
+import Li from "../../uiKit/Li/Li";
 const DocsDropdown = () => {
   return (
     <div>
       <h2>AVATAR</h2>
       <br />
       <Avatar /> <br />
+      <br />
+      <h2>LISTGROUP</h2>
+      <br />
+      <div className="grid-responsive-docs-filterform">
+        <div>
+          <h3>(COLLAPSE-FILTER SELECT)</h3>
+          <br />
+          <ListGroup classname="collapse-selects">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="collapse-selects-item border-top-formfilter"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(COLLAPSE-SIDEBAR)</h3>
+          <br />
+          <ListGroup classname="collapse-sidebar">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="collapse-sidebar-item border-bottom-sidebar"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(DROPDOWN)</h3>
+          <br />
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </div>
+      </div>
+      <br />
+      <br />
+      <h2>LISTGROUP WITH ICON</h2>
+      <br />
+      <div className="grid-responsive-docs-filterform">
+        <div>
+          <h3>(COLLAPSE-FILTER SELECT)</h3>
+          <br />
+          <ListGroup classname="collapse-selects">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                icon={item.icon}
+                route={item.route}
+                classname="collapse-selects-item border-top-formfilter"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(COLLAPSE-SIDEBAR)</h3>
+          <br />
+          <ListGroup classname="collapse-sidebar">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="collapse-sidebar-item border-bottom-sidebar"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(DROPDOWN-BUTTON)</h3>
+          <br />
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                icon={item.icon}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </div>
+      </div>
+      <br />
+      <br />
       <h2>DROPDOWN AVATAR</h2>
       <br />
       <div className="grid-responsive-docs">
@@ -21,7 +117,18 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
 
         <DropdownAvatar
           type="button"
@@ -32,7 +139,18 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropup"
           text="Usuario 2"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
 
         <DropdownAvatar
           type="button"
@@ -43,7 +161,18 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropend"
           text="Usuario 3"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
 
         <DropdownAvatar
           type="button"
@@ -54,7 +183,18 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropstart"
           text="Usuario 4"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
       </div>
       <br />
       <br />
@@ -70,7 +210,17 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Hacia Abajo"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
 
         <Dropdown
           type="button"
@@ -81,7 +231,17 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           text="Hacia Arriba"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
 
         <Dropdown
           type="button"
@@ -92,7 +252,17 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           text="Hacia derecha"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
 
         <Dropdown
           type="button"
@@ -103,7 +273,17 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           text="Hacia izquierda"
-        />
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
       </div>
     </div>
   );

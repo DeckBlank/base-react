@@ -34,7 +34,7 @@ class FormFilterEjm extends Component {
           _onChange={(parametro) => (this.onValueChange(parametro))}
           /> */}
           <label
-            className="switch border-botton-formfilter"
+            className="switch border-bottom-formfilter"
             checked={this.state.selectedOption === "Option0"}
             onChange={this.onValueChange}
           >
@@ -43,7 +43,7 @@ class FormFilterEjm extends Component {
             <span className="slider round"></span>
           </label>
 
-          <label className="form-control border-botton-formfilter">
+          <label className="form-control border-bottom-formfilter">
             <input
               type="radio"
               value="Option1"
@@ -53,7 +53,7 @@ class FormFilterEjm extends Component {
             Option 1
           </label>
 
-          <label className="form-control border-botton-formfilter">
+          <label className="form-control border-bottom-formfilter">
             <input
               type="radio"
               value="Option2"

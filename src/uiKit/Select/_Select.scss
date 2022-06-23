@@ -19,23 +19,24 @@
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-
     display: inline-block;
     width: 100%;
     cursor: pointer;
     padding: 0.6em 2em 0.6em 0.8em;
     outline: 0;
     border: 0;
-    border: 1px solid $silver;
-    background-color: $white;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
     border-radius: 8px;
     text-transform: capitalize;
     position: relative;
     transition: all 0.25s ease;
     color: $silver;
+    z-index: 2;
 
     &::-ms-expand {
       display: none;
+      background-color: transparent;
     }
 
     &:hover{

@@ -31,21 +31,7 @@ const Dropdown = (props) => {
         {text}
       </Button>
       <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 1
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 2
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 3
-          </Link>
-        </li>
+         {props.children}
       </ul>
     </div>
     

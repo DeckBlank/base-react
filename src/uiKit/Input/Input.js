@@ -1,4 +1,5 @@
 import React from 'react'
+import "./_Input.scss";
 
 const Input = () => {
   return (

@@ -69,25 +69,7 @@ const DropdownAvatar = (props) => {
         aria-labelledby={ariaLabelledby}
         Style={`display: ${sdropdown ? "block" : "none"};`}
       >
-        {/* {
-         data.dropdownAvatar.map((dropdownLinkAvatar) => <DropdownLinkAvatarB dropdownLinkAvatar={dropdownLinkAvatar} path={dropdownLinkAvatar.path} imgUrl={dropdownLinkAvatar.imgUrl} title={dropdownLinkAvatar.title} /> )
-        } */}
-
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 1
-          </Link>
-        </li>        
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 2
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 3
-          </Link>
-        </li>
+        {props.children}
       </ul>
     </div>
   );

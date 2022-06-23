@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+.li-content {
+  padding: 0;
+  margin: 0;
+  font-size: small;
+}
+
+.li-items {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icon-flex {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}

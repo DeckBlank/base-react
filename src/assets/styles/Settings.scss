@@ -62,8 +62,16 @@ $btn-font-weight: bold;
   border-radius: 15px;
 }
 
-.border-botton-formfilter {
+.border-bottom-formfilter {
   border-bottom: 2px solid $silver;
+}
+
+.border-top-formfilter {
+  border-top: 1px solid $silver;
+}
+
+.border-bottom-sidebar {
+  border-bottom: 1px solid $white;
 }
 
 /* :::SPAN::: */

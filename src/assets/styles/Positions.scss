@@ -85,16 +85,19 @@
 
 .dropup,
 .dropend,
+.dropdown,
 .dropstart {
   position: relative;
 }
 
 .dropdown {
-.dropdown-menu {
+  .dropdown-menu {
+    // width: 150px;
     top: 100%;
     bottom: auto;
     margin-bottom: 0;
-    margin-top: 0.125rem;
+    right: 0;
+    background-color: transparent;
   }
   .dropdown-toggle::after {
     display: inline-block;
@@ -111,13 +114,12 @@
   }
 }
 
-
 .dropup {
   .dropdown-menu {
+    // width: 150px;
     top: auto;
     bottom: 100%;
     margin-top: 0;
-    margin-bottom: 0.125rem;
   }
   .dropdown-toggle::after {
     display: inline-block;
@@ -136,11 +138,11 @@
 
 .dropend {
   .dropdown-menu {
+    // width: 150px;
     top: 0;
     right: auto;
     left: 100%;
     margin-top: 0;
-    margin-left: 0.125rem;
   }
   .dropdown-toggle::after {
     display: inline-block;
@@ -162,11 +164,11 @@
 
 .dropstart {
   .dropdown-menu {
+    // width: 150px;
     top: 0;
     right: 100%;
     left: auto;
     margin-top: 0;
-    margin-right: 0.125rem;
   }
   .dropdown-toggle::after {
     display: inline-block;
@@ -191,5 +193,28 @@
   }
   .dropdown-toggle::before {
     vertical-align: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dropstart {
+    .dropdown-menu {
+      width: 150px;
+    }
+  }
+  .dropdown {
+    .dropdown-menu {
+      width: 150px;
+    }
+  }
+  .dropup {
+    .dropdown-menu {
+      width: 150px;
+    }
+  }
+  .dropend {
+    .dropdown-menu {
+      width: 150px;
+    }
   }
 }

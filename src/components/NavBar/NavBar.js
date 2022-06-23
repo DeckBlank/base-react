@@ -5,7 +5,10 @@ import "./_NavBar.scss";
 import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 import { GrMenu } from "react-icons/gr";
 import { BsFillBellFill } from "react-icons/bs";
+import ListGroup from "../../uiKit/ListGroup/ListGroup";
+import Li from "../../uiKit/Li/Li";
 // import images from "../../assets/constants/images";
+import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;
@@ -14,7 +17,6 @@ const NavBar = (props) => {
     <header className={`header ${show ? "space-toggle" : null}`}>
       <div className="header-toggle" onClick={onclick}>
         <GrMenu />
-        {/* <i className="fas fa-solid fa-bars"></i> */}
       </div>
       <div className="flex-logo-avatar-nav">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
@@ -28,10 +30,6 @@ const NavBar = (props) => {
             position="relative"
           >
             <BsFillBellFill className="notification-icon" />
-            {/* <i className="fas fa-solid fa-bell "></i> */}
-            {/* <img src={images.notificacion} alt="" className="notification-icon" /> */}
-            {/* <i src={images.notificacion} className="notification-icon"></i> */}
-            {/* <i className="notification-icon"><img src={images.notificacion} alt=""  /></i> */}
             <Badge
               classname="badge-notification"
               bgcolor="red"
@@ -44,15 +42,26 @@ const NavBar = (props) => {
             />
           </Button>
           <DropdownAvatar
-            type="button"
-            bgcolor="transparent"
-            txtcolor="black"
-            dropdown="toggle"
-            id="idDropdown"
-            data-bs-toggle="dropdown"
-            direction="dropdown"
-            text="Usuario 1"
-          />
+          type="button"
+          bgcolor="transparent"
+          txtcolor="black"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropdown"
+          text="Usuario 1"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
         </div>
       </div>
     </header>
