@@ -5,7 +5,6 @@ import TableSimple from "../../uiKit/TableSimple/TableSimple";
 import Button from "../../uiKit/Button/Button";
 import IconoTutor from "../../assets/images/icono de tutor.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import Badge from "../../uiKit/Badge/Badge";
 
 const DocsTable = () => {
   // Table Multi Pagination

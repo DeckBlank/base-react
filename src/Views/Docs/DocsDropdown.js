@@ -16,7 +16,7 @@ const DocsDropdown = () => {
       <br />
       <div className="grid-responsive-docs-filterform">
         <div>
-          <h3>(COLLAPSE-FILTER SELECT)</h3>
+          <h3>(S/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
             {OptionsListGroup.map((item) => (
@@ -24,19 +24,6 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
-              />
-            ))}
-          </ListGroup>
-        </div>
-        <div>
-          <h3>(COLLAPSE-SIDEBAR)</h3>
-          <br />
-          <ListGroup classname="collapse-sidebar">
-            {OptionsListGroup.map((item) => (
-              <Li
-                text={item.display_name}
-                route={item.route}
-                classname="collapse-sidebar-item border-bottom-sidebar"
               />
             ))}
           </ListGroup>
@@ -54,6 +41,32 @@ const DocsDropdown = () => {
             ))}
           </ListGroup>
         </div>
+        <div>
+          <h3>(COLLAPSE-SIDEBAR)</h3>
+          <br />
+          <ListGroup classname="collapse-sidebar">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="collapse-sidebar-item border-bottom-sidebar"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(UNCOLLAPSE-SIDEBAR)</h3>
+          <br />
+          <ListGroup classname="uncollapse-sidebar">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                classname="uncollapse-sidebar-item border-bottom-sidebar"
+              />
+            ))}
+          </ListGroup>
+        </div>
       </div>
       <br />
       <br />
@@ -61,7 +74,7 @@ const DocsDropdown = () => {
       <br />
       <div className="grid-responsive-docs-filterform">
         <div>
-          <h3>(COLLAPSE-FILTER SELECT)</h3>
+          <h3>(D/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
             {OptionsListGroup.map((item) => (
@@ -70,6 +83,20 @@ const DocsDropdown = () => {
                 icon={item.icon}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
+              />
+            ))}
+          </ListGroup>
+        </div>
+        <div>
+          <h3>(DROPDOWN-BUTTON)</h3>
+          <br />
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                icon={item.icon}
+                route={item.route}
+                classname="dropdown-group-list-item"
               />
             ))}
           </ListGroup>
@@ -89,15 +116,15 @@ const DocsDropdown = () => {
           </ListGroup>
         </div>
         <div>
-          <h3>(DROPDOWN-BUTTON)</h3>
+          <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="uncollapse-sidebar li-items-sidebar">
             {OptionsListGroup.map((item) => (
               <Li
                 text={item.display_name}
-                icon={item.icon}
                 route={item.route}
-                classname="dropdown-group-list-item"
+                icon={item.icon}
+                classname="uncollapse-sidebar-item border-bottom-sidebar "
               />
             ))}
           </ListGroup>

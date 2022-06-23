@@ -24,6 +24,7 @@
   position: relative;
   display: block;
   padding: 0.5rem 1rem;
+  gap: 1rem;
   color: $black;
   text-decoration: none;
   background-color: $white;
@@ -79,6 +80,7 @@
   position: relative;
   display: block;
   padding: 0.5rem 1rem;
+  gap: 1rem;
   color: $black;
   text-decoration: none;
   background-color: $white;
@@ -130,6 +132,7 @@
   position: relative;
   display: block;
   padding: 1rem 1rem;
+  gap: 1rem;
   color: $black;
   text-decoration: none;
   background-color: $blue;
@@ -168,6 +171,61 @@
   border-top-width: 0;
 }
 .collapse-sidebar-item + .collapse-sidebar-item.active {
+  margin-top: -1px;
+  border-top-width: 1px;
+}
+
+// SIDEBAR NORMAL
+
+.uncollapse-sidebar {
+  width: 100%;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.uncollapse-sidebar-item {
+  height: 4rem;
+  width: 100%;
+  position: relative;
+  display: block;
+  padding: 1rem 1.3rem;
+  gap: 1rem;
+  text-decoration: none;
+  background-color: $gray;
+  color: $white;
+}
+
+.uncollapse-sidebar-item:first-child {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.uncollapse-sidebar-item:last-child {
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+
+.uncollapse-sidebar-item:hover {
+  background-color: $fuchsia;
+  color: $white;
+}
+
+.uncollapse-sidebar-item.disabled,
+.uncollapse-sidebar-item:disabled {
+  color: $silver;
+  pointer-events: none;
+  background-color: $lightsilver;
+  color: $silver;
+}
+.uncollapse-sidebar-item-filter.active {
+  z-index: 2;
+  color: $white;
+  background-color: $fuchsia;
+  color: $white;
+}
+.uncollapse-sidebar-item + .uncollapse-sidebar-item {
+  border-top-width: 0;
+}
+.uncollapse-sidebar-item + .uncollapse-sidebar-item.active {
   margin-top: -1px;
   border-top-width: 1px;
 }

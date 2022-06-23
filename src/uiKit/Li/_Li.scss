@@ -15,5 +15,16 @@
 .icon-flex {
   display: flex;
   align-items: center;
-  margin-right: 0.5rem;
+}
+
+.li-items-sidebar { 
+  i {
+    font-size: x-large;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  span {
+    font-size: medium;
+  }
 }

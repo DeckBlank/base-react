@@ -1,15 +1,18 @@
 import React, { Component, Suspense, useState } from "react";
 import { Route, Routes, useNavigate, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { AiFillHome } from "react-icons/ai";
-import { IoIosListBox } from "react-icons/io";
-import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
-import { faFileLines, faBell } from "@fortawesome/free-solid-svg-icons";
+// import { AiFillHome } from "react-icons/ai";
+// import { IoIosListBox } from "react-icons/io";
+// import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar/NavBar";
 import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
+import SideBarListGroup from "../../assets/Jsons/sidebar-list -docs.json";
+import ListGroup from "../../uiKit/ListGroup/ListGroup";
+import Li from "../../uiKit/Li/Li";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -57,13 +60,12 @@ const Docs = (props) => {
       />
 
       <SideBar show={show} bgcolor="bg-gray">
-        <div>
-          <Link to="/badge" className="nav-link">
+        {/*<div>
+           <Link to="/badge" className="nav-link">
             <AiFillHome className="nav-link-icon" />
-            {/* <FontAwesomeIcon icon={faBell} className="nav-link-icon" /> */}
             <span className="nav-link-name">Badge</span>
           </Link>
-          <hr className="hr-sidebar" />
+          {/* <hr className="hr-sidebar" />
 
           <Link to="/button" className="nav-link">
             <IoIosListBox className="nav-link-icon" />
@@ -84,7 +86,7 @@ const Docs = (props) => {
           <hr className="hr-sidebar" />
           <Link to="/dropdown" className="nav-link">
             <BsFillFileEarmarkBarGraphFill className="nav-link-icon" />
-            <span className="nav-link-name">Dropdown</span>
+            <span className="nav-link-name">Dropdown / Collapse</span>
           </Link>
           <hr className="hr-sidebar" />
 
@@ -94,8 +96,19 @@ const Docs = (props) => {
           </Link>
           <hr className="hr-sidebar" />
 
-          <div className="nav-list"></div>
-        </div>
+          <div className="nav-list"></div> 
+        </div>*/}
+          <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+            {SideBarListGroup.map((item) => (
+              <Li
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="uncollapse-sidebar-item border-bottom-sidebar "
+              />
+            ))}
+          </ListGroup>
+
 
         <Link to="/ro-maquetacion" className="nav-link">
           <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
