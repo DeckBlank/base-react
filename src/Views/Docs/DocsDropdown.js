@@ -263,10 +263,7 @@ const DocsDropdown = () => {
         <div className="flex-responsive-docs">
           <h3>(BUTTON / LISTGROUP)</h3>
           <br />
-          <Collapse
-            type="button"
-            id="idCollapse"
-            data-bs-toggle="collapdown"
+          <Collapse                
             text="Collapse"
           >
             <ListGroup classname="collapse-sidebar">

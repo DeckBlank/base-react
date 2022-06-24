@@ -1,39 +1,29 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import Button from '../Button/Button'
 import "./_Collapse.scss";
+import ButtonItem from "../ButtonItem/ButtonItem";
 
 const Collapse = (props) => {
-  
-  let { id, type, direction, bgcolor, txtcolor, collapse, ariaLabelledby, text, hoverbgcolor, hovertxtcolor } =
-    props;  
-  
+
   const [sCollapse, setsCollapse] = useState(false);
   const showCollapse = () => {
-      setsCollapse(!sCollapse);
-    };
- 
+    setsCollapse(!sCollapse);
+  };
+
   return (
-    <div className={`collapse-group ${direction}`}>
-      <Button       
-        type={type}
-        id={id}
-        bgcolor={bgcolor}
-        txtcolor={txtcolor}
-        collapse={collapse}
-        data-bs-toggle="collapse"
-        ariaexpanded="false"
+    <div className={`collapse-group`}>
+      <ButtonItem
+        text="Button for Sidebar"
+        icon="bx:package"
+        classname="uncollapse-sidebar-item li-items-sidebar"
         onclick={showCollapse}
-        hoverbgcolor={hoverbgcolor}
-        hovertxtcolor={hovertxtcolor}
+      />
+      <div
+        Style={`display: ${sCollapse ? "block" : "none"};`}
       >
-        {text}
-      </Button>
-      <div className="collapse-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sCollapse ? "block" : "none"};`}>
         {props.children}
       </div>
     </div>
-    
   );
 };
 
