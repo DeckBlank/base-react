@@ -1,19 +1,12 @@
 @import "../../App.scss";
 
-.collapse-group {
-  // position: relative;
-  // display: inline-flex;
-  // vertical-align: middle;
-  // flex-direction: column;
-}
-
 .collapse-toggle {
   white-space: nowrap;
 }
 
 .collapse-menu {
-  // position: initial;
-  // z-index: 1000;
+  position: initial;
+  z-index: 1000;
   // width: 100%;
   // margin: 0;
   /* font-size: small; */

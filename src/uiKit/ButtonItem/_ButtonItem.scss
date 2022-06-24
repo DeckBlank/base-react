@@ -1,12 +1,13 @@
 @import "../../App.scss";
 
 .btn-item {
-  button
-  {text-decoration: none;
-  cursor: pointer;
-  user-select: none; 
-  -webkit-user-select: none;
-  border: 1px solid transparent;}
+  button {
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    border: 1px solid transparent;
+  }
 }
 
 .li-content {
@@ -26,7 +27,7 @@
   align-items: center;
 }
 
-.li-items-sidebar { 
+.li-items-sidebar {
   i {
     font-size: x-large;
     display: flex;
@@ -37,4 +38,3 @@
     font-size: medium;
   }
 }
-

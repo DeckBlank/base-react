@@ -7,7 +7,13 @@ import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
 import LinkItem from "../../uiKit/LinkItem/LinkItem";
 import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
 import Collapse from "../../uiKit/Collapse/Collapse";
-
+import Details from "../../uiKit/Details/Details";
+import FormFilter from "../../uiKit/FormFilter/FormFilter";
+import RadioBtn from "../../uiKit/RadioBtn/RadioBtn";
+import SwitchBtn from "../../uiKit/SwitchBtn/SwitchBtn";
+import Select from "../../uiKit/Select/Select";
+import OptionsList from "../../assets/Jsons/options-list.json";
+import Option from "../../uiKit/Select/Option";
 
 const DocsDropdown = () => {
   return (
@@ -16,25 +22,25 @@ const DocsDropdown = () => {
       <br />
       <div className="grid-responsive-docs-filterform">
         <LinkItem
-          text="NavLink Sidebar"
+          text="Link for select"
           route="/"
           icon="bx:package"
           classname="collapse-selects-item"
         />
         <LinkItem
-          text="Collapse Sidebar"
+          text="Link for dropdown"
           route="/"
           icon="bx:package"
           classname="dropdown-group-list-item"
         />
         <LinkItem
-          text="Collapse Sidebar"
+          text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="collapse-sidebar-item"
         />
         <LinkItem
-          text="Collapse Sidebar"
+          text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
@@ -46,22 +52,22 @@ const DocsDropdown = () => {
       <br />
       <div className="grid-responsive-docs-filterform">
         <ButtonItem
-          text="NavLink Sidebar"
+          text="Button for Select"
           icon="bx:package"
           classname="collapse-selects-item"
         />
         <ButtonItem
-          text="Collapse Sidebar"
+          text="Button for Dropdown"
           icon="bx:package"
           classname="dropdown-group-list-item"
         />
         <ButtonItem
-          text="Collapse Sidebar"
+          text="Button for Sidebar"
           icon="bx:package"
           classname="collapse-sidebar-item"
         />
         <ButtonItem
-          text="Collapse Sidebar"
+          text="Button for Sidebar"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
         />
@@ -197,89 +203,83 @@ const DocsDropdown = () => {
       <h2>COLLAPSE</h2>
       <br />
       <div className="grid-responsive-docs">
-        <Collapse
-          type="button"
-          bgcolor="fuchsia"
-          txtcolor="white"
-          collapse="toggle"
-          id="idCollapse"
-          data-bs-toggle="collapdown"
-          direction="collapdown"
-          text="Hacia Abajo"
-        >
-          <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
-              <LinkItem
-                text={item.display_name}
-                route={item.route}
-                classname="dropdown-group-list-item"
+        <div className="flex-responsive-docs">
+          <h3>(DETAILS / SUMMARY : FILTERS RADIO BUTTON)</h3>
+          <br />
+          <Details summary="Summary" txtcolor="gray">
+            <FormFilter>
+              <RadioBtn
+                text="Radio Button 1"
+                classname="border-bottom-formfilter"
+                name="name-radio-btn"
               />
-            ))}
-          </ListGroup>
-        </Collapse>
-
-        <Collapse
-          type="button"
-          bgcolor="yellow"
-          txtcolor="white"
-          dropdown="toggle"
-          direction="collapup"
-          id="ididCollapse"
-          data-bs-toggle="collapdown"
-          text="Hacia Arriba"
-        >
-          <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
-              <LinkItem
-                text={item.display_name}
-                route={item.route}
-                classname="dropdown-group-list-item"
+              <RadioBtn
+                text="Radio Button 2 "
+                classname="border-bottom-formfilter"
+                name="name-radio-btn"
               />
-            ))}
-          </ListGroup>
-        </Collapse>
-
-        <Collapse
-          type="button"
-          bgcolor="green"
-          txtcolor="white"
-          dropdown="toggle"
-          direction="collapend"
-          id="idCollapse"
-          data-bs-toggle="collapdown"
-          text="Hacia derecha"
-        >
-          <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
-              <LinkItem
-                text={item.display_name}
-                route={item.route}
-                classname="dropdown-group-list-item"
+              <RadioBtn
+                text="Radio Button 3"
+                type="checkbox"
+                name="name-radio-btn"
               />
-            ))}
-          </ListGroup>
-        </Collapse>
-
-        <Collapse
-          type="button"
-          bgcolor="blue"
-          txtcolor="white"
-          dropdown="toggle"
-          direction="collapstart"
-          id="idCollapse"
-          data-bs-toggle="collapdown"
-          text="Hacia izquierda"
-        >
-          <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
-              <LinkItem
-                text={item.display_name}
-                route={item.route}
-                classname="dropdown-group-list-item"
+            </FormFilter>
+          </Details>
+        </div>
+        <div className="flex-responsive-docs">
+          <h3>(DETAILS / SUMMARY : FILTERS SWITCH BUTTON)</h3>
+          <br />
+          <Details summary="Summary" txtcolor="gray">
+            <FormFilter>
+              <SwitchBtn
+                text="Switch Button 1"
+                name="name-switch-btn"
+                classname="border-bottom-formfilter"
               />
+              <SwitchBtn
+                text="Switch Button 2"
+                name="name-switch-btn"
+                classname="border-bottom-formfilter"
+              />
+              <SwitchBtn text="Switch Button 3" name="name-switch-btn"/>
+            </FormFilter>
+          </Details>
+        </div>
+        <div className="flex-responsive-docs">
+          <h3>(DETAILS / SUMMARY : SELECTS)</h3>
+          <br />
+          <Details summary="Summary" txtcolor="gray">
+          <Select
+            size="1"
+            selectedtext="Seleccionar Tutor"
+            labelfor="labelfor"
+          >
+            {OptionsList.map((item) => (
+              <Option value={item.value} optiontext={item.option} />
             ))}
-          </ListGroup>
-        </Collapse>
+          </Select>
+          </Details>
+        </div>
+        <div className="flex-responsive-docs">
+          <h3>(BUTTON / LISTGROUP)</h3>
+          <br />
+          <Collapse
+            type="button"
+            id="idCollapse"
+            data-bs-toggle="collapdown"
+            text="Collapse"
+          >
+            <ListGroup classname="collapse-sidebar">
+              {OptionsListGroup.map((item) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  classname="collapse-sidebar-item border-bottom-sidebar"
+                />
+              ))}
+            </ListGroup>
+          </Collapse>
+        </div>
       </div>
       <br />
       <h2>DROPDOWN AVATAR</h2>

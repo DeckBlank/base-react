@@ -38,7 +38,7 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: start;
-  align-items: center;
+  align-items: start;
   align-content: center;
 }
 
@@ -58,6 +58,12 @@
   justify-items: start;
   align-items: start;
   align-content: center;
+}
+
+.flex-responsive-docs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .flex-btns-docs {
