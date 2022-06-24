@@ -12,7 +12,7 @@ import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
 import SideBarListGroup from "../../assets/Jsons/sidebar-list -docs.json";
 import ListGroup from "../../uiKit/ListGroup/ListGroup";
-import Li from "../../uiKit/Li/Li";
+import LinkItem from "../../uiKit/LinkItem/LinkItem";
 
 const loading = (
   <div className="pt-3 text-center">
@@ -62,14 +62,14 @@ const Docs = (props) => {
       <SideBar show={show} bgcolor="bg-gray">
         <ListGroup classname="uncollapse-sidebar li-items-sidebar">
           {SideBarListGroup.map((item) => (
-            <Li
+            <LinkItem
               text={item.display_name}
               route={item.route}
               icon={item.icon}
               classname="uncollapse-sidebar-item border-bottom-sidebar "
             />
           ))}
-        </ListGroup>
+        </ListGroup>        
       </SideBar>
 
       <Content>

@@ -6,8 +6,7 @@ import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 import { GrMenu } from "react-icons/gr";
 import { BsFillBellFill } from "react-icons/bs";
 import ListGroup from "../../uiKit/ListGroup/ListGroup";
-import Li from "../../uiKit/Li/Li";
-// import images from "../../assets/constants/images";
+import LinkItem from "../../uiKit/LinkItem/LinkItem";
 import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
 
 const NavBar = (props) => {
@@ -53,7 +52,7 @@ const NavBar = (props) => {
         >
           <ListGroup classname="dropdown-group-list">
             {OptionsListGroup.map((item) => (
-              <Li
+              <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}

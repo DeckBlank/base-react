@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
-import './_Li.scss'
+import './_LinkItem.scss'
 
-const Li = (props) => {
+const LinkItem = (props) => {
   let {
     classname,
     icon,
@@ -11,7 +11,7 @@ const Li = (props) => {
     text,
   } = props;
   return (
-    <li className="li-content">
+    <div className="li-content">
       <Link
         className={`li-items ${classname}`}
         to={route}
@@ -21,8 +21,8 @@ const Li = (props) => {
         </i>
         <span>{text}</span>
       </Link>
-    </li>
+    </div>
   );
 };
 
-export default Li;
+export default LinkItem;
