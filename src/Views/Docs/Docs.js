@@ -60,60 +60,16 @@ const Docs = (props) => {
       />
 
       <SideBar show={show} bgcolor="bg-gray">
-        {/*<div>
-           <Link to="/badge" className="nav-link">
-            <AiFillHome className="nav-link-icon" />
-            <span className="nav-link-name">Badge</span>
-          </Link>
-          {/* <hr className="hr-sidebar" />
-
-          <Link to="/button" className="nav-link">
-            <IoIosListBox className="nav-link-icon" />
-            <span className="nav-link-name">Button</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
-          <Link to="/filtercardbtn" className="nav-link">
-            <IoIosListBox className="nav-link-icon" />
-            <span className="nav-link-name">FiltersCard</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
-          <Link to="/formfilter" className="nav-link">
-            <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
-            <span className="nav-link-name">FormFilter</span>
-          </Link>
-          <hr className="hr-sidebar" />
-          <Link to="/dropdown" className="nav-link">
-            <BsFillFileEarmarkBarGraphFill className="nav-link-icon" />
-            <span className="nav-link-name">Dropdown / Collapse</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
-          <Link to="/table" className="nav-link">
-            <FontAwesomeIcon icon={faFileLines} className="nav-link-icon" />
-            <span className="nav-link-name">Table</span>
-          </Link>
-          <hr className="hr-sidebar" />
-
-          <div className="nav-list"></div> 
-        </div>*/}
-          <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-            {SideBarListGroup.map((item) => (
-              <Li
-                text={item.display_name}
-                route={item.route}
-                icon={item.icon}
-                classname="uncollapse-sidebar-item border-bottom-sidebar "
-              />
-            ))}
-          </ListGroup>
-
-
-        <Link to="/ro-maquetacion" className="nav-link">
-          <FontAwesomeIcon icon={faBell} className="nav-link-icon" />
-          <span className="nav-link-name">Cerrar Sesión</span>
-        </Link>
+        <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+          {SideBarListGroup.map((item) => (
+            <Li
+              text={item.display_name}
+              route={item.route}
+              icon={item.icon}
+              classname="uncollapse-sidebar-item border-bottom-sidebar "
+            />
+          ))}
+        </ListGroup>
       </SideBar>
 
       <Content>
@@ -146,12 +102,6 @@ const Docs = (props) => {
                 name="FormFilter"
                 element={<FormFilter />}
               />
-              {/* <Route
-                exact
-                path="/radiobtn"
-                name="RadioButton"
-                element={<DocsGroupButton />}
-              /> */}
             </>
           </Routes>
         </Suspense>

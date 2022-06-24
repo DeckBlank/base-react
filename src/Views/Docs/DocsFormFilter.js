@@ -33,7 +33,7 @@ const DocsFormFilter = () => {
           </Select>
         </div>
         <div>
-          <h2>INPUT: CALENDAR</h2>
+          <h2>SELECT / UL-LI</h2>
           <br />
           <SwitchBtn text="Switch Button"  />
         </div>
@@ -57,7 +57,7 @@ const DocsFormFilter = () => {
           </FormFilter>
         </div>
         <div>
-          <h2>FORM FILTERS SELECTS </h2>
+          <h2>FORM FILTERS SELECTS / OPTIONS </h2>
           <br />
           <Select
             size="1"
@@ -82,7 +82,7 @@ const DocsFormFilter = () => {
           </Select>
         </div>
         <div>
-          <h2>FORM FILTERS INPUTS</h2>
+          <h2>FORM FILTERS SELECT / UL-LI</h2>
           <br />
           <Select
             size="1"

@@ -64,6 +64,12 @@
   display: flex;
 }
 
+.flex-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 @media screen and (max-width: 768px) {
   .grid-responsive-docs-filtercard {
     display: grid;
