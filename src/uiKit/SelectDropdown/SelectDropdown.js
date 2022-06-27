@@ -6,7 +6,7 @@ import ListGroup from "../../uiKit/ListGroup/ListGroup";
 import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
 
 const SelectDropdown = (props) => {
-  let { id, size, selectedtext, labeltext, labelfor } = props;
+  let { id, selectedtext, labeltext, labelfor } = props;
 
   const options = [
     "Option 1",
@@ -16,6 +16,7 @@ const SelectDropdown = (props) => {
     "Option 5",
     "Option 6",
   ];
+  
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -33,7 +34,9 @@ const SelectDropdown = (props) => {
     <div className="select-flex-column ">
       <label for={labelfor}>{labeltext}</label>
       <div className="content-select-drop">
-        <div id={id} className="form-select-drop" onClick={toggling}>
+        <div id={id} className={`form-select-drop ${
+        isOpen ? "form-select-collap" : null
+      } `} onClick={toggling}>
           <IoIosArrowDown className="icon-select-drop" />
           {selectedOption || <p>{selectedtext}</p> }
         </div>

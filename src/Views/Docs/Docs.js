@@ -1,10 +1,8 @@
 import React, { Component, Suspense, useState } from "react";
 import { Route, Routes, useNavigate, Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { AiFillHome } from "react-icons/ai";
 // import { IoIosListBox } from "react-icons/io";
 // import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
-import { faBell } from "@fortawesome/free-solid-svg-icons";
 import NavBar from "../../components/NavBar/NavBar";
 import SideBar from "../../components/SideBar/SideBar";
 import Content from "../../components/Content/Content";
