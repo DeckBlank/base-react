@@ -14,6 +14,7 @@ import SwitchBtn from "../../uiKit/SwitchBtn/SwitchBtn";
 import Select from "../../uiKit/Select/Select";
 import OptionsList from "../../assets/Jsons/options-list.json";
 import Option from "../../uiKit/Select/Option";
+import SelectDropdown from "../../uiKit/SelectDropdown/SelectDropdown";
 
 const DocsDropdown = () => {
   return (
@@ -258,6 +259,8 @@ const DocsDropdown = () => {
               <Option value={item.value} optiontext={item.option} />
             ))}
           </Select>
+          <br />
+          <SelectDropdown labelfor="labelfor" />
           </Details>
         </div>
         <div className="flex-responsive-docs">
