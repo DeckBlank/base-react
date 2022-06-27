@@ -11,8 +11,10 @@ const Select = (props) => {
       <label for={labelfor}>{labeltext}</label>
       <div className="content-select">
       <select id={id} className="form-select" size={size}>
-        <option className="selected-option" selected>{selectedtext}</option>
-        {props.children}      
+      
+        <option className="collapse-selects-item border-top-formfilter selected-option" selected>{selectedtext}</option>
+        
+        {props.children}     
       </select>
       <IoIosArrowDown className="icon-select"/>
       </div>

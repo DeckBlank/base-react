@@ -118,7 +118,7 @@ const DocsDropdown = () => {
         <div>
           <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
-          <ListGroup classname="uncollapse-sidebar">
+          <ListGroup classname="uncollapse-sidebar li-items-sidebar">
             {OptionsListGroup.map((item) => (
               <LinkItem
                 text={item.display_name}

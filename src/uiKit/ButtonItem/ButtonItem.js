@@ -4,7 +4,7 @@ import "./_ButtonItem.scss";
 import PropTypes from "prop-types";
 
 const ButtonItem = (props) => {
-  let { classname, icon, text, id, name, type, onclick } = props;
+  let { classname, icon, text, id, name, type, onclick, key } = props;
   return (
     <div className="btn-item li-content">
       <button
@@ -13,6 +13,7 @@ const ButtonItem = (props) => {
         type={type}
         onClick={onclick}
         className={`li-items ${classname}`}
+        key={key}
       >
         <i className="icon-flex">
           <Icon icon={icon} />

@@ -12,10 +12,10 @@
   }
 }
 
-.content-select {
+.content-select-drop {
   width: 100%;
   position: relative;
-  select {
+  .form-select-drop{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -33,6 +33,7 @@
     transition: all 0.25s ease;
     color: $silver;
     z-index: 2;
+    font-size: small;
 
     &::-ms-expand {
       display: none;
@@ -43,10 +44,13 @@
       border: 1px solid $gray;
       color: $gray;
     }
-  }
+  }  
 
+  .form-select-collap {
+    border-radius: 8px 8px 0 0;
+  }
   
-  .icon-select {
+  .icon-select-drop {
     position: absolute;
     font-size: x-large;
     right: 0.7rem;
