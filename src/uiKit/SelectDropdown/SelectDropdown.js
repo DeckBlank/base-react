@@ -27,13 +27,15 @@ const SelectDropdown = (props) => {
     console.log(selectedOption);
   };
 
+
+
   return (
     <div className="select-flex-column ">
       <label for={labelfor}>{labeltext}</label>
       <div className="content-select-drop">
         <div id={id} className="form-select-drop" onClick={toggling}>
           <IoIosArrowDown className="icon-select-drop" />
-          {selectedOption || "Seleccionar Tutor"}
+          {selectedOption || <p>{selectedtext}</p> }
         </div>
         {isOpen && (
           <ListGroup classname="collapse-selects collapse-select-absolute">
@@ -55,6 +57,7 @@ const SelectDropdown = (props) => {
 SelectDropdown.propTypes = {
   id: PropTypes.string,
   value: PropTypes.string,
+  selectedtext: PropTypes.string,
   for: PropTypes.string,
 };
 

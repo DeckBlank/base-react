@@ -260,7 +260,7 @@ const DocsDropdown = () => {
             ))}
           </Select>
           <br />
-          <SelectDropdown labelfor="labelfor" />
+          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor" />
           </Details>
         </div>
         <div className="flex-responsive-docs">

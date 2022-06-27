@@ -32,7 +32,7 @@ const DocsFormFilter = () => {
         </div>
         <div>
           <h2>SELECT / UL-LI</h2>
-          <SelectDropdown />
+          <SelectDropdown selectedtext="Seleccionar Item"/>
         </div>
       </div>
       <br />
@@ -92,10 +92,10 @@ const DocsFormFilter = () => {
         <div>
           <h2>FORM FILTERS SELECT / UL-LI</h2>
           <br />
-          <SelectDropdown labeltext="Tutor:" labelfor="labelfor" />
+          <SelectDropdown labeltext="Tutor:" selectedtext="Seleccionar Tutor" labelfor="labelfor" />
 
           <br />
-          <SelectDropdown labeltext="Alumno:" labelfor="labelfor" />
+          <SelectDropdown labeltext="Alumno:" selectedtext="Seleccionar Alumno" labelfor="labelfor" />
         </div>
       </div>
       <br />
