@@ -10,6 +10,11 @@
         "icon": "bx:user-pin"
     },
     {
+        "display_name": "Input",
+        "route": "/input",
+        "icon": "bx:user-pin"
+    },
+    {
         "display_name": "FiltersCard",
         "route": "/filtercardbtn",
         "icon": "bx:package"

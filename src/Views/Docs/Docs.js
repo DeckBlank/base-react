@@ -21,6 +21,7 @@ const loading = (
 // Pages
 //PageDocs
 const DocsButton = React.lazy(() => import("./DocsButton"));
+const DocsInput = React.lazy(() => import("./DocsInput"));
 const DocsBadge = React.lazy(() => import("./DocsBadge"));
 const DocsFilterCardBtn = React.lazy(() => import("./DocsFilterCardBtn"));
 const FormFilter = React.lazy(() => import("./DocsFormFilter"));
@@ -67,7 +68,7 @@ const Docs = (props) => {
               classname="uncollapse-sidebar-item border-bottom-sidebar "
             />
           ))}
-        </ListGroup>        
+        </ListGroup>
       </SideBar>
 
       <Content>
@@ -80,6 +81,7 @@ const Docs = (props) => {
                 name="Button"
                 element={<DocsButton />}
               />
+              <Route exact path="/input" name="Input" element={<DocsInput />} />
               <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
               <Route
