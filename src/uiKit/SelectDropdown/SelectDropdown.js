@@ -4,6 +4,7 @@ import { IoIosArrowDown } from "react-icons/io";
 import "./_SelectDropdown.scss";
 import ListGroup from "../../uiKit/ListGroup/ListGroup";
 import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
+import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
 
 const SelectDropdown = (props) => {
   let { id, selectedtext, labeltext, labelfor } = props;
@@ -42,12 +43,11 @@ const SelectDropdown = (props) => {
         </div>
         {isOpen && (
           <ListGroup classname="collapse-selects collapse-select-absolute">
-            {options.map((option) => (
+            {OptionsListGroupBtn.map((item) => (
               <ButtonItem
                 classname="collapse-selects-item border-top-formfilter"
-                onclick={onOptionClicked(option)}
-                key={Math.random()}
-                text={option}
+                onclick={onOptionClicked(item.display_name)}
+                text={item.display_name}
               />
             ))}
           </ListGroup>

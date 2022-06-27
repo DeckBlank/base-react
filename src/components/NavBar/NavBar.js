@@ -7,7 +7,7 @@ import { GrMenu } from "react-icons/gr";
 import { BsFillBellFill } from "react-icons/bs";
 import ListGroup from "../../uiKit/ListGroup/ListGroup";
 import LinkItem from "../../uiKit/LinkItem/LinkItem";
-import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
+import OptionsListGroupLink from "../../assets/Jsons/listgroup-list-icon-link.json";
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;
@@ -51,7 +51,7 @@ const NavBar = (props) => {
           text="Usuario 1"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}

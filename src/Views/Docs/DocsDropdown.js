@@ -3,7 +3,8 @@ import Avatar from "../../uiKit/Avatar/Avatar";
 import Dropdown from "../../uiKit/Dropdown/Dropdown";
 import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
 import ListGroup from "../../uiKit/ListGroup/ListGroup";
-import OptionsListGroup from "../../assets/Jsons/listgroup-list-icon.json";
+import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
+import OptionsListGroupLink from "../../assets/Jsons/listgroup-list-icon-link.json";
 import LinkItem from "../../uiKit/LinkItem/LinkItem";
 import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
 import Collapse from "../../uiKit/Collapse/Collapse";
@@ -81,7 +82,7 @@ const DocsDropdown = () => {
           <h3>(S/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -94,7 +95,7 @@ const DocsDropdown = () => {
           <h3>(DROPDOWN)</h3>
           <br />
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -107,7 +108,7 @@ const DocsDropdown = () => {
           <h3>(COLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="collapse-sidebar">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -120,7 +121,7 @@ const DocsDropdown = () => {
           <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -139,7 +140,7 @@ const DocsDropdown = () => {
           <h3>(D/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 icon={item.icon}
@@ -153,7 +154,7 @@ const DocsDropdown = () => {
           <h3>(DROPDOWN-BUTTON)</h3>
           <br />
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 icon={item.icon}
@@ -167,7 +168,7 @@ const DocsDropdown = () => {
           <h3>(COLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="collapse-sidebar">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -181,7 +182,7 @@ const DocsDropdown = () => {
           <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupLink.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -270,7 +271,7 @@ const DocsDropdown = () => {
             text="Collapse"
           >
             <ListGroup classname="collapse-sidebar">
-              {OptionsListGroup.map((item) => (
+              {OptionsListGroupBtn.map((item) => (
                 <LinkItem
                   text={item.display_name}
                   route={item.route}
@@ -296,7 +297,7 @@ const DocsDropdown = () => {
           text="Usuario 1"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -318,7 +319,7 @@ const DocsDropdown = () => {
           text="Usuario 2"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -340,7 +341,7 @@ const DocsDropdown = () => {
           text="Usuario 3"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -362,7 +363,7 @@ const DocsDropdown = () => {
           text="Usuario 4"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -389,7 +390,7 @@ const DocsDropdown = () => {
           text="Hacia Abajo"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -410,7 +411,7 @@ const DocsDropdown = () => {
           text="Hacia Arriba"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -431,7 +432,7 @@ const DocsDropdown = () => {
           text="Hacia derecha"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -452,7 +453,7 @@ const DocsDropdown = () => {
           text="Hacia izquierda"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroup.map((item) => (
+            {OptionsListGroupBtn.map((item) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
