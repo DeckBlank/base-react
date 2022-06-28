@@ -1,5 +1,5 @@
 import React, { Component, Suspense, useState } from "react";
-import { Route, Routes, useNavigate, Link } from "react-router-dom";
+import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 // import { AiFillHome } from "react-icons/ai";
 // import { IoIosListBox } from "react-icons/io";
 // import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
@@ -30,6 +30,12 @@ const DocsDropdown = React.lazy(() => import("./DocsDropdown"));
 const DocsTable = React.lazy(() => import("./DocsTable"));
 
 const Docs = (props) => {
+  const location = useLocation();
+
+  console.log("hash", location.hash);
+  console.log("pathname", location.pathname);
+  console.log("search", location.search);
+
   const { token, setToken } = useToken();
   const [show, setShow] = useState(true);
 

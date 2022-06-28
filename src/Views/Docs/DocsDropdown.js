@@ -271,10 +271,10 @@ const DocsDropdown = () => {
           <SelectDropdown selectedtext="Seleccionar Alumno"/> 
           </Details>
         </div>
-        {/* <div className="flex-responsive-docs">
+        <div className="flex-responsive-docs">
           <h3>(BUTTON / LISTGROUP)</h3>
           <br />
-          <Collapse                
+          {/* <Collapse                
             text="Collapse"
           >
             <ListGroup classname="collapse-sidebar">
@@ -287,8 +287,8 @@ const DocsDropdown = () => {
                 />
               ))}
             </ListGroup>
-          </Collapse> 
-        </div>*/}
+          </Collapse>  */}
+        </div>
       </div> 
       <br />
       <h2>DROPDOWN AVATAR</h2>
