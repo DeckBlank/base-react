@@ -146,8 +146,16 @@ const DocsBadge = () => {
         <Icon icon="charm:menu-hamburger" className="txt-gray font-xxl"/>       
         <Icon icon="majesticons:more-menu-vertical" className="txt-gray font-xxl"/>               
         <Icon icon="ic:baseline-do-not-disturb-alt" className="txt-gray font-xxl"/>       
-        <Icon icon="bxs:bell" className="txt-gray font-xxl"/>       
-        <Icon icon="eva:arrow-ios-downward-fill" className="txt-gray font-xxl"/>          
+        <Icon icon="bxs:bell" className="txt-gray font-xxl"/>  
+          
+        <Icon icon="eva:arrow-down-fill" className="txt-gray font-xxl"/>             
+        <Icon icon="eva:arrow-ios-downward-outline" className="txt-gray font-xxl"/>          
+        <Icon icon="eva:arrow-ios-back-outline" className="txt-gray font-xxl"/>          
+        <Icon icon="eva:arrow-ios-forward-outline" className="txt-gray font-xxl"/>          
+        <Icon icon="eva:arrow-ios-upward-fill" className="txt-gray font-xxl"/>          
+              
+        <Icon icon="fluent:arrow-previous-24-filled" className="txt-gray font-xxl"/>          
+        <Icon icon="fluent:arrow-next-24-filled" className="txt-gray font-xxl"/>          
       </div>
     </div>
   );

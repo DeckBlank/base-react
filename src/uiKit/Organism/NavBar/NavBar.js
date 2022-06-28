@@ -1,7 +1,7 @@
 import React from "react";
 import "./_NavBar.scss";
-import { GrMenu } from "react-icons/gr";
-import { BsFillBellFill } from "react-icons/bs";
+import { Icon } from "@iconify/react";
+
 import Button from "../../Atoms/Button/Button";
 import Badge from "../../Atoms/Badge/Badge";
 import DropdownAvatar from "../../Molecules/DropdownAvatar/DropdownAvatar";
@@ -15,7 +15,7 @@ const NavBar = (props) => {
   return (
     <header className={`header ${show ? "space-toggle" : null}`}>
       <div className="header-toggle" onClick={onclick}>
-        <GrMenu />
+        <Icon icon="charm:menu-hamburger" />
       </div>
       <div className="flex-logo-avatar-nav">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
@@ -28,7 +28,7 @@ const NavBar = (props) => {
             txtcolor="silver"
             position="relative"
           >
-            <BsFillBellFill className="notification-icon" />
+            <Icon icon="bxs:bell" className="notification-icon"/>
             <Badge
               classname="badge-notification"
               bgcolor="red"
@@ -41,27 +41,27 @@ const NavBar = (props) => {
             />
           </Button>
           <DropdownAvatar
-          type="button"
-          bgcolor="transparent"
-          txtcolor="black"
-          dropdown="toggle"
-          id="idDropdown"
-          data-bs-toggle="dropdown"
-          direction="dropdown"
-          text="Usuario 1"
-        >
-          <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupLink.map((item, index) => (
-              <LinkItem
-                text={item.display_name}
-                route={item.route}
-                icon={item.icon}
-                classname="dropdown-group-list-item"
-                key={index}
-              />
-            ))}
-          </ListGroup>
-        </DropdownAvatar>
+            type="button"
+            bgcolor="transparent"
+            txtcolor="black"
+            dropdown="toggle"
+            id="idDropdown"
+            data-bs-toggle="dropdown"
+            direction="dropdown"
+            text="Usuario 1"
+          >
+            <ListGroup classname="dropdown-group-list">
+              {OptionsListGroupLink.map((item, index) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  icon={item.icon}
+                  classname="dropdown-group-list-item"
+                  key={index}
+                />
+              ))}
+            </ListGroup>
+          </DropdownAvatar>
         </div>
       </div>
     </header>

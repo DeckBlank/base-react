@@ -52,13 +52,13 @@
   
   .icon-select-drop {
     position: absolute;
-    font-size: x-large;
-    right: 0.7rem;
-    top: calc(50% - 0.7rem);
+    font-size: xx-large;
+    right: 0.3rem;
+    top: calc(50% - 0.9rem);
     display: block;
+    transition: all 0.25s ease;
     color: $silver;
     // transform: rotate(90deg);
-    transition: all 0.25s ease;
   }
 }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-import { IoIosArrowDown } from "react-icons/io";
+import { Icon } from "@iconify/react";
 import "./_SelectDropdown.scss";
 import ListGroup from "../../Atoms/ListGroup/ListGroup";
 import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
@@ -31,7 +31,7 @@ const SelectDropdown = (props) => {
           } `}
           onClick={toggling}
         >
-          <IoIosArrowDown className="icon-select-drop" />
+          <Icon icon="eva:arrow-ios-downward-outline" className="icon-select-drop"/>
           {selectedOption || <p>{selectedtext}</p>}
         </div>
         {isOpen && (
