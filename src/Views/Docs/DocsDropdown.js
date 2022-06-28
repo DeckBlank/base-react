@@ -262,14 +262,13 @@ const DocsDropdown = () => {
           <Select
             size="1"
             selectedtext="Seleccionar Tutor"
-            labelfor="labelfor"
           >
             {OptionsList.map((item, index) => (
               <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
           <br />
-          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor"/> 
+          <SelectDropdown selectedtext="Seleccionar Alumno"/> 
           </Details>
         </div>
         {/* <div className="flex-responsive-docs">

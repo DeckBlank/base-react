@@ -37,6 +37,7 @@ class FormFilterEjm extends Component {
             className="switch border-bottom-formfilter"
             checked={this.state.selectedOption === "Option0"}
             onChange={this.onValueChange}
+            htmlFor="formfilter"
           >
             Option 0
             <input type="checkbox" value="Option0" />
@@ -49,6 +50,7 @@ class FormFilterEjm extends Component {
               value="Option1"
               checked={this.state.selectedOption === "Option1"}
               onChange={this.onValueChange}
+              htmlFor="formfilter"
             />
             Option 1
           </label>
@@ -59,6 +61,7 @@ class FormFilterEjm extends Component {
               value="Option2"
               checked={this.state.selectedOption === "Option2"}
               onChange={this.onValueChange}
+              htmlFor="formfilter"
             />
             Option 2
           </label>
@@ -69,6 +72,7 @@ class FormFilterEjm extends Component {
               value="Option3"
               checked={this.state.selectedOption === "Option3"}
               onChange={this.onValueChange}
+              htmlFor="formfilter"
             />
             Option 3
           </label>

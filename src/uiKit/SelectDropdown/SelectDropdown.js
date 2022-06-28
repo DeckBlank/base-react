@@ -7,7 +7,7 @@ import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
 import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
 
 const SelectDropdown = (props) => {
-  let { id, selectedtext, labeltext } = props;
+  let { id, selectedtext, labeltext, htmlfor } = props;
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -22,7 +22,7 @@ const SelectDropdown = (props) => {
 
   return (
     <div className="select-flex-column ">
-      <label>{labeltext}</label>
+      <label htmlFor={htmlfor}>{labeltext}</label>
       <div className="content-select-drop">
         <div
           id={id}
@@ -41,11 +41,12 @@ const SelectDropdown = (props) => {
               onclick={onOptionClicked(selectedtext)}
               text={selectedtext}
             />
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 classname="collapse-selects-item border-top-formfilter"
                 onclick={onOptionClicked(item.display_name)}
                 text={item.display_name}
+                key={index}
               />
             ))}
           </ListGroup>
