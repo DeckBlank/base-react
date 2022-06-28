@@ -5,12 +5,15 @@ import './_LinkItem.scss'
 import PropTypes from "prop-types";
 
 const LinkItem = (props) => {
+  
   let {
+    id,
     classname,
     icon,
     route,
     text
   } = props;
+
   return (
     <div className="li-content">
       <Link
@@ -25,8 +28,10 @@ const LinkItem = (props) => {
     </div>
   );
 };
+
 LinkItem.propTypes = {
   id: PropTypes.string,
   text: PropTypes.string,
 };
+
 export default LinkItem;

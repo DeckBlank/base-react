@@ -17,6 +17,7 @@ import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown"
 
 import OptionsList from "../../assets/Jsons/options-list.json";
 import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
+
 const DocsDropdown = () => {
   return (
     <div>
@@ -273,21 +274,19 @@ const DocsDropdown = () => {
         </div>
         <div className="flex-responsive-docs">
           <h3>(BUTTON / LISTGROUP)</h3>
-          <br />
-          {/* <Collapse                
-            text="Collapse"
-          >
+          <br /> 
+          <Collapse >
             <ListGroup classname="collapse-sidebar">
-              {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupBtn.map((item, index) => (
                 <LinkItem
-                  text={item.display_name}
-                  route={item.route}
-                  classname="collapse-sidebar-item border-bottom-sidebar"
-                  key={index}
-                />
+                text={item.display_name}
+                route={item.route}
+                className="collapse-sidebar-item border-bottom-sidebar"
+                key={index}
+              />
               ))}
             </ListGroup>
-          </Collapse> */}
+          </Collapse>
         </div>
       </div> 
       <br />

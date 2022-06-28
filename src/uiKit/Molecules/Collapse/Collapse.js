@@ -20,7 +20,7 @@ const Collapse = (props) => {
       />
       <div className={`${sCollapse ? ".block" : ".none"}`}
       >
-        {props.children}
+       {props.children}
       </div>
     </div>
   );
