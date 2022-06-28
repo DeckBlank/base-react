@@ -43,22 +43,22 @@ const DocsInput = () => {
         <div>
           <h4>TYPE: search</h4>
           <br />
-          <Input labeltext="search" type="search" />
+          <Input labeltext="search" results="5" type="search" placeholder="Placeholder"/>
         </div>
         <div>
           <h4>TYPE: text</h4>
           <br />
-          <Input labeltext="text" type="text" />
+          <Input labeltext="text" type="text" placeholder="Placeholder"/>
         </div>
         <div>
           <h4>TYPE: url</h4>
           <br />
-          <Input labeltext="url" type="url" />
+          <Input labeltext="url" type="url" placeholder="Placeholder"/>
         </div>
         <div>
           <h4>TYPE: email</h4>
           <br />
-          <Input labeltext="email" type="email" />
+          <Input labeltext="email" type="email" placeholder="Placeholder"/>
         </div>
       </div>
       <br />
@@ -68,7 +68,7 @@ const DocsInput = () => {
         <div>
           <h4>TYPE: number</h4>
           <br />
-          <Input labeltext="number" type="number" />
+          <Input labeltext="number" type="number" placeholder="Placeholder"/>
         </div>
         <div>
           <h4>TYPE: range</h4>
@@ -78,7 +78,7 @@ const DocsInput = () => {
         <div>
           <h4>TYPE: tel</h4>
           <br />
-          <Input labeltext="tel" type="tel" />
+          <Input labeltext="tel" type="tel" placeholder="Placeholder"/>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ const DocsInput = () => {
         <div>
           <h4>TYPE: password</h4>
           <br />
-          <Input labeltext="password" type="password" />
+          <Input labeltext="password" type="password" placeholder="Placeholder"/>
         </div>
         <div>
           <h4>TYPE: reset</h4>

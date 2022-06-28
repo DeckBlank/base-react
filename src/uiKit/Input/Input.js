@@ -3,7 +3,7 @@ import "./_Input.scss";
 import { Icon } from "@iconify/react";
 
 const Input = (props) => {
-  let { id, icon, type, value, step, name, placeholder, labeltext, title, htmlfor, autocomplete, classname, min, max, size, pattern, maxlength, width, height } =
+  let { id, icon, type, value, step, name, placeholder, labeltext, title, htmlfor, autocomplete, classname, min, max, size, pattern, maxlength, width, height, results } =
     props;
   return (
     <div className="input-flex-column">
@@ -26,6 +26,7 @@ const Input = (props) => {
           autocomplete={autocomplete}
           width={width} 
           height={height}
+          results={results}
         />
 
         <Icon icon={icon} className="icon-input" />
