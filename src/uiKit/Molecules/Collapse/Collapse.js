@@ -20,7 +20,7 @@ const Collapse = (props) => {
       />
       <div style={{display: `${sCollapse ? "block" : "none"}`}}
       >
-        {props.children}
+       {props.children}
       </div>
     </div>
   );
