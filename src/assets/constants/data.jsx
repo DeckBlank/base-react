@@ -2,22 +2,22 @@ import images from './images';
 
 const dropdownAvatar = [
   {
-    imgUrl: images.editarPerfilPsico,
+    imgUrl: images.LogoMab,
     title: 'Option 1',
     path: './',
   },
   {
-    imgUrl: images.editarPerfilPsico,
+    icon: "ant-design:home-filled",
     title: 'Option 2',
     path: './',
   },
   {
-    imgUrl: images.editarPerfilPsico,
+    icon: "ant-design:home-filled",
     title: 'Option 3',
     path: './',
   },
   {
-    imgUrl: images.editarPerfilPsico,
+    icon: "ant-design:home-filled",
     title: 'Option 4',
     path: './',
   },
@@ -25,22 +25,22 @@ const dropdownAvatar = [
 
 const dropdownEditState = [
   {
-    imgUrl: images.reprogramar,
+    icon: "ant-design:home-filled",
     title: 'Cancelar',
     path: './',
   },
   {
-    imgUrl: images.reporte,
+    icon: "ant-design:home-filled",
     title: 'Reporte',
     path: './',
   },
   {
-    imgUrl: images.reprogramar,
+    icon: "ant-design:home-filled",
     title: 'Reprogramar',
     path: './',
   },
   {
-    imgUrl: images.reprogramar,
+    icon: "ant-design:home-filled",
     title: 'Anular',
     path: './',
   },
@@ -48,22 +48,22 @@ const dropdownEditState = [
 
 const dropdownEditClass = [
   {
-    imgUrl: images.enviarInfo,
+    icon: "ant-design:home-filled",
     title: 'Enviar información',
     path: './',
   },
   {
-    imgUrl: images.editarPerfilPsico,
+    icon: "ant-design:home-filled",
     title: 'Editar perfil psicológico',
     path: './',
   },
   {
-    imgUrl: images.eliminar,
+    icon: "ant-design:home-filled",
     title: 'Eliminar',
     path: './',
   },
   {
-    imgUrl: images.inhabilitar,
+    icon: "ant-design:home-filled",
     title: 'Inhabilitar',
     path: './',
   },
