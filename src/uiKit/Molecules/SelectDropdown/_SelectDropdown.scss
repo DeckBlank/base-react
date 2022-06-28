@@ -1,0 +1,65 @@
+@import "../../../App.scss";
+
+.select-flex-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: column;
+  text-transform: capitalize;
+  label {
+    font-size: $small;
+    text-transform: capitalize;
+  }
+}
+
+.content-select-drop {
+  width: 100%;
+  position: relative;
+  .form-select-drop{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.6em 2em 0.6em 0.8em;
+    outline: 0;
+    border: 0;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    border-radius: 8px;
+    text-transform: capitalize;
+    position: relative;
+    transition: all 0.25s ease;
+    color: $silver;
+    z-index: 2;
+    font-size: small;
+
+    &::-ms-expand {
+      display: none;
+      background-color: transparent;
+    }
+
+    &:hover{
+      border: 1px solid $gray;
+      color: $gray;
+    }
+  }  
+
+  .form-select-collap {
+    border-radius: 8px 8px 0 0 !important;
+  }
+  
+  .icon-select-drop {
+    position: absolute;
+    font-size: x-large;
+    right: 0.7rem;
+    top: calc(50% - 0.7rem);
+    display: block;
+    color: $silver;
+    // transform: rotate(90deg);
+    transition: all 0.25s ease;
+  }
+}
+
+

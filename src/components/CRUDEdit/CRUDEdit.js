@@ -1,5 +1,5 @@
 import React ,{useCallback} from "react";
-import Table from "../../uiKit/TableSimple/TableSimple";
+import Table from "../../uiKit/Molecules/TableSimple/TableSimple";
 import './_CRUDEdit.scss';
 
 

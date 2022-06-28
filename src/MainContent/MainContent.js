@@ -2,11 +2,11 @@ import React, { Suspense, useState } from 'react';
 import { Route, Routes ,useNavigate, Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileLines } from "@fortawesome/free-solid-svg-icons";
-import NavBar from "../components/NavBar/NavBar";
-import SideBar from "../components/SideBar/SideBar";
 import LogoMab from "../assets/images/Logo de MAB.png";
 import useToken from '../useToken';
 import './_MainContent.scss';
+import SideBar from '../uiKit/Organism/SideBar/SideBar';
+import NavBar from '../uiKit/Organism/NavBar/NavBar';
 
 
 const loading = (

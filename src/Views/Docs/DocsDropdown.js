@@ -1,22 +1,22 @@
 import React from "react";
-import Avatar from "../../uiKit/Avatar/Avatar";
-import Dropdown from "../../uiKit/Dropdown/Dropdown";
-import DropdownAvatar from "../../uiKit/DropdownAvatar/DropdownAvatar";
-import ListGroup from "../../uiKit/ListGroup/ListGroup";
-import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
+import Avatar from "../../uiKit/Atoms/Avatar/Avatar";
+import Dropdown from "../../uiKit/Molecules/Dropdown/Dropdown";
+import DropdownAvatar from "../../uiKit/Molecules/DropdownAvatar/DropdownAvatar";
+import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
 import OptionsListGroupLink from "../../assets/Jsons/listgroup-list-icon-link.json";
-import LinkItem from "../../uiKit/LinkItem/LinkItem";
-import ButtonItem from "../../uiKit/ButtonItem/ButtonItem";
-import Collapse from "../../uiKit/Collapse/Collapse";
-import Details from "../../uiKit/Details/Details";
-import FormFilter from "../../uiKit/FormFilter/FormFilter";
-import RadioBtn from "../../uiKit/RadioBtn/RadioBtn";
-import SwitchBtn from "../../uiKit/SwitchBtn/SwitchBtn";
-import Select from "../../uiKit/Select/Select";
-import OptionsList from "../../assets/Jsons/options-list.json";
-import Option from "../../uiKit/Select/Option";
-import SelectDropdown from "../../uiKit/SelectDropdown/SelectDropdown";
+import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
+import ButtonItem from "../../uiKit/Atoms/ButtonItem/ButtonItem";
+import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
+import Details from "../../uiKit/Atoms/Details/Details";
+import FormFilter from "../../uiKit/Organism/FormFilter/FormFilter";
+import RadioBtn from "../../uiKit/Atoms/RadioBtn/RadioBtn";
+import SwitchBtn from "../../uiKit/Atoms/SwitchBtn/SwitchBtn";
+import Select from "../../uiKit/Atoms/Select/Select";
+import Option from "../../uiKit/Atoms/Select/Option";
+import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 
+import OptionsList from "../../assets/Jsons/options-list.json";
+import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
 const DocsDropdown = () => {
   return (
     <div>

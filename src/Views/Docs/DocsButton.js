@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../uiKit/Button/Button";
+import Button from "../../uiKit/Atoms/Button/Button";
 import { Icon } from '@iconify/react';
 
 const DocsButton = () => {

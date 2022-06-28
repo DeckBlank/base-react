@@ -1,6 +1,6 @@
 import React from "react";
-import Badge from "../../uiKit/Badge/Badge";
-import Button from "../../uiKit/Button/Button";
+import Badge from "../../uiKit/Atoms/Badge/Badge";
+import Button from "../../uiKit/Atoms/Button/Button";
 import { Icon } from "@iconify/react";
 
 const DocsBadge = () => {

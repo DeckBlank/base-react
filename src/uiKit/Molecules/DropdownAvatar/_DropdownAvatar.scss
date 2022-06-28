@@ -1,0 +1,28 @@
+@import "../../../App.scss";
+
+.avatar-dropdown {
+  display: flex;
+  align-items: center;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    // padding: 0;
+    p {
+      display: block;
+    }
+  }
+}
+
+@media screen and(max-width:768px) {
+  .avatar-dropdown {
+    button {
+      gap: 0;
+      p {
+        display: none;
+      }      
+    }
+  }
+}
+

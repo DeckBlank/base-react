@@ -3,14 +3,15 @@ import { Route, Routes, useNavigate, useLocation } from "react-router-dom";
 // import { AiFillHome } from "react-icons/ai";
 // import { IoIosListBox } from "react-icons/io";
 // import { BsFillFileEarmarkBarGraphFill } from "react-icons/bs";
-import NavBar from "../../components/NavBar/NavBar";
-import SideBar from "../../components/SideBar/SideBar";
+import NavBar from "../../uiKit/Organism/NavBar/NavBar";
+import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
 import SideBarListGroup from "../../assets/Jsons/sidebar-list -docs.json";
-import ListGroup from "../../uiKit/ListGroup/ListGroup";
-import LinkItem from "../../uiKit/LinkItem/LinkItem";
+import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
+import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
+
 
 const loading = (
   <div className="pt-3 text-center">

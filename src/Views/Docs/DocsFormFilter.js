@@ -1,12 +1,12 @@
 import React from "react";
-import FormFilter from "../../uiKit/FormFilter/FormFilter";
-import FormFilterEjm from "../../uiKit/FormFilter/FormFilterEjm";
-import RadioBtn from "../../uiKit/RadioBtn/RadioBtn";
-import Select from "../../uiKit/Select/Select";
-import SwitchBtn from "../../uiKit/SwitchBtn/SwitchBtn";
+import FormFilter from "../../uiKit/Organism/FormFilter/FormFilter";
+import FormFilterEjm from "../../uiKit/Organism/FormFilter/FormFilterEjm";
+import RadioBtn from "../../uiKit/Atoms/RadioBtn/RadioBtn";
+import Select from "../../uiKit/Atoms/Select/Select";
+import SwitchBtn from "../../uiKit/Atoms/SwitchBtn/SwitchBtn";
+import Option from "../../uiKit/Atoms/Select/Option";
+import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 import OptionsList from "../../assets/Jsons/options-list.json";
-import Option from "../../uiKit/Select/Option";
-import SelectDropdown from "../../uiKit/SelectDropdown/SelectDropdown";
 
 const DocsFormFilter = () => {
   return (

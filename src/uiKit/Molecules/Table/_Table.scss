@@ -1,0 +1,112 @@
+@import "../../../App.scss";
+
+.table-container {
+  background-color: $white;
+  border-radius: 10px;
+  font-size: small;
+  // border: 1px solid $silver;
+}
+
+table {
+  width: 100%;
+  min-width: 400px;
+  border-spacing: 0;
+  border: 1px solid $silver;
+  tr {
+    text-align: left;
+    border-radius: 10px;
+    :last-child {
+      td {
+        border-bottom: 0;
+      }
+    }
+  }
+
+  th,
+  td {
+    margin: 0;
+    padding: 0.5rem;
+    border: 1px solid $silver;
+    text-transform: capitalize;
+    // border-bottom: 1px solid $silver;
+    // border-right: 1px solid $silver;
+
+    :last-child {
+      border-right: 0;
+    }
+  }
+}
+
+thead {
+  background-color: $white;
+  color: $gray;
+  font-weight: bolder;
+}
+
+tbody > tr:hover {
+  background-color: $fuchsia;
+  color: $white;
+}
+
+.table__pagination-mix {
+  button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid $silver;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    &:hover {
+      background-color: $fuchsia;
+      color: $white;
+      font-weight: 600;
+    }
+    &:active:hover {
+      background-color: $fuchsia;
+      color: $black;
+      font-weight: 600;
+    }
+  }
+  input {
+    border-radius: 10px;
+    border: 1px solid $silver;
+    padding: 0.2rem 0.5rem;
+  }
+  select {
+    border-radius: 10px;
+    border: 1px solid $silver;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+.table__pagination-mix {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+
+  .flex-responsive-pagination {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+  .flex-arrows-btns-pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+@media screen and(max-width:768px) {
+  .table__pagination-mix {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

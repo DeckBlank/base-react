@@ -1,8 +1,8 @@
 import React from "react";
-import Table from "../../uiKit/Table/Table";
-import customerList from "../../assets/Jsons/customers-list.json";
-import TableSimple from "../../uiKit/TableSimple/TableSimple";
-import Button from "../../uiKit/Button/Button";
+import Table from "../../uiKit/Molecules/Table/Table";
+import TableSimple from "../../uiKit/Molecules/TableSimple/TableSimple";
+import Button from "../../uiKit/Atoms/Button/Button";
+import CustomerList from "../../assets/Jsons/customers-list.json";
 import IconoTutor from "../../assets/images/icono de tutor.png";
 import { BsThreeDotsVertical } from "react-icons/bs";
 
@@ -16,9 +16,9 @@ const DocsTable = () => {
 
   const fetchData = () => {
     setLoading(true);
-    //const customerList= await namefuncion ()
-    setData(customerList);
-    setPageCount(customerList.length);
+    //const CustomerList= await namefuncion ()
+    setData(CustomerList);
+    setPageCount(CustomerList.length);
     setLoading(false);
   };
 
@@ -100,7 +100,7 @@ const DocsTable = () => {
         limit="10"
         headData={customerTableHead}
         renderHead={(item, index) => renderHead(item, index)}
-        bodyData={customerList}
+        bodyData={CustomerList}
         renderBody={(item, index) => renderBody(item, index)}
       />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "../../uiKit/Input/Input";
+import Input from "../../uiKit/Atoms/Input/Input";
 
 const DocsInput = () => {
   return (

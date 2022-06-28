@@ -1,5 +1,5 @@
 import React from "react";
-import FilterCardButton from "../../uiKit/FilterCardButton/FilterCardButton";
+import FilterCardButton from "../../uiKit/Atoms/FilterCardButton/FilterCardButton";
 
 const DocsFilterCardBtn = () => {
   return (
