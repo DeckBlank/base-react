@@ -8,7 +8,7 @@ import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json
 
 const SelectDropdown = (props) => {
   let { id, selectedtext, labeltext } = props;
-  
+
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
 
@@ -20,20 +20,27 @@ const SelectDropdown = (props) => {
     console.log(selectedOption);
   };
 
-
-
   return (
     <div className="select-flex-column ">
       <label>{labeltext}</label>
       <div className="content-select-drop">
-        <div id={id} className={`form-select-drop ${
-        isOpen ? "form-select-collap" : null
-      } `} onClick={toggling}>
+        <div
+          id={id}
+          className={`form-select-drop ${
+            isOpen ? "form-select-collap" : null
+          } `}
+          onClick={toggling}
+        >
           <IoIosArrowDown className="icon-select-drop" />
-          {selectedOption || <p>{selectedtext}</p> }
+          {selectedOption || <p>{selectedtext}</p>}
         </div>
         {isOpen && (
           <ListGroup classname="collapse-selects collapse-select-absolute">
+            <ButtonItem
+              classname="selected-item border-top-formfilter"
+              onclick={onOptionClicked(selectedtext)}
+              text={selectedtext}
+            />
             {OptionsListGroupBtn.map((item) => (
               <ButtonItem
                 classname="collapse-selects-item border-top-formfilter"
