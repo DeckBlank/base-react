@@ -1,5 +1,6 @@
 import React from "react";
 import FormFilter from "../../uiKit/FormFilter/FormFilter";
+import FormFilterEjm2 from "../../uiKit/FormFilter/FormFilterEjm2";
 import FormFilterEjm from "../../uiKit/FormFilter/FormFilterEjm";
 import RadioBtn from "../../uiKit/RadioBtn/RadioBtn";
 import Select from "../../uiKit/Select/Select";
@@ -110,11 +111,18 @@ const DocsFormFilter = () => {
       </div>
       <br />
 
-      <h2>FORM FILTERS FUNCTIONAL</h2>
+      <h2>FORM FILTERS FUNCTIONAL WITH HOOKS</h2>
       <br />
       <div>
         <FormFilterEjm />
+      </div> 
+
+       <h2>FORM FILTERS FUNCTIONAL </h2>
+      <br />
+      <div>
+        <FormFilterEjm2 />
       </div>
+
     </div>
   );
 };
