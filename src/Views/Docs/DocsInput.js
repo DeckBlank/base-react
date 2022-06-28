@@ -119,7 +119,7 @@ const DocsInput = () => {
         <div>
           <h4>TYPE: image</h4>
           <br />
-          <Input labeltext="image" type="image" />
+          <Input labeltext="image" type="image" src="" />
         </div>
         <div>
           <h4>TYPE: password</h4>
