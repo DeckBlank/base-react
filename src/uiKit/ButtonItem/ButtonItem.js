@@ -4,9 +4,9 @@ import "./_ButtonItem.scss";
 import PropTypes from "prop-types";
 
 const ButtonItem = (props) => {
-  let { classname, icon, text, id, name, type, onclick, key } = props;
+  let { classname, icon, text, id, name, type, onclick } = props;
   return (
-    <div className="btn-item li-content" key={key}>
+    <div className="btn-item li-content">
       <button
         id={id}
         name={name}

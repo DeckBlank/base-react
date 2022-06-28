@@ -6,7 +6,7 @@ import "./_Dropdown.scss";
 
 const Dropdown = (props) => {
   
-  let { id, key, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
@@ -15,7 +15,7 @@ const Dropdown = (props) => {
     };
  
   return (
-    <div className={`dropdown-group ${direction}`} key={key}>
+    <div className={`dropdown-group ${direction}`} >
       <Button        
         type={type}
         id={id}

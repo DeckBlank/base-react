@@ -9,11 +9,10 @@ const LinkItem = (props) => {
     classname,
     icon,
     route,
-    text,
-    key
+    text
   } = props;
   return (
-    <div className="li-content" key={key}>
+    <div className="li-content">
       <Link
         className={`li-items ${classname}`}
         to={route}
@@ -29,6 +28,5 @@ const LinkItem = (props) => {
 LinkItem.propTypes = {
   id: PropTypes.string,
   text: PropTypes.string,
-  key: PropTypes.string,
 };
 export default LinkItem;

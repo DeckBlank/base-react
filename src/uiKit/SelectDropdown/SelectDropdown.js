@@ -46,7 +46,6 @@ const SelectDropdown = (props) => {
                 classname="collapse-selects-item border-top-formfilter"
                 onclick={onOptionClicked(item.display_name)}
                 text={item.display_name}
-                key={item.key}
               />
             ))}
           </ListGroup>

@@ -28,28 +28,24 @@ const DocsDropdown = () => {
           route="/"
           icon="bx:package"
           classname="collapse-selects-item"
-          key="key a"
         />
         <LinkItem
           text="Link for dropdown"
           route="/"
           icon="bx:package"
           classname="dropdown-group-list-item"
-          key="key b"
         />
         <LinkItem
           text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="collapse-sidebar-item"
-          key="key c"
         />
         <LinkItem
           text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
-          key="key d"
         />
       </div>
       <br />
@@ -61,25 +57,21 @@ const DocsDropdown = () => {
           text="Button for Select"
           icon="bx:package"
           classname="collapse-selects-item"
-          key="key aa"
         />
         <ButtonItem
           text="Button for Dropdown"
           icon="bx:package"
           classname="dropdown-group-list-item"
-          key="key bb"
         />
         <ButtonItem
           text="Button for Sidebar"
           icon="bx:package"
           classname="collapse-sidebar-item"
-          key="key cc"
         />
         <ButtonItem
           text="Button for Sidebar"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
-          key="key dd"
         />
       </div>
       <br />
@@ -90,12 +82,12 @@ const DocsDropdown = () => {
           <h3>(S/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -104,12 +96,12 @@ const DocsDropdown = () => {
           <h3>(DROPDOWN)</h3>
           <br />
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -118,12 +110,12 @@ const DocsDropdown = () => {
           <h3>(COLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="collapse-sidebar">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="collapse-sidebar-item border-bottom-sidebar"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -132,12 +124,12 @@ const DocsDropdown = () => {
           <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="uncollapse-sidebar-item border-bottom-sidebar"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -152,13 +144,13 @@ const DocsDropdown = () => {
           <h3>(D/C-SELECT)</h3>
           <br />
           <ListGroup classname="collapse-selects">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 icon={item.icon}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -167,13 +159,13 @@ const DocsDropdown = () => {
           <h3>(DROPDOWN-BUTTON)</h3>
           <br />
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 icon={item.icon}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -182,13 +174,13 @@ const DocsDropdown = () => {
           <h3>(COLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="collapse-sidebar">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="collapse-sidebar-item border-bottom-sidebar"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -197,13 +189,13 @@ const DocsDropdown = () => {
           <h3>(UNCOLLAPSE-SIDEBAR)</h3>
           <br />
           <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="uncollapse-sidebar-item border-bottom-sidebar "
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -272,33 +264,33 @@ const DocsDropdown = () => {
             selectedtext="Seleccionar Tutor"
             labelfor="labelfor"
           >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} key={item.key}/>
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
           <br />
-          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor" key="key 12"/> 
+          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor"/> 
           </Details>
         </div>
-        <div className="flex-responsive-docs">
+        {/* <div className="flex-responsive-docs">
           <h3>(BUTTON / LISTGROUP)</h3>
           <br />
           <Collapse                
             text="Collapse"
           >
             <ListGroup classname="collapse-sidebar">
-              {OptionsListGroupBtn.map((item) => (
+              {OptionsListGroupBtn.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
                   route={item.route}
                   classname="collapse-sidebar-item border-bottom-sidebar"
-                  key={item.key}
+                  key={index}
                 />
               ))}
             </ListGroup>
           </Collapse> 
-        </div>
-      </div>
+        </div>*/}
+      </div> 
       <br />
       <h2>DROPDOWN AVATAR</h2>
       <br />
@@ -314,13 +306,13 @@ const DocsDropdown = () => {
           text="Usuario 1"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -337,13 +329,13 @@ const DocsDropdown = () => {
           text="Usuario 2"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item. index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -357,16 +349,15 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropend"
-          text="Usuario 3"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -383,13 +374,13 @@ const DocsDropdown = () => {
           text="Usuario 4"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -411,12 +402,12 @@ const DocsDropdown = () => {
           text="Hacia Abajo"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -433,12 +424,12 @@ const DocsDropdown = () => {
           text="Hacia Arriba"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -455,12 +446,12 @@ const DocsDropdown = () => {
           text="Hacia derecha"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>
@@ -477,12 +468,12 @@ const DocsDropdown = () => {
           text="Hacia izquierda"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item) => (
+            {OptionsListGroupBtn.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>

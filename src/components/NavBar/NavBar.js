@@ -51,13 +51,13 @@ const NavBar = (props) => {
           text="Usuario 1"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupLink.map((item) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
-                key={item.key}
+                key={index}
               />
             ))}
           </ListGroup>

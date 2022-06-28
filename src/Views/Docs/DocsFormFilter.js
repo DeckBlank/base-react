@@ -25,8 +25,8 @@ const DocsFormFilter = () => {
         <div>
           <h2>SELECT / OPTIONS</h2>
           <Select size="1" selectedtext="Options selected">
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index} />
             ))}
           </Select>
         </div>
@@ -72,8 +72,8 @@ const DocsFormFilter = () => {
             selectedtext="Seleccionar Tutor"
             labeltext="Tutor:"
           >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
           <br />
@@ -82,8 +82,8 @@ const DocsFormFilter = () => {
             selectedtext="Seleccionar Alumno"
             labeltext="Alumno:"
           >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
         </div>

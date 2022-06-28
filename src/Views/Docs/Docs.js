@@ -60,13 +60,13 @@ const Docs = (props) => {
 
       <SideBar show={show} bgcolor="bg-gray">
         <ListGroup classname="uncollapse-sidebar li-items-sidebar">
-          {SideBarListGroup.map((item) => (
+          {SideBarListGroup.map((item, index) => (
             <LinkItem
               text={item.display_name}
               route={item.route}
               icon={item.icon}
               classname="uncollapse-sidebar-item border-bottom-sidebar "
-              key={item.key}
+              key={index}
             />
           ))}
         </ListGroup>

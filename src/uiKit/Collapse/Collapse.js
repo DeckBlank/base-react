@@ -5,14 +5,13 @@ import ButtonItem from "../ButtonItem/ButtonItem";
 
 const Collapse = (props) => {
 
-  let{key} = props;
   const [sCollapse, setsCollapse] = useState(false);
   const showCollapse = () => {
     setsCollapse(!sCollapse);
   };
 
   return (
-    <div className={`collapse-group`} key={key}>
+    <div className={`collapse-group`} >
       <ButtonItem
         text="Button for Sidebar"
         icon="bx:package"
