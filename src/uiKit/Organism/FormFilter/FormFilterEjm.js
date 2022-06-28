@@ -13,8 +13,10 @@ class FormFilterEjm extends Component {
 
   onValueChange(event) {
     this.setState({
-      selectedOption: event.target.value,
-    });
+      selectedOption: event.target.value,      
+    }    
+    );
+    console.log(event.target);
   }
 
   formSubmit(event) {

@@ -7,6 +7,7 @@ import SwitchBtn from "../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import Option from "../../uiKit/Atoms/Select/Option";
 import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 import OptionsList from "../../assets/Jsons/options-list.json";
+import FormFilterEjm2 from "../../uiKit/Organism/FormFilter/FormFilterEjm2";
 
 const DocsFormFilter = () => {
   return (
@@ -98,11 +99,18 @@ const DocsFormFilter = () => {
       </div>
       <br />
 
-      <h2>FORM FILTERS FUNCTIONAL</h2>
+      <h2>FORM FILTERS FUNCTIONAL WITH HOOKS</h2>
       <br />
       <div>
         <FormFilterEjm />
+      </div> 
+
+       <h2>FORM FILTERS FUNCTIONAL </h2>
+      <br />
+      <div>
+        <FormFilterEjm2 />
       </div>
+
     </div>
   );
 };
