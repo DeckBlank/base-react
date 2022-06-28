@@ -1,12 +1,7 @@
 import React from "react";
 import { useTable, usePagination, useSortBy } from "react-table";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleRight,
-  faAngleLeft,
-  faAnglesLeft,
-  faAnglesRight,
-} from "@fortawesome/free-solid-svg-icons";
+import { Icon } from "@iconify/react";
+
 import "./_Table.scss";
 
 export default function TablePaginations({
@@ -99,19 +94,31 @@ export default function TablePaginations({
         <div className="flex-responsive-pagination">
           <div className="flex-arrows-btns-pagination">
             <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-              <FontAwesomeIcon icon={faAnglesLeft} className="nav-link-icon" />
+              <Icon
+                icon="fluent:arrow-previous-24-filled"
+                className="nav-link-icon font-l"
+              />
             </button>{" "}
             <button onClick={() => previousPage()} disabled={!canPreviousPage}>
-              <FontAwesomeIcon icon={faAngleLeft} className="nav-link-icon" />
+              <Icon
+                icon="eva:arrow-ios-back-outline"
+                className="nav-link-icon font-xl"
+              />
             </button>{" "}
             <button onClick={() => nextPage()} disabled={!canNextPage}>
-              <FontAwesomeIcon icon={faAngleRight} className="nav-link-icon" />
+              <Icon
+                icon="eva:arrow-ios-forward-outline"
+                className="nav-link-icon font-xl"
+              />
             </button>{" "}
             <button
               onClick={() => gotoPage(pageCount - 1)}
               disabled={!canNextPage}
             >
-              <FontAwesomeIcon icon={faAnglesRight} className="nav-link-icon" />
+              <Icon
+                icon="fluent:arrow-next-24-filled"
+                className="nav-link-icon font-l"
+              />
             </button>{" "}
           </div>
           <span>

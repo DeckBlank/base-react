@@ -33,8 +33,7 @@ const FormFilterEjm2 = (props) => {
       <section>
         <form className="formFilter__container" >         
           <label
-            className="switch border-botton-formfilter"
-            
+            className="switch border-bottom-formfilter"          
             onClick={_iChecked}
           >
             Option 0
@@ -42,7 +41,7 @@ const FormFilterEjm2 = (props) => {
             <span className="slider round"></span>
           </label>
 
-          <label className="form-control border-botton-formfilter">
+          <label className="form-control border-bottom-formfilter">
             <input
               type="radio"
               name="r1"
@@ -53,7 +52,7 @@ const FormFilterEjm2 = (props) => {
             Option 1
           </label>
 
-          <label className="form-control border-botton-formfilter">
+          <label className="form-control border-bottom-formfilter">
             <input
               type="radio"
               value="Option2"

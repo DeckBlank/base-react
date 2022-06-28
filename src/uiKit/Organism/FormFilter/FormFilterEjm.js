@@ -13,10 +13,8 @@ class FormFilterEjm extends Component {
 
   onValueChange(event) {
     this.setState({
-      selectedOption: event.target.value,      
-    }    
-    );
-    console.log(event.target);
+      selectedOption: event.target.value,
+    });
   }
 
   formSubmit(event) {
@@ -34,45 +32,41 @@ class FormFilterEjm extends Component {
           _onChange={(parametro) => (this.onValueChange(parametro))}
           /> */}
           <label
-            className="switch border-bottom-formfilter"
+            class="switch border-bottom-formfilter"
             checked={this.state.selectedOption === "Option0"}
             onChange={this.onValueChange}
-            htmlFor="formfilter"
           >
             Option 0
             <input type="checkbox" value="Option0" />
-            <span className="slider round"></span>
+            <span class="slider round"></span>
           </label>
 
-          <label className="form-control border-bottom-formfilter">
+          <label class="form-control border-bottom-formfilter">
             <input
               type="radio"
               value="Option1"
               checked={this.state.selectedOption === "Option1"}
               onChange={this.onValueChange}
-              htmlFor="formfilter"
             />
             Option 1
           </label>
 
-          <label className="form-control border-bottom-formfilter">
+          <label class="form-control border-bottom-formfilter">
             <input
               type="radio"
               value="Option2"
               checked={this.state.selectedOption === "Option2"}
               onChange={this.onValueChange}
-              htmlFor="formfilter"
             />
             Option 2
           </label>
 
-          <label className="form-control">
+          <label class="form-control">
             <input
               type="radio"
               value="Option3"
               checked={this.state.selectedOption === "Option3"}
               onChange={this.onValueChange}
-              htmlFor="formfilter"
             />
             Option 3
           </label>

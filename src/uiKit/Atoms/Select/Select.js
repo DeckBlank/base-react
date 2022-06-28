@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { IoIosArrowDown } from "react-icons/io";
+import { Icon } from "@iconify/react";
 import "./_Select.scss";
 
 const Select = (props) => {
@@ -14,7 +14,7 @@ const Select = (props) => {
         <option className="collapse-selects-item border-top-formfilter selected-option" defaultValue={selectedtext}>{selectedtext}</option>      
         {props.children}     
       </select>
-      <IoIosArrowDown className="icon-select"/>
+      <Icon icon="eva:arrow-ios-downward-outline" className="icon-select"/>
       </div>
     </div>
   );
