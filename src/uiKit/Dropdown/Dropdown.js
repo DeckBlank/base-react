@@ -30,7 +30,7 @@ const Dropdown = (props) => {
       >
         {text}
       </Button>
-      <div className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
+      <div className="dropdown-menu" aria-labelledby={ariaLabelledby} style={{display: `${ sdropdown ? "block" : "none"}`}}>
         {props.children}
       </div>
     </div>
