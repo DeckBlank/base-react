@@ -11,7 +11,7 @@ const Select = (props) => {
       <label>{labeltext}</label>
       <div className="content-select">
       <select id={id} className="form-select" size={size}>      
-        <option className="collapse-selects-item border-top-formfilter selected-option" selected>{selectedtext}</option>      
+        <option className="collapse-selects-item border-top-formfilter selected-option" defaultValue={selectedtext}>{selectedtext}</option>      
         {props.children}     
       </select>
       <IoIosArrowDown className="icon-select"/>
