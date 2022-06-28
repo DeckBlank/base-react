@@ -9,10 +9,11 @@ const LinkItem = (props) => {
     classname,
     icon,
     route,
-    text
+    text,
+    classnameLi
   } = props;
   return (
-    <div className="li-content">
+    <div className={`li-content ${classnameLi}`}>
       <Link
         className={`li-items ${classname}`}
         to={route}

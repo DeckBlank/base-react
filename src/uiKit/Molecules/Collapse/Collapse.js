@@ -18,7 +18,7 @@ const Collapse = (props) => {
         classname="uncollapse-sidebar-item li-items-sidebar"
         onclick={showCollapse}
       />
-      <div className={`${sCollapse ? ".block" : ".none"}`}
+      <div style={{display: `${sCollapse ? "block" : "none"}`}}
       >
         {props.children}
       </div>

@@ -274,11 +274,11 @@ const DocsDropdown = () => {
         <div className="flex-responsive-docs">
           <h3>(BUTTON / LISTGROUP)</h3>
           <br />
-          {/* <Collapse                
+        <Collapse                
             text="Collapse"
           >
             <ListGroup classname="collapse-sidebar">
-              {OptionsListGroupBtn.map((item, index) => (
+              {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
                   route={item.route}
@@ -287,14 +287,14 @@ const DocsDropdown = () => {
                 />
               ))}
             </ListGroup>
-          </Collapse> */}
+          </Collapse>
         </div>
       </div> 
       <br />
       <h2>DROPDOWN AVATAR</h2>
       <br />
       <div className="grid-responsive-docs">
-        {/* <DropdownAvatar
+        <DropdownAvatar
           type="button"
           bgcolor="transparent"
           txtcolor="black"
@@ -305,7 +305,7 @@ const DocsDropdown = () => {
           text="Usuario 1"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -315,9 +315,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </DropdownAvatar> */}
+        </DropdownAvatar> 
 
-        {/* <DropdownAvatar
+        <DropdownAvatar
           type="button"
           bgcolor="black"
           txtcolor="white"
@@ -328,7 +328,7 @@ const DocsDropdown = () => {
           text="Usuario 2"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item. index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -338,9 +338,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </DropdownAvatar> */}
+        </DropdownAvatar>
 
-        {/* <DropdownAvatar
+        <DropdownAvatar
           type="button"
           bgcolor="red"
           txtcolor="white"
@@ -348,9 +348,10 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           direction="dropend"
+          text="Usuario 3"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -360,9 +361,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </DropdownAvatar> */}
+        </DropdownAvatar> 
 
-        {/* <DropdownAvatar
+        <DropdownAvatar
           type="button"
           bgcolor="gray"
           txtcolor="white"
@@ -373,7 +374,7 @@ const DocsDropdown = () => {
           text="Usuario 4"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -383,14 +384,14 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </DropdownAvatar> */}
+        </DropdownAvatar>
       </div>
       <br />
       <br />
       <h2>DROPDOWN DIRECTIONS</h2>
       <br />
       <div className="grid-responsive-docs">
-        {/* <Dropdown
+        <Dropdown
           type="button"
           bgcolor="fuchsia"
           txtcolor="white"
@@ -401,7 +402,7 @@ const DocsDropdown = () => {
           text="Hacia Abajo"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -410,9 +411,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </Dropdown> */}
+        </Dropdown> 
 
-        {/* <Dropdown
+        <Dropdown
           type="button"
           bgcolor="yellow"
           txtcolor="white"
@@ -423,7 +424,7 @@ const DocsDropdown = () => {
           text="Hacia Arriba"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -432,9 +433,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </Dropdown> */}
+        </Dropdown> 
 
-        {/* <Dropdown
+        <Dropdown
           type="button"
           bgcolor="green"
           txtcolor="white"
@@ -445,7 +446,7 @@ const DocsDropdown = () => {
           text="Hacia derecha"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -454,9 +455,9 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </Dropdown> */}
+        </Dropdown>
 
-        {/* <Dropdown
+        <Dropdown
           type="button"
           bgcolor="blue"
           txtcolor="white"
@@ -467,7 +468,7 @@ const DocsDropdown = () => {
           text="Hacia izquierda"
         >
           <ListGroup classname="dropdown-group-list">
-            {OptionsListGroupBtn.map((item, index) => (
+            {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
@@ -476,7 +477,7 @@ const DocsDropdown = () => {
               />
             ))}
           </ListGroup>
-        </Dropdown> */}
+        </Dropdown>
       </div>
     </div>
   );

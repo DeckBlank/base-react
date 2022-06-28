@@ -2,10 +2,28 @@ import React from "react";
 import Badge from "../../uiKit/Atoms/Badge/Badge";
 import Button from "../../uiKit/Atoms/Button/Button";
 import { Icon } from "@iconify/react";
+import Breadcrumb from "../../uiKit/Atoms/Breadcrumb/Breadcrumb";
+import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
+import SideBarListGroup from "../../assets/Jsons/sidebar-list -docs.json";
 
 const DocsBadge = () => {
   return (
     <div>
+      <div>
+        <h2>BREADCRUMB</h2>
+        <br />
+        {/* <Breadcrumb/> */}
+        {/* <Breadcrumb textpage="Page" classnameLi="breadcrumb-item">
+        {SideBarListGroup.map((item, index) => (
+            <LinkItem
+              text={item.display_name}
+              route={item.route}
+              classname="breadcrumb-item"
+              key={index}
+            />
+          ))}
+        </Breadcrumb> */}
+      </div>
       <div>
         <h2>BADGE</h2>
         <br />
@@ -147,7 +165,7 @@ const DocsBadge = () => {
         <Icon icon="majesticons:more-menu-vertical" className="txt-gray font-xxl"/>               
         <Icon icon="ic:baseline-do-not-disturb-alt" className="txt-gray font-xxl"/>       
         <Icon icon="bxs:bell" className="txt-gray font-xxl"/>  
-          
+
         <Icon icon="eva:arrow-down-fill" className="txt-gray font-xxl"/>             
         <Icon icon="eva:arrow-ios-downward-outline" className="txt-gray font-xxl"/>          
         <Icon icon="eva:arrow-ios-back-outline" className="txt-gray font-xxl"/>          
