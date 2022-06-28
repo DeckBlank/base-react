@@ -143,7 +143,11 @@ const DocsBadge = () => {
         <Icon icon="fluent:delete-dismiss-20-regular" className="txt-gray font-xxl"/>
         <Icon icon="bx:mail-send" className="txt-gray font-xxl"/>
         <Icon icon="uil:chat-bubble-user" className="txt-gray font-xxl"/>
+        <Icon icon="charm:menu-hamburger" className="txt-gray font-xxl"/>       
+        <Icon icon="majesticons:more-menu-vertical" className="txt-gray font-xxl"/>               
         <Icon icon="ic:baseline-do-not-disturb-alt" className="txt-gray font-xxl"/>       
+        <Icon icon="bxs:bell" className="txt-gray font-xxl"/>       
+        <Icon icon="eva:arrow-ios-downward-fill" className="txt-gray font-xxl"/>          
       </div>
     </div>
   );
