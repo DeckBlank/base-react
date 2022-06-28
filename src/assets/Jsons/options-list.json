@@ -1,32 +1,38 @@
 [
-    {
-        "icon": "bx:shopping-bag",
-        "value": "option value 1",
-        "option": "option 1"
-    },
-    {
-        "icon": "bx:cart",
-        "value": "option value 2",
-        "option": "option 2"
-    },
-    {
-        "icon": "bx:dollar-circle",
-        "value": "option value 3",
-        "option": "option 3"
-    },
-    {
-        "icon": "bx:receipt",
-        "value": "option value 4",
-        "option": "option 4"
-    },
-    {
-        "icon": "bx:receipt",
-        "value": "option value 5",
-        "option": "option 5"
-    },
-    {
-        "icon": "bx:receipt",
-        "value": "option value 6",
-        "option": "option 6"
-    }
+  {
+    "icon": "bx:shopping-bag",
+    "value": "option value 1",
+    "option": "option 1",
+    "key": "key 111"
+  },
+  {
+    "icon": "bx:cart",
+    "value": "option value 2",
+    "option": "option 2",
+    "key": "key 222"
+  },
+  {
+    "icon": "bx:dollar-circle",
+    "value": "option value 3",
+    "option": "option 3",
+    "key": "key 333"
+  },
+  {
+    "icon": "bx:receipt",
+    "value": "option value 4",
+    "option": "option 4",
+    "key": "key 444"
+  },
+  {
+    "icon": "bx:receipt",
+    "value": "option value 5",
+    "option": "option 5",
+    "key": "key 555"
+  },
+  {
+    "icon": "bx:receipt",
+    "value": "option value 6",
+    "option": "option 667",
+    "key": "key 1"
+  }
 ]

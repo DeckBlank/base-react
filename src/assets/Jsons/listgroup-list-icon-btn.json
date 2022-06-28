@@ -1,22 +1,27 @@
 [
     {
         "display_name": "lorem ipsum 1",
-        "icon": "bx:category-alt"
+        "icon": "bx:category-alt",
+        "key": "key 1"
     },
     {
         "display_name": "lorem ipsum 2",
-        "icon": "bx:user-pin"
+        "icon": "bx:user-pin",
+        "key": "key 2"
     },
     {
         "display_name": "lorem ipsum 3",
-        "icon": "bx:package"
+        "icon": "bx:package",
+        "key": "key 3"
     },
     {
         "display_name": "lorem ipsum 4",
-        "icon": "bx:cog"
+        "icon": "bx:cog",
+        "key": "key 4"
     },
     {
         "display_name": "lorem ipsum 5",
-        "icon": "bx:cog"
+        "icon": "bx:cog",
+        "key": "key 5"
     }
 ]

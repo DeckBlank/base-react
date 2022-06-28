@@ -28,24 +28,28 @@ const DocsDropdown = () => {
           route="/"
           icon="bx:package"
           classname="collapse-selects-item"
+          key="key a"
         />
         <LinkItem
           text="Link for dropdown"
           route="/"
           icon="bx:package"
           classname="dropdown-group-list-item"
+          key="key b"
         />
         <LinkItem
           text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="collapse-sidebar-item"
+          key="key c"
         />
         <LinkItem
           text="Link for Sidebar"
           route="/"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
+          key="key d"
         />
       </div>
       <br />
@@ -57,21 +61,25 @@ const DocsDropdown = () => {
           text="Button for Select"
           icon="bx:package"
           classname="collapse-selects-item"
+          key="key aa"
         />
         <ButtonItem
           text="Button for Dropdown"
           icon="bx:package"
           classname="dropdown-group-list-item"
+          key="key bb"
         />
         <ButtonItem
           text="Button for Sidebar"
           icon="bx:package"
           classname="collapse-sidebar-item"
+          key="key cc"
         />
         <ButtonItem
           text="Button for Sidebar"
           icon="bx:package"
           classname="uncollapse-sidebar-item li-items-sidebar"
+          key="key dd"
         />
       </div>
       <br />
@@ -87,6 +95,7 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -100,6 +109,7 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -113,6 +123,7 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="collapse-sidebar-item border-bottom-sidebar"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -126,6 +137,7 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="uncollapse-sidebar-item border-bottom-sidebar"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -146,6 +158,7 @@ const DocsDropdown = () => {
                 icon={item.icon}
                 route={item.route}
                 classname="collapse-selects-item border-top-formfilter"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -160,6 +173,7 @@ const DocsDropdown = () => {
                 icon={item.icon}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -174,6 +188,7 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="collapse-sidebar-item border-bottom-sidebar"
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -188,6 +203,7 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="uncollapse-sidebar-item border-bottom-sidebar "
+                key={item.key}
               />
             ))}
           </ListGroup>
@@ -257,11 +273,11 @@ const DocsDropdown = () => {
             labelfor="labelfor"
           >
             {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+              <Option value={item.value} optiontext={item.option} key={item.key}/>
             ))}
           </Select>
           <br />
-          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor" />
+          <SelectDropdown selectedtext="Seleccionar Alumno" labelfor="labelfor" key="key 12"/> 
           </Details>
         </div>
         <div className="flex-responsive-docs">
@@ -276,17 +292,18 @@ const DocsDropdown = () => {
                   text={item.display_name}
                   route={item.route}
                   classname="collapse-sidebar-item border-bottom-sidebar"
+                  key={item.key}
                 />
               ))}
             </ListGroup>
-          </Collapse>
+          </Collapse> 
         </div>
       </div>
       <br />
       <h2>DROPDOWN AVATAR</h2>
       <br />
       <div className="grid-responsive-docs">
-        <DropdownAvatar
+        {/* <DropdownAvatar
           type="button"
           bgcolor="transparent"
           txtcolor="black"
@@ -303,12 +320,13 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </DropdownAvatar>
+        </DropdownAvatar> */}
 
-        <DropdownAvatar
+        {/* <DropdownAvatar
           type="button"
           bgcolor="black"
           txtcolor="white"
@@ -325,12 +343,13 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </DropdownAvatar>
+        </DropdownAvatar> */}
 
-        <DropdownAvatar
+        {/* <DropdownAvatar
           type="button"
           bgcolor="red"
           txtcolor="white"
@@ -347,12 +366,13 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </DropdownAvatar>
+        </DropdownAvatar> */}
 
-        <DropdownAvatar
+        {/* <DropdownAvatar
           type="button"
           bgcolor="gray"
           txtcolor="white"
@@ -369,17 +389,18 @@ const DocsDropdown = () => {
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </DropdownAvatar>
+        </DropdownAvatar> */}
       </div>
       <br />
       <br />
       <h2>DROPDOWN DIRECTIONS</h2>
       <br />
       <div className="grid-responsive-docs">
-        <Dropdown
+        {/* <Dropdown
           type="button"
           bgcolor="fuchsia"
           txtcolor="white"
@@ -395,12 +416,13 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </Dropdown>
+        </Dropdown> */}
 
-        <Dropdown
+        {/* <Dropdown
           type="button"
           bgcolor="yellow"
           txtcolor="white"
@@ -416,12 +438,13 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </Dropdown>
+        </Dropdown> */}
 
-        <Dropdown
+        {/* <Dropdown
           type="button"
           bgcolor="green"
           txtcolor="white"
@@ -437,12 +460,13 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </Dropdown>
+        </Dropdown> */}
 
-        <Dropdown
+        {/* <Dropdown
           type="button"
           bgcolor="blue"
           txtcolor="white"
@@ -458,10 +482,11 @@ const DocsDropdown = () => {
                 text={item.display_name}
                 route={item.route}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
-        </Dropdown>
+        </Dropdown> */}
       </div>
     </div>
   );

@@ -4,16 +4,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import "./_Select.scss";
 
 const Select = (props) => {
-  let { id, size, selectedtext, labeltext, labelfor } = props;
+  let { id, size, selectedtext, labeltext } = props;
 
   return (
     <div className="select-flex-column ">
-      <label for={labelfor}>{labeltext}</label>
+      <label>{labeltext}</label>
       <div className="content-select">
-      <select id={id} className="form-select" size={size}>
-      
-        <option className="collapse-selects-item border-top-formfilter selected-option" selected>{selectedtext}</option>
-        
+      <select id={id} className="form-select" size={size}>      
+        <option className="collapse-selects-item border-top-formfilter selected-option" selected>{selectedtext}</option>      
         {props.children}     
       </select>
       <IoIosArrowDown className="icon-select"/>

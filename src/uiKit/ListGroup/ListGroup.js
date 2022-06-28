@@ -6,9 +6,9 @@ const ListGroup = (props) => {
     classname,
   } = props;
   return (
-    <ul className={`list-group ${classname}`}>
+    <div className={`list-group ${classname}`}>
       {props.children} 
-    </ul>
+    </div>
   );
 };
 

@@ -71,7 +71,6 @@ const DocsFormFilter = () => {
             size="1"
             selectedtext="Seleccionar Tutor"
             labeltext="Tutor:"
-            labelfor="labelfor"
           >
             {OptionsList.map((item) => (
               <Option value={item.value} optiontext={item.option} />
@@ -82,7 +81,6 @@ const DocsFormFilter = () => {
             size="1"
             selectedtext="Seleccionar Alumno"
             labeltext="Alumno:"
-            labelfor="labelfor"
           >
             {OptionsList.map((item) => (
               <Option value={item.value} optiontext={item.option} />
@@ -92,10 +90,10 @@ const DocsFormFilter = () => {
         <div>
           <h2>FORM FILTERS SELECT / UL-LI</h2>
           <br />
-          <SelectDropdown labeltext="Tutor:" selectedtext="Seleccionar Tutor" labelfor="labelfor" />
+          <SelectDropdown labeltext="Tutor:" selectedtext="Seleccionar Tutor" />
 
           <br />
-          <SelectDropdown labeltext="Alumno:" selectedtext="Seleccionar Alumno" labelfor="labelfor" />
+          <SelectDropdown labeltext="Alumno:" selectedtext="Seleccionar Alumno" />
         </div>
       </div>
       <br />

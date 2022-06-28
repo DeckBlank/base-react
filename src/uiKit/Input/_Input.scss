@@ -1,1 +1,296 @@
 @import "../../App.scss";
+
+.input-flex-column {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: column;
+  text-transform: capitalize;
+
+  label {
+    font-size: $small;
+    text-transform: capitalize;
+    margin-left: 0.5rem;
+  }
+}
+
+.content-input {
+    width: 100%;
+    position: relative;
+    input {
+      // appearance: none;
+      // -webkit-appearance: none;
+      // -moz-appearance: none;
+      // display: inline-block;
+      width: 100%;
+      cursor: pointer;
+      padding: 0.6em 0.8em 0.6em 0.8em;
+      outline: 0;
+      border: 0;
+      border: 1px solid $silver;
+      background-color: transparent;
+      border-radius: 8px;
+      text-transform: capitalize;
+      position: relative;
+      transition: all 0.25s ease;
+      color: $black;
+      z-index: 5;
+      
+      &:hover{
+        border: 1px solid $gray;
+        color: $gray;
+      }
+      &:hover:active{
+        border: 1px solid $gray;
+        color: $gray;
+      }
+      &:hover::after{
+        border: 1px solid $gray;
+        color: $gray;
+      }
+    }
+}
+
+
+.icon-input {
+  position: absolute;
+  font-size: x-large;
+  right: 0.7rem;
+  top: calc(50% - 0.7rem);
+  display: block;
+  color: $gray;
+  // transform: rotate(90deg);
+  transition: all 0.25s ease;
+  z-index: 1;
+  cursor: pointer;
+}
+
+// input[type="date"]::-webkit-calendar-picker-indicator,
+// input[type="date"]::-webkit-calendar-picker-indicator,
+// input[type="month"]::-webkit-calendar-picker-indicator,
+// input[type="time"]::-webkit-calendar-picker-indicator,
+// input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+//   // display: none;
+//   // -webkit-appearance: none; 
+//   padding: 0px;
+//   margin: 0px;
+//   font-size: large;
+//   cursor: pointer;
+// }
+
+
+// INPUT TYPE DATE
+
+input[type=date]::-webkit-datetime-edit-month-field {
+  color: $gray;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+  color: $gray;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+  color: $gray;
+}
+
+input[type=date]::-webkit-clear-button {
+  position: relative;
+  color: $gray;
+  font-weight: 400;
+}
+
+input[type=date]::-webkit-inner-spin-button {
+   // filter: drop-shadow(0 0 0 rgba(0, 0, 0)) invert(100%);
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  padding: 0px;
+  margin: 0px;
+  font-size: large;
+  cursor: pointer;
+   // filter: drop-shadow(0 0 0 rgb(0, 0, 0)) invert(100%);
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator:active {
+  color: $gray;
+  font-weight: 400;
+}
+
+
+// INPUT TYPE MONTH
+
+input[type=month]::-webkit-datetime-edit-month-field {
+  color: $gray;
+}
+
+input[type=month]::-webkit-datetime-edit-day-field {
+  color: $gray;
+}
+
+input[type=month]::-webkit-datetime-edit-year-field {
+  color: $gray;
+}
+
+input[type=month]::-webkit-clear-button {
+  position: relative;
+  color: $gray;
+  font-weight: 400;
+}
+
+input[type=month]::-webkit-inner-spin-button {
+   // filter: drop-shadow(0 0 0 rgba(0, 0, 0)) invert(100%);
+}
+
+input[type=month]::-webkit-calendar-picker-indicator {
+  padding: 0px;
+  margin: 0px;
+  font-size: large;
+  cursor: pointer;
+   // filter: drop-shadow(0 0 0 rgb(0, 0, 0)) invert(100%);
+}
+
+input[type=month]::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=month]::-webkit-calendar-picker-indicator:active {
+  color: $gray;
+  font-weight: 400;
+}
+
+// INPUT TYPE TIME
+
+input[type=time]::-webkit-datetime-edit-month-field {
+  color: $gray;
+}
+
+input[type=time]::-webkit-datetime-edit-day-field {
+  color: $gray;
+}
+
+input[type=time]::-webkit-datetime-edit-year-field {
+  color: $gray;
+}
+
+input[type=time]::-webkit-clear-button {
+  position: relative;
+  color: $gray;
+  font-weight: 400;
+}
+
+input[type=time]::-webkit-inner-spin-button {
+   // filter: drop-shadow(0 0 0 rgba(0, 0, 0)) invert(100%);
+}
+
+input[type=time]::-webkit-calendar-picker-indicator {
+  padding: 0px;
+  margin: 0px;
+  font-size: large;
+  cursor: pointer;
+   // filter: drop-shadow(0 0 0 rgb(0, 0, 0)) invert(100%);
+}
+
+input[type=time]::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=time]::-webkit-calendar-picker-indicator:active {
+  color: $gray;
+  font-weight: 400;
+}
+
+// INPUT TYPE DATETIME-LOCAL
+
+input[type=datetime-local]::-webkit-datetime-edit-month-field {
+  color: $gray;
+}
+
+input[type=datetime-local]::-webkit-datetime-edit-day-field {
+  color: $gray;
+}
+
+input[type=datetime-local]::-webkit-datetime-edit-year-field {
+  color: $gray;
+}
+
+input[type=datetime-local]::-webkit-clear-button {
+  position: relative;
+  color: $gray;
+  font-weight: 400;
+}
+
+input[type=datetime-local]::-webkit-inner-spin-button {
+   // filter: drop-shadow(0 0 0 rgba(0, 0, 0)) invert(100%);
+}
+
+input[type=datetime-local]::-webkit-calendar-picker-indicator {
+  padding: 0px;
+  margin: 0px;
+  font-size: large;
+  cursor: pointer;
+  // filter: drop-shadow(0 0 0 rgb(0, 0, 0)) invert(100%);
+}
+
+input[type=datetime-local]::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=datetime-local]::-webkit-calendar-picker-indicator:active {
+  color: $gray;
+  font-weight: 400;
+}
+
+// INPUT TYPE WEEK
+
+input[type=week]::-webkit-datetime-edit-month-field {
+  color: $gray;
+}
+
+input[type=week]::-webkit-datetime-edit-day-field {
+  color: $gray;
+}
+
+input[type=week]::-webkit-datetime-edit-year-field {
+  color: $gray;
+}
+
+input[type=week]::-webkit-clear-button {
+  position: relative;
+  color: $gray;
+  font-weight: 400;
+}
+
+input[type=week]::-webkit-inner-spin-button {
+   // filter: drop-shadow(0 0 0 rgba(0, 0, 0)) invert(100%);
+}
+
+input[type=week]::-webkit-calendar-picker-indicator {
+  padding: 0px;
+  margin: 0px;
+  font-size: large;
+  cursor: pointer;
+  // filter: drop-shadow(0 0 0 rgb(0, 0, 0)) invert(100%);
+}
+
+input[type=week]::-webkit-calendar-picker-indicator:hover {
+  background-color: transparent;
+  color: transparent;
+  cursor: pointer;
+}
+
+input[type=week]::-webkit-calendar-picker-indicator:active {
+  color: $gray;
+  font-weight: 400;
+}

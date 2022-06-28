@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Icon } from '@iconify/react';
 import './_LinkItem.scss'
+import PropTypes from "prop-types";
 
 const LinkItem = (props) => {
   let {
@@ -9,9 +10,10 @@ const LinkItem = (props) => {
     icon,
     route,
     text,
+    key
   } = props;
   return (
-    <div className="li-content">
+    <div className="li-content" key={key}>
       <Link
         className={`li-items ${classname}`}
         to={route}
@@ -24,5 +26,9 @@ const LinkItem = (props) => {
     </div>
   );
 };
-
+LinkItem.propTypes = {
+  id: PropTypes.string,
+  text: PropTypes.string,
+  key: PropTypes.string,
+};
 export default LinkItem;

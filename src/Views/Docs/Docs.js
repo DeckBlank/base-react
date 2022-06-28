@@ -66,6 +66,7 @@ const Docs = (props) => {
               route={item.route}
               icon={item.icon}
               classname="uncollapse-sidebar-item border-bottom-sidebar "
+              key={item.key}
             />
           ))}
         </ListGroup>

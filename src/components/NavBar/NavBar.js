@@ -57,6 +57,7 @@ const NavBar = (props) => {
                 route={item.route}
                 icon={item.icon}
                 classname="dropdown-group-list-item"
+                key={item.key}
               />
             ))}
           </ListGroup>
