@@ -9,14 +9,13 @@
   label {
     font-size: $small;
     text-transform: capitalize;
-    margin-left: 0.5rem;
   }
 }
 
-.content-select {
+.content-select-drop {
   width: 100%;
   position: relative;
-  select {
+  .form-select-drop{
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -26,7 +25,7 @@
     padding: 0.6em 2em 0.6em 0.8em;
     outline: 0;
     border: 0;
-    border: 1px solid $silver;
+    border: 1px solid #c4c4c4;
     background-color: transparent;
     border-radius: 8px;
     text-transform: capitalize;
@@ -34,6 +33,7 @@
     transition: all 0.25s ease;
     color: $silver;
     z-index: 2;
+    font-size: small;
 
     &::-ms-expand {
       display: none;
@@ -44,10 +44,13 @@
       border: 1px solid $gray;
       color: $gray;
     }
-  }
+  }  
 
+  .form-select-collap {
+    border-radius: 8px 8px 0 0 !important;
+  }
   
-  .icon-select {
+  .icon-select-drop {
     position: absolute;
     font-size: x-large;
     right: 0.7rem;

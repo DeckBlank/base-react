@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-// import { images, data } from "../../assets/constants";
 import PropTypes from "prop-types";
 import Avatar from "../Avatar/Avatar";
 import Button from "../Button/Button";
 import "./_DropdownAvatar.scss";
-// import DropdownLinkAvatar from "./DropdownLinkAvatar";
 
 const DropdownAvatar = (props) => {
   let {
@@ -19,30 +16,12 @@ const DropdownAvatar = (props) => {
     text,
     hoverbgcolor,
     hovertxtcolor,
-    // onclick
-    // title,
-    // path,
-    // imgUrl,
-    // classname,
-    // options,
-    // option
   } = props;
 
   const [sdropdown, setsDropdown] = useState(false);
   const showDropdown = () => {
     setsDropdown(!sdropdown);
   };
-
-  // function DropdownLinkAvatarB({ dropdownAvatar: { imgUrl, title, path } }) {
-  //   return (
-  //     <li className="flex-dropdown-link">
-  //       <Link to={path} onClick={onclick}>
-  //         <img src={imgUrl} alt={title} />
-  //         {title}
-  //       </Link>
-  //     </li>
-  //   );
-  // }
 
   return (
     <div
@@ -65,29 +44,11 @@ const DropdownAvatar = (props) => {
       </div>
       <ul
         id="dropdownAvatars"
-        className="dropdown-menu"
+        className={`dropdown-menu`}
         aria-labelledby={ariaLabelledby}
-        Style={`display: ${sdropdown ? "block" : "none"};`}
+        style={{display: `${sdropdown ? "block" : "none"}`}}
       >
-        {/* {
-         data.dropdownAvatar.map((dropdownLinkAvatar) => <DropdownLinkAvatarB dropdownLinkAvatar={dropdownLinkAvatar} path={dropdownLinkAvatar.path} imgUrl={dropdownLinkAvatar.imgUrl} title={dropdownLinkAvatar.title} /> )
-        } */}
-
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 1
-          </Link>
-        </li>        
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 2
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 3
-          </Link>
-        </li>
+        {props.children}
       </ul>
     </div>
   );

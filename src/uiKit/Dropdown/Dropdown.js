@@ -15,7 +15,7 @@ const Dropdown = (props) => {
     };
  
   return (
-    <div className={`dropdown-group ${direction}`}>
+    <div className={`dropdown-group ${direction}`} >
       <Button        
         type={type}
         id={id}
@@ -30,23 +30,9 @@ const Dropdown = (props) => {
       >
         {text}
       </Button>
-      <ul className="dropdown-menu" aria-labelledby={ariaLabelledby} Style={`display: ${ sdropdown ? "block" : "none"};`}>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 1
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 2
-          </Link>
-        </li>
-        <li>
-          <Link className="dropdown-item" to="./">
-            Item 3
-          </Link>
-        </li>
-      </ul>
+      <div className="dropdown-menu" aria-labelledby={ariaLabelledby} style={{display: `${ sdropdown ? "block" : "none"}`}}>
+        {props.children}
+      </div>
     </div>
     
   );

@@ -19,7 +19,8 @@ const Button = (props) => {
     hoverbgcolor,
     hovertxtcolor,
     hoverbordercolor,
-    classname
+    classname,
+    alt
   } = props;
 
   return (
@@ -27,6 +28,7 @@ const Button = (props) => {
       id={id}
       name={name}
       type={type}
+      alt={alt}
       className={`btn ${classname} hover-border-${hoverbordercolor} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} dropdown-${dropdown} padding-${padding} radius-${radius}`}
       data-bs-toggle={databstoggle}
       aria-expanded={ariaexpanded}

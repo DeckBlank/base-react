@@ -7,6 +7,7 @@ import Select from "../../uiKit/Select/Select";
 import SwitchBtn from "../../uiKit/SwitchBtn/SwitchBtn";
 import OptionsList from "../../assets/Jsons/options-list.json";
 import Option from "../../uiKit/Select/Option";
+import SelectDropdown from "../../uiKit/SelectDropdown/SelectDropdown";
 
 const DocsFormFilter = () => {
   return (
@@ -15,28 +16,24 @@ const DocsFormFilter = () => {
         <div>
           <h2>RADIO BUTTONS</h2>
           <br />
-          <RadioBtn text="Radio Button"  />
+          <RadioBtn text="Radio Button" />
         </div>
         <div>
           <h2>SWITCH BUTTONS</h2>
           <br />
-          <SwitchBtn text="Switch Button"  />
+          <SwitchBtn text="Switch Button" />
         </div>
         <div>
           <h2>SELECT / OPTIONS</h2>
-          <Select
-            size="1"
-            selectedtext="Options selected"
-          >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+          <Select size="1" selectedtext="Options selected">
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index} />
             ))}
           </Select>
         </div>
         <div>
-          <h2>INPUT: CALENDAR</h2>
-          <br />
-          <SwitchBtn text="Switch Button"  />
+          <h2>SELECT / UL-LI</h2>
+          <SelectDropdown selectedtext="Seleccionar Item"/>
         </div>
       </div>
       <br />
@@ -45,29 +42,39 @@ const DocsFormFilter = () => {
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
           <FormFilter>
-            <RadioBtn text="Radio Button"  classname="border-botton-formfilter"/>
-            <RadioBtn text="Radio Button" type="checkbox" />
+            <RadioBtn
+              text="Radio Button"
+              classname="border-bottom-formfilter"
+              name="name-radio-btn"
+            />
+            <RadioBtn
+              text="Radio Button"
+              type="checkbox"
+              name="name-radio-btn"
+            />
           </FormFilter>
         </div>
         <div>
           <h2>FORM FILTERS SWITCHES</h2>
           <br />
           <FormFilter>
-            <SwitchBtn text="Switch Button" classname="border-botton-formfilter"/>
+            <SwitchBtn
+              text="Switch Button"
+              classname="border-bottom-formfilter"
+            />
             <SwitchBtn text="Switch Button" />
           </FormFilter>
         </div>
         <div>
-          <h2>FORM FILTERS SELECTS </h2>
+          <h2>FORM FILTERS SELECTS / OPTIONS </h2>
           <br />
           <Select
             size="1"
             selectedtext="Seleccionar Tutor"
             labeltext="Tutor:"
-            labelfor="labelfor"
           >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
           <br />
@@ -75,39 +82,20 @@ const DocsFormFilter = () => {
             size="1"
             selectedtext="Seleccionar Alumno"
             labeltext="Alumno:"
-            labelfor="labelfor"
           >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
+            {OptionsList.map((item, index) => (
+              <Option value={item.value} optiontext={item.option} key={index}/>
             ))}
           </Select>
         </div>
         <div>
-          <h2>FORM FILTERS INPUTS</h2>
+          <h2>FORM FILTERS SELECT / UL-LI</h2>
           <br />
-          <Select
-            size="1"
-            selectedtext="Seleccionar Tutor"
-            labeltext="Tutor:"
-            labelfor="labelfor"
-          >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
-            ))}
-          </Select>
-          <br />
-          <Select
-            size="1"
-            selectedtext="Seleccionar Alumno"
-            labeltext="Alumno:"
-            labelfor="labelfor"
-          >
-            {OptionsList.map((item) => (
-              <Option value={item.value} optiontext={item.option} />
-            ))}
-          </Select>
-        </div>
+          <SelectDropdown labeltext="Tutor:" selectedtext="Seleccionar Tutor" />
 
+          <br />
+          <SelectDropdown labeltext="Alumno:" selectedtext="Seleccionar Alumno" />
+        </div>
       </div>
       <br />
 

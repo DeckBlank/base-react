@@ -38,7 +38,7 @@
   gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: start;
-  align-items: center;
+  align-items: start;
   align-content: center;
 }
 
@@ -60,8 +60,20 @@
   align-content: center;
 }
 
+.flex-responsive-docs {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .flex-btns-docs {
   display: flex;
+}
+
+.flex-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 @media screen and (max-width: 768px) {

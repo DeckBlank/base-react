@@ -27,11 +27,11 @@ export default function Login({ setToken }) {
     <div className="login-wrapper">
       <h1>Ingresa</h1>
       <form onSubmit={handleSubmit}>
-        <label>
+        <label htmlFor="htmlfor">
           <p>Email</p>
           <input type="email" onChange={e => setEmail(e.target.value)} />
         </label>
-        <label>
+        <label htmlFor="htmlfor">
           <p>Clave</p>
           <input type="password" onChange={e => setPassword(e.target.value)} />
         </label>

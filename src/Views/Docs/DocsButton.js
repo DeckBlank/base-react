@@ -1,9 +1,35 @@
 import React from "react";
 import Button from "../../uiKit/Button/Button";
+import { Icon } from '@iconify/react';
 
 const DocsButton = () => {
   return (
     <div>
+      <h2>BUTTON TEXT</h2> 
+      <br /> 
+      <br />
+      <Button bgcolor="silver" txtcolor="white">
+        Button Text
+      </Button>
+      <br />
+      <br />
+      <h2>BUTTON ICON</h2> 
+      <br /> 
+      <br />
+      <Button classname="flex-btn" bgcolor="silver" txtcolor="white">
+        <Icon icon="bx:cog" />
+      </Button>
+      <br />
+      <br />
+      <h2>BUTTON TEXT + ICON</h2> 
+      <br /> 
+      <br />
+      <Button classname="flex-btn" bgcolor="silver" txtcolor="white">
+        <Icon icon="bx:cog" />
+        Button Text + Icon
+      </Button>
+      <br />
+      <br />
       <h2>BUTTON COLORES</h2> 
       <br /> 
       <br />
