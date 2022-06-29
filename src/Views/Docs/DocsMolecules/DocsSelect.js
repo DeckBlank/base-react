@@ -1,27 +1,27 @@
 import React from "react";
-import Avatar from "../../uiKit/Atoms/Avatar/Avatar";
-import Dropdown from "../../uiKit/Molecules/Dropdown/Dropdown";
-import DropdownAvatar from "../../uiKit/Molecules/DropdownAvatar/DropdownAvatar";
-import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
-import OptionsListGroupLink from "../../assets/Jsons/listgroup-list-icon-link.json";
-import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
-import ButtonItem from "../../uiKit/Atoms/ButtonItem/ButtonItem";
-import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
-import Details from "../../uiKit/Atoms/Details/Details";
-import FormFilter from "../../uiKit/Organism/FormFilter/FormFilter";
-import RadioBtn from "../../uiKit/Atoms/RadioBtn/RadioBtn";
-import SwitchBtn from "../../uiKit/Atoms/SwitchBtn/SwitchBtn";
-import Select from "../../uiKit/Atoms/Select/Select";
-import Option from "../../uiKit/Atoms/Select/Option";
-import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+import Avatar from "../../../uiKit/Atoms/Avatar/Avatar";
+import Dropdown from "../../../uiKit/Molecules/Dropdown/Dropdown";
+import DropdownAvatar from "../../../uiKit/Molecules/DropdownAvatar/DropdownAvatar";
+import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
+import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
+import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
+import Collapse from "../../../uiKit/Molecules/Collapse/Collapse";
+import Details from "../../../uiKit/Atoms/Details/Details";
+import FormFilter from "../../../uiKit/Organism/FormFilter/FormFilter";
+import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
+import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
+import Select from "../../../uiKit/Molecules/Select/Select";
+import Option from "../../../uiKit/Molecules/Select/Option";
+import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 
-import OptionsList from "../../assets/Jsons/options-list.json";
-import OptionsListGroupBtn from "../../assets/Jsons/listgroup-list-icon-btn.json";
+import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
+import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
+import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 
-const DocsDropdown = () => {
+const DocsSelect = () => {
   return (
     <div>
-      <h2>LINKITEM</h2>
+      <h2>SELECT</h2>
       <br />
       <div className="grid-responsive-docs-filterform">
         <LinkItem
@@ -484,4 +484,4 @@ const DocsDropdown = () => {
   );
 };
 
-export default DocsDropdown;
+export default DocsSelect ;

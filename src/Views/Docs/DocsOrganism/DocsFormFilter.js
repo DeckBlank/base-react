@@ -1,13 +1,13 @@
 import React from "react";
-import FormFilter from "../../uiKit/Organism/FormFilter/FormFilter";
-import FormFilterEjm from "../../uiKit/Organism/FormFilter/FormFilterEjm";
-import RadioBtn from "../../uiKit/Atoms/RadioBtn/RadioBtn";
-import Select from "../../uiKit/Atoms/Select/Select";
-import SwitchBtn from "../../uiKit/Atoms/SwitchBtn/SwitchBtn";
-import Option from "../../uiKit/Atoms/Select/Option";
-import SelectDropdown from "../../uiKit/Molecules/SelectDropdown/SelectDropdown";
-import OptionsList from "../../assets/Jsons/options-list.json";
-import FormFilterEjm2 from "../../uiKit/Organism/FormFilter/FormFilterEjm2";
+import FormFilter from "../../../uiKit/Organism/FormFilter/FormFilter";
+import FormFilterEjm from "../../../uiKit/Organism/FormFilter/FormFilterEjm";
+import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
+import Select from "../../../uiKit/Molecules/Select/Select";
+import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
+import Option from "../../../uiKit/Molecules/Select/Option";
+import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
+import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
 
 const DocsFormFilter = () => {
   return (

@@ -1,0 +1,22 @@
+[
+  {
+    "display_name": "Dropdown",
+    "route": "/dropdown",
+    "icon": "bx:category-alt"
+  },
+  {
+    "display_name": "Collapse",
+    "route": "/collapse",
+    "icon": "bx:user-pin"
+  },
+  {
+    "display_name": "Select",
+    "route": "/select",
+    "icon": "bx:user-pin"
+  },
+  {
+    "display_name": "Table",
+    "route": "/table",
+    "icon": "bx:package"
+  }
+]

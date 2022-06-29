@@ -1,6 +1,7 @@
 import React from "react";
-import Button from "../../uiKit/Atoms/Button/Button";
 import { Icon } from '@iconify/react';
+import Button from "../../../uiKit/Atoms/Button/Button";
+import FilterCardButton from "../../../uiKit/Atoms/FilterCardButton/FilterCardButton"
 
 const DocsButton = () => {
   return (
@@ -217,6 +218,99 @@ const DocsButton = () => {
       <Button hoverbordercolor="gray" bgcolor="silver" txtcolor="white">
         gray
       </Button>
+      <br />
+      <br />
+      <br />
+      <h2>FILTROS EN TARJETA</h2>
+      <br />
+      <br />
+      <div className="grid-responsive-docs-filtercard">
+        <FilterCardButton
+          hoverbgcolor="silver"
+          hoverbordercolor="silver"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 1"
+          count="12"
+        />
+        <FilterCardButton
+          hoverbgcolor="red"
+          hoverbordercolor="red"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 2"
+          count="0"
+        />
+
+        <FilterCardButton
+          hoverbgcolor="yellow"
+          hoverbordercolor="yellow"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 3"
+          count="0"
+        />
+
+        <FilterCardButton
+          hoverbgcolor="blue"
+          hoverbordercolor="blue"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 4"
+          count="0"
+        />
+
+        <FilterCardButton
+          hoverbgcolor="turquoise"
+          hoverbordercolor="turquoise"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 5"
+          count="0"
+        />
+
+        <FilterCardButton
+          hoverbgcolor="orange"
+          hoverbordercolor="orange"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 6"
+          count="0"
+        />
+
+        <FilterCardButton
+          hoverbgcolor="green"
+          hoverbordercolor="green"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 7"
+          count="0"
+        />
+        <FilterCardButton
+          hoverbgcolor="magenta"
+          hoverbordercolor="magenta"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 8"
+          count="0"
+        />
+        <FilterCardButton
+          hoverbgcolor="gray"
+          hoverbordercolor="gray"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 9"
+          count="0"
+        />
+        <FilterCardButton
+          hoverbgcolor="lightblue"
+          hoverbordercolor="lightblue"
+          bgcolor="transparent"
+          txtcolor="black"
+          title="Filtro 10"
+          count="0"
+        />
+        </div>
     </div>
   );
 };

@@ -7,7 +7,7 @@ import Badge from "../../Atoms/Badge/Badge";
 import DropdownAvatar from "../../Molecules/DropdownAvatar/DropdownAvatar";
 import ListGroup from "../../Atoms/ListGroup/ListGroup";
 import LinkItem from "../../Atoms/LinkItem/LinkItem";
-import OptionsListGroupLink from "../../../assets/Jsons/listgroup-list-icon-link.json";
+import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 
 const NavBar = (props) => {
   let { logo, show, onclick } = props;

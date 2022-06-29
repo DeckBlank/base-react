@@ -1,0 +1,22 @@
+[
+  {
+    "display_name": "Badge",
+    "route": "/badge",
+    "icon": "bx:category-alt"
+  },
+  {
+    "display_name": "Button",
+    "route": "/button",
+    "icon": "bx:user-pin"
+  },
+  {
+    "display_name": "Input",
+    "route": "/input",
+    "icon": "bx:user-pin"
+  },
+  {
+    "display_name": "Item",
+    "route": "/item",
+    "icon": "bx:package"
+  }
+]

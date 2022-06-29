@@ -1,10 +1,10 @@
 import React from "react";
-import Badge from "../../uiKit/Atoms/Badge/Badge";
-import Button from "../../uiKit/Atoms/Button/Button";
+import Badge from "../../../uiKit/Atoms/Badge/Badge";
+import Button from "../../../uiKit/Atoms/Button/Button";
 import { Icon } from "@iconify/react";
-import Breadcrumb from "../../uiKit/Atoms/Breadcrumb/Breadcrumb";
-import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
-import SideBarListGroup from "../../assets/Jsons/sidebar-list -docs.json";
+import Breadcrumb from "../../../uiKit/Atoms/Breadcrumb/Breadcrumb";
+import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
+import SideBarListGroup from "../../../assets/Jsons/sidebar-list -docs.json";
 
 const DocsBadge = () => {
   return (

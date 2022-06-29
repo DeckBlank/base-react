@@ -5,6 +5,8 @@ import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
 
 const Collapse = (props) => {
 
+  let {icon, classname, text} = props
+
   const [sCollapse, setsCollapse] = useState(false);
   const showCollapse = () => {
     setsCollapse(!sCollapse);
@@ -13,9 +15,9 @@ const Collapse = (props) => {
   return (
     <div className={`collapse-group`} >
       <ButtonItem
-        text="Button for Sidebar"
-        icon="bx:package"
-        classname="uncollapse-sidebar-item li-items-sidebar"
+        text={text}
+        icon={icon}
+        classname={classname}
         onclick={showCollapse}
       />
       <div style={{display: `${sCollapse ? "block" : "none"}`}}

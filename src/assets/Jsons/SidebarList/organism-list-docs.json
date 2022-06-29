@@ -1,0 +1,17 @@
+[
+  {
+    "display_name": "FormFilter",
+    "route": "/formfilter",
+    "icon": "bx:category-alt"
+  },
+  {
+    "display_name": "sidebar",
+    "route": "/sidebar",
+    "icon": "bx:user-pin"
+  },
+  {
+    "display_name": "nav",
+    "route": "/nav",
+    "icon": "bx:package"
+  }
+]

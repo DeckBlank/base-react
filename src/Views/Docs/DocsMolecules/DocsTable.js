@@ -1,10 +1,13 @@
 import React from "react";
-import Table from "../../uiKit/Molecules/Table/Table";
-import TableSimple from "../../uiKit/Molecules/TableSimple/TableSimple";
-import Button from "../../uiKit/Atoms/Button/Button";
-import CustomerList from "../../assets/Jsons/customers-list.json";
-import IconoTutor from "../../assets/images/icono de tutor.png";
 import { Icon } from "@iconify/react";
+
+import Table from "../../../uiKit/Molecules/Table/Table";
+import TableSimple from "../../../uiKit/Molecules/TableSimple/TableSimple";
+import Button from "../../../uiKit/Atoms/Button/Button";
+
+import CustomerList from "../../../assets/Jsons/TableList/customers-list.json";
+import IconoTutor from "../../../assets/images/icono de tutor.png";
+
 
 const DocsTable = () => {
   // Table Multi Pagination
