@@ -3,7 +3,6 @@
 .sidebar-container {
   position: relative;
   margin: $header-height 0 0 0;
-  padding: 1rem;
   font-size: 1rem;
   transition: 0.5s;
   a {
@@ -36,16 +35,16 @@
 }
 
 .sidebar-container-open {
-  padding: 1rem 1rem 1rem calc($nav-width + 1rem);
+  padding: 0rem 0rem 1rem calc($nav-width + 0rem);
 }
 
 @media screen and(min-width:768px){
   .sidebar-container {
-    padding: 1rem 1rem 1rem calc($nav-width + 1rem);
+    padding: 0rem 0rem 1rem calc($nav-width + 0rem);
   }
 
   .sidebar-container-open {
-    padding: 1rem 1rem 1rem calc(220px + 1.4rem);
+    padding: 0rem 0rem 1rem calc(220px + 0rem);
   }
 
   .sidebar {

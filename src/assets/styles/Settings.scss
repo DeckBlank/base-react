@@ -27,6 +27,16 @@ $large: large;
 $x-large: x-large;
 $xx-large: xx-large;
 
+// DISPLAYS BLOCK & NONE
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 /* :::SCROLL::: */
 
 ::-webkit-scrollbar {
@@ -79,6 +89,11 @@ $btn-font-weight: bold;
 .border-top-sidebar {
   border-top: 1px solid $white !important;
 }
+
+.border-bottom-title {
+  border-bottom: 1px solid $silver !important;
+}
+
 /* :::SPAN::: */
 
 .span {
@@ -89,12 +104,3 @@ $btn-font-weight: bold;
   width: 100%;
 }
 
-// DISPLAYS BLOCK & NONE
-
-.none {
-  display: none;
-}
-
-.block {
-  display: block;
-}

@@ -2,10 +2,15 @@ import React from "react";
 // COMPONENTS
 import Badge from "../../../uiKit/Atoms/Badge/Badge";
 import Button from "../../../uiKit/Atoms/Button/Button";
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsBadge = () => {
   return (
     <div>
+      <Title title="Título de la pagina" classname="position-sticky top-0 txt-black border-bottom-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />      
+      <h3>TITLE FOR PAGES</h3>
+      <br />
+      <br />
       <div>
         <h2>BADGE</h2>
         <br />
@@ -52,6 +57,7 @@ const DocsBadge = () => {
       <br />
       <br />
       <h2>DIRECTIONS</h2>
+      <br />
       <div className="grid-responsive-docs">
         <div>
           <h3>BADGE ENCIMA DERECHA</h3>
