@@ -105,7 +105,7 @@ const DocsSidebar = () => {
             <div className="position-sticky flex-filternav">
               <div className="flex-filtertitle">
                 <Icon icon="mi:filter" className="txt-gray font-xxl" />
-                <h4 className="txt-gray"> Filtros </h4>
+                <h3 className="txt-gray"> Filtros </h3>
               </div>
               {/* <Button classname="flex-btn" bgcolor="white">
                 <Icon icon="ep:close-bold" className="txt-gray font-m" />
