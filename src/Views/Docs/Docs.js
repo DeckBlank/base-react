@@ -70,14 +70,16 @@ const Docs = (props) => {
         closeSession={closeSession}
       />
       <SideBar show={show} bgcolor="bg-gray">
+
         <ListGroup classname="uncollapse-sidebar li-items-sidebar">
           <LinkItem
             text="Documentation"
             route="/"
             icon="ant-design:home-filled"
-            classname="uncollapse-sidebar-item border-bottom-sidebar "
+            classname="uncollapse-sidebar-item border-bottom-sidebar"
           />
         </ListGroup>
+
         <Collapse text="Atoms" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar border-bottom-sidebar">
           <ListGroup classname="collapse-sidebar">
             {AtomsListGroup.map((item, index) => (
@@ -125,6 +127,7 @@ const Docs = (props) => {
             classname="uncollapse-sidebar-item border-bottom-sidebar "
           />
         </ListGroup>
+
       </SideBar>
 
       <Content>
