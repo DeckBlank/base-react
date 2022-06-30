@@ -12,30 +12,6 @@ import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
 const DocsFormFilter = () => {
   return (
     <div>
-      <div className="grid-responsive-docs-filterform">
-        <div>
-          <h2>RADIO BUTTONS</h2>
-          <br />
-          <RadioBtn text="Radio Button" />
-        </div>
-        <div>
-          <h2>SWITCH BUTTONS</h2>
-          <br />
-          <SwitchBtn text="Switch Button" />
-        </div>
-        <div>
-          <h2>SELECT / OPTIONS</h2>
-          <Select size="1" selectedtext="Options selected">
-            {OptionsList.map((item, index) => (
-              <Option value={item.value} optiontext={item.option} key={index} />
-            ))}
-          </Select>
-        </div>
-        <div>
-          <h2>SELECT / UL-LI</h2>
-          <SelectDropdown selectedtext="Seleccionar Item"/>
-        </div>
-      </div>
       <br />
       <div className="grid-responsive-docs-filterform">
         <div>
@@ -68,13 +44,9 @@ const DocsFormFilter = () => {
         <div>
           <h2>FORM FILTERS SELECTS / OPTIONS </h2>
           <br />
-          <Select
-            size="1"
-            selectedtext="Seleccionar Tutor"
-            labeltext="Tutor:"
-          >
+          <Select size="1" selectedtext="Seleccionar Tutor" labeltext="Tutor:">
             {OptionsList.map((item, index) => (
-              <Option value={item.value} optiontext={item.option} key={index}/>
+              <Option value={item.value} optiontext={item.option} key={index} />
             ))}
           </Select>
           <br />
@@ -84,7 +56,7 @@ const DocsFormFilter = () => {
             labeltext="Alumno:"
           >
             {OptionsList.map((item, index) => (
-              <Option value={item.value} optiontext={item.option} key={index}/>
+              <Option value={item.value} optiontext={item.option} key={index} />
             ))}
           </Select>
         </div>
@@ -94,23 +66,25 @@ const DocsFormFilter = () => {
           <SelectDropdown labeltext="Tutor:" selectedtext="Seleccionar Tutor" />
 
           <br />
-          <SelectDropdown labeltext="Alumno:" selectedtext="Seleccionar Alumno" />
+          <SelectDropdown
+            labeltext="Alumno:"
+            selectedtext="Seleccionar Alumno"
+          />
         </div>
       </div>
       <br />
-
-      <h2>FORM FILTERS FUNCTIONAL WITH HOOKS</h2>
-      <br />
-      <div>
-        <FormFilterEjm />
-      </div> 
-
-       <h2>FORM FILTERS FUNCTIONAL </h2>
-      <br />
-      <div>
-        <FormFilterEjm2 />
+      <div className="grid-responsive-docs-filterform">
+        <div>
+          <h2>FORM FILTERS FUNCTIONAL WITH HOOKS</h2>
+          <br />
+          <FormFilterEjm />
+        </div>
+        <div>
+          <h2>FORM FILTERS FUNCTIONAL </h2>
+          <br />
+          <FormFilterEjm2 />
+        </div>
       </div>
-
     </div>
   );
 };

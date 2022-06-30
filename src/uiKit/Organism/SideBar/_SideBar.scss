@@ -16,7 +16,7 @@
 }
 
 .sidebar {
-  position: fixed; /*fixed*/
+  // position: fixed; /*fixed*/
   top: $header-height;
   left: -30%;
   height: calc(100vh - $header-height); /*100vh*/
@@ -24,6 +24,7 @@
   transition: 0.5s;
   overflow-y: overlay;
   overflow-x: hidden;
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
   /*background-color: $gray;*/
   // span {
   //   margin-left: 1.2rem;
@@ -58,3 +59,11 @@
   
 }
 
+.sidebar-filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem;
+  width: 100%;
+  gap: 1rem;
+}

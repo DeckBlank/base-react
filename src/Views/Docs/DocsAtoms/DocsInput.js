@@ -1,6 +1,8 @@
 import React from "react";
 
 import Input from "../../../uiKit/Atoms/Input/Input";
+import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
+import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 
 const DocsInput = () => {
   return (
@@ -87,6 +89,16 @@ const DocsInput = () => {
       <h2>BUTTON</h2>
       <br />
       <div className="grid-responsive-docs">
+      <div>
+          <h4>TYPE: RADIO BUTTONS</h4>
+          <br />
+          <RadioBtn text="Radio Button" />
+        </div>
+        <div>
+          <h4>TYPE: SWITCH BUTTONS</h4>
+          <br />
+          <SwitchBtn text="Switch Button" />
+        </div>
         <div>
           <h4>TYPE: BUTTON</h4>
           <br />

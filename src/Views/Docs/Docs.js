@@ -69,7 +69,7 @@ const Docs = (props) => {
         onclick={onShow}
         closeSession={closeSession}
       />
-      <SideBar show={show} bgcolor="bg-gray">
+      <SideBar show={show} classname="position-fixed" bgcolor="bg-gray">
 
         <ListGroup classname="uncollapse-sidebar li-items-sidebar">
           <LinkItem

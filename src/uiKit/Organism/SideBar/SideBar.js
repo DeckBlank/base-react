@@ -4,11 +4,11 @@ import "./_SideBar.scss";
 const SideBar = (props) => {
 
   let{
-    show, bgcolor
+    show, bgcolor, classname
   }=props
 
   return (
-      <aside className={`sidebar ${show ? "show" : null} ${bgcolor}`}>
+      <aside className={`sidebar ${classname} ${show ? "show" : null} ${bgcolor}`}>
         <nav className="nav">
           {props.children}
         </nav>
