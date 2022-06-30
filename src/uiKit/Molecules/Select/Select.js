@@ -11,7 +11,7 @@ const Select = (props) => {
       <label htmlFor={htmlfor}>{labeltext}</label>
       <div className="content-select">
       <select id={id} className="form-select" size={size}>      
-        <option className="collapse-selects-item border-top-formfilter selected-option" defaultValue={selectedtext}>{selectedtext}</option>      
+        <option className="collapse-selects-item bt-formfilter selected-option" defaultValue={selectedtext}>{selectedtext}</option>      
         {props.children}     
       </select>
       <Icon icon="eva:arrow-ios-downward-outline" className="icon-select"/>

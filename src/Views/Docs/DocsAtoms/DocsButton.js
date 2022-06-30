@@ -3,10 +3,13 @@ import { Icon } from '@iconify/react';
 // COMPONENTS
 import Button from "../../../uiKit/Atoms/Button/Button";
 import FilterCardButton from "../../../uiKit/Atoms/FilterCardButton/FilterCardButton"
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsButton = () => {
   return (
-    <div>
+    <section>
+      <Title title="Docs Button" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" /> 
+      <div className="ph-3">    
       <h2>BUTTON TEXT</h2> 
       <br /> 
       <br />
@@ -311,8 +314,8 @@ const DocsButton = () => {
           title="Filtro 10"
           count="0"
         />
-        </div>
-    </div>
+        </div></div>
+    </section>
   );
 };
 

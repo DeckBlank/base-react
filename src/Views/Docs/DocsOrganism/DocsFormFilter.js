@@ -10,11 +10,13 @@ import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdo
 import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
 // JSONS
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsFormFilter = () => {
   return (
-    <div>
-      <br />
+    <section>
+      <Title title="Docs Form Filter" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <div className="ph-3">
       <div className="grid-responsive-docs-filterform">
         <div>
           <h2>FORM FILTERS RADIO BTN</h2>
@@ -87,7 +89,8 @@ const DocsFormFilter = () => {
           <FormFilterEjm2 />
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

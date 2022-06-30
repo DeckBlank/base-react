@@ -5,9 +5,12 @@ import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdo
 import Option from "../../../uiKit/Molecules/Select/Option";
 // JSONS
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
+import Title from "../../../uiKit/Atoms/Title/Title";
 const DocsSelect = () => {
   return (
-    <div>
+    <section>
+      <Title title="Docs Select" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <div className="ph-3">
       <h2>SELECT</h2>
       <br />
       <br />
@@ -37,7 +40,8 @@ const DocsSelect = () => {
           </Select>
         </div>
       </div>
-    </div>
+      </div>
+    </section>
   );
 };
 

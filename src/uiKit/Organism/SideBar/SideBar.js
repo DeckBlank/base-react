@@ -9,9 +9,9 @@ const SideBar = (props) => {
 
   return (
       <aside className={` ${classname} ${show ? "show" : null} ${bgcolor}`}>
-        <nav className="nav">
+        <div className="sidebar-div">
           {props.children}
-        </nav>
+        </div>
       </aside>
   );
 };

@@ -1,10 +1,13 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsIconify = () => {
   return (
-    <div>
-      <br />
+    <section>
+      <Title title="Docs Icons" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <div className="ph-3"> 
+
       <h2>ICONS</h2>
       <br />
       <div>
@@ -99,8 +102,8 @@ const DocsIconify = () => {
           icon="fluent:arrow-next-24-filled"
           className="txt-gray font-xxl"
         />
-      </div>
-    </div>
+      </div></div>
+    </section>
   );
 };
 

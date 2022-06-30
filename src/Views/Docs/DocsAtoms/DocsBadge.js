@@ -6,8 +6,9 @@ import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsBadge = () => {
   return (
-    <div>
-      <Title title="Título de la pagina" classname="position-sticky top-0 txt-black border-bottom-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />      
+    <section>
+      <Title title="Docs Badge" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <div className="ph-3">    
       <h3>TITLE FOR PAGES</h3>
       <br />
       <br />
@@ -123,8 +124,8 @@ const DocsBadge = () => {
             />
           </Button>
         </div>
-      </div>
-    </div>
+      </div></div>
+    </section>
   );
 };
 

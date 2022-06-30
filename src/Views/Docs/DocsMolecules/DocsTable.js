@@ -8,7 +8,7 @@ import Button from "../../../uiKit/Atoms/Button/Button";
 import CustomerList from "../../../assets/Jsons/TableList/customers-list.json";
 // IMAGES
 import IconoTutor from "../../../assets/images/icono de tutor.png";
-
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsTable = () => {
   // Table Multi Pagination
@@ -77,46 +77,52 @@ const DocsTable = () => {
         <div className="tutor-flex-td">
           <img src={IconoTutor} alt="Logo del Tutor" /> {item.tutor}
         </div>
-      </td> 
+      </td>
       <td>{item.alumno}</td>
       <td>{item.fecha}</td>
       <td>{item.hora}</td>
       <td>{item.curso}</td>
       <td>{item.modalidad}</td>
-       <td className="span-state-container">
+      <td className="span-state-container">
         {/* <Badge text={item.estado} bgcolor="green" txtcolor="white" classname="span-width" /> */}
         <span className="span span-width btn-radius span-flex-state bg-green">
           {item.estado}
-        </span> 
-        <Button  classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
-        <Icon icon="majesticons:more-menu-vertical"/>   
+        </span>
+        <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
+          <Icon icon="majesticons:more-menu-vertical" />
         </Button>
-      </td> 
+      </td>
     </tr>
   );
 
   return (
-    <div className="views-docs">
-      <h2>TABLA CON PAGINACIÓN SIMPLE </h2>
-
-      <TableSimple
-        limit="10"
-        headData={customerTableHead}
-        renderHead={(item, index) => renderHead(item, index)}
-        bodyData={CustomerList}
-        renderBody={(item, index) => renderBody(item, index)}
+    <section className="views-docs">
+      <Title
+        title="Docs Table"
+        classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
+      <div className="ph-3">
+        <h2>TABLA CON PAGINACIÓN SIMPLE </h2>
 
-      <h2>TABLA CON MULTI PAGINACIÓN </h2>
+        <TableSimple
+          limit="10"
+          headData={customerTableHead}
+          renderHead={(item, index) => renderHead(item, index)}
+          bodyData={CustomerList}
+          renderBody={(item, index) => renderBody(item, index)}
+        />
 
-      <Table
-        columns={columns}
-        data={data}
-        fetchData={fetchData}
-        loading={loading}
-        pageCount={pageCount}
-      />
-    </div>
+        <h2>TABLA CON MULTI PAGINACIÓN </h2>
+
+        <Table
+          columns={columns}
+          data={data}
+          fetchData={fetchData}
+          loading={loading}
+          pageCount={pageCount}
+        />
+      </div>
+    </section>
   );
 };
 

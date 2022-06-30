@@ -37,13 +37,13 @@ const SelectDropdown = (props) => {
         {isOpen && (
           <ListGroup classname="collapse-selects collapse-select-absolute">
             <ButtonItem
-              classname="selected-item border-top-formfilter"
+              classname="selected-item bt-formfilter"
               onclick={onOptionClicked(selectedtext)}
               text={selectedtext}
             />
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
-                classname="collapse-selects-item border-top-formfilter"
+                classname="collapse-selects-item bt-formfilter"
                 onclick={onOptionClicked(item.display_name)}
                 text={item.display_name}
                 key={index}

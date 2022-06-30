@@ -15,12 +15,15 @@ import AtomsListGroup from "../../../assets/Jsons/SidebarList/atoms-list-docs.js
 import MoleculesListGroup from "../../../assets/Jsons/SidebarList/molecules-list-docs.json";
 import OrganismListGroup from "../../../assets/Jsons/SidebarList/organism-list-docs.json";
 import Button from "../../../uiKit/Atoms/Button/Button";
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsSidebar = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <div>
+    <section>
+      <Title title="Docs Sidebar" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <div className="ph-3">
       <h2>SIDEBAR</h2>
       <br />
       <div className="grid-responsive-docs">
@@ -33,21 +36,21 @@ const DocsSidebar = () => {
                 text="Documentation"
                 route="/"
                 icon="ant-design:home-filled"
-                classname="uncollapse-sidebar-item border-bottom-sidebar"
+                classname="uncollapse-sidebar-item bb-sidebar"
               />
             </ListGroup>
 
             <Collapse
               text="Atoms"
               icon="clarity:list-solid"
-              classname="uncollapse-sidebar-item li-items-sidebar border-bottom-sidebar"
+              classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
             >
               <ListGroup classname="collapse-sidebar">
                 {AtomsListGroup.map((item, index) => (
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
-                    classname="collapse-sidebar-item border-bottom-sidebar"
+                    classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />
                 ))}
@@ -57,14 +60,14 @@ const DocsSidebar = () => {
             <Collapse
               text="Molecules"
               icon="clarity:list-solid"
-              classname="uncollapse-sidebar-item li-items-sidebar border-bottom-sidebar"
+              classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
             >
               <ListGroup classname="collapse-sidebar">
                 {MoleculesListGroup.map((item, index) => (
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
-                    classname="collapse-sidebar-item border-bottom-sidebar"
+                    classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />
                 ))}
@@ -74,14 +77,14 @@ const DocsSidebar = () => {
             <Collapse
               text="Organism"
               icon="clarity:list-solid"
-              classname="uncollapse-sidebar-item li-items-sidebar border-bottom-sidebar"
+              classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
             >
               <ListGroup classname="collapse-sidebar">
                 {OrganismListGroup.map((item, index) => (
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
-                    classname="collapse-sidebar-item border-bottom-sidebar"
+                    classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />
                 ))}
@@ -93,7 +96,7 @@ const DocsSidebar = () => {
                 text="Iconify"
                 route="/iconify"
                 icon="akar-icons:face-very-happy"
-                classname="uncollapse-sidebar-item border-bottom-sidebar "
+                classname="uncollapse-sidebar-item bb-sidebar "
               />
             </ListGroup>
           </SideBar>
@@ -102,7 +105,7 @@ const DocsSidebar = () => {
           <h3>FILTER</h3>
           <br />
           <SideBar show={show} classname="sidebar-filter" bgcolor="bg-white">
-            <div className="position-sticky top-0 bg-white flex-filternav">
+            <div className="p-sticky top-0 bg-white flex-filternav">
               <div className="flex-filtertitle">
                 <Icon icon="mi:filter" className="txt-gray font-xxl" />
                 <h3 className="txt-gray"> Filtros </h3>
@@ -118,7 +121,7 @@ const DocsSidebar = () => {
                   <SwitchBtn
                     text="Lista de clases"
                     name="name-switch-btn"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                   />
                   <SwitchBtn
                     text="Lista de talleres"
@@ -130,12 +133,12 @@ const DocsSidebar = () => {
                 <FormFilter>
                   <RadioBtn
                     text="Dia"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn
                     text="Semana"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn text="Mes" type="checkbox" name="name-radio-btn" />
@@ -145,17 +148,17 @@ const DocsSidebar = () => {
                 <FormFilter>
                   <RadioBtn
                     text="Todos"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn
                     text="MAB GO"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn
                     text="MAB Online"
-                    classname="border-bottom-formfilter"
+                    classname="bb-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn
@@ -173,8 +176,8 @@ const DocsSidebar = () => {
             </div>
           </SideBar>
         </div>
-      </div>
-    </div>
+      </div></div>
+    </section>
   );
 };
 

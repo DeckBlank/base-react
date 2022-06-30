@@ -13,10 +13,13 @@ import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdo
 // JSONS
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
+import Title from "../../../uiKit/Atoms/Title/Title";
 
 const DocsCollapse = () => {
   return (
-    <div>
+    <section>
+      <Title title="Docs Collapse" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" /> 
+      <div className="ph-3">
       <h2>COLLAPSE</h2>
       <br />
       <div className="grid-responsive-docs">
@@ -100,7 +103,8 @@ const DocsCollapse = () => {
           </Collapse>
         </div>
       </div>
-    </div>
+      </div> 
+    </section>
   );
 };
 
