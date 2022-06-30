@@ -102,7 +102,7 @@ const DocsSidebar = () => {
           <h3>FILTER</h3>
           <br />
           <SideBar show={show} classname="sidebar-filter" bgcolor="bg-white">
-            <div className="position-sticky flex-filternav">
+            <div className="position-sticky top-0 bg-white flex-filternav">
               <div className="flex-filtertitle">
                 <Icon icon="mi:filter" className="txt-gray font-xxl" />
                 <h3 className="txt-gray"> Filtros </h3>
