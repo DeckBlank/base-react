@@ -1,5 +1,5 @@
 import React from "react";
-
+// COMPONENTS
 import Input from "../../../uiKit/Atoms/Input/Input";
 import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
 import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";

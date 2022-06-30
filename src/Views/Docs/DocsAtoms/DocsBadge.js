@@ -1,4 +1,5 @@
 import React from "react";
+// COMPONENTS
 import Badge from "../../../uiKit/Atoms/Badge/Badge";
 import Button from "../../../uiKit/Atoms/Button/Button";
 

@@ -1,7 +1,9 @@
 import React from "react";
+// COMPONENTS
 import Select from "../../../uiKit/Molecules/Select/Select";
 import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 import Option from "../../../uiKit/Molecules/Select/Option";
+// JSONS
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
 const DocsSelect = () => {
   return (

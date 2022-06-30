@@ -1,9 +1,11 @@
 import React from "react";
+// COMPONENTS
 import Avatar from "../../../uiKit/Atoms/Avatar/Avatar";
 import Dropdown from "../../../uiKit/Molecules/Dropdown/Dropdown";
 import DropdownAvatar from "../../../uiKit/Molecules/DropdownAvatar/DropdownAvatar";
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
+// JSONS
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 
 const DocsDropdown = () => {

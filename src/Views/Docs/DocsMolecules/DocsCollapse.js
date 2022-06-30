@@ -1,4 +1,5 @@
 import React from "react";
+// COMPONENTS
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
 import Collapse from "../../../uiKit/Molecules/Collapse/Collapse";
@@ -9,6 +10,7 @@ import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import Select from "../../../uiKit/Molecules/Select/Select";
 import Option from "../../../uiKit/Molecules/Select/Option";
 import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+// JSONS
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
 

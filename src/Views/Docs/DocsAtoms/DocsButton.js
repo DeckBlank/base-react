@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from '@iconify/react';
+// COMPONENTS
 import Button from "../../../uiKit/Atoms/Button/Button";
 import FilterCardButton from "../../../uiKit/Atoms/FilterCardButton/FilterCardButton"
 

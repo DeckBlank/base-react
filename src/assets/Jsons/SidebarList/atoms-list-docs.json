@@ -1,6 +1,6 @@
 [
   {
-    "display_name": "Badge",
+    "display_name": "Badge / Title",
     "route": "/badge",
     "icon": "bx:category-alt"
   },

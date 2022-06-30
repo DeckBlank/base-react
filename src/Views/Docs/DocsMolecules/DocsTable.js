@@ -1,17 +1,17 @@
 import React from "react";
 import { Icon } from "@iconify/react";
-
+// COMPONENTS
 import Table from "../../../uiKit/Molecules/Table/Table";
 import TableSimple from "../../../uiKit/Molecules/TableSimple/TableSimple";
 import Button from "../../../uiKit/Atoms/Button/Button";
-
+// JSONS
 import CustomerList from "../../../assets/Jsons/TableList/customers-list.json";
+// IMAGES
 import IconoTutor from "../../../assets/images/icono de tutor.png";
 
 
 const DocsTable = () => {
   // Table Multi Pagination
-
   const [data, setData] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const [pageCount, setPageCount] = React.useState(0);

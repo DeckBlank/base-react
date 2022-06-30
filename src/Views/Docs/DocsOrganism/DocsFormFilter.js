@@ -1,4 +1,5 @@
 import React from "react";
+// COMPONENTS
 import FormFilter from "../../../uiKit/Organism/FormFilter/FormFilter";
 import FormFilterEjm from "../../../uiKit/Organism/FormFilter/FormFilterEjm";
 import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
@@ -6,8 +7,9 @@ import Select from "../../../uiKit/Molecules/Select/Select";
 import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import Option from "../../../uiKit/Molecules/Select/Option";
 import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
-import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
 import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
+// JSONS
+import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
 
 const DocsFormFilter = () => {
   return (

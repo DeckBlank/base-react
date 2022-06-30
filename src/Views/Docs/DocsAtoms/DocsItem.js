@@ -1,9 +1,9 @@
 import React from "react";
-
+// COMPONENTS
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
 import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
-
+// JSONS
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 
 const DocsItem = () => {

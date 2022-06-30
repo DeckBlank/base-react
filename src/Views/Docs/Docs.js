@@ -1,5 +1,6 @@
 import React, { Component, Suspense, useState } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
+// COMPONENTS
 import NavBar from "../../uiKit/Organism/NavBar/NavBar";
 import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
@@ -8,7 +9,6 @@ import useToken from "../../useToken";
 import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
 import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
-
 // JSONS
 import AtomsListGroup from "../../assets/Jsons/SidebarList/atoms-list-docs.json";
 import MoleculesListGroup from "../../assets/Jsons/SidebarList/molecules-list-docs.json";
