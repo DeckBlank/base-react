@@ -123,9 +123,7 @@ const DocsSidebar = () => {
                   <SwitchBtn
                     text="Lista de talleres"
                     name="name-switch-btn"
-                    classname="border-bottom-formfilter"
                   />
-                  <SwitchBtn text="Switch Button 3" name="name-switch-btn" />
                 </FormFilter>
               </Details>
               <Details summary="Por" txtcolor="gray">
@@ -157,12 +155,11 @@ const DocsSidebar = () => {
                   />
                   <RadioBtn
                     text="MAB Online"
-                    type="checkbox"
+                    classname="border-bottom-formfilter"
                     name="name-radio-btn"
                   />
                   <RadioBtn
                     text="MAB Sede"
-                    type="checkbox"
                     name="name-radio-btn"
                   />
                 </FormFilter>
