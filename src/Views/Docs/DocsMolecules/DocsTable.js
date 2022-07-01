@@ -1,14 +1,16 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 // COMPONENTS
 import Table from "../../../uiKit/Molecules/Table/Table";
 import TableSimple from "../../../uiKit/Molecules/TableSimple/TableSimple";
-import Button from "../../../uiKit/Atoms/Button/Button";
+import Dropdown from "../../../uiKit/Molecules/Dropdown/Dropdown";
+import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
 // JSONS
+import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 import CustomerList from "../../../assets/Jsons/TableList/customers-list.json";
 // IMAGES
 import IconoTutor from "../../../assets/images/icono de tutor.png";
 import Title from "../../../uiKit/Atoms/Title/Title";
+import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 
 const DocsTable = () => {
   // Table Multi Pagination
@@ -89,9 +91,28 @@ const DocsTable = () => {
           {item.estado}
         </span>
         
-        <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
-          <Icon icon="majesticons:more-menu-vertical" />
-        </Button>
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classname="bg-white br-15"
+          classbtn="txt-black bg-transparent"
+        >
+          <ListGroup classname="dropdown-group-list zi-50">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
       </td>
     </tr>
   );
