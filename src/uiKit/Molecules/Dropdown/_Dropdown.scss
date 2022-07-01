@@ -4,6 +4,15 @@
   position: relative;
   display: inline-flex;
   vertical-align: middle;
+  .icon-arrow-drop {
+    position: absolute;
+    font-size: xx-large;
+    right: 0.3rem;
+    top: calc(50% - 0.9rem);
+    display: block;
+    transition: all 0.25s ease;
+    // transform: rotate(90deg);
+  }
 }
 
 .dropdown-toggle {
@@ -16,7 +25,6 @@
   width: 100%;
   margin: 0;
   font-size: small;
-  color: $black;
   text-align: right;
   list-style: none;
   // background-color: $white;

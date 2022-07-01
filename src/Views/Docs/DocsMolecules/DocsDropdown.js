@@ -6,8 +6,10 @@ import DropdownAvatar from "../../../uiKit/Molecules/DropdownAvatar/DropdownAvat
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
 // JSONS
+import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 import Title from "../../../uiKit/Atoms/Title/Title";
+import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
 
 const DocsDropdown = () => {
   return (
@@ -19,122 +21,18 @@ const DocsDropdown = () => {
       <div className="ph-3">
         <h2>DROPDOWN</h2>
         <br />
-        <div>
-          <h3>AVATAR</h3>
-          <br />
-          <Avatar />
-        </div>
         <br />
-        <br />
-        <h2>DROPDOWN AVATAR</h2>
-        <br />
-        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <DropdownAvatar
-            type="button"
-            bgcolor="transparent"
-            txtcolor="black"
-            dropdown="toggle"
-            id="idDropdown"
-            data-bs-toggle="dropdown"
-            direction="dropdown"
-            text="Usuario 1"
-          >
-            <ListGroup classname="dropdown-group-list">
-              {OptionsListGroupLink.map((item, index) => (
-                <LinkItem
-                  text={item.display_name}
-                  route={item.route}
-                  icon={item.icon}
-                  classname="dropdown-group-list-item"
-                  key={index}
-                />
-              ))}
-            </ListGroup>
-          </DropdownAvatar>
-
-          <DropdownAvatar
-            type="button"
-            bgcolor="black"
-            txtcolor="white"
-            dropdown="toggle"
-            id="idDropdown"
-            data-bs-toggle="dropdown"
-            direction="dropup"
-            text="Usuario 2"
-          >
-            <ListGroup classname="dropdown-group-list">
-              {OptionsListGroupLink.map((item, index) => (
-                <LinkItem
-                  text={item.display_name}
-                  route={item.route}
-                  icon={item.icon}
-                  classname="dropdown-group-list-item"
-                  key={index}
-                />
-              ))}
-            </ListGroup>
-          </DropdownAvatar>
-
-          <DropdownAvatar
-            type="button"
-            bgcolor="red"
-            txtcolor="white"
-            dropdown="toggle"
-            id="idDropdown"
-            data-bs-toggle="dropdown"
-            direction="dropend"
-            text="Usuario 3"
-          >
-            <ListGroup classname="dropdown-group-list">
-              {OptionsListGroupLink.map((item, index) => (
-                <LinkItem
-                  text={item.display_name}
-                  route={item.route}
-                  icon={item.icon}
-                  classname="dropdown-group-list-item"
-                  key={index}
-                />
-              ))}
-            </ListGroup>
-          </DropdownAvatar>
-
-          <DropdownAvatar
-            type="button"
-            bgcolor="gray"
-            txtcolor="white"
-            dropdown="toggle"
-            id="idDropdown"
-            data-bs-toggle="dropdown"
-            direction="dropstart"
-            text="Usuario 4"
-          >
-            <ListGroup classname="dropdown-group-list">
-              {OptionsListGroupLink.map((item, index) => (
-                <LinkItem
-                  text={item.display_name}
-                  route={item.route}
-                  icon={item.icon}
-                  classname="dropdown-group-list-item"
-                  key={index}
-                />
-              ))}
-            </ListGroup>
-          </DropdownAvatar>
-        </div>
-        <br />
-        <br />
-        <h2>DROPDOWN DIRECTIONS</h2>
+        <h3>DROPDOWN DIRECTIONS WITHOUT ARROW</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
           <Dropdown
             type="button"
-            bgcolor="fuchsia"
-            txtcolor="white"
             dropdown="toggle"
             id="idDropdown"
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Hacia Abajo"
+            classbtn="txt-white bg-silver"
           >
             <ListGroup classname="dropdown-group-list">
               {OptionsListGroupLink.map((item, index) => (
@@ -150,13 +48,12 @@ const DocsDropdown = () => {
 
           <Dropdown
             type="button"
-            bgcolor="yellow"
-            txtcolor="white"
             dropdown="toggle"
             direction="dropup"
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia Arriba"
+            classbtn="txt-white bg-silver"
           >
             <ListGroup classname="dropdown-group-list">
               {OptionsListGroupLink.map((item, index) => (
@@ -172,13 +69,12 @@ const DocsDropdown = () => {
 
           <Dropdown
             type="button"
-            bgcolor="green"
-            txtcolor="white"
             dropdown="toggle"
             direction="dropend"
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia derecha"
+            classbtn="txt-white bg-silver"
           >
             <ListGroup classname="dropdown-group-list">
               {OptionsListGroupLink.map((item, index) => (
@@ -194,13 +90,12 @@ const DocsDropdown = () => {
 
           <Dropdown
             type="button"
-            bgcolor="blue"
-            txtcolor="white"
             dropdown="toggle"
             direction="dropstart"
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia izquierda"
+            classbtn="txt-white bg-silver"
           >
             <ListGroup classname="dropdown-group-list">
               {OptionsListGroupLink.map((item, index) => (
@@ -213,7 +108,301 @@ const DocsDropdown = () => {
               ))}
             </ListGroup>
           </Dropdown>
-        </div>
+        </div>{" "}
+        <br />
+        <br />
+        <h3>DROPDOWN DIRECTIONS WITH ARROW</h3>
+        <br />
+        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
+          <Dropdown
+            type="button"
+            dropdown="toggle"
+            id="idDropdown"
+            data-bs-toggle="dropdown"
+            direction="dropdown"
+            text="Hacia Abajo"
+            classbtn="txt-white bg-silver"
+          >
+            <ListGroup classname="dropdown-group-list">
+              {OptionsListGroupLink.map((item, index) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  classname="dropdown-group-list-item"
+                  key={index}
+                />
+              ))}
+            </ListGroup>
+          </Dropdown>
+
+          <Dropdown
+            type="button"
+            dropdown="toggle"
+            direction="dropup"
+            id="idDropdown"
+            data-bs-toggle="dropdown"
+            text="Hacia Arriba"
+            classbtn="txt-white bg-silver"
+          >
+            <ListGroup classname="dropdown-group-list">
+              {OptionsListGroupLink.map((item, index) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  classname="dropdown-group-list-item"
+                  key={index}
+                />
+              ))}
+            </ListGroup>
+          </Dropdown>
+
+          <Dropdown
+            type="button"
+            dropdown="toggle"
+            direction="dropend"
+            id="idDropdown"
+            data-bs-toggle="dropdown"
+            text="Hacia derecha"
+            classbtn="txt-white bg-silver"
+          >
+            <ListGroup classname="dropdown-group-list">
+              {OptionsListGroupLink.map((item, index) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  classname="dropdown-group-list-item"
+                  key={index}
+                />
+              ))}
+            </ListGroup>
+          </Dropdown>
+
+          <Dropdown
+            type="button"
+            dropdown="toggle"
+            direction="dropstart"
+            id="idDropdown"
+            data-bs-toggle="dropdown"
+            text="Hacia izquierda"
+            classbtn="txt-white bg-silver"
+          >
+            <ListGroup classname="dropdown-group-list">
+              {OptionsListGroupLink.map((item, index) => (
+                <LinkItem
+                  text={item.display_name}
+                  route={item.route}
+                  classname="dropdown-group-list-item"
+                  key={index}
+                />
+              ))}
+            </ListGroup>
+          </Dropdown>
+        </div>{" "}
+        <br />
+        <br />
+        <h3>AVATAR</h3>
+        <br />
+        <Avatar />
+        <br />
+        <br />
+        <h3>DROPDOWN WITH AVATAR - ARROW</h3>
+        <br />
+        <DropdownAvatar
+          type="button"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropdown"
+          text="Usuario 1"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupLink.map((item, index) => (
+              <LinkItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH AVATAR + ARROW</h3>
+        <br />
+        <DropdownAvatar
+          type="button"
+          dropdown="toggle"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          direction="dropdown"
+          text="Usuario 1"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupLink.map((item, index) => (
+              <LinkItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </DropdownAvatar>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH ICON - ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH ICON + ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH TEXT - ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH TEXT + ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH ICON AND TEXT - ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
+        <br />
+        <br />
+        <h3>DROPDOWN WITH ICON AND TEXT + ARROW</h3>
+        <br />
+        <Dropdown
+          type="button"
+          dropdown="toggle"
+          direction="dropend"
+          id="idDropdown"
+          data-bs-toggle="dropdown"
+          icon="entypo:dots-three-vertical"
+          classbtn="txt-white bg-silver"
+        >
+          <ListGroup classname="dropdown-group-list">
+            {OptionsListGroupBtn.map((item, index) => (
+              <ButtonItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="dropdown-group-list-item"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Dropdown>
       </div>
     </section>
   );
