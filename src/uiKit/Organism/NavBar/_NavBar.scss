@@ -28,31 +28,16 @@
   cursor: pointer;
   color: #303c54;
 }
-  
-//.nav {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
-  // overflow: hidden;
-  // height: 100%;
-//}
 
 .nav-logo {
   display: grid;
   grid-template-columns: max-content max-content;
   column-gap: 2rem;
 }
- 
-// .nav-link {
-//   padding: 0.5rem 0 0.5rem 1.2rem;
-// }
-
-.nav-logo {
-  padding: 0.5rem 0 0.5rem 1.4rem;
-}
 
 .nav-logo{
   align-items: center;
+  padding: 0.5rem 0 0.5rem 1.4rem;
   height: 4rem;
   border-bottom: 1px solid $silver;
 }
@@ -68,42 +53,8 @@
   margin: 0 2rem;
 }
 
-.nav-logo-name {
-  // font-weight: 700;
-  color: $white;
-}
-
-// .nav-link {
-//   position: relative;
-//   color: $white;
-//   transition: 0.5s;
-//   height: 3rem;
-//   align-items: center;
-//   margin: 0.4rem;
-//   border-radius: 10px;
-// }
-
-// .nav-link:hover {
-//   color: $white;
-//   background-color: rgba(0, 0, 0, 0.1);
-// }
-
 .active {
   color: $white;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-.notification-icon {
-  font-size: xx-large;
-}
-
-.btn-notification {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 0.2rem;
-}
-
-.badge-notification {
-  margin-top: 0.3rem;
-}

@@ -21,16 +21,16 @@ const NavBar = (props) => {
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="d-flex ai-center jc-center g-2 mr-1">
           <Button
-            classname="btn-notification"
+            classname="d-flex ai-center jc-center mt-02"
             hoverbgcolor="yellow"
             hovertxtcolor="black"
             bgcolor="white"
             txtcolor="silver"
             position="relative"
           >
-            <Icon icon="bxs:bell" className="notification-icon" />
+            <Icon icon="bxs:bell" className="notification-icon f-xxl" />
             <Badge
-              classname="badge-notification"
+              classname="mt-03"
               bgcolor="red"
               txtcolor="white"
               position="absolute"
