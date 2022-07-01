@@ -8,7 +8,7 @@ const SideBar = (props) => {
   }=props
 
   return (
-      <aside className={`${classname} ${show ? "show" : null} ${bgcolor}`}>
+      <aside className={`zi-1000 ${classname} ${show ? "show" : null} ${bgcolor}`}>
           {props.children}
       </aside>
   );
