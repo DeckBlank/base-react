@@ -15,7 +15,7 @@ const DocsInput = () => {
       <br />
       <h2>DATE/TIME (Chrome only)</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h4>TYPE: date</h4>
           <br />
@@ -45,7 +45,7 @@ const DocsInput = () => {
       <br />
       <h2>TEXT</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h4>TYPE: search</h4>
           <br />
@@ -70,7 +70,7 @@ const DocsInput = () => {
       <br />
       <h2>NUMERIC</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h4>TYPE: number</h4>
           <br />
@@ -91,7 +91,7 @@ const DocsInput = () => {
       <br />
       <h2>BUTTON</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
       <div>
           <h4>TYPE: RADIO BUTTONS</h4>
           <br />
@@ -126,7 +126,7 @@ const DocsInput = () => {
       <br />
       <h2>OTHER</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h4>TYPE: hidden</h4>
           <br />

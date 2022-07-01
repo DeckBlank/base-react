@@ -14,7 +14,7 @@ const DocsSelect = () => {
       <h2>SELECT</h2>
       <br />
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h2>SELECT / UL-LI</h2>
           <SelectDropdown selectedtext="Seleccionar Item" />

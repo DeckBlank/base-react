@@ -6,7 +6,7 @@ import "./_Dropdown.scss";
 
 const Dropdown = (props) => {
   
-  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text, hoverbgcolor, hovertxtcolor } =
+  let { id, type, direction, bgcolor, txtcolor, dropdown, ariaLabelledby, text } =
     props;  
   
   const [sdropdown, setsDropdown] = useState(false);
@@ -25,8 +25,6 @@ const Dropdown = (props) => {
         data-bs-toggle="dropdown"
         ariaexpanded="false"
         onclick={showDropdown}
-        hoverbgcolor={hoverbgcolor}
-        hovertxtcolor={hovertxtcolor}
       >
         {text}
       </Button>

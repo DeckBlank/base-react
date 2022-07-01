@@ -9,9 +9,6 @@ const DocsBadge = () => {
     <section>
       <Title title="Docs Badge" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
       <div className="ph-3">    
-      <h3>TITLE FOR PAGES</h3>
-      <br />
-      <br />
       <div>
         <h2>BADGE</h2>
         <br />
@@ -59,7 +56,7 @@ const DocsBadge = () => {
       <br />
       <h2>DIRECTIONS</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 ji-start ai-start ac-center gt-columns-200-1">
         <div>
           <h3>BADGE ENCIMA DERECHA</h3>
           <br />

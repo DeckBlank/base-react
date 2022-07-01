@@ -27,16 +27,6 @@ $large: large;
 $x-large: x-large;
 $xx-large: xx-large;
 
-// DISPLAYS BLOCK & NONE
-
-.none {
-  display: none;
-}
-
-.block {
-  display: block;
-}
-
 /* :::SCROLL::: */
 
 ::-webkit-scrollbar {
@@ -66,22 +56,12 @@ $btn-border-radius: 15px;
 $btn-padding: 0.375rem 0.75rem;
 $btn-font-weight: bold;
 
-.btn-width {
-  width: min-content;
+/* :::DISPLAYS BLOCK & NONE::: */
+
+.none {
+  display: none;
 }
 
-.btn-radius {
-  border-radius: 15px;
+.block {
+  display: block;
 }
-
-
-/* :::SPAN::: */
-
-.span {
-  padding: 0.3rem;
-}
-
-.span-width {
-  width: 100%;
-}
-

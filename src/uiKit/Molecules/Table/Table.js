@@ -96,19 +96,19 @@ export default function TablePaginations({
             <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
               <Icon
                 icon="fluent:arrow-previous-24-filled"
-                className="nav-link-icon font-l"
+                className="nav-link-icon f-l"
               />
             </button>{" "}
             <button onClick={() => previousPage()} disabled={!canPreviousPage}>
               <Icon
                 icon="eva:arrow-ios-back-outline"
-                className="nav-link-icon font-xl"
+                className="nav-link-icon f-xl"
               />
             </button>{" "}
             <button onClick={() => nextPage()} disabled={!canNextPage}>
               <Icon
                 icon="eva:arrow-ios-forward-outline"
-                className="nav-link-icon font-xl"
+                className="nav-link-icon f-xl"
               />
             </button>{" "}
             <button
@@ -117,7 +117,7 @@ export default function TablePaginations({
             >
               <Icon
                 icon="fluent:arrow-next-24-filled"
-                className="nav-link-icon font-l"
+                className="nav-link-icon f-l"
               />
             </button>{" "}
           </div>

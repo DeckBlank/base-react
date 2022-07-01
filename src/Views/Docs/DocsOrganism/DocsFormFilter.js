@@ -17,7 +17,7 @@ const DocsFormFilter = () => {
     <section>
       <Title title="Docs Form Filter" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
       <div className="ph-3">
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h2>FORM FILTERS RADIO BTN</h2>
           <br />
@@ -77,7 +77,7 @@ const DocsFormFilter = () => {
         </div>
       </div>
       <br />
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h2>FORM FILTERS FUNCTIONAL WITH HOOKS</h2>
           <br />

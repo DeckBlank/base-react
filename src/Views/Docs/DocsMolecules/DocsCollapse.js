@@ -22,8 +22,8 @@ const DocsCollapse = () => {
       <div className="ph-3">
       <h2>COLLAPSE</h2>
       <br />
-      <div className="grid-responsive-docs">
-        <div className="flex-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
+        <div className="d-flex fd-column jc-flex-start">
           <h3>(DETAILS / SUMMARY : FILTERS RADIO BUTTON)</h3>
           <br />
           <Details summary="Summary" txtcolor="gray">
@@ -46,7 +46,7 @@ const DocsCollapse = () => {
             </FormFilter>
           </Details>
         </div>
-        <div className="flex-responsive-docs">
+        <div className="d-flex fd-column jc-flex-start">
           <h3>(DETAILS / SUMMARY : FILTERS SWITCH BUTTON)</h3>
           <br />
           <Details summary="Summary" txtcolor="gray">
@@ -65,7 +65,7 @@ const DocsCollapse = () => {
             </FormFilter>
           </Details>
         </div>
-        <div className="flex-responsive-docs">
+        <div className="d-flex fd-column jc-flex-start">
           <h3>(DETAILS / SUMMARY : SELECTS)</h3>
           <br />
           <Details summary="Summary" txtcolor="gray">
@@ -82,7 +82,7 @@ const DocsCollapse = () => {
             </Select>
           </Details>
         </div>
-        <div className="flex-responsive-docs">
+        <div className="d-flex fd-column jc-flex-start">
           <h3>(BUTTON / LISTGROUP)</h3>
           <br />
           <Collapse

@@ -26,7 +26,7 @@ const FilterCardButton = (props) => {
       id={id}
       name={name}
       type={type}
-      className={`btnCard ${classname} hover-bg-${hoverbgcolor} hover-border-${hoverbordercolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
+      className={`btnCard ${classname} h-bg-${hoverbgcolor} h-border-${hoverbordercolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
       onClick={onclick}
     >
       <span>

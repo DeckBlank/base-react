@@ -85,7 +85,7 @@ const DocsTable = () => {
       <td>{item.modalidad}</td>
       <td className="span-state-container">
         {/* <Badge text={item.estado} bgcolor="green" txtcolor="white" classname="span-width" /> */}
-        <span className="span span-width btn-radius span-flex-state bg-green">
+        <span className="p-03 w-100 br-15 bg-green d-flex ai-center txta-center jc-center">
           {item.estado}
         </span>
         <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
@@ -96,7 +96,7 @@ const DocsTable = () => {
   );
 
   return (
-    <section className="views-docs">
+    <section className="d-flex fd-column g-2">
       <Title
         title="Docs Table"
         classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"

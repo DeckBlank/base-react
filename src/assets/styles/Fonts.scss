@@ -8,38 +8,264 @@
     scroll-behavior: smooth;
 }
 
+/* :::TRANSFORM TEXT::: */
+
+.txt-capitalize {
+    text-transform: capitalize;
+}
+
+.txt-uppercase {
+    text-transform: uppercase;
+}
+
+.txt-lowercase {
+    text-transform: lowercase;
+}
+
+.txt-none {
+    text-transform: none;
+}
+
 /* :::MEDIDAS FONT SIZE::: */
 
-.font-s {
+.f-s {
     font-size: $small;
 }
 
-.font-xs {
+.f-xs {
     font-size: $x-small;
 }
 
-.font-xxs {
+.f-xxs {
     font-size: $xx-small;
 }
 
-.font-m {
+.f-m {
     font-size: $medium;
 }
 
-.font-l {
+.f-l {
     font-size: $large;
 }
 
-.font-xl {
+.f-xl {
     font-size: $x-large;
 }
 
-.font-xxl {
+.f-xxl {
     font-size: $xx-large;
 }
 
-.f-s {
-    font-size: small;
+/* :::FONT WEIGHT::: */
+
+.fw-normal {
+    font-weight: normal;
 }
 
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-lighter {
+    font-weight: lighter;
+}
+
+.fw-bolder {
+    font-weight: bolder;
+}
+
+.fw-100 {
+    font-weight: 100;
+}
+
+.fw-200 {
+    font-weight: 200;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* :::FONT STYLE::: */
+
+.fs-normal {
+    font-style: normal;
+}
+
+.fs-italic {
+    font-style: italic;
+}
+
+.fs-oblique {
+    font-style: oblique;
+}
+
+.fs-inherit {
+    font-style: inherit;
+}
+
+.fs-initial {
+    font-style: initial;
+}
+
+.fs-unset {
+    font-style: unset;
+}
+
+/* :::TEXT ALIGN::: */
+
+.txta-center {
+    text-align: center;
+}
+
+.txta-justify {
+    text-align: justify;
+}
+
+.txta-start {
+    text-align: start;
+}
+
+.txta-end {
+    text-align: end;
+}
+
+.txta-left {
+    text-align: left;
+}
+
+.txta-right {
+    text-align: right;
+}
+
+/* :::LINE-HEIGHT::: */
+
+.lh-normal {
+    line-height: normal;
+}
+
+.lh-02 {
+    line-height: 0.2rem;
+}
+
+.lh-04 {
+    line-height: 0.4rem;
+}
+
+.lh-05 {
+    line-height: 0.5rem;
+}
+
+.lh-06 {
+    line-height: 0.6rem;
+}
+
+.lh-08 {
+    line-height: 0.8rem;
+}
+
+.lh-1 {
+    line-height: 1rem;
+}
+
+.lh-12 {
+    line-height: 1.2rem;
+}
+
+.lh-14 {
+    line-height: 1.4rem;
+}
+
+.lh-15 {
+    line-height: 1.5rem;
+}
+
+.lh-16 {
+    line-height: 1.6rem;
+}
+
+.lh-18 {
+    line-height: 1.8rem;
+}
+
+.lh-2 {
+    line-height: 2rem;
+}
+
+/* :::LETTER-SPACING::: */
+
+.ls-normal {
+    letter-spacing:normal;
+}
+
+.ls-02 {
+    letter-spacing: 0.2rem;
+}
+
+.ls-04 {
+    letter-spacing: 0.4rem;
+}
+
+.ls-05 {
+    letter-spacing: 0.5rem;
+}
+
+.ls-06 {
+    letter-spacing: 0.6rem;
+}
+
+.ls-08 {
+    letter-spacing: 0.8rem;
+}
+
+.ls-1 {
+    letter-spacing: 1rem;
+}
+
+.ls-12 {
+    letter-spacing: 1.2rem;
+}
+
+.ls-14 {
+    letter-spacing: 1.4rem;
+}
+
+.ls-15 {
+    letter-spacing: 1.5rem;
+}
+
+.ls-16 {
+    letter-spacing: 1.6rem;
+}
+
+.ls-18 {
+    letter-spacing: 1.8rem;
+}
+
+.ls-2 {
+    letter-spacing: 2rem;
+}
 

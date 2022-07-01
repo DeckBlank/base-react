@@ -29,7 +29,7 @@ const Button = (props) => {
       name={name}
       type={type}
       alt={alt}
-      className={`btn ${classname} hover-border-${hoverbordercolor} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} dropdown-${dropdown} padding-${padding} radius-${radius}`}
+      className={`btn ${classname} h-b-${hoverbordercolor} h-bg-${hoverbgcolor} h-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} p-${position} dropdown-${dropdown} padding-${padding} radius-${radius}`}
       data-bs-toggle={databstoggle}
       aria-expanded={ariaexpanded}
       onClick={onclick}

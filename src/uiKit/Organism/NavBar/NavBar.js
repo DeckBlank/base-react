@@ -17,9 +17,9 @@ const NavBar = (props) => {
       <div className="header-toggle" onClick={onclick}>
         <Icon icon="charm:menu-hamburger" />
       </div>
-      <div className="flex-logo-avatar-nav">
+      <div className="d-flex ai-center jc-space-between w-webkit-fill-available">
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
-        <div className="flex-avatar-nav">
+        <div className="d-flex ai-center jc-center g-2 mr-1">
           <Button
             classname="btn-notification"
             hoverbgcolor="yellow"

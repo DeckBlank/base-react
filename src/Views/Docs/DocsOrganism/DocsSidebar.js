@@ -26,7 +26,7 @@ const DocsSidebar = () => {
       <div className="ph-3">
       <h2>SIDEBAR</h2>
       <br />
-      <div className="grid-responsive-docs">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h3>HOME</h3>
           <br />
@@ -105,8 +105,8 @@ const DocsSidebar = () => {
           <h3>FILTER</h3>
           <br />
           <SideBar show={show} classname="sidebar-filter" bgcolor="bg-white">
-            <div className="p-sticky top-0 bg-white flex-filternav">
-              <div className="flex-filtertitle">
+            <div className="p-sticky top-0 bg-white d-flex jc-space-between ai-center pt-1 pr-1 pl-1 zi-100">
+              <div className="d-flex ai-center zi-100">
                 <Icon icon="mi:filter" className="txt-gray font-xxl" />
                 <h3 className="txt-gray"> Filtros </h3>
               </div>

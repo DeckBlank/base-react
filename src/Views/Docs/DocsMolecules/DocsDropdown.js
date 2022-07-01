@@ -28,7 +28,7 @@ const DocsDropdown = () => {
         <br />
         <h2>DROPDOWN AVATAR</h2>
         <br />
-        <div className="grid-responsive-docs">
+        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
           <DropdownAvatar
             type="button"
             bgcolor="transparent"
@@ -125,7 +125,7 @@ const DocsDropdown = () => {
         <br />
         <h2>DROPDOWN DIRECTIONS</h2>
         <br />
-        <div className="grid-responsive-docs">
+        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
           <Dropdown
             type="button"
             bgcolor="fuchsia"

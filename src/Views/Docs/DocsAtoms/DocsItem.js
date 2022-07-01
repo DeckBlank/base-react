@@ -14,7 +14,7 @@ const DocsItem = () => {
       <div className="ph-3"> 
       <h2>LINKITEM</h2>
       <br />
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <LinkItem
           text="Link for select"
           route="/"
@@ -44,7 +44,7 @@ const DocsItem = () => {
       <br />
       <h2>BUTTONITEM</h2>
       <br />
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <ButtonItem
           text="Button for Select"
           icon="bx:package"
@@ -69,7 +69,7 @@ const DocsItem = () => {
       <br />
       <h2>LISTGROUP</h2>
       <br />
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h3>(S/C-SELECT)</h3>
           <br />
@@ -131,7 +131,7 @@ const DocsItem = () => {
       <br />
       <h2>LISTGROUP WITH ICON</h2>
       <br />
-      <div className="grid-responsive-docs-filterform">
+      <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
         <div>
           <h3>(D/C-SELECT)</h3>
           <br />
