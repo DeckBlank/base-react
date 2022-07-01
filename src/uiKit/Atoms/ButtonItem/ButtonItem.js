@@ -12,9 +12,9 @@ const ButtonItem = (props) => {
         name={name}
         type={type}
         onClick={onclick}
-        className={`li-items ${classname}`}        
+        className={`d-flex ai-center jc-flex-start ${classname}`}        
       >
-        <i className="icon-flex">
+        <i className="icon d-flex ai-center">
           <Icon icon={icon} />
         </i>
         <span>{text}</span>

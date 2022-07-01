@@ -86,6 +86,7 @@ const Docs = (props) => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
+                icon={item.icon}
                 classname="collapse-sidebar-item bb-sidebar"
                 key={index}
               />
@@ -99,6 +100,7 @@ const Docs = (props) => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
+                icon={item.icon}
                 classname="collapse-sidebar-item bb-sidebar"
                 key={index}
               />
@@ -112,6 +114,7 @@ const Docs = (props) => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
+                icon={item.icon}
                 classname="collapse-sidebar-item bb-sidebar"
                 key={index}
               />

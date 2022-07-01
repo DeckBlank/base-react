@@ -85,9 +85,10 @@ const DocsTable = () => {
       <td>{item.modalidad}</td>
       <td className="span-state-container">
         {/* <Badge text={item.estado} bgcolor="green" txtcolor="white" classname="span-width" /> */}
-        <span className="p-03 w-100 br-15 bg-green d-flex ai-center txta-center jc-center">
+        <span className="p-03 w-100p br-15 bg-green d-flex ai-center txta-center jc-center">
           {item.estado}
         </span>
+        
         <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
           <Icon icon="majesticons:more-menu-vertical" />
         </Button>

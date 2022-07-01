@@ -50,6 +50,7 @@ const DocsSidebar = () => {
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
+                    icon={item.icon}
                     classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />
@@ -67,6 +68,7 @@ const DocsSidebar = () => {
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
+                    icon={item.icon}
                     classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />
@@ -84,6 +86,7 @@ const DocsSidebar = () => {
                   <LinkItem
                     text={item.display_name}
                     route={item.route}
+                    icon={item.icon}
                     classname="collapse-sidebar-item bb-sidebar"
                     key={index}
                   />

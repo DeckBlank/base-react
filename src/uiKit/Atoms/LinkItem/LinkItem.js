@@ -15,12 +15,12 @@ const LinkItem = (props) => {
   } = props;
 
   return (
-    <div className={`li-content ${classnameLi}`}>
+    <div className={`p-0 m-0 ${classnameLi}`}>
       <Link
-        className={`li-items ${classname}`}
+        className={`d-flex ai-center jc-flex-start font-s ${classname}`}
         to={route}
       >
-        <i className="icon-flex">
+        <i className="icon d-flex ai-center">
           <Icon icon={icon} />
         </i>
         <span>{text}</span>
