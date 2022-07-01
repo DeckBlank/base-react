@@ -32,9 +32,10 @@ const DocsDropdown = () => {
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Hacia Abajo"
-            classbtn="txt-white bg-silver"
+            classname="bg-red txt-white br-15"
+            classbtn="txt-white bg-transparent"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -53,9 +54,10 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia Arriba"
-            classbtn="txt-white bg-silver"
+            classname="bg-blue txt-white br-15"
+            classbtn="txt-white bg-transparent "
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -74,9 +76,10 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia derecha"
-            classbtn="txt-white bg-silver"
+            classname="bg-green txt-white br-15"
+            classbtn="txt-white bg-transparent "
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -95,9 +98,10 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia izquierda"
-            classbtn="txt-white bg-silver"
+            classname="bg-orange txt-white br-15"
+            classbtn="txt-white bg-transparent "
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -121,9 +125,11 @@ const DocsDropdown = () => {
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Hacia Abajo"
-            classbtn="txt-white bg-silver"
+            classname="bg-red txt-white br-15"
+            classbtn="txt-white bg-transparent pr-2"
+            iconarrow="eva:arrow-ios-downward-outline"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -142,9 +148,11 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia Arriba"
-            classbtn="txt-white bg-silver"
+            classname="bg-blue txt-white br-15"
+            classbtn="txt-white bg-transparent pr-2"
+            iconarrow="eva:arrow-ios-upward-fill"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -163,9 +171,11 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia derecha"
-            classbtn="txt-white bg-silver"
+            classname="bg-orange txt-white br-15"
+            classbtn="txt-white bg-transparent pr-2"
+            iconarrow="eva:arrow-ios-forward-outline"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -184,9 +194,11 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia izquierda"
-            classbtn="txt-white bg-silver"
+            classname="bg-green txt-white br-15"
+            classbtn="txt-white bg-transparent pr-2"
+            iconarrow="eva:arrow-ios-back-outline"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
@@ -214,9 +226,10 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-          classbtn="txt-white bg-silver"
+          classname="txt-white br-15"
+          classbtn="txt-black bg-transparent "          
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
@@ -239,9 +252,11 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-          classbtn="txt-white bg-silver"
+          classname="txt-white bg-grey br-15"
+          classbtn="txt-black bg-transparent pr-2"
+          iconarrow="eva:arrow-ios-forward-outline"
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50" >
             {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
@@ -264,9 +279,10 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          classname="bg-white br-15"
+          classbtn="txt-black bg-transparent"
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}
@@ -288,10 +304,12 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          icon="fluent:calculator-20-filled"
+          iconarrow="eva:arrow-ios-forward-outline"
+          classname="txt-white bg-silver br-15"
+          classbtn="txt-white bg-transparent pr-2"
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}
@@ -313,10 +331,11 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          text="Texto"
+          classname="bg-yellow txt-white br-15"
+          classbtn="txt-black bg-transparent "
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}
@@ -338,10 +357,12 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          text="Texto"
+          classname="txt-silver br-15"
+          classbtn="txt-black bg-transparent pr-2"
+          iconarrow="eva:arrow-ios-forward-outline"
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}
@@ -363,10 +384,12 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          icon="fluent:calculator-20-filled"
+          classname="txt-silver br-15"
+          classbtn="txt-black bg-transparent"
+          text="Texto"
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}
@@ -388,10 +411,13 @@ const DocsDropdown = () => {
           direction="dropend"
           id="idDropdown"
           data-bs-toggle="dropdown"
-          icon="entypo:dots-three-vertical"
-          classbtn="txt-white bg-silver"
+          icon="fluent:calculator-20-filled"
+          iconarrow="eva:arrow-ios-forward-outline"
+          text="Texto"
+          classname="bg-yellow txt-white br-15"
+          classbtn="txt-black bg-transparent pr-2"          
         >
-          <ListGroup classname="dropdown-group-list">
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
               <ButtonItem
                 text={item.display_name}

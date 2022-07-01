@@ -30,7 +30,7 @@ const DocsSidebar = () => {
         <div>
           <h3>HOME</h3>
           <br />
-          <SideBar show={show} classname="sidebar" bgcolor="bg-gray">
+          <SideBar show={show} classname="sidebar zi-100" bgcolor="bg-gray">
             <ListGroup classname="uncollapse-sidebar li-items-sidebar">
               <LinkItem
                 text="Documentation"
@@ -107,7 +107,7 @@ const DocsSidebar = () => {
         <div>
           <h3>FILTER</h3>
           <br />
-          <SideBar show={show} classname="sidebar-filter" bgcolor="bg-white">
+          <SideBar show={show} classname="sidebar-filter zi-200" bgcolor="bg-white">
             <div className="p-sticky top-0 bg-white d-flex jc-space-between ai-center pt-1 pr-1 pl-1 zi-100">
               <div className="d-flex ai-center zi-100">
                 <Icon icon="mi:filter" className="txt-gray font-xxl" />

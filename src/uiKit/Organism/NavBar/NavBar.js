@@ -28,7 +28,7 @@ const NavBar = (props) => {
             txtcolor="silver"
             position="relative"
           >
-            <Icon icon="bxs:bell" className="notification-icon"/>
+            <Icon icon="bxs:bell" className="notification-icon" />
             <Badge
               classname="badge-notification"
               bgcolor="red"
@@ -42,15 +42,16 @@ const NavBar = (props) => {
           </Button>
           <DropdownAvatar
             type="button"
-            bgcolor="transparent"
-            txtcolor="black"
             dropdown="toggle"
             id="idDropdown"
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Usuario 1"
+            classname="txt-silver br-15"
+            classbtn="txt-black bg-transparent pr-2"
+            iconarrow="eva:arrow-ios-downward-outline"
           >
-            <ListGroup classname="dropdown-group-list">
+            <ListGroup classname="dropdown-group-list zi-50">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}

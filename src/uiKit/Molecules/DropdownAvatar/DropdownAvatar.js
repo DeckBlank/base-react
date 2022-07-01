@@ -26,10 +26,10 @@ const DropdownAvatar = (props) => {
 
   return (
     <div
-      className={`dropdown-group ${direction} ${classname}`}
+    className={`dropdown-group zi-10 ${direction} ${classname}`}
     >
       <div className="avatar-dropdown">
-      <Icon icon={iconarrow} className={classarrow} />
+      <Icon icon={iconarrow} className={`${classarrow} icon-arrow-drop zi-20`} />
         <Button
           type={type}
           id={id}
@@ -37,7 +37,7 @@ const DropdownAvatar = (props) => {
           data-bs-toggle="dropdown"
           ariaexpanded="false"
           onclick={showDropdown}
-          classname={`d-flex ai-center w-100p ${classbtn}`}
+          classname={`d-flex ai-center w-100p zi-30 ${classbtn}`}
         >
           <Avatar />
           <p>{text}</p>
@@ -45,7 +45,7 @@ const DropdownAvatar = (props) => {
       </div>
       <ul
         id="dropdownAvatars"
-        className={`dropdown-menu`}
+        className={`dropdown-menu zi-40`}
         aria-labelledby={ariaLabelledby}
         style={{display: `${sdropdown ? "block" : "none"}`}}
       >

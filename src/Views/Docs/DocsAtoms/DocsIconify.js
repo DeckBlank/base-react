@@ -87,12 +87,13 @@ const DocsIconify = () => {
           icon="eva:arrow-ios-downward-outline"
           className="txt-gray f-xxl"
         />
+        <Icon icon="eva:arrow-ios-upward-fill" className="txt-gray f-xxl" />
         <Icon icon="eva:arrow-ios-back-outline" className="txt-gray f-xxl" />
         <Icon
           icon="eva:arrow-ios-forward-outline"
           className="txt-gray f-xxl"
         />
-        <Icon icon="eva:arrow-ios-upward-fill" className="txt-gray f-xxl" />
+        
         <Icon
           icon="fluent:arrow-previous-24-filled"
           className="txt-gray f-xxl"
