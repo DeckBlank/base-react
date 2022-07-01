@@ -94,12 +94,12 @@ const DocsTable = () => {
         <Dropdown
           type="button"
           dropdown="toggle"
-          direction="dropend"
+          direction="dropstart"
           id="idDropdown"
           data-bs-toggle="dropdown"
           icon="entypo:dots-three-vertical"
-          classname="bg-white br-15"
-          classbtn="txt-black bg-transparent"
+          classname="bg-transparent br-15"
+          classbtn="txt-gray bg-transparent h-txt-white"
         >
           <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (
