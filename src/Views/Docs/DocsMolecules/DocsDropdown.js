@@ -252,9 +252,9 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-          classname="txt-white bg-grey br-15"
-          classbtn="txt-black bg-transparent pr-2"
-          iconarrow="eva:arrow-ios-forward-outline"
+          classname="txt-white bg-gray br-15"
+          classbtn="txt-white bg-transparent pr-2"
+          iconarrow="eva:arrow-ios-downward-outline"
         >
           <ListGroup classname="dropdown-group-list zi-50" >
             {OptionsListGroupLink.map((item, index) => (
