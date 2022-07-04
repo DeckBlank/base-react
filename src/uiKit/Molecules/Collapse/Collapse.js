@@ -21,7 +21,7 @@ const Collapse = (props) => {
         onclick={showCollapse}
         iconarrow={iconarrow}
       />
-      <div style={{display: `${sCollapse ? "block" : "none"}`}}
+      <div className={`${sCollapse ? "block" : "none"}`} 
       >
        {props.children}
       </div>

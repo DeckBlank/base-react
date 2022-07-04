@@ -30,7 +30,7 @@ const Dropdown = (props) => {
         <Icon icon={icon} />
         <p className={classtext}>{text}</p>        
       </Button>
-      <div className="dropdown-menu zi-40" aria-labelledby={ariaLabelledby} style={{display: `${ sdropdown ? "block" : "none"}`}}>
+      <div className={`dropdown-menu zi-40 ${sdropdown ? "block" : "none"}`} aria-labelledby={ariaLabelledby}>
         {props.children}
       </div>
     </div>
