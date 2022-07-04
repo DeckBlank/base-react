@@ -31,15 +31,23 @@ const DocsItem = React.lazy(() => import("../Docs/DocsAtoms/DocsItem"));
 const DocsIconify = React.lazy(() => import("../Docs/DocsAtoms/DocsIconify"));
 
 // DOCS MOLECULES
-const DocsCollapse = React.lazy(() => import("../Docs/DocsMolecules/DocsCollapse"));
-const DocsDropdown = React.lazy(() => import("../Docs/DocsMolecules/DocsDropdown"));
+const DocsCollapse = React.lazy(() =>
+  import("../Docs/DocsMolecules/DocsCollapse")
+);
+const DocsDropdown = React.lazy(() =>
+  import("../Docs/DocsMolecules/DocsDropdown")
+);
 const DocsSelect = React.lazy(() => import("../Docs/DocsMolecules/DocsSelect"));
 const DocsTable = React.lazy(() => import("../Docs/DocsMolecules/DocsTable"));
 
 // DOCS ORGANISM
-const DocsFormFilter = React.lazy(() => import("../Docs/DocsOrganism/DocsFormFilter"));
+const DocsFormFilter = React.lazy(() =>
+  import("../Docs/DocsOrganism/DocsFormFilter")
+);
 const DocsNav = React.lazy(() => import("../Docs/DocsOrganism/DocsNav"));
-const DocsSidebar = React.lazy(() => import("../Docs/DocsOrganism/DocsSidebar"));
+const DocsSidebar = React.lazy(() =>
+  import("../Docs/DocsOrganism/DocsSidebar")
+);
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
@@ -70,7 +78,6 @@ const Docs = (props) => {
         closeSession={closeSession}
       />
       <SideBar show={show} classname="sidebar p-fixed" bgcolor="bg-gray">
-
         <ListGroup classname="uncollapse-sidebar li-items-sidebar">
           <LinkItem
             text="Documentation"
@@ -80,7 +87,12 @@ const Docs = (props) => {
           />
         </ListGroup>
 
-        <Collapse text="Atoms" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse
+          text="Atoms"
+          icon="clarity:list-solid"
+          iconarrow="eva:arrow-ios-downward-outline"
+          classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+        >
           <ListGroup classname="collapse-sidebar">
             {AtomsListGroup.map((item, index) => (
               <LinkItem
@@ -94,7 +106,12 @@ const Docs = (props) => {
           </ListGroup>
         </Collapse>
 
-        <Collapse text="Molecules" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse
+          text="Molecules"
+          icon="clarity:list-solid"
+          iconarrow="eva:arrow-ios-downward-outline"
+          classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+        >
           <ListGroup classname="collapse-sidebar">
             {MoleculesListGroup.map((item, index) => (
               <LinkItem
@@ -108,7 +125,12 @@ const Docs = (props) => {
           </ListGroup>
         </Collapse>
 
-        <Collapse text="Organism" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse
+          text="Organism"
+          icon="clarity:list-solid"
+          iconarrow="eva:arrow-ios-downward-outline"
+          classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+        >
           <ListGroup classname="collapse-sidebar">
             {OrganismListGroup.map((item, index) => (
               <LinkItem
@@ -130,27 +152,61 @@ const Docs = (props) => {
             classname="uncollapse-sidebar-item bb-sidebar "
           />
         </ListGroup>
-
       </SideBar>
 
       <Content>
         <Suspense fallback={loading}>
           <Routes>
             <>
-              <Route exact path="/button" name="Button" element={<DocsButton />}/>
+              <Route
+                exact
+                path="/button"
+                name="Button"
+                element={<DocsButton />}
+              />
               <Route exact path="/input" name="Input" element={<DocsInput />} />
               <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
               <Route exact path="/item" name="Item" element={<DocsItem />} />
-              <Route exact path="/iconify" name="Iconify" element={<DocsIconify />} />
+              <Route
+                exact
+                path="/iconify"
+                name="Iconify"
+                element={<DocsIconify />}
+              />
 
-              <Route exact path="/dropdown" name="Dropdown" element={<DocsDropdown />}/>
-              <Route exact path="/collapse" name="Collapse" element={<DocsCollapse />} />
-              <Route exact path="/select" name="Select" element={<DocsSelect />} />
+              <Route
+                exact
+                path="/dropdown"
+                name="Dropdown"
+                element={<DocsDropdown />}
+              />
+              <Route
+                exact
+                path="/collapse"
+                name="Collapse"
+                element={<DocsCollapse />}
+              />
+              <Route
+                exact
+                path="/select"
+                name="Select"
+                element={<DocsSelect />}
+              />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
 
-              <Route exact path="/formfilter" name="FormFilter" element={<DocsFormFilter />} />
+              <Route
+                exact
+                path="/formfilter"
+                name="FormFilter"
+                element={<DocsFormFilter />}
+              />
               <Route exact path="/nav" name="Nav" element={<DocsNav />} />
-              <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />
+              <Route
+                exact
+                path="/sidebar"
+                name="Sidebar"
+                element={<DocsSidebar />}
+              />
             </>
           </Routes>
         </Suspense>

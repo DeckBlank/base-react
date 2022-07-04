@@ -89,13 +89,15 @@ const DocsCollapse = () => {
             text="Collapse"
             icon="clarity:list-solid"
             classname="uncollapse-sidebar-item li-items-sidebar border-bottom-sidebar"
+            iconarrow="eva:arrow-ios-downward-outline"
           >
             <ListGroup classname="collapse-sidebar">
               {OptionsListGroupLink.map((item, index) => (
                 <LinkItem
                   text={item.display_name}
+                  icon={item.icon}
                   route={item.route}
-                  classname="collapse-sidebar-item border-bottom-sidebar"
+                  classname="collapse-sidebar-item bb-sidebar"
                   key={index}
                 />
               ))}

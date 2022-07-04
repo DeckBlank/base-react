@@ -5,7 +5,7 @@ import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
 
 const Collapse = (props) => {
 
-  let {icon, classname, text} = props
+  let {icon, classname, text, iconarrow} = props
 
   const [sCollapse, setsCollapse] = useState(false);
   const showCollapse = () => {
@@ -19,6 +19,7 @@ const Collapse = (props) => {
         icon={icon}
         classname={classname}
         onclick={showCollapse}
+        iconarrow={iconarrow}
       />
       <div style={{display: `${sCollapse ? "block" : "none"}`}}
       >
