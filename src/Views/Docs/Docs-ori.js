@@ -9,15 +9,11 @@ import useToken from "../../useToken";
 import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
 import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
-import SidebarFilter from "../../uiKit/Organism/SidebarFilter/SidebarFilter";
-import SidebarLink from "../../uiKit/Organism/SidebarLink/SidebarLink";
+
 // JSONS
 import AtomsListGroup from "../../assets/Jsons/SidebarList/atoms-list-docs.json";
 import MoleculesListGroup from "../../assets/Jsons/SidebarList/molecules-list-docs.json";
 import OrganismListGroup from "../../assets/Jsons/SidebarList/organism-list-docs.json";
-
-//CONTEXT
-import {FilterContext} from "../../context/FilterContext";
 
 // LOADER
 const loading = (
@@ -45,19 +41,13 @@ const DocsTable = React.lazy(() => import("./DocsMolecules/DocsTable"));
 const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"));
 const DocsNav = React.lazy(() => import("./DocsOrganism/DocsNav"));
 const DocsSidebar = React.lazy(() => import("./DocsOrganism/DocsSidebar"));
-const DocsPrueba = React.lazy(() => import("./DocsOrganism/DocsPrueba"));
 
-const Docs = (props) => {
+const Docsf = (props) => {
   const { token, setToken } = useToken();
   const [show, setShow] = useState(true);  
-  const [showFilter, setShowFilter] = useState(false);
 
   const onShow = () => {
     setShow(!show);
-  };
-
-  const onShowFilter = (showFilter) => {  
-    setShowFilter(showFilter);    
   };
 
   const navigate = useNavigate();
@@ -81,12 +71,70 @@ const Docs = (props) => {
         onclick={onShow}
         closeSession={closeSession}
       />
-      <SideBar show={show} classname="sidebar p-fixed" bgcolor={ showFilter===true ? "bg-white" : "bg-gray" }>        
-        { showFilter===true ? <SidebarFilter onshowfilter={onShowFilter} /> : <SidebarLink/> }
+      <SideBar show={show} classname="sidebar p-fixed" bgcolor="bg-gray">       
+        <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+          <LinkItem
+            text="Documentation"
+            route="/"
+            icon="ant-design:home-filled"
+            classname="uncollapse-sidebar-item bb-sidebar"
+          />
+        </ListGroup>
+
+        <Collapse text="Atoms" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+          <ListGroup classname="collapse-sidebar">
+            {AtomsListGroup.map((item, index) => (
+              <LinkItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="collapse-sidebar-item bb-sidebar"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Collapse>
+
+        <Collapse text="Molecules" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+          <ListGroup classname="collapse-sidebar">
+            {MoleculesListGroup.map((item, index) => (
+              <LinkItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="collapse-sidebar-item bb-sidebar"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Collapse>
+
+        <Collapse text="Organism" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+          <ListGroup classname="collapse-sidebar">
+            {OrganismListGroup.map((item, index) => (
+              <LinkItem
+                text={item.display_name}
+                route={item.route}
+                icon={item.icon}
+                classname="collapse-sidebar-item bb-sidebar"
+                key={index}
+              />
+            ))}
+          </ListGroup>
+        </Collapse>
+
+        <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+          <LinkItem
+            text="Iconify"
+            route="/iconify"
+            icon="akar-icons:face-very-happy"
+            classname="uncollapse-sidebar-item bb-sidebar "
+          />
+        </ListGroup>
+       
       </SideBar>
 
       <Content>
-        
         <Suspense fallback={loading}>
           <Routes>
             <>
@@ -103,10 +151,7 @@ const Docs = (props) => {
 
               <Route exact path="/formfilter" name="FormFilter" element={<DocsFormFilter />} />
               <Route exact path="/nav" name="Nav" element={<DocsNav />} />
-              <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />  
-                            
-              <Route exact path="/prueba" name="Sidebar" element={<DocsPrueba onshowfilter={onShowFilter} />} />
-              
+              <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />
             </>
           </Routes>
         </Suspense>
@@ -115,4 +160,4 @@ const Docs = (props) => {
   );
 };
 
-export default Docs;
+export default Docsf;

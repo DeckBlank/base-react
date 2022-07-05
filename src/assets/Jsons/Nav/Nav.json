@@ -1,0 +1,95 @@
+[
+    {
+        "text": "Documentation",
+        "route": "/",
+        "icon": "ant-design:home-filled",
+        "snav": []
+    },
+    {    
+        "text": "Atoms",
+        "route": "#",
+        "icon": "clarity:list-solid",
+        "snav": [
+            {
+                "text": "Badge / Title", 
+                "route": "/badge",
+                "icon": "bx:category-alt"
+            },
+            {
+                "text": "Button",
+                "route": "/button",
+                "icon": "bx:user-pin"
+            },
+            {
+                "text": "Input",
+                "route": "/input",
+                "icon": "bx:user-pin"
+            },
+            {
+                "text": "Item",
+                "route": "/item",
+                "icon": "bx:package"
+            }
+        ]
+    },
+    {    
+        "text": "Molecules",
+        "route": "#",
+        "icon": "clarity:list-solid",
+        "snav": [
+            {
+                "text": "Dropdown",
+                "route": "/dropdown",
+                "icon": "bx:category-alt"
+            },
+            {
+                "text": "Collapse",
+                "route": "/collapse",
+                "icon": "bx:user-pin"
+            },
+            {
+                "text": "Select",
+                "route": "/select",
+                "icon": "bx:user-pin"
+            },
+            {
+                "text": "Table",
+                "route": "/table",
+                "icon": "bx:package"
+            }
+        ]
+    },
+    {    
+        "text": "Organism",
+        "route": "#",
+        "icon": "clarity:list-solid",
+        "snav": [
+            {
+                "text": "FormFilter",
+                "route": "/formfilter",
+                "icon": "bx:category-alt"
+            },
+            {
+                "text": "sidebar",
+                "route": "/sidebar",
+                "icon": "bx:user-pin"
+            },
+            {
+                "text": "nav",
+                "route": "/nav",
+                "icon": "bx:package"
+            },
+            {
+                "text": "prueba",
+                "route": "/prueba",
+                "icon": "bx:package"
+            }
+        ]
+    },
+    {
+        "text": "Iconify",
+        "route": "/iconify",
+        "icon": "akar-icons:face-very-happy",
+        "snav": []
+    }
+]
