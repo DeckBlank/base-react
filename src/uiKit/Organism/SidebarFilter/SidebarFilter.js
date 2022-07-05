@@ -19,8 +19,7 @@ let{onshowfilter}=props;
             </div>
             <Button classname="flex-btn" bgcolor="white" onclick={() => onshowfilter(false)}>
             <Icon icon="ep:close-bold" className="txt-gray font-m" />
-            </Button> 
-            <Icon icon="ep:close-bold" className="txt-gray font-m"  />
+            </Button>             
         </div>
         <div className="content-filter">
             <Details summary="Lista" txtcolor="gray">

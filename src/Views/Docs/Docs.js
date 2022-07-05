@@ -26,8 +26,6 @@ const loading = (
   </div>
 );
 
-// PAGES FOR DOCS
-
 // DOCS ATOMS
 const DocsButton = React.lazy(() => import("./DocsAtoms/DocsButton"));
 const DocsInput = React.lazy(() => import("./DocsAtoms/DocsInput"));
@@ -46,6 +44,7 @@ const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"))
 const DocsNav = React.lazy(() => import("./DocsOrganism/DocsNav"));
 const DocsSidebar = React.lazy(() => import("./DocsOrganism/DocsSidebar"));
 const DocsPrueba = React.lazy(() => import("./DocsOrganism/DocsPrueba"));
+const DocsModals = React.lazy(() => import("../Docs/DocsOrganism/DocsModals"));
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
@@ -90,23 +89,52 @@ const Docs = (props) => {
         <Suspense fallback={loading}>
           <Routes>
             <>
-              <Route exact path="/button" name="Button" element={<DocsButton />}/>
+              <Route
+                exact
+                path="/button"
+                name="Button"
+                element={<DocsButton />}
+              />
               <Route exact path="/input" name="Input" element={<DocsInput />} />
               <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
               <Route exact path="/item" name="Item" element={<DocsItem />} />
-              <Route exact path="/iconify" name="Iconify" element={<DocsIconify />} />
+              <Route
+                exact
+                path="/iconify"
+                name="Iconify"
+                element={<DocsIconify />}
+              />
 
-              <Route exact path="/dropdown" name="Dropdown" element={<DocsDropdown />}/>
-              <Route exact path="/collapse" name="Collapse" element={<DocsCollapse />} />
-              <Route exact path="/select" name="Select" element={<DocsSelect />} />
+              <Route
+                exact
+                path="/dropdown"
+                name="Dropdown"
+                element={<DocsDropdown />}
+              />
+              <Route
+                exact
+                path="/collapse"
+                name="Collapse"
+                element={<DocsCollapse />}
+              />
+              <Route
+                exact
+                path="/select"
+                name="Select"
+                element={<DocsSelect />}
+              />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
 
-              <Route exact path="/formfilter" name="FormFilter" element={<DocsFormFilter />} />
+              <Route
+                exact
+                path="/formfilter"
+                name="FormFilter"
+                element={<DocsFormFilter />}
+              />
               <Route exact path="/nav" name="Nav" element={<DocsNav />} />
               <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />  
-                            
+              <Route exact path="/modals" name="Modals" element={<DocsModals />} />              
               <Route exact path="/prueba" name="Sidebar" element={<DocsPrueba onshowfilter={onShowFilter} />} />
-              
             </>
           </Routes>
         </Suspense>

@@ -45,9 +45,8 @@ const DropdownAvatar = (props) => {
       </div>
       <ul
         id="dropdownAvatars"
-        className={`dropdown-menu zi-40`}
         aria-labelledby={ariaLabelledby}
-        style={{display: `${sdropdown ? "block" : "none"}`}}
+        className={`dropdown-menu zi-40 ${sdropdown ? "block" : "none"}`} 
       >
         {props.children}
       </ul>

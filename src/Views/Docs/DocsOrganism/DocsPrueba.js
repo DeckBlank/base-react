@@ -8,6 +8,7 @@ const DocsPrueba = (props) => {
   
     return (
     <div>
+      
       <Button     
       bgcolor="magenta"   
         onclick={() => onshowfilter(true)}

@@ -31,6 +31,8 @@ const SidebarLink = () => {
                 <Collapse
                     text={item.text}
                     icon={item.icon}
+                    iconarrowdown="eva:arrow-ios-downward-outline"
+                    iconarrowup="eva:arrow-ios-upward-fill"
                     classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
                 >
                     <ListGroup classname="collapse-sidebar">

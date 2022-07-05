@@ -80,10 +80,15 @@
                 "icon": "bx:package"
             },
             {
+                "text": "modals",
+                "route": "/modals",
+                "icon": "bx:category-alt"
+            },
+            {
                 "text": "prueba",
                 "route": "/prueba",
                 "icon": "bx:package"
-            }
+            }            
         ]
     },
     {
