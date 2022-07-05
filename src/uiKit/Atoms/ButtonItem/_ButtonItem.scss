@@ -42,3 +42,25 @@
   }
 }
 
+
+.arrowUp {
+
+  .iconArrowUp {
+    display: block;
+  }
+  .iconArrowDown {
+    display: none;
+  }
+
+}
+
+.arrowDown {
+
+  .iconArrowUp {
+    display: none;
+  }
+  .iconArrowDown {
+    display: block;
+  }
+}
+

@@ -4,7 +4,7 @@ import "./_ButtonItem.scss";
 import PropTypes from "prop-types";
 
 const ButtonItem = (props) => {
-  let { classname, icon, text, id, name, type, onclick, iconarrow } = props;
+  let { classname, icon, text, id, name, type, onclick, iconarrowdown, iconarrowup } = props;
   return (
     <div className="btn-item li-content">
       <button
@@ -20,7 +20,8 @@ const ButtonItem = (props) => {
         <div className="d-flex w-100p jc-space-between">
           <span>{text}</span>
           <i className="icon d-flex ai-center">
-            <Icon icon={iconarrow} />
+            <Icon className="iconArrowUp" icon={iconarrowup} />
+            <Icon className="iconArrowDown" icon={iconarrowdown} />
           </i>
         </div>
       </button>

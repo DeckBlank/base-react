@@ -90,7 +90,8 @@ const Docs = (props) => {
         <Collapse
           text="Atoms"
           icon="clarity:list-solid"
-          iconarrow="eva:arrow-ios-downward-outline"
+          iconarrowdown="eva:arrow-ios-downward-outline"
+          iconarrowup="eva:arrow-ios-upward-fill"
           classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
         >
           <ListGroup classname="collapse-sidebar">
@@ -109,7 +110,8 @@ const Docs = (props) => {
         <Collapse
           text="Molecules"
           icon="clarity:list-solid"
-          iconarrow="eva:arrow-ios-downward-outline"
+          iconarrowdown="eva:arrow-ios-downward-outline"
+          iconarrowup="eva:arrow-ios-upward-fill"
           classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
         >
           <ListGroup classname="collapse-sidebar">
@@ -128,7 +130,8 @@ const Docs = (props) => {
         <Collapse
           text="Organism"
           icon="clarity:list-solid"
-          iconarrow="eva:arrow-ios-downward-outline"
+          iconarrowdown="eva:arrow-ios-downward-outline"
+          iconarrowup="eva:arrow-ios-upward-fill"
           classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
         >
           <ListGroup classname="collapse-sidebar">

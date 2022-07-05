@@ -46,7 +46,8 @@ const DocsSidebar = () => {
               <Collapse
                 text="Atoms"
                 icon="clarity:list-solid"
-                iconarrow="eva:arrow-ios-downward-outline"
+                iconarrowdown="eva:arrow-ios-downward-outline"
+                iconarrowup="eva:arrow-ios-upward-fill"
                 classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
               >
                 <ListGroup classname="collapse-sidebar">
@@ -65,7 +66,8 @@ const DocsSidebar = () => {
               <Collapse
                 text="Molecules"
                 icon="clarity:list-solid"
-                iconarrow="eva:arrow-ios-downward-outline"
+                iconarrowdown="eva:arrow-ios-downward-outline"
+                iconarrowup="eva:arrow-ios-upward-fill"
                 classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
               >
                 <ListGroup classname="collapse-sidebar">
@@ -84,7 +86,8 @@ const DocsSidebar = () => {
               <Collapse
                 text="Organism"
                 icon="clarity:list-solid"
-                iconarrow="eva:arrow-ios-downward-outline"
+                iconarrowdown="eva:arrow-ios-downward-outline"
+                iconarrowup="eva:arrow-ios-upward-fill"
                 classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
               >
                 <ListGroup classname="collapse-sidebar">
@@ -104,7 +107,8 @@ const DocsSidebar = () => {
                 <LinkItem
                   text="Iconify"
                   route="/iconify"
-                  icon="akar-icons:face-very-happy"
+                  iconarrowdown="eva:arrow-ios-downward-outline"
+                  iconarrowup="ant-design:home-filled"
                   classname="uncollapse-sidebar-item bb-sidebar "
                 />
               </ListGroup>
