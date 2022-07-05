@@ -48,6 +48,9 @@ const DocsNav = React.lazy(() => import("../Docs/DocsOrganism/DocsNav"));
 const DocsSidebar = React.lazy(() =>
   import("../Docs/DocsOrganism/DocsSidebar")
 );
+const DocsModals = React.lazy(() =>
+  import("../Docs/DocsOrganism/DocsModals")
+);
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
@@ -210,6 +213,7 @@ const Docs = (props) => {
                 name="Sidebar"
                 element={<DocsSidebar />}
               />
+              <Route exact path="/modals" name="Modals" element={<DocsModals />} />
             </>
           </Routes>
         </Suspense>

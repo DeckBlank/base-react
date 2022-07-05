@@ -13,5 +13,10 @@
     "display_name": "nav",
     "route": "/nav",
     "icon": "bx:package"
+  },
+  {
+    "display_name": "modals",
+    "route": "/modals",
+    "icon": "bx:category-alt"
   }
 ]

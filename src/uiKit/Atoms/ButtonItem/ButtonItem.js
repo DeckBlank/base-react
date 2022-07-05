@@ -17,7 +17,7 @@ const ButtonItem = (props) => {
         <i className="icon d-flex ai-center">
           <Icon icon={icon} />
         </i>
-        <div className="d-flex w-100p jc-space-between">
+        <div className="d-flex w-100p g-05 jc-space-between">
           <span>{text}</span>
           <i className="icon d-flex ai-center">
             <Icon className="iconArrowUp" icon={iconarrowup} />
