@@ -14,6 +14,7 @@ import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdo
 import AtomsListGroup from "../../../assets/Jsons/SidebarList/atoms-list-docs.json";
 import MoleculesListGroup from "../../../assets/Jsons/SidebarList/molecules-list-docs.json";
 import OrganismListGroup from "../../../assets/Jsons/SidebarList/organism-list-docs.json";
+import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json"
 import Button from "../../../uiKit/Atoms/Button/Button";
 import Title from "../../../uiKit/Atoms/Title/Title";
 
@@ -127,9 +128,7 @@ const DocsSidebar = () => {
                   <Icon icon="mi:filter" className="txt-gray f-xxl" />
                   <h3 className="txt-gray"> Filtros </h3>
                 </div>
-                <Button
-                  classname="d-flex ai-center h-bg-gray bg-white h-txt-white txt-gray"
-                >
+                <Button classname="d-flex ai-center h-bg-gray bg-white h-txt-white txt-gray">
                   <Icon icon="ep:close-bold" className="font-m" />
                 </Button>
               </div>
@@ -187,10 +186,24 @@ const DocsSidebar = () => {
                   </FormFilter>
                 </Details>
                 <Details summary="Por tutor" txtcolor="gray">
-                  <SelectDropdown selectedtext="Seleccionar tutor" />
+                  <SelectDropdown
+                    selectedtext="Seleccionar tutor"
+                    listOptions={OptionsListGroupBtn}
+                    labeltext="Label"
+                    classListGroup="collapse-selects collapse-select-absolute h-155px"
+                    classSelectedItem="selected-item"
+                    classOptions="collapse-selects-item bt-1-silver"
+                  />
                 </Details>
                 <Details summary="Por Alumno" txtcolor="gray">
-                  <SelectDropdown selectedtext="Seleccionar Alumno" />
+                  <SelectDropdown
+                    selectedtext="Seleccionar Alumno"
+                    listOptions={OptionsListGroupBtn}
+                    labeltext="Label"
+                    classListGroup="collapse-selects collapse-select-absolute h-155px"
+                    classSelectedItem="selected-item"
+                    classOptions="collapse-selects-item bt-1-silver"
+                  />
                 </Details>
               </div>
             </SideBar>
