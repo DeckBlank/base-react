@@ -21,7 +21,8 @@ const DocsSelect = () => {
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
           <div>
-            <h2>SELECT / UL-LI</h2>
+            <h3>SELECT / UL-LI</h3>
+            <br />
             <SelectDropdown
               listOptions={OptionsListGroupBtn}
               labeltext="Label"
@@ -32,7 +33,8 @@ const DocsSelect = () => {
             />
           </div>
           <div>
-            <h2>SELECT / UL-LI</h2>
+            <h3>SELECT / UL-LI</h3>
+            <br />
             <SelectDropdown
               listOptions={OptionsListGroupBtn}
               labeltext="Label"
@@ -43,8 +45,9 @@ const DocsSelect = () => {
             />
           </div>
           <div>
-            <h2>SELECT / OPTIONS</h2>
-            <Select size="1" selectedtext="Options selected">
+            <h3>SELECT / OPTIONS</h3>
+            <br />
+            <Select size="1" labeltext="Label:" selectedtext="Options selected">
               {OptionsList.map((item, index) => (
                 <Option
                   value={item.value}
@@ -55,8 +58,9 @@ const DocsSelect = () => {
             </Select>
           </div>
           <div>
-            <h2>SELECT / OPTIONS</h2>
-            <Select size="1" selectedtext="Options selected">
+            <h3>SELECT / OPTIONS</h3>
+            <br />
+            <Select size="1" labeltext="Label:" selectedtext="Options selected">
               {OptionsList.map((item, index) => (
                 <Option
                   value={item.value}
