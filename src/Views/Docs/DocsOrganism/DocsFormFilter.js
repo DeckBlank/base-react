@@ -17,7 +17,7 @@ const DocsFormFilter = () => {
     <section>
       <Title
         title="Docs Form Filter"
-        classname="p-sticky top-0 txt-black f-s mb-1 pl-3 pt-1 pr-1 pb-1"
+        classname="p-sticky top-0 txt-black bb-1-silver f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">

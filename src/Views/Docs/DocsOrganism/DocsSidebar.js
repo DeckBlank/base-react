@@ -24,7 +24,7 @@ const DocsSidebar = () => {
     <section>
       <Title
         title="Docs Sidebar"
-        classname="p-sticky top-0 txt-black f-s mb-1 pl-3 pt-1 pr-1 pb-1"
+        classname="p-sticky top-0 txt-black bb-1-silver f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
         <h2>SIDEBAR</h2>
@@ -123,14 +123,15 @@ const DocsSidebar = () => {
               bgcolor="bg-white"
             >
               <div className="p-sticky top-0 bg-white d-flex jc-space-between ai-center pt-1 pr-1 pl-1 zi-100">
-                <div className="d-flex ai-center zi-100">
-                  <Icon icon="mi:filter" className="txt-gray font-xxl" />
+                <div className="d-flex ai-center zi-100 g-05">
+                  <Icon icon="mi:filter" className="txt-gray f-xxl" />
                   <h3 className="txt-gray"> Filtros </h3>
                 </div>
-                {/* <Button classname="flex-btn" bgcolor="white">
-                <Icon icon="ep:close-bold" className="txt-gray font-m" />
-              </Button> */}
-                <Icon icon="ep:close-bold" className="txt-gray font-m" />
+                <Button
+                  classname="d-flex ai-center h-bg-gray bg-white h-txt-white txt-gray"
+                >
+                  <Icon icon="ep:close-bold" className="font-m" />
+                </Button>
               </div>
               <div className="content-filter">
                 <Details summary="Lista" txtcolor="gray">
