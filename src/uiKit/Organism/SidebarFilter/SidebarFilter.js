@@ -27,7 +27,7 @@ let{onshowfilter}=props;
                 <SwitchBtn
                 text="Lista de clases"
                 name="name-switch-btn"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 />
                 <SwitchBtn
                 text="Lista de talleres"
@@ -39,12 +39,12 @@ let{onshowfilter}=props;
             <FormFilter>
                 <RadioBtn
                 text="Dia"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 name="name-radio-btn"
                 />
                 <RadioBtn
                 text="Semana"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 name="name-radio-btn"
                 />
                 <RadioBtn text="Mes" type="checkbox" name="name-radio-btn" />
@@ -54,17 +54,17 @@ let{onshowfilter}=props;
             <FormFilter>
                 <RadioBtn
                 text="Todos"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 name="name-radio-btn"
                 />
                 <RadioBtn
                 text="MAB GO"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 name="name-radio-btn"
                 />
                 <RadioBtn
                 text="MAB Online"
-                classname="bb-formfilter"
+                classname="bb-2-silver"
                 name="name-radio-btn"
                 />
                 <RadioBtn

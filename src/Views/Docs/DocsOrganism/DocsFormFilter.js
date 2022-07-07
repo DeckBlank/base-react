@@ -17,7 +17,7 @@ const DocsFormFilter = () => {
     <section>
       <Title
         title="Docs Form Filter"
-        classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"
+        classname="p-sticky top-0 txt-black f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
@@ -43,7 +43,7 @@ const DocsFormFilter = () => {
             <FormFilter>
               <SwitchBtn
                 text="Switch Button"
-                classname="border-bottom-formfilter"
+                classname="border-bottom-formfilter "
               />
               <SwitchBtn text="Switch Button" />
             </FormFilter>
@@ -85,18 +85,18 @@ const DocsFormFilter = () => {
             <SelectDropdown
               labeltext="Tutor:"
               selectedtext="Seleccionar Tutor"
-              classListGroup="collapse-selects collapse-select-absolute"
+              classListGroup="collapse-selects collapse-select-absolute h-155px"
               classSelectedItem="selected-item"
-              classOptions="collapse-selects-item bt-formfilter"
+              classOptions="collapse-selects-item bt-1-silver"
             />
 
             <br />
             <SelectDropdown
               labeltext="Alumno:"
               selectedtext="Seleccionar Alumno"
-              classListGroup="collapse-selects collapse-select-absolute"
+              classListGroup="collapse-selects collapse-select-absolute h-155px"
               classSelectedItem="selected-item"
-              classOptions="collapse-selects-item bt-formfilter"
+              classOptions="collapse-selects-item bt-1-silver"
             />
           </div>
         </div>

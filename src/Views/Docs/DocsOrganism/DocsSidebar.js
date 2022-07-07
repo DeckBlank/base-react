@@ -24,7 +24,7 @@ const DocsSidebar = () => {
     <section>
       <Title
         title="Docs Sidebar"
-        classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"
+        classname="p-sticky top-0 txt-black f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
         <h2>SIDEBAR</h2>
@@ -39,7 +39,7 @@ const DocsSidebar = () => {
                   text="Documentation"
                   route="/"
                   icon="ant-design:home-filled"
-                  classname="uncollapse-sidebar-item bb-sidebar"
+                  classname="uncollapse-sidebar-item bb-1-white"
                 />
               </ListGroup>
 
@@ -48,7 +48,7 @@ const DocsSidebar = () => {
                 icon="clarity:list-solid"
                 iconarrowdown="eva:arrow-ios-downward-outline"
                 iconarrowup="eva:arrow-ios-upward-fill"
-                classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                classname="uncollapse-sidebar-item li-items-sidebar bb-1-white"
               >
                 <ListGroup classname="collapse-sidebar">
                   {AtomsListGroup.map((item, index) => (
@@ -56,7 +56,7 @@ const DocsSidebar = () => {
                       text={item.display_name}
                       route={item.route}
                       icon={item.icon}
-                      classname="collapse-sidebar-item bb-sidebar"
+                      classname="collapse-sidebar-item bb-1-white"
                       key={index}
                     />
                   ))}
@@ -68,7 +68,7 @@ const DocsSidebar = () => {
                 icon="clarity:list-solid"
                 iconarrowdown="eva:arrow-ios-downward-outline"
                 iconarrowup="eva:arrow-ios-upward-fill"
-                classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                classname="uncollapse-sidebar-item li-items-sidebar bb-1-white"
               >
                 <ListGroup classname="collapse-sidebar">
                   {MoleculesListGroup.map((item, index) => (
@@ -76,7 +76,7 @@ const DocsSidebar = () => {
                       text={item.display_name}
                       route={item.route}
                       icon={item.icon}
-                      classname="collapse-sidebar-item bb-sidebar"
+                      classname="collapse-sidebar-item bb-1-white"
                       key={index}
                     />
                   ))}
@@ -88,7 +88,7 @@ const DocsSidebar = () => {
                 icon="clarity:list-solid"
                 iconarrowdown="eva:arrow-ios-downward-outline"
                 iconarrowup="eva:arrow-ios-upward-fill"
-                classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                classname="uncollapse-sidebar-item li-items-sidebar bb-1-white"
               >
                 <ListGroup classname="collapse-sidebar">
                   {OrganismListGroup.map((item, index) => (
@@ -96,7 +96,7 @@ const DocsSidebar = () => {
                       text={item.display_name}
                       route={item.route}
                       icon={item.icon}
-                      classname="collapse-sidebar-item bb-sidebar"
+                      classname="collapse-sidebar-item bb-1-white"
                       key={index}
                     />
                   ))}
@@ -109,7 +109,7 @@ const DocsSidebar = () => {
                   route="/iconify"
                   iconarrowdown="eva:arrow-ios-downward-outline"
                   iconarrowup="ant-design:home-filled"
-                  classname="uncollapse-sidebar-item bb-sidebar "
+                  classname="uncollapse-sidebar-item bb-1-white "
                 />
               </ListGroup>
             </SideBar>
@@ -138,7 +138,7 @@ const DocsSidebar = () => {
                     <SwitchBtn
                       text="Lista de clases"
                       name="name-switch-btn"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                     />
                     <SwitchBtn
                       text="Lista de talleres"
@@ -150,12 +150,12 @@ const DocsSidebar = () => {
                   <FormFilter>
                     <RadioBtn
                       text="Dia"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                       name="name-radio-btn"
                     />
                     <RadioBtn
                       text="Semana"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                       name="name-radio-btn"
                     />
                     <RadioBtn
@@ -169,17 +169,17 @@ const DocsSidebar = () => {
                   <FormFilter>
                     <RadioBtn
                       text="Todos"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                       name="name-radio-btn"
                     />
                     <RadioBtn
                       text="MAB GO"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                       name="name-radio-btn"
                     />
                     <RadioBtn
                       text="MAB Online"
-                      classname="bb-formfilter"
+                      classname="bb-2-silver"
                       name="name-radio-btn"
                     />
                     <RadioBtn text="MAB Sede" name="name-radio-btn" />

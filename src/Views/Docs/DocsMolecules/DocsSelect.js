@@ -13,7 +13,7 @@ const DocsSelect = () => {
     <section>
       <Title
         title="Docs Select"
-        classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"
+        classname="p-sticky top-0 txt-black  f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
         <h2>SELECT</h2>
@@ -26,9 +26,9 @@ const DocsSelect = () => {
               listOptions={OptionsListGroupBtn}
               labeltext="Label"
               selectedtext="Seleccionar Item"
-              classListGroup="collapse-selects collapse-select-absolute"
+              classListGroup="collapse-selects collapse-select-absolute h-155px"
               classSelectedItem="selected-item"
-              classOptions="collapse-selects-item bt-formfilter"
+              classOptions="collapse-selects-item bt-1-silver"
             />
           </div>
           <div>
@@ -37,9 +37,9 @@ const DocsSelect = () => {
               listOptions={OptionsListGroupBtn}
               labeltext="Label"
               selectedtext="Seleccionar Item"
-              classListGroup="collapse-selects collapse-select-absolute"
+              classListGroup="collapse-selects collapse-select-absolute h-155px"
               classSelectedItem="selected-item"
-              classOptions="collapse-selects-item bt-formfilter"
+              classOptions="collapse-selects-item bt-1-silver"
             />
           </div>
           <div>

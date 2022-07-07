@@ -43,7 +43,7 @@ const SelectDropdown = (props) => {
             />
             {listOptions.map((item, index) => (
               <ButtonItem
-                classname={`${classOptions} bt-formfilter`}
+                classname={`${classOptions} bt-1-silver`}
                 onclick={onOptionClicked(item.display_name)}
                 text={item.display_name}
                 key={index}

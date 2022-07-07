@@ -24,7 +24,7 @@ const SidebarLink = () => {
                     text={item.text}
                     route={item.route}
                     icon={item.icon}
-                    classname="uncollapse-sidebar-item bb-sidebar"
+                    classname="uncollapse-sidebar-item bb-1-white"
                     />
                 </ListGroup>
             :
@@ -33,7 +33,7 @@ const SidebarLink = () => {
                     icon={item.icon}
                     iconarrowdown="eva:arrow-ios-downward-outline"
                     iconarrowup="eva:arrow-ios-upward-fill"
-                    classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                    classname="uncollapse-sidebar-item li-items-sidebar bb-1-white"
                     key={index}
                 >
                     <ListGroup classname="collapse-sidebar">
@@ -42,7 +42,7 @@ const SidebarLink = () => {
                         text={item.text}
                         route={item.route}
                         icon={item.icon}
-                        classname="collapse-sidebar-item bb-sidebar"
+                        classname="collapse-sidebar-item bb-1-white"
                         key={index}
                         />
                     ))}
