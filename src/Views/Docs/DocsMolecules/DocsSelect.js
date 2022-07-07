@@ -38,7 +38,7 @@ const DocsSelect = () => {
               labeltext="Label"
               selectedtext="Seleccionar Item"
               classListGroup="collapse-selects collapse-select-absolute"
-              classSelectedItem="selected-item bt-formfilter"
+              classSelectedItem="selected-item"
               classOptions="collapse-selects-item bt-formfilter"
             />
           </div>
