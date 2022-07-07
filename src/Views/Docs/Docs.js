@@ -6,15 +6,8 @@ import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
-import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
-import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
-import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
 import SidebarFilter from "../../uiKit/Organism/SidebarFilter/SidebarFilter";
 import SidebarLink from "../../uiKit/Organism/SidebarLink/SidebarLink";
-// JSONS
-import AtomsListGroup from "../../assets/Jsons/SidebarList/atoms-list-docs.json";
-import MoleculesListGroup from "../../assets/Jsons/SidebarList/molecules-list-docs.json";
-import OrganismListGroup from "../../assets/Jsons/SidebarList/organism-list-docs.json";
 
 //CONTEXT
 import {FilterContext} from "../../context/FilterContext";

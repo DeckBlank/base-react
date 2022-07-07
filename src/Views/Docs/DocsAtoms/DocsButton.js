@@ -18,9 +18,9 @@ const DocsButton = () => {
         classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1"
       />
       <div className="ph-3">
-        <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
+        {/* <Button classname="btn-edit" hovertxtcolor="silver" txtcolor="black">
           <Icon icon="majesticons:more-menu-vertical" />
-        </Button>
+        </Button> */}
         <h2>BUTTON TEXT</h2>
         <br />
         <br />

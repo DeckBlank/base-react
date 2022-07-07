@@ -19,7 +19,7 @@ const SidebarLink = () => {
         {Nav.map((item, index) => (
             item.route!='#'
             ?
-                <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+                <ListGroup classname="uncollapse-sidebar li-items-sidebar" key={index} >
                     <LinkItem
                     text={item.text}
                     route={item.route}
@@ -34,6 +34,7 @@ const SidebarLink = () => {
                     iconarrowdown="eva:arrow-ios-downward-outline"
                     iconarrowup="eva:arrow-ios-upward-fill"
                     classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                    key={index}
                 >
                     <ListGroup classname="collapse-sidebar">
                     {item.snav.map((item, index) => (
