@@ -9,6 +9,7 @@ import Option from "../../../uiKit/Molecules/Select/Option";
 import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
 import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
 // JSONS
+import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json"
 import OptionsList from "../../../assets/Jsons/ItemsList/options-list.json";
 import Title from "../../../uiKit/Atoms/Title/Title";
 
@@ -83,6 +84,7 @@ const DocsFormFilter = () => {
             <h2>FORM FILTERS SELECT / UL-LI</h2>
             <br />
             <SelectDropdown
+            listOptions={OptionsListGroupBtn}
               labeltext="Tutor:"
               selectedtext="Seleccionar Tutor"
               classListGroup="collapse-selects collapse-select-absolute h-155px"
@@ -92,6 +94,7 @@ const DocsFormFilter = () => {
 
             <br />
             <SelectDropdown
+             listOptions={OptionsListGroupBtn}
               labeltext="Alumno:"
               selectedtext="Seleccionar Alumno"
               classListGroup="collapse-selects collapse-select-absolute h-155px"
