@@ -22,7 +22,7 @@ const Details = (props) => {
     <details
       id={id}
       name={name}
-      className={`dtails ${classname} hover-border-${hoverbordercolor} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
+      className={`dtails us-none ${classname} hover-border-${hoverbordercolor} hover-bg-${hoverbgcolor} hover-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} position-${position} padding-${padding} radius-${radius}`}
     >
       <summary className={`txt-${txtcolor}`}>{summary}</summary>
       {props.children}

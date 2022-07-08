@@ -6,7 +6,7 @@ const Title = (props) => {
   let {classname, title} = props
 
   return (
-   <p className={classname}>
+   <p className={` ${classname} us-none`} >
     {title}
    </p>
   );

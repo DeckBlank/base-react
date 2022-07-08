@@ -9,7 +9,7 @@ const Badge = (props) => {
     <span 
       id={id}
       name={name}
-      className={`badge rounded-pill ${classname} h-bg-${hoverbgcolor} h-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} p-${position} top-${top} start-${start}  translate-${translate}`}
+      className={`badge rounded-pill us-none ${classname} h-bg-${hoverbgcolor} h-txt-${hovertxtcolor} bg-${bgcolor} txt-${txtcolor} p-${position} top-${top} start-${start}  translate-${translate}`}
       onClick={onClick}      
     >
       {text}
