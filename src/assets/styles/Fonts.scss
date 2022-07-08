@@ -10,7 +10,7 @@
 
 /* :::USER-SELECT GENERAL PREDETERMINADO::: */
 
-p, label, input {
+p, label, input, br {
   &::selection {
     background: $gray;
     color: $white;
