@@ -4,13 +4,13 @@ import Table from "../../../uiKit/Molecules/Table/Table";
 import TableSimple from "../../../uiKit/Molecules/TableSimple/TableSimple";
 import Dropdown from "../../../uiKit/Molecules/Dropdown/Dropdown";
 import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
+import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
+import Title from "../../../uiKit/Atoms/Title/Title";
 // JSONS
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 import CustomerList from "../../../assets/Jsons/TableList/customers-list.json";
 // IMAGES
 import IconoTutor from "../../../assets/images/icono de tutor.png";
-import Title from "../../../uiKit/Atoms/Title/Title";
-import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 
 const DocsTable = () => {
   // Table Multi Pagination
