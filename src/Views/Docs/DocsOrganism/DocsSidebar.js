@@ -5,7 +5,7 @@ import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import Collapse from "../../../uiKit/Molecules/Collapse/Collapse";
 import SideBar from "../../../uiKit/Organism/SideBar/SideBar";
-import Details from "../../../uiKit/Atoms/Details/Details";
+import Details from "../../../uiKit/Molecules/Details/Details";
 import FormFilter from "../../../uiKit/Organism/FormFilter/FormFilter";
 import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
