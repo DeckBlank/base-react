@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 // COMPONENTS
-import Details from "../../Atoms/Details/Details";
+import Details from "../../Molecules/Details/Details";
 import FormFilter from "../FormFilter/FormFilter";
 import SwitchBtn from "../../Atoms/SwitchBtn/SwitchBtn";
 import RadioBtn from "../../Atoms/RadioBtn/RadioBtn";
