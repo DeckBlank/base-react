@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import { FavoritesContextProvider } from "./context/FavoritesContext";
 import { CartContextProvider } from "./context/CartContext";
+import { MainContextProvider} from "./context/MainContext";
 import useToken from "./useToken";
 import "./App.scss";
 
@@ -32,6 +33,7 @@ function App() {
   const { token, setToken } = useToken();
 
   return (
+    <MainContextProvider>
     <CartContextProvider>
       <FavoritesContextProvider>
         <div className="wrapper">
@@ -77,6 +79,7 @@ function App() {
         </div>
       </FavoritesContextProvider>
     </CartContextProvider>
+    </MainContextProvider>
   );
 }
 

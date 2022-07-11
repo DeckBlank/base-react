@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Icon } from "@iconify/react";
 // COMPONENTS
 import Details from "../../Atoms/Details/Details";
@@ -7,9 +7,12 @@ import SwitchBtn from "../../Atoms/SwitchBtn/SwitchBtn";
 import RadioBtn from "../../Atoms/RadioBtn/RadioBtn";
 import SelectDropdown from "../../Molecules/SelectDropdown/SelectDropdown";
 import Button from "../../Atoms/Button/Button";
+import {useMainContext} from "../../../context/MainContext";
 
 const SidebarFilter = (props) => {   
-let{onshowfilter}=props;
+
+const {showFilter, setShowFilter} = useMainContext();
+
   return (
     <div>
         <div className="p-sticky top-0 bg-white d-flex jc-space-between ai-center pt-1 pr-1 pl-1 zi-100">
@@ -17,7 +20,7 @@ let{onshowfilter}=props;
             <Icon icon="mi:filter" className="txt-gray font-xxl" />
             <h3 className="txt-gray"> Filtros </h3>
             </div>
-            <Button classname="flex-btn" bgcolor="white" onclick={() => onshowfilter(false)}>
+            <Button classname="flex-btn" bgcolor="white" onclick={() => setShowFilter(false)}>
             <Icon icon="ep:close-bold" className="txt-gray font-m" />
             </Button>             
         </div>

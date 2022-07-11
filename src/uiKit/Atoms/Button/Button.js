@@ -20,7 +20,8 @@ const Button = (props) => {
     hovertxtcolor,
     hoverbordercolor,
     classname,
-    alt
+    alt,
+    visible
   } = props;
 
   return (
@@ -33,6 +34,7 @@ const Button = (props) => {
       data-bs-toggle={databstoggle}
       aria-expanded={ariaexpanded}
       onClick={onclick}
+      Style={`visibility: ${visible}`}
     >
       {props.children}
     </button>

@@ -1,4 +1,4 @@
-import React, { Component, Suspense, useState } from "react";
+import React, { Component, Suspense, useState, useContext } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 // COMPONENTS
 import NavBar from "../../uiKit/Organism/NavBar/NavBar";
@@ -17,7 +17,7 @@ import MoleculesListGroup from "../../assets/Jsons/SidebarList/molecules-list-do
 import OrganismListGroup from "../../assets/Jsons/SidebarList/organism-list-docs.json";
 
 //CONTEXT
-import {FilterContext} from "../../context/FilterContext";
+import {useMainContext} from "../../context/MainContext";
 
 // LOADER
 const loading = (
@@ -48,15 +48,11 @@ const DocsModals = React.lazy(() => import("../Docs/DocsOrganism/DocsModals"));
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
-  const [show, setShow] = useState(true);  
-  const [showFilter, setShowFilter] = useState(false);
+  const { showSidebar, setShowSidebar, showFilter, setShowFilter } = useMainContext();  
+ 
 
   const onShow = () => {
-    setShow(!show);
-  };
-
-  const onShowFilter = (showFilter) => {  
-    setShowFilter(showFilter);    
+    setShowSidebar(!showSidebar);
   };
 
   const navigate = useNavigate();
@@ -68,78 +64,84 @@ const Docs = (props) => {
     window.location = "/";
   };
 
-  return (
-    <div
-      className={`sidebar-container ${
-        show ? "space-toggle sidebar-container-open" : null
-      } `}
-    >
-      <NavBar
-        logo={LogoMab}
-        show={show}
-        onclick={onShow}
-        closeSession={closeSession}
-      />
-      <SideBar show={show} classname="sidebar p-fixed" bgcolor={ showFilter===true ? "bg-white" : "bg-gray" }>        
-        { showFilter===true ? <SidebarFilter onshowfilter={onShowFilter} /> : <SidebarLink/> }
-      </SideBar>
+  
 
-      <Content>
+  return (    
+    
+      <div
+        className={`sidebar-container ${
+          showSidebar ? "space-toggle sidebar-container-open" : null
+        } `}
+      >
         
-        <Suspense fallback={loading}>
-          <Routes>
-            <>
-              <Route
-                exact
-                path="/button"
-                name="Button"
-                element={<DocsButton />}
-              />
-              <Route exact path="/input" name="Input" element={<DocsInput />} />
-              <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
-              <Route exact path="/item" name="Item" element={<DocsItem />} />
-              <Route
-                exact
-                path="/iconify"
-                name="Iconify"
-                element={<DocsIconify />}
-              />
+        <NavBar
+          logo={LogoMab}
+          show={showSidebar}
+          onclick={onShow}
+          closeSession={closeSession}
+        />
+        <SideBar show={showSidebar} classname="sidebar p-fixed" bgcolor={ showFilter===true ? "bg-white" : "bg-gray" }> 
+            { showFilter===true ? <SidebarFilter/> : <SidebarLink/> }
+        </SideBar>
 
-              <Route
-                exact
-                path="/dropdown"
-                name="Dropdown"
-                element={<DocsDropdown />}
-              />
-              <Route
-                exact
-                path="/collapse"
-                name="Collapse"
-                element={<DocsCollapse />}
-              />
-              <Route
-                exact
-                path="/select"
-                name="Select"
-                element={<DocsSelect />}
-              />
-              <Route exact path="/table" name="Table" element={<DocsTable />} />
+        <Content>        
+          <Suspense fallback={loading}>        
+            <Routes>
+              <>
+                <Route
+                  exact
+                  path="/button"
+                  name="Button"
+                  element={<DocsButton />}
+                />
+                <Route exact path="/input" name="Input" element={<DocsInput />} />
+                <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
+                <Route exact path="/item" name="Item" element={<DocsItem />} />
+                <Route
+                  exact
+                  path="/iconify"
+                  name="Iconify"
+                  element={<DocsIconify />}
+                />
 
-              <Route
-                exact
-                path="/formfilter"
-                name="FormFilter"
-                element={<DocsFormFilter />}
-              />
-              <Route exact path="/nav" name="Nav" element={<DocsNav />} />
-              <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />  
-              <Route exact path="/modals" name="Modals" element={<DocsModals />} />              
-              <Route exact path="/prueba" name="Sidebar" element={<DocsPrueba onshowfilter={onShowFilter} />} />
-            </>
-          </Routes>
-        </Suspense>
-      </Content>
-    </div>
+                <Route
+                  exact
+                  path="/dropdown"
+                  name="Dropdown"
+                  element={<DocsDropdown />}
+                />
+                <Route
+                  exact
+                  path="/collapse"
+                  name="Collapse"
+                  element={<DocsCollapse />}
+                />
+                <Route
+                  exact
+                  path="/select"
+                  name="Select"
+                  element={<DocsSelect />}
+                />
+                <Route exact path="/table" name="Table" element={<DocsTable />} />
+
+                <Route
+                  exact
+                  path="/formfilter"
+                  name="FormFilter"
+                  element={<DocsFormFilter />}
+                />
+                <Route exact path="/nav" name="Nav" element={<DocsNav />} />
+                <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />  
+                <Route exact path="/modals" name="Modals" element={<DocsModals />} />    
+                <Route exact path="/prueba" name="Prueba" element={<DocsPrueba />} />
+              </>
+            </Routes>
+            
+          </Suspense>
+          
+        </Content>
+        
+      </div>     
   );
 };
 

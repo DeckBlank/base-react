@@ -1,17 +1,19 @@
-import React from "react";
+import React, {useContext} from "react";
 import Button from "../../../uiKit/Atoms/Button/Button";
+import {useMainContext} from "../../../context/MainContext";
 
 
-const DocsPrueba = (props) => {
+const DocsPrueba = (props) => { 
+
+  const {showFilter, setShowFilter} = useMainContext();
   
-   let{onshowfilter}=props
   
-    return (
+  return (
     <div>
       
       <Button     
       bgcolor="magenta"   
-        onclick={() => onshowfilter(true)}
+        onclick={() => setShowFilter(true)} visible={ showFilter===true ? "hidden" : "visible" }
       >Filtro</Button> 
     </div>
   );
