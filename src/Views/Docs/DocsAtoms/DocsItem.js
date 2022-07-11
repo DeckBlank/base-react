@@ -10,7 +10,7 @@ import Title from "../../../uiKit/Atoms/Title/Title";
 const DocsItem = () => {
   return (
     <section>
-      <Title title="Docs Item" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />
+      <Title title="Docs Item" classname="p-sticky top-0 txt-black bb-1-silver f-s mb-1 pl-3 pt-1 pr-1 pb-1" />
       <div className="ph-3"> 
       <h2>LINKITEM</h2>
       <br />
@@ -78,7 +78,7 @@ const DocsItem = () => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
-                classname="collapse-selects-item bt-formfilter"
+                classname="collapse-selects-item bt-1-silver"
                 key={index}
               />
             ))}
@@ -106,7 +106,7 @@ const DocsItem = () => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
-                classname="collapse-sidebar-item bb-sidebar"
+                classname="collapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
@@ -120,7 +120,7 @@ const DocsItem = () => {
               <LinkItem
                 text={item.display_name}
                 route={item.route}
-                classname="uncollapse-sidebar-item bb-sidebar"
+                classname="uncollapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
@@ -141,7 +141,7 @@ const DocsItem = () => {
                 text={item.display_name}
                 icon={item.icon}
                 route={item.route}
-                classname="collapse-selects-item bt-formfilter"
+                classname="collapse-selects-item bt-1-silver"
                 key={index}
               />
             ))}
@@ -171,7 +171,7 @@ const DocsItem = () => {
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
-                classname="collapse-sidebar-item bb-sidebar"
+                classname="collapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
@@ -186,7 +186,7 @@ const DocsItem = () => {
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
-                classname="uncollapse-sidebar-item bb-sidebar "
+                classname="uncollapse-sidebar-item bb-1-white "
                 key={index}
               />
             ))}

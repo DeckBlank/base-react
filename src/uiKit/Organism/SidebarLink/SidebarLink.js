@@ -5,11 +5,6 @@ import LinkItem from "../../Atoms/LinkItem/LinkItem";
 import ListGroup from "../../Atoms/ListGroup/ListGroup";
 import Collapse from "../../Molecules/Collapse/Collapse";
 
-// JSONS
-import AtomsListGroup from "../../../assets/Jsons/SidebarList/atoms-list-docs.json";
-import MoleculesListGroup from "../../../assets/Jsons/SidebarList/molecules-list-docs.json";
-import OrganismListGroup from "../../../assets/Jsons/SidebarList/organism-list-docs.json";
-
 import Nav from "../../../assets/Jsons/Nav/Nav.json";
 
 const SidebarLink = () => {
@@ -19,12 +14,12 @@ const SidebarLink = () => {
         {Nav.map((item, index) => (
             item.route!='#'
             ?
-                <ListGroup classname="uncollapse-sidebar li-items-sidebar">
+                <ListGroup classname="uncollapse-sidebar li-items-sidebar" key={index} >
                     <LinkItem
                     text={item.text}
                     route={item.route}
                     icon={item.icon}
-                    classname="uncollapse-sidebar-item bb-sidebar"
+                    classname="uncollapse-sidebar-item bb-1-white"
                     />
                 </ListGroup>
             :
@@ -33,7 +28,8 @@ const SidebarLink = () => {
                     icon={item.icon}
                     iconarrowdown="eva:arrow-ios-downward-outline"
                     iconarrowup="eva:arrow-ios-upward-fill"
-                    classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar"
+                    classname="uncollapse-sidebar-item li-items-sidebar bb-1-white"
+                    key={index}
                 >
                     <ListGroup classname="collapse-sidebar">
                     {item.snav.map((item, index) => (
@@ -41,7 +37,7 @@ const SidebarLink = () => {
                         text={item.text}
                         route={item.route}
                         icon={item.icon}
-                        classname="collapse-sidebar-item bb-sidebar"
+                        classname="collapse-sidebar-item bb-1-white"
                         key={index}
                         />
                     ))}

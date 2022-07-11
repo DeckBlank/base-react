@@ -8,7 +8,7 @@ import Title from "../../../uiKit/Atoms/Title/Title";
 const DocsInput = () => {
   return (
     <section>
-      <Title title="Docs Input" classname="p-sticky top-0 txt-black bb-title f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
+      <Title title="Docs Input" classname="p-sticky top-0 txt-black bb-1-silver f-s mb-1 pl-3 pt-1 pr-1 pb-1" />  
       <div className="ph-3">
       <h1>INPUT</h1>
       <br />

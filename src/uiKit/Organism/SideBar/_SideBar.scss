@@ -20,7 +20,7 @@
   left: -30%;
   height: calc(100vh - $header-height); /*100vh*/
   width: $nav-width;
-  transition: 0.5s;
+  // transition: 0.5s;
   overflow-y: overlay;
   overflow-x: hidden;
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
@@ -28,10 +28,12 @@
   //   margin-left: 1.2rem;
   //   flex-wrap: wrap;
   // }
+  transition: 0.5s;
 }
 
 .show {
   left: 0;
+  transition: 0.5s;
 }
 
 .sidebar-container-open {
@@ -53,6 +55,7 @@
 
   .show {
     width: calc($header-height + 156px);
+    transition: 0.5s;
   }
   
 }

@@ -78,7 +78,7 @@
   padding: 0 4rem !important;
 }
 
-/* :::PADDING VERTICALES - SUPERIOR E INFERIOS::: */
+/* :::PADDING VERTICALES - SUPERIOR E INFERIOR::: */
 
 .pv-01 {
   padding: 0.1rem 0 !important;
@@ -617,28 +617,42 @@
   border-radius: 15px 0 15px 0 !important;
 }
 
-/* :::BORDER-BOTTOM::: */
+/* :::BORDER::: */
 
-.bb-formfilter {
-  border-bottom: 2px solid $silver !important;
+.b-1-silver {
+  border: 1px solid $silver !important;
 }
 
-.bb-sidebar {
+.b-1-white {
+  border: 1px solid $white !important;
+}
+
+.b-1-black {
+  border: 1px solid $black !important;
+}
+
+/* :::BORDER-BOTTOM::: */
+
+.bb-1-white {
   border-bottom: 1px solid $white !important;
 }
 
-.bb-title {
+.bb-1-silver {
   border-bottom: 1px solid $silver !important;
+}
+
+.bb-2-silver {
+  border-bottom: 2px solid $silver !important;
 }
 
 /* :::BORDER-TOP::: */
 
-.bt-formfilter {
-  border-top: 1px solid $silver !important;
+.bt-1-white {
+  border-top: 1px solid $white !important;
 }
 
-.bt-sidebar {
-  border-top: 1px solid $white !important;
+.bt-1-silver {
+  border-top: 1px solid $silver !important;
 }
 
 /* :::BOX SHODOWN::: */
@@ -646,3 +660,4 @@
 .b-shadow-1 {
   box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px !important;
 }
+

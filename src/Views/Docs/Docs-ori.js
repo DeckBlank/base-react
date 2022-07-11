@@ -77,46 +77,46 @@ const Docsf = (props) => {
             text="Documentation"
             route="/"
             icon="ant-design:home-filled"
-            classname="uncollapse-sidebar-item bb-sidebar"
+            classname="uncollapse-sidebar-item bb-1-white"
           />
         </ListGroup>
 
-        <Collapse text="Atoms" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse text="Atoms" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-1-white">
           <ListGroup classname="collapse-sidebar">
             {AtomsListGroup.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
-                classname="collapse-sidebar-item bb-sidebar"
+                classname="collapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
           </ListGroup>
         </Collapse>
 
-        <Collapse text="Molecules" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse text="Molecules" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-1-white">
           <ListGroup classname="collapse-sidebar">
             {MoleculesListGroup.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
-                classname="collapse-sidebar-item bb-sidebar"
+                classname="collapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
           </ListGroup>
         </Collapse>
 
-        <Collapse text="Organism" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-sidebar">
+        <Collapse text="Organism" icon="clarity:list-solid" classname="uncollapse-sidebar-item li-items-sidebar bb-1-white">
           <ListGroup classname="collapse-sidebar">
             {OrganismListGroup.map((item, index) => (
               <LinkItem
                 text={item.display_name}
                 route={item.route}
                 icon={item.icon}
-                classname="collapse-sidebar-item bb-sidebar"
+                classname="collapse-sidebar-item bb-1-white"
                 key={index}
               />
             ))}
@@ -128,7 +128,7 @@ const Docsf = (props) => {
             text="Iconify"
             route="/iconify"
             icon="akar-icons:face-very-happy"
-            classname="uncollapse-sidebar-item bb-sidebar "
+            classname="uncollapse-sidebar-item bb-1-white "
           />
         </ListGroup>
        

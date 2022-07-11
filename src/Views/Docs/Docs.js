@@ -6,15 +6,8 @@ import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
-import ListGroup from "../../uiKit/Atoms/ListGroup/ListGroup";
-import LinkItem from "../../uiKit/Atoms/LinkItem/LinkItem";
-import Collapse from "../../uiKit/Molecules/Collapse/Collapse";
 import SidebarFilter from "../../uiKit/Organism/SidebarFilter/SidebarFilter";
 import SidebarLink from "../../uiKit/Organism/SidebarLink/SidebarLink";
-// JSONS
-import AtomsListGroup from "../../assets/Jsons/SidebarList/atoms-list-docs.json";
-import MoleculesListGroup from "../../assets/Jsons/SidebarList/molecules-list-docs.json";
-import OrganismListGroup from "../../assets/Jsons/SidebarList/organism-list-docs.json";
 
 //CONTEXT
 import {useMainContext} from "../../context/MainContext";
@@ -38,6 +31,7 @@ const DocsCollapse = React.lazy(() => import("./DocsMolecules/DocsCollapse"));
 const DocsDropdown = React.lazy(() => import("./DocsMolecules/DocsDropdown"));
 const DocsSelect = React.lazy(() => import("./DocsMolecules/DocsSelect"));
 const DocsTable = React.lazy(() => import("./DocsMolecules/DocsTable"));
+const DocsSlider = React.lazy(() => import("./DocsMolecules/DocsSlider"));
 
 // DOCS ORGANISM
 const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"));
@@ -103,6 +97,26 @@ const Docs = (props) => {
                   name="Iconify"
                   element={<DocsIconify />}
                 />
+              <Route
+                exact
+                path="/dropdown"
+                name="Dropdown"
+                element={<DocsDropdown />}
+              />
+              <Route
+                exact
+                path="/collapse"
+                name="Collapse"
+                element={<DocsCollapse />}
+              />
+              <Route
+                exact
+                path="/select"
+                name="Select"
+                element={<DocsSelect />}
+              />
+              <Route exact path="/table" name="Table" element={<DocsTable />} />
+              <Route exact path="/slider" name="Slider" element={<DocsSlider />} />
 
                 <Route
                   exact

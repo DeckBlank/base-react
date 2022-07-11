@@ -43,7 +43,7 @@
                 "icon": "bx:category-alt"
             },
             {
-                "text": "Collapse",
+                "text": "Collapse / Details",
                 "route": "/collapse",
                 "icon": "bx:user-pin"
             },
@@ -55,6 +55,11 @@
             {
                 "text": "Table",
                 "route": "/table",
+                "icon": "bx:package"
+            },
+            {
+                "text": "Slider",
+                "route": "/slider",
                 "icon": "bx:package"
             }
         ]

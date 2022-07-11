@@ -7,7 +7,7 @@ import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 
 const SelectDropdown = (props) => {
-  let { id, selectedtext, labeltext, htmlfor } = props;
+  let { id, selectedtext, labeltext, htmlfor, listOptions, classListGroup, classSelectedItem, classOptions } = props;
 
   const [isOpen, setIsOpen] = useState(false);
   const [selectedOption, setSelectedOption] = useState(null);
@@ -35,15 +35,15 @@ const SelectDropdown = (props) => {
           {selectedOption || <p>{selectedtext}</p>}
         </div>
         {isOpen && (
-          <ListGroup classname="collapse-selects collapse-select-absolute">
+          <ListGroup classname={`${classListGroup}`}>
             <ButtonItem
-              classname="selected-item bt-formfilter"
+              classname={`${classSelectedItem}`}
               onclick={onOptionClicked(selectedtext)}
               text={selectedtext}
             />
-            {OptionsListGroupBtn.map((item, index) => (
+            {listOptions.map((item, index) => (
               <ButtonItem
-                classname="collapse-selects-item bt-formfilter"
+                classname={`${classOptions} bt-1-silver`}
                 onclick={onOptionClicked(item.display_name)}
                 text={item.display_name}
                 key={index}

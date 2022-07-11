@@ -1,0 +1,11 @@
+@import "../../../App.scss";
+
+.dtails {
+  min-width: 190px;
+  cursor: pointer;
+  summary {
+    padding-left: 1rem;
+    padding-bottom: 0.5rem;
+    font-weight: bold;
+  }
+}
