@@ -1,0 +1,30 @@
+[
+    {
+      "title": "slide title 1",
+      "description": "slide description 1",
+      "img": "/assets/images/Baners/Baner-1.png",
+      "alt":"slide 1",
+      "color": "#FFBB28"     
+    },
+    {
+      "title": "slide title 2",
+      "description": "slide description 2",
+      "img": "/assets/images/Baners/Baner-2.png",
+      "alt":"slide 2",
+      "color": "#303c54"
+    },
+    {
+      "title": "slide title 3",
+      "description": "slide description 3",
+      "img": "/assets/images/Baners/Baner-3.png",
+      "alt":"slide 3",
+      "color": "#00C49F"
+    },
+    {
+      "title": "slide title 4",
+      "description": "slide description 4",
+      "img": "/assets/images/Baners/Baner-4.png",
+      "alt":"slide 4",
+      "color": "#0088FE"
+    }
+  ]

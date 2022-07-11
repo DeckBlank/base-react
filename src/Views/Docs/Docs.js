@@ -31,6 +31,7 @@ const DocsCollapse = React.lazy(() => import("./DocsMolecules/DocsCollapse"));
 const DocsDropdown = React.lazy(() => import("./DocsMolecules/DocsDropdown"));
 const DocsSelect = React.lazy(() => import("./DocsMolecules/DocsSelect"));
 const DocsTable = React.lazy(() => import("./DocsMolecules/DocsTable"));
+const DocsSlider = React.lazy(() => import("./DocsMolecules/DocsSlider"));
 
 // DOCS ORGANISM
 const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"));
@@ -117,6 +118,7 @@ const Docs = (props) => {
                 element={<DocsSelect />}
               />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
+              <Route exact path="/slider" name="Slider" element={<DocsSlider />} />
 
               <Route
                 exact
