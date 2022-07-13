@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PropTypes from "prop-types";
 import Avatar from "../../Atoms/Avatar/Avatar";
 import Button from "../../Atoms/Button/Button";
-import "./_DropdownAvatar.scss";
+import "./_Dropdown.scss";
 import { Icon } from "@iconify/react";
 
 const DropdownAvatar = (props) => {
@@ -46,7 +46,7 @@ const DropdownAvatar = (props) => {
       <ul
         id="dropdownAvatars"
         aria-labelledby={ariaLabelledby}
-        className={`dropdown-menu zi-40 ${sdropdown ? "block" : "none"}`} 
+        className={`dropdown-menu w-100p p-absolute zi-40 ${sdropdown ? "block" : "none"}`} 
       >
         {props.children}
       </ul>

@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 
 import Button from "../../Atoms/Button/Button";
 import Badge from "../../Atoms/Badge/Badge";
-import DropdownAvatar from "../../Molecules/DropdownAvatar/DropdownAvatar";
+import DropdownAvatar from "../../Molecules/Dropdown/DropdownAvatar";
 import ListGroup from "../../Atoms/ListGroup/ListGroup";
 import LinkItem from "../../Atoms/LinkItem/LinkItem";
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";

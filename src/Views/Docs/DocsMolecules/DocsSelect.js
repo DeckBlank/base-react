@@ -1,7 +1,7 @@
 import React from "react";
 // COMPONENTS
 import Select from "../../../uiKit/Molecules/Select/Select";
-import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+import SelectDropdown from "../../../uiKit/Molecules/Select/SelectDropdown";
 import Option from "../../../uiKit/Molecules/Select/Option";
 import Title from "../../../uiKit/Atoms/Title/Title";
 // JSONS

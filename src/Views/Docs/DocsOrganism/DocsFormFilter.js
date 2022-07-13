@@ -6,7 +6,7 @@ import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
 import Select from "../../../uiKit/Molecules/Select/Select";
 import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import Option from "../../../uiKit/Molecules/Select/Option";
-import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+import SelectDropdown from "../../../uiKit/Molecules/Select/SelectDropdown";
 import FormFilterEjm2 from "../../../uiKit/Organism/FormFilter/FormFilterEjm2";
 // JSONS
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json"

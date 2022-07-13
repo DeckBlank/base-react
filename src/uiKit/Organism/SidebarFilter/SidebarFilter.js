@@ -5,7 +5,7 @@ import Details from "../../Molecules/Details/Details";
 import FormFilter from "../FormFilter/FormFilter";
 import SwitchBtn from "../../Atoms/SwitchBtn/SwitchBtn";
 import RadioBtn from "../../Atoms/RadioBtn/RadioBtn";
-import SelectDropdown from "../../Molecules/SelectDropdown/SelectDropdown";
+import SelectDropdown from "../../Molecules/Select/SelectDropdown";
 import Button from "../../Atoms/Button/Button";
 import {useMainContext} from "../../../context/MainContext";
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json"

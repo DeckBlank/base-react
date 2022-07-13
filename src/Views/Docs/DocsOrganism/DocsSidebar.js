@@ -9,7 +9,7 @@ import Details from "../../../uiKit/Molecules/Details/Details";
 import FormFilter from "../../../uiKit/Organism/FormFilter/FormFilter";
 import SwitchBtn from "../../../uiKit/Atoms/SwitchBtn/SwitchBtn";
 import RadioBtn from "../../../uiKit/Atoms/RadioBtn/RadioBtn";
-import SelectDropdown from "../../../uiKit/Molecules/SelectDropdown/SelectDropdown";
+import SelectDropdown from "../../../uiKit/Molecules/Select/SelectDropdown";
 // JSONS
 import AtomsListGroup from "../../../assets/Jsons/SidebarList/atoms-list-docs.json";
 import MoleculesListGroup from "../../../assets/Jsons/SidebarList/molecules-list-docs.json";
