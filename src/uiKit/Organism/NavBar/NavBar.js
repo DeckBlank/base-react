@@ -10,10 +10,10 @@ import LinkItem from "../../Atoms/LinkItem/LinkItem";
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 
 const NavBar = (props) => {
-  let { logo, show, onclick } = props;
+  let { logo, show, onclick, classname } = props;
 
   return (
-    <header className={`header ${show ? "space-toggle" : null}`}>
+    <header className={`header ${classname}  ${show ? "space-toggle" : null}`}>
       <div className="header-toggle" onClick={onclick}>
         <Icon icon="charm:menu-hamburger" />
       </div>

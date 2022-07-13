@@ -4,11 +4,11 @@ import { Route, Routes, useNavigate } from "react-router-dom";
 import NavBar from "../../uiKit/Organism/NavBar/NavBar";
 import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
-import LogoMab from "../../assets/images/Logo de MAB.png";
 import useToken from "../../useToken";
 import SidebarFilter from "../../uiKit/Organism/SidebarFilter/SidebarFilter";
 import SidebarLink from "../../uiKit/Organism/SidebarLink/SidebarLink";
-
+//IMAGES
+import LogoMab from "../../assets/images/Logo de MAB.png";
 //CONTEXT
 import {useMainContext} from "../../context/MainContext";
 
@@ -69,6 +69,7 @@ const Docs = (props) => {
       >
         
         <NavBar
+          classname="top-0 left-0 p-fixed"
           logo={LogoMab}
           show={showSidebar}
           onclick={onShow}
