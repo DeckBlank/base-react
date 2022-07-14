@@ -127,7 +127,7 @@ const DocsSidebar = () => {
           <div>
             <h3>NOTIFICATION</h3>
             <br />
-            <SideBar classname="sidebar-notification zi-200" bgcolor="bg-white">
+            <SideBar classname="h-100vh w-280px oy-overlay ox-hidden zi-1000 b-shadow-1 bg-white">
               <SidebarNotifications />
             </SideBar>
           </div>
