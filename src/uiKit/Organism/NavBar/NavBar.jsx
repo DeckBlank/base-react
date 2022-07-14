@@ -10,7 +10,7 @@ import LinkItem from "../../Atoms/LinkItem/LinkItem";
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
 
 const NavBar = (props) => {
-  let { logo, show, onclick, classname } = props;
+  let { logo, show, onclick, onclickN, classname } = props;
 
   return (
     <header className={`header ${classname}  ${show ? "space-toggle" : null}`}>
@@ -21,20 +21,12 @@ const NavBar = (props) => {
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="d-flex ai-center jc-center g-2 mr-1">
           <Button
-            classname="d-flex ai-center jc-center mt-02"
-            hoverbgcolor="yellow"
-            hovertxtcolor="black"
-            bgcolor="white"
-            txtcolor="silver"
-            position="relative"
+            classname="p-relative d-flex ai-center jc-center mt-02 txt-silver bg-white h-bg-yellow h-txt-black"
+            onclick={onclickN}
           >
             <Icon icon="bxs:bell" className="notification-icon f-xxl" />
             <Badge
-              classname="mt-03"
-              bgcolor="red"
-              txtcolor="white"
-              position="absolute"
-              top="0"
+              classname="p-absolute txt-white bg-red top-0 mt-03"
               start="100"
               translate="middle"
               text="+99"

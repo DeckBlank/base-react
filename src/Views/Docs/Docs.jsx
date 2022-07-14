@@ -11,6 +11,7 @@ import SidebarLink from "../../uiKit/Organism/SideBar/SidebarLink";
 import LogoMab from "../../assets/images/Logo de MAB.png";
 //CONTEXT
 import {useMainContext} from "../../context/MainContext";
+import SidebarNotifications from "../../uiKit/Organism/SideBar/SidebarNotifications";
 
 // LOADER
 const loading = (
@@ -42,11 +43,15 @@ const DocsModals = React.lazy(() => import("./DocsOrganism/DocsModals"));
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
-  const { showSidebar, setShowSidebar, showFilter, setShowFilter } = useMainContext();  
+  const { showSidebar, setShowSidebar, showFilter, setShowFilter, showNotification, setShowNotification } = useMainContext();  
  
 
   const onShow = () => {
     setShowSidebar(!showSidebar);
+  };
+
+  const onShowN = () => {
+    setShowNotification(!showNotification);
   };
 
   const navigate = useNavigate();
@@ -72,12 +77,16 @@ const Docs = (props) => {
           classname="top-0 left-0 p-fixed"
           logo={LogoMab}
           show={showSidebar}
+          showN={showNotification}
           onclick={onShow}
+          onclickN={onShowN}
           closeSession={closeSession}
         />
-        <SideBar show={showSidebar} classname="sidebar p-fixed" bgcolor={ showFilter===true ? "bg-white" : "bg-gray" }> 
+        <SideBar show={showSidebar} classname="sidebar p-fixed" bgcolor={ showFilter===false ? "bg-white" : "bg-gray" }> 
             { showFilter===true ? <SidebarFilter/> : <SidebarLink/> }
         </SideBar>
+
+        { showNotification===true ? null : <SidebarNotifications classname="sidebar-notification" showN={showNotification}/> }
 
         <Content>        
           <Suspense fallback={loading}>        

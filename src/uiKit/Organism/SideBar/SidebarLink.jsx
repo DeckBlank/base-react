@@ -10,7 +10,7 @@ import Nav from "../../../assets/Jsons/Nav/Nav.json";
 const SidebarLink = () => {
 
   return (
-    <div>
+    <div className="h-100p bg-gray" >
         {Nav.map((item, index) => (
             item.route!='#'
             ?

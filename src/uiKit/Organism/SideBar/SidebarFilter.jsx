@@ -15,7 +15,7 @@ const SidebarFilter = (props) => {
   const { showFilter, setShowFilter } = useMainContext();
 
   return (
-    <div>
+    <div className="h-100p bg-white" >
       <div className="p-sticky top-0 d-flex jc-space-between ai-center pt-05 pr-1 pl-1 pb-05 zi-100">
         <div className="d-flex ai-center zi-100 g-05">
           <Icon icon="mi:filter" className="txt-gray f-xxl" />

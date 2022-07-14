@@ -1,17 +1,15 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 // COMPONENTS
-import Details from "../../Molecules/Details/Details";
-import FormFilter from "../FormFilter/FormFilter";
-import SwitchBtn from "../../Atoms/SwitchBtn/SwitchBtn";
 import Button from "../../Atoms/Button/Button";
 import { useMainContext } from "../../../context/MainContext";
 
 const SidebarNotifications = (props) => {
   const { showNotification, setShowNotification } = useMainContext();
+  let {classname} = props;
 
   return (
-    <div>
+    <div className={classname}>
       <div className="bg-yellow p-sticky top-0 d-flex jc-space-between ai-center pt-05 pr-1 pl-1 pb-05 zi-100">
         <div className="d-flex ai-center zi-100 g-05">
           <Icon icon="bxs:bell" className="txt-black f-xxl" />
@@ -19,7 +17,7 @@ const SidebarNotifications = (props) => {
         </div>
         <Button
           classname="d-flex ai-center h-bg-red h-txt-white txt-black"
-          onclick={() => setShowNotification(false)}
+          onclick={() => setShowNotification(true)}
         >
           <Icon icon="ep:close-bold" className="font-m" />
         </Button>
