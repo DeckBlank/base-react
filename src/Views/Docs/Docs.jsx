@@ -38,7 +38,7 @@ const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"))
 const DocsNav = React.lazy(() => import("./DocsOrganism/DocsNav"));
 const DocsSidebar = React.lazy(() => import("./DocsOrganism/DocsSidebar"));
 const DocsPrueba = React.lazy(() => import("./DocsOrganism/DocsPrueba"));
-const DocsModals = React.lazy(() => import("../Docs/DocsOrganism/DocsModals"));
+const DocsModals = React.lazy(() => import("./DocsOrganism/DocsModals"));
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
