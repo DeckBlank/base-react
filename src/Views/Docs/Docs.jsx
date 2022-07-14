@@ -2,11 +2,11 @@ import React, { Component, Suspense, useState, useContext } from "react";
 import { Route, Routes, useNavigate } from "react-router-dom";
 // COMPONENTS
 import NavBar from "../../uiKit/Organism/NavBar/NavBar";
-import SideBar from "../../uiKit/Organism/SideBar/SideBar";
 import Content from "../../components/Content/Content";
 import useToken from "../../useToken";
-import SidebarFilter from "../../uiKit/Organism/SidebarFilter/SidebarFilter";
-import SidebarLink from "../../uiKit/Organism/SidebarLink/SidebarLink";
+import SideBar from "../../uiKit/Organism/SideBar/SideBar";
+import SidebarFilter from "../../uiKit/Organism/SideBar/SidebarFilter";
+import SidebarLink from "../../uiKit/Organism/SideBar/SidebarLink";
 //IMAGES
 import LogoMab from "../../assets/images/Logo de MAB.png";
 //CONTEXT
