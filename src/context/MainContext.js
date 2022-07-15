@@ -7,7 +7,7 @@ const useMainContext = () => {
 }
 
 const  MainContextProvider = (props) => {
-    const [showFilter, setShowFilter] = useState(true);
+    const [showFilter, setShowFilter] = useState(false);
     const [showSidebar, setShowSidebar] = useState(true);
     const [showNotification, setShowNotification] = useState(true);
    
