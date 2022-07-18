@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import "./_Slider.scss";
 
 function Slider(props) {
-  let {baner} = props;
+  let { baner } = props;
   // const baner = ['/assets/images/Baners/Baner-1.png', '/assets/images/Baners/Baner-2.png', '/assets/images/Baners/Baner-3.png', '/assets/images/Baners/Baner-4.png'];
   const delay = 2500;
   const [index, setIndex] = useState(0);
@@ -16,7 +16,6 @@ function Slider(props) {
   }
 
   useEffect(() => {
-
     resetTimeout();
     timeoutRef.current = setTimeout(
       () =>
@@ -32,13 +31,20 @@ function Slider(props) {
   });
   return (
     <div className="slideshow">
-      <div
-        className="slideshowSlider"
+      <div className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
       >
-        {baner.map((item,index) => (
-          <div className="slide" key={index} style={{backgroundColor:`${item.color}`}} >
-            <img className="slide" src={item.img} alt={item.alt} />
+        {baner.map((item, index) => (
+          <div
+            className="slide"
+            key={index}
+            style={{ backgroundColor: `${item.color}` }}
+          >
+            <div className="d-flex fd-column w-100p ai-center p-1" >
+              {/* <img className="slide" src={item.img} alt={item.alt} /> */}
+              <h1>{item.title} </h1>
+              <p>{item.description}</p>             
+            </div>
           </div>
         ))}
       </div>
@@ -61,6 +67,5 @@ function Slider(props) {
 Slider.propTypes = {
   id: PropTypes.string,
 };
-
 
 export default Slider;

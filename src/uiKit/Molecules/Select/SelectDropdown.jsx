@@ -1,10 +1,9 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import { Icon } from "@iconify/react";
-import "./_SelectDropdown.scss";
+import "./_Select.scss";
 import ListGroup from "../../Atoms/ListGroup/ListGroup";
 import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
-import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 
 const SelectDropdown = (props) => {
   let { id, selectedtext, labeltext, htmlfor, listOptions, classListGroup, classSelectedItem, classOptions } = props;

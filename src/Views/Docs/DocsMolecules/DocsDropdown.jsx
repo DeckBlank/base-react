@@ -1,17 +1,29 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { Icon } from "@iconify/react";
 // COMPONENTS
 import Avatar from "../../../uiKit/Atoms/Avatar/Avatar";
 import Dropdown from "../../../uiKit/Molecules/Dropdown/Dropdown";
-import DropdownAvatar from "../../../uiKit/Molecules/DropdownAvatar/DropdownAvatar";
+import DropdownAvatar from "../../../uiKit/Molecules/Dropdown/DropdownAvatar";
 import ListGroup from "../../../uiKit/Atoms/ListGroup/ListGroup";
 import LinkItem from "../../../uiKit/Atoms/LinkItem/LinkItem";
 import ButtonItem from "../../../uiKit/Atoms/ButtonItem/ButtonItem";
+import Title from "../../../uiKit/Atoms/Title/Title";
+import Dropdown2 from "../../../uiKit/Molecules/Dropdown/Dropdown2";
 // JSONS
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 import OptionsListGroupLink from "../../../assets/Jsons/ItemsList/listgroup-list-icon-link.json";
-import Title from "../../../uiKit/Atoms/Title/Title";
+import notifications from "../../../assets/Jsons/ItemsList/notification.json";
 
 const DocsDropdown = () => {
+  
+  const renderNotificationItem = (item, index) => (
+    <div className="d-flex ai-center g-05 p-05" key={index}>
+        <Icon className="txt-black f-xl" icon={item.icon} />
+      <span className="f-s" >{item.content}</span>
+    </div>
+  );
+
   return (
     <section>
       <Title
@@ -22,6 +34,17 @@ const DocsDropdown = () => {
         <h2>DROPDOWN</h2>
         <br />
         <br />
+        <h3>DROPDOWN DIRECTIONS WITH FOOTER</h3>
+        <br />
+        <div>
+          <Dropdown2
+            icon="bxs:bell"
+            badge="12"
+            contentData={notifications}
+            renderItems={(item, index) => renderNotificationItem(item, index)}
+            renderFooter={() => <Link to="/">Ver Todas</Link>}
+          />
+        </div>
         <h3>DROPDOWN DIRECTIONS WITHOUT ARROW</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
@@ -227,7 +250,7 @@ const DocsDropdown = () => {
           direction="dropdown"
           text="Usuario 1"
           classname="txt-white br-15"
-          classbtn="txt-black bg-transparent "          
+          classbtn="txt-black bg-transparent "
         >
           <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupLink.map((item, index) => (
@@ -256,7 +279,7 @@ const DocsDropdown = () => {
           classbtn="txt-white bg-transparent pr-2"
           iconarrow="eva:arrow-ios-downward-outline"
         >
-          <ListGroup classname="dropdown-group-list zi-50" >
+          <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupLink.map((item, index) => (
               <LinkItem
                 text={item.display_name}
@@ -415,7 +438,7 @@ const DocsDropdown = () => {
           iconarrow="eva:arrow-ios-forward-outline"
           text="Texto"
           classname="bg-yellow txt-white br-15"
-          classbtn="txt-black bg-transparent pr-2"          
+          classbtn="txt-black bg-transparent pr-2"
         >
           <ListGroup classname="dropdown-group-list zi-50">
             {OptionsListGroupBtn.map((item, index) => (

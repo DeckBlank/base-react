@@ -17,7 +17,7 @@ const loading = (
 );
 
 // Container
-const MainContent = React.lazy(() => import("./MainContent/MainContent.js"));
+const MainContent = React.lazy(() => import("./MainContent/MainContent.jsx"));
 
 // Pages
 const Login = React.lazy(() => import("./Views/Login/Login"));

@@ -367,6 +367,10 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
 }
 
+.gt-columns-180-1 {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
 .gt-columns-200-1 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }

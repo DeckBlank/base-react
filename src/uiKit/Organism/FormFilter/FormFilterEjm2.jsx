@@ -76,10 +76,8 @@ const FormFilterEjm2 = (props) => {
         <div>Selected option is : </div>
         <br />
         <Button
-          hovertxtcolor="yellow"
           type="submit"
-          bgcolor="red"
-          txtcolor="white"
+          classname="btn-padding bg-red txt-white h-txt-yellow"
         >
           Enviar
         </Button>

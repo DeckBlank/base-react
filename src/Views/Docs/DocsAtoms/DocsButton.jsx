@@ -16,7 +16,7 @@ const DocsButton = () => {
         <h2>BUTTON TEXT</h2>
         <br />
         <br />
-        <Button bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="silver" txtcolor="white" >
           Button Text
         </Button>
         <br />
@@ -24,7 +24,7 @@ const DocsButton = () => {
         <h2>BUTTON ICON</h2>
         <br />
         <br />
-        <Button classname="" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="silver" txtcolor="white">
           <Icon icon="bx:cog" />
         </Button>
         <br />
@@ -41,43 +41,43 @@ const DocsButton = () => {
         <h2>BUTTON COLORES</h2>
         <br />
         <br />
-        <Button bgcolor="white" txtcolor="black">
+        <Button classname="btn-padding" bgcolor="white" txtcolor="black">
           white
         </Button>
-        <Button bgcolor="red" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="red" txtcolor="white">
           red
         </Button>
-        <Button bgcolor="turquoise" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="turquoise" txtcolor="white">
           turquoise
         </Button>
-        <Button bgcolor="blue" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="blue" txtcolor="white">
           blue
         </Button>
-        <Button bgcolor="yellow" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="yellow" txtcolor="white">
           yellow
         </Button>
-        <Button bgcolor="orange" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="orange" txtcolor="white">
           orange
         </Button>
-        <Button bgcolor="green" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="green" txtcolor="white">
           green
         </Button>
-        <Button bgcolor="magenta" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="magenta" txtcolor="white">
           magenta
         </Button>
-        <Button bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="black" txtcolor="white">
           black
         </Button>
-        <Button bgcolor="fuchsia" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="fuchsia" txtcolor="white">
           fuchsia
         </Button>
-        <Button bgcolor="lightblue" txtcolor="black">
+        <Button classname="btn-padding" bgcolor="lightblue" txtcolor="black">
           lightblue
         </Button>
-        <Button bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="silver" txtcolor="white">
           silver
         </Button>
-        <Button bgcolor="gray" txtcolor="white">
+        <Button classname="btn-padding" bgcolor="gray" txtcolor="white">
           gray
         </Button>
         <br />
@@ -86,52 +86,52 @@ const DocsButton = () => {
         <h2>HOVERS PARA BACKGROUND</h2>
         <br />
         <br />
-        <Button hoverbgcolor="white" bgcolor="silver" txtcolor="black">
+        <Button classname="btn-padding" hoverbgcolor="white" bgcolor="silver" txtcolor="black">
           white
         </Button>
-        <Button hoverbgcolor="red" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="red" bgcolor="silver" txtcolor="white">
           red
         </Button>
-        <Button hoverbgcolor="turquoise" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="turquoise" bgcolor="silver" txtcolor="white">
           turquoise
         </Button>
-        <Button hoverbgcolor="blue" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="blue" bgcolor="silver" txtcolor="white">
           blue
         </Button>
-        <Button hoverbgcolor="yellow" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="yellow" bgcolor="silver" txtcolor="white">
           yellow
         </Button>
-        <Button hoverbgcolor="orange" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="orange" bgcolor="silver" txtcolor="white">
           orange
         </Button>
-        <Button hoverbgcolor="green" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="green" bgcolor="silver" txtcolor="white">
           green
         </Button>
-        <Button hoverbgcolor="magenta" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="magenta" bgcolor="silver" txtcolor="white">
           magenta
         </Button>
-        <Button hoverbgcolor="black" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="black" bgcolor="silver" txtcolor="white">
           black
         </Button>
-        <Button hoverbgcolor="fuchsia" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="fuchsia" bgcolor="silver" txtcolor="white">
           fuchsia
         </Button>
-        <Button hoverbgcolor="lightblue" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="lightblue" bgcolor="silver" txtcolor="white">
           lightblue
         </Button>
-        <Button hoverbgcolor="silver" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="silver" bgcolor="silver" txtcolor="white">
           silver
         </Button>
-        <Button hoverbgcolor="gray" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="gray" bgcolor="silver" txtcolor="white">
           gray
         </Button>
-        <Button hoverbgcolor="opacity0" bgcolor="red" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="opacity0" bgcolor="red" txtcolor="white">
           opacity 0
         </Button>
-        <Button hoverbgcolor="opacity4" bgcolor="red" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="opacity4" bgcolor="red" txtcolor="white">
           opacity 4
         </Button>
-        <Button hoverbgcolor="opacity8" bgcolor="red" txtcolor="white">
+        <Button classname="btn-padding" hoverbgcolor="opacity8" bgcolor="red" txtcolor="white">
           opacity 8
         </Button>
         <br />
@@ -141,43 +141,43 @@ const DocsButton = () => {
         <br />
         <br />
 
-        <Button hovertxtcolor="white" bgcolor="black" txtcolor="black">
+        <Button classname="btn-padding" hovertxtcolor="white" bgcolor="black" txtcolor="black">
           white
         </Button>
-        <Button hovertxtcolor="red" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="red" bgcolor="black" txtcolor="white">
           red
         </Button>
-        <Button hovertxtcolor="turquoise" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="turquoise" bgcolor="black" txtcolor="white">
           turquoise
         </Button>
-        <Button hovertxtcolor="blue" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="blue" bgcolor="black" txtcolor="white">
           blue
         </Button>
-        <Button hovertxtcolor="yellow" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="yellow" bgcolor="black" txtcolor="white">
           yellow
         </Button>
-        <Button hovertxtcolor="orange" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="orange" bgcolor="black" txtcolor="white">
           orange
         </Button>
-        <Button hovertxtcolor="green" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="green" bgcolor="black" txtcolor="white">
           green
         </Button>
-        <Button hovertxtcolor="magenta" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="magenta" bgcolor="black" txtcolor="white">
           magenta
         </Button>
-        <Button hovertxtcolor="black" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="black" bgcolor="black" txtcolor="white">
           black
         </Button>
-        <Button hovertxtcolor="fuchsia" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="fuchsia" bgcolor="black" txtcolor="white">
           fuchsia
         </Button>
-        <Button hovertxtcolor="lightblue" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="lightblue" bgcolor="black" txtcolor="white">
           lightblue
         </Button>
-        <Button hovertxtcolor="silver" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="silver" bgcolor="black" txtcolor="white">
           silver
         </Button>
-        <Button hovertxtcolor="gray" bgcolor="black" txtcolor="white">
+        <Button classname="btn-padding" hovertxtcolor="gray" bgcolor="black" txtcolor="white">
           gray
         </Button>
         <br />
@@ -186,43 +186,43 @@ const DocsButton = () => {
         <br />
         <br />
 
-        <Button hoverbordercolor="white" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="white" bgcolor="silver" txtcolor="white">
           white
         </Button>
-        <Button hoverbordercolor="red" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="red" bgcolor="silver" txtcolor="white">
           red
         </Button>
-        <Button hoverbordercolor="turquoise" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="turquoise" bgcolor="silver" txtcolor="white">
           turquoise
         </Button>
-        <Button hoverbordercolor="blue" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="blue" bgcolor="silver" txtcolor="white">
           blue
         </Button>
-        <Button hoverbordercolor="yellow" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="yellow" bgcolor="silver" txtcolor="white">
           yellow
         </Button>
-        <Button hoverbordercolor="orange" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="orange" bgcolor="silver" txtcolor="white">
           orange
         </Button>
-        <Button hoverbordercolor="green" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="green" bgcolor="silver" txtcolor="white">
           green
         </Button>
-        <Button hoverbordercolor="magenta" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="magenta" bgcolor="silver" txtcolor="white">
           magenta
         </Button>
-        <Button hoverbordercolor="silver" bgcolor="white" txtcolor="black">
+        <Button classname="btn-padding" hoverbordercolor="silver" bgcolor="white" txtcolor="black">
           silver
         </Button>
-        <Button hoverbordercolor="fuchsia" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="fuchsia" bgcolor="silver" txtcolor="white">
           fuchsia
         </Button>
-        <Button hoverbordercolor="lightblue" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="lightblue" bgcolor="silver" txtcolor="white">
           lightblue
         </Button>
-        <Button hoverbordercolor="black" bgcolor="white" txtcolor="black">
+        <Button classname="btn-padding" hoverbordercolor="black" bgcolor="white" txtcolor="black">
           black
         </Button>
-        <Button hoverbordercolor="gray" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding" hoverbordercolor="gray" bgcolor="silver" txtcolor="white">
           gray
         </Button>
         <br />
