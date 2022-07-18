@@ -25,6 +25,10 @@ const SuccesModal = (e) => {
 
   Toast.fire({
     icon: "success",
+    iconColor: "#0f0f0f",
+    color:"#0f0f0f",
+    background:"#22bc22",
+    padding:"0.8rem",
     title: "La clase fue agendada correctamente.",
   });
 };
@@ -46,6 +50,10 @@ const ErrorModal = (e) => {
 
   Toast.fire({
     icon: "error",
+    iconColor: "#0f0f0f",
+    color:"#0f0f0f",
+    background:"#ff3333",
+    padding:"0.8rem",
     title: "Te faltan ingresar algunos campos.",
   });
 };
@@ -609,7 +617,7 @@ const DocsModals = () => {
             bgcolor="green"
             txtcolor="white"
           >
-            Mix In
+            Succes modal
           </Button>
           <Button
             onclick={ErrorModal}
@@ -617,7 +625,7 @@ const DocsModals = () => {
             bgcolor="red"
             txtcolor="white"
           >
-            Top End
+            Error Modal
           </Button>
         </div>
         <br />

@@ -16,6 +16,8 @@ const DocsKeyframes = () => {
         <br />
         <br />
 
+        <br />
+        <br />
         <div className="gt-columns-180-1 d-grid rg-2 cg-2">
           <Button classname="sombra-movil p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             sombra-movil
@@ -23,7 +25,6 @@ const DocsKeyframes = () => {
           <Button classname="flecha p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             flecha
           </Button>
-
           <Button classname="h-flash p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             flash
           </Button>
@@ -45,11 +46,12 @@ const DocsKeyframes = () => {
           <Button classname="h-vaiven p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             vaiven
           </Button>
-
+          <Button classname="h-rebote-out p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+            rebote out
+          </Button>
           <Button classname="h-rebote p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             rebote
           </Button>
-
           <Button classname="h-rebote-in-2 p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             rebote-in-2
           </Button>
@@ -68,29 +70,28 @@ const DocsKeyframes = () => {
         </div>
         <br />
         <br />
-        <div className="d-flex fd-column g-2">
-          <Button classname="h-out_rotativo w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+        <div className="gt-columns-180-1 d-grid rg-2 cg-2">
+          <Button classname="h-out_rotativo p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             out_rotativo
           </Button>
-          <Button classname="h-in_rotativo w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-in_rotativo p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             in_rotativo
           </Button>
-          <Button classname="h-veloz-in w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-veloz-in p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             veloz-in
           </Button>
-          <Button classname="h-veloz-out w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-veloz-out p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             veloz-out
           </Button>
-          <Button classname="h-descolgado w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-descolgado p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             descolgado
           </Button>
-          <Button classname="h-translate-3d w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-translate-3d p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             translate-3d
           </Button>
-          <Button classname="h-rebote-in w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+          <Button classname="h-rebote-in p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             rebote-in
           </Button>
-
         </div>
       </div>
     </section>
