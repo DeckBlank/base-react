@@ -17,17 +17,11 @@ const DocsKeyframes = () => {
         <br />
 
         <div className="gt-columns-180-1 d-grid rg-2 cg-2">
-          <Button classname="h-descolgado p-1 p-relative d-i-block bg-gray txt-white fw-bold">
-            descolgado
-          </Button>
           <Button classname="sombra-movil p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             sombra-movil
           </Button>
           <Button classname="flecha p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             flecha
-          </Button>
-          <Button classname="h-efecto-3d p-1 p-relative d-i-block bg-gray txt-white fw-bold">
-            efecto-3d
           </Button>
 
           <Button classname="h-flash p-1 p-relative d-i-block bg-gray txt-white fw-bold">
@@ -87,12 +81,16 @@ const DocsKeyframes = () => {
           <Button classname="h-veloz-out w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             veloz-out
           </Button>
+          <Button classname="h-descolgado w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
+            descolgado
+          </Button>
           <Button classname="h-translate-3d w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             translate-3d
           </Button>
           <Button classname="h-rebote-in w-150px p-1 p-relative d-i-block bg-gray txt-white fw-bold">
             rebote-in
           </Button>
+
         </div>
       </div>
     </section>
