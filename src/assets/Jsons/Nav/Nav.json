@@ -101,5 +101,11 @@
         "route": "/iconify",
         "icon": "akar-icons:face-very-happy",
         "snav": []
+    },
+    {
+        "text": "Keyframes",
+        "route": "/keyframes",
+        "icon": "eos-icons:arrow-rotate",
+        "snav": []
     }
 ]

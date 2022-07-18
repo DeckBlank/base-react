@@ -10,7 +10,7 @@ import SidebarLink from "../../uiKit/Organism/SideBar/SidebarLink";
 //IMAGES
 import LogoMab from "../../assets/images/Logo de MAB.png";
 //CONTEXT
-import {useMainContext} from "../../context/MainContext";
+import { useMainContext } from "../../context/MainContext";
 import SidebarNotifications from "../../uiKit/Organism/SideBar/SidebarNotifications";
 
 // LOADER
@@ -26,6 +26,7 @@ const DocsInput = React.lazy(() => import("./DocsAtoms/DocsInput"));
 const DocsBadge = React.lazy(() => import("./DocsAtoms/DocsBadge"));
 const DocsItem = React.lazy(() => import("./DocsAtoms/DocsItem"));
 const DocsIconify = React.lazy(() => import("./DocsAtoms/DocsIconify"));
+const DocsKeyframes = React.lazy(() => import("./DocsAtoms/DocsKeyframes"));
 
 // DOCS MOLECULES
 const DocsCollapse = React.lazy(() => import("./DocsMolecules/DocsCollapse"));
@@ -35,7 +36,9 @@ const DocsTable = React.lazy(() => import("./DocsMolecules/DocsTable"));
 const DocsSlider = React.lazy(() => import("./DocsMolecules/DocsSlider"));
 
 // DOCS ORGANISM
-const DocsFormFilter = React.lazy(() => import("./DocsOrganism/DocsFormFilter"));
+const DocsFormFilter = React.lazy(() =>
+  import("./DocsOrganism/DocsFormFilter")
+);
 const DocsNav = React.lazy(() => import("./DocsOrganism/DocsNav"));
 const DocsSidebar = React.lazy(() => import("./DocsOrganism/DocsSidebar"));
 const DocsPrueba = React.lazy(() => import("./DocsOrganism/DocsPrueba"));
@@ -43,8 +46,14 @@ const DocsModals = React.lazy(() => import("./DocsOrganism/DocsModals"));
 
 const Docs = (props) => {
   const { token, setToken } = useToken();
-  const { showSidebar, setShowSidebar, showFilter, setShowFilter, showNotification, setShowNotification } = useMainContext();  
- 
+  const {
+    showSidebar,
+    setShowSidebar,
+    showFilter,
+    setShowFilter,
+    showNotification,
+    setShowNotification,
+  } = useMainContext();
 
   const onShow = () => {
     setShowSidebar(!showSidebar);
@@ -63,50 +72,61 @@ const Docs = (props) => {
     window.location = "/";
   };
 
-  
-
-  return (    
-    
-      <div
-        className={`sidebar-container ${
-          showSidebar ? "space-toggle sidebar-container-open" : null
-        } `}
+  return (
+    <div
+      className={`sidebar-container ${
+        showSidebar ? "space-toggle sidebar-container-open" : null
+      } `}
+    >
+      <NavBar
+        classname="top-0 left-0 p-fixed"
+        logo={LogoMab}
+        show={showSidebar}
+        showN={showNotification}
+        onclick={onShow}
+        onclickN={onShowN}
+        closeSession={closeSession}
+      />
+      <SideBar
+        show={showSidebar}
+        classname="sidebar p-fixed"
+        bgcolor={showFilter === false ? "bg-white" : "bg-gray"}
       >
-        
-        <NavBar
-          classname="top-0 left-0 p-fixed"
-          logo={LogoMab}
-          show={showSidebar}
+        {showFilter === true ? <SidebarFilter /> : <SidebarLink />}
+      </SideBar>
+
+      {showNotification === true ? null : (
+        <SidebarNotifications
+          classname="sidebar-notification"
           showN={showNotification}
-          onclick={onShow}
-          onclickN={onShowN}
-          closeSession={closeSession}
         />
-        <SideBar show={showSidebar} classname="sidebar p-fixed" bgcolor={ showFilter===false ? "bg-white" : "bg-gray" }> 
-            { showFilter===true ? <SidebarFilter/> : <SidebarLink/> }
-        </SideBar>
+      )}
 
-        { showNotification===true ? null : <SidebarNotifications classname="sidebar-notification" showN={showNotification}/> }
-
-        <Content>        
-          <Suspense fallback={loading}>        
-            <Routes>
-              <>
-                <Route
-                  exact
-                  path="/button"
-                  name="Button"
-                  element={<DocsButton />}
-                />
-                <Route exact path="/input" name="Input" element={<DocsInput />} />
-                <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
-                <Route exact path="/item" name="Item" element={<DocsItem />} />
-                <Route
-                  exact
-                  path="/iconify"
-                  name="Iconify"
-                  element={<DocsIconify />}
-                />
+      <Content>
+        <Suspense fallback={loading}>
+          <Routes>
+            <>
+              <Route
+                exact
+                path="/button"
+                name="Button"
+                element={<DocsButton />}
+              />
+              <Route exact path="/input" name="Input" element={<DocsInput />} />
+              <Route exact path="/badge" name="Badge" element={<DocsBadge />} />
+              <Route exact path="/item" name="Item" element={<DocsItem />} />
+              <Route
+                exact
+                path="/iconify"
+                name="Iconify"
+                element={<DocsIconify />}
+              />
+              <Route
+                exact
+                path="/keyframes"
+                name="Keyframes"
+                element={<DocsKeyframes />}
+              />
               <Route
                 exact
                 path="/dropdown"
@@ -126,46 +146,63 @@ const Docs = (props) => {
                 element={<DocsSelect />}
               />
               <Route exact path="/table" name="Table" element={<DocsTable />} />
-              <Route exact path="/slider" name="Slider" element={<DocsSlider />} />
+              <Route
+                exact
+                path="/slider"
+                name="Slider"
+                element={<DocsSlider />}
+              />
 
-                <Route
-                  exact
-                  path="/dropdown"
-                  name="Dropdown"
-                  element={<DocsDropdown />}
-                />
-                <Route
-                  exact
-                  path="/collapse"
-                  name="Collapse"
-                  element={<DocsCollapse />}
-                />
-                <Route
-                  exact
-                  path="/select"
-                  name="Select"
-                  element={<DocsSelect />}
-                />
-                <Route exact path="/table" name="Table" element={<DocsTable />} />
+              <Route
+                exact
+                path="/dropdown"
+                name="Dropdown"
+                element={<DocsDropdown />}
+              />
+              <Route
+                exact
+                path="/collapse"
+                name="Collapse"
+                element={<DocsCollapse />}
+              />
+              <Route
+                exact
+                path="/select"
+                name="Select"
+                element={<DocsSelect />}
+              />
+              <Route exact path="/table" name="Table" element={<DocsTable />} />
 
-                <Route
-                  exact
-                  path="/formfilter"
-                  name="FormFilter"
-                  element={<DocsFormFilter />}
-                />
-                <Route exact path="/nav" name="Nav" element={<DocsNav />} />
-                <Route exact path="/sidebar" name="Sidebar" element={<DocsSidebar />} />  
-                <Route exact path="/modals" name="Modals" element={<DocsModals />} />    
-                <Route exact path="/prueba" name="Prueba" element={<DocsPrueba />} />
-              </>
-            </Routes>
-            
-          </Suspense>
-          
-        </Content>
-        
-      </div>     
+              <Route
+                exact
+                path="/formfilter"
+                name="FormFilter"
+                element={<DocsFormFilter />}
+              />
+              <Route exact path="/nav" name="Nav" element={<DocsNav />} />
+              <Route
+                exact
+                path="/sidebar"
+                name="Sidebar"
+                element={<DocsSidebar />}
+              />
+              <Route
+                exact
+                path="/modals"
+                name="Modals"
+                element={<DocsModals />}
+              />
+              <Route
+                exact
+                path="/prueba"
+                name="Prueba"
+                element={<DocsPrueba />}
+              />
+            </>
+          </Routes>
+        </Suspense>
+      </Content>
+    </div>
   );
 };
 

@@ -1,10 +1,398 @@
-.rebote-5 {
-  transform: translateY(5%);
-  transition-duration: 0.3s;
-  animation: 1.5s mover-caja infinite;
-  content: "";
-  opacity: 1;
-  transition-duration: 0.3s;
+/*
+- Los @keyframes son como funciones que se aplican a un elemento y se ejecutan cuando las llamas
+- La propiedad animation tiene diferentes variantes:
+  - animation-name: nombre del keyframe que se usará
+  - animation-duration: tiempo que dura la animación
+  - animation-iteration-count: veces que se repite
+  - animation-delay: retardo con que comienza
+- Son animaciones en la línea del tiempo que dura la animación, que actúan de manera progresiva en el tiempo
+- Los cambios son siempre progresivos
+*/
+
+/*::::::::::::::::::KEYFRAMES::::::::::::::::::*/
+
+/*FLASH*/
+/*Efecto como de una cámara cuando lanza el flash, jugando con la opacidad*/
+
+@keyframes flash {
+  25%,
+  75% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/*CLICK*/
+/*Efecto al hacer click sobre un botón, jugando con las escalas*/
+
+@keyframes click {
+  25%,
+  75% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+/*CHICLE*/
+/*Efecto de chicle que se estira y se encoge y rebota, jugando con las escalas*/
+
+@keyframes chicle {
+  30% {
+    transform: scaleX(1.25) scaleY(0.75);
+  }
+  50% {
+    transform: scaleX(0.75) scaleY(1.25);
+  }
+  60% {
+    transform: scaleX(1.15) scaleY(0.85);
+  }
+}
+
+/*VIBRADOR*/
+/*Efecto de vibración, jugando con el desplazamiento en X e Y*/
+
+@keyframes vibracion {
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+  5%,
+  25%,
+  45%,
+  65%,
+  85% {
+    transform: translateY(-10px);
+  }
+  15%,
+  35%,
+  55%,
+  75% {
+    transform: translateY(10px);
+  }
+}
+
+/*CARTEL*/
+/*Efecto como el de un cartel de una tienda que se mueve hacia los lados, jugando con la rotación.
+Cambiamos el origin del elemento para que rote desde el top center*/
+
+@keyframes cartel {
+  20% {
+    transform: rotate(20deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  80% {
+    transform: rotate(-5deg);
+  }
+}
+
+/*BALANCEO*/
+/*Efecto de balanceo, jugando con la escala y la rotación*/
+
+@keyframes balanceo {
+  20% {
+    transform: scale(0.7) rotate(-6deg);
+  }
+  30%,
+  70% {
+    transform: scale(1.1) rotate(6deg);
+  }
+  50%,
+  90% {
+    transform: scale(1.1) rotate(-6deg);
+  }
+}
+
+/*VAIVEN*/
+/*Efecto vaivén, jugando con la rotración y la traslación en % (el porcentaje se calcula en base al tamaño del elemento)*/
+
+@keyframes vaiven {
+  15% {
+    transform: translateX(-25%) rotate(-10deg);
+  }
+  30% {
+    transform: translateX(20%) rotate(5deg);
+  }
+  45% {
+    transform: translateX(-10%) rotate(-3deg);
+  }
+  60% {
+    transform: translateX(5%) rotate(2deg);
+  }
+  75% {
+    transform: translateX(-3%) rotate(-1deg);
+  }
+}
+
+/*DESCOLGADO*/
+/*Efecto como que se descuelga de una esquina y luego cae, jugando con la rotación y la traslación*/
+
+@keyframes descolgado {
+  20%,
+  60% {
+    transform: rotate(80deg);
+  }
+  40%,
+  80% {
+    transform: rotate(60deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(400px) rotate(60deg);
+    opacity: 0;
+  }
+}
+
+/*IN ROTATIVO*/
+/*Efecto de entrar desde un lateral, rotando y apareciendo, jugando con la rotación, la traslación y la opacidad*/
+
+@keyframes in_rotativo {
+  0% {
+    transform: translateX(-100%) rotate(-260deg);
+    opacity: 0;
+  }
+}
+
+/*OUT ROTATIVO*/
+/*Efecto de salir por un lateral, rotando y apareciendo, jugando con la rotación, la traslación y la opacidad*/
+
+@keyframes out_rotativo {
+  100% {
+    transform: translateX(100%) rotate(260deg);
+    opacity: 0;
+  }
+}
+
+/*REBOTE*/
+/*Efecto de botar un elemento*/
+
+@keyframes rebote {
+  20%,
+  50%,
+  70% {
+    transform: translateY(0%);
+  }
+  40% {
+    transform: translateY(-45px);
+  }
+  60% {
+    transform: translateY(-25px);
+  }
+}
+
+/*REBOTE IN*/
+/*Efecto de aparición de un elemento botando*/
+
+@keyframes rebote-in {
+  0% {
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(0.9);
+  }
+}
+
+/*REBOTE IN 2*/
+/*Efecto de aparición de un elemento rebotando desde la izquierda*/
+
+@keyframes rebote-in-2 {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  20% {
+    transform: translateX(10%);
+    opacity: 1;
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  60% {
+    transform: translateX(0%);
+  }
+}
+
+/*REBOTE OUT*/
+/*Efecto de desaparición de un elemento botando*/
+
+@keyframes rebote-out {
+  25% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/*REBOTE OUT 2*/
+/*Efecto de desaparición de un elemento botando*/
+
+@keyframes rebote-out-2 {
+  20% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-500px);
+  }
+}
+
+/*FADE IN*/
+/*Efecto de fade in*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+/*CORTINILLA*/
+/*Efecto de cortinilla lateral*/
+
+@keyframes cortinilla {
+  0% {
+    left: 0px;
+  }
+}
+
+/*VELOZ IN*/
+/*Efecto de entrada lateral con inclinación*/
+
+@keyframes veloz-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-200%) skewX(30deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-20%) skewX(-30deg);
+  }
+  80% {
+    transform: translateX(0%) skew(15deg);
+  }
+}
+
+/*VELOZ OUT*/
+/*Efecto de salida lateral con inclinación*/
+
+@keyframes veloz-out {
+  15% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200%) skewX(-70deg);
+  }
+}
+
+/*GIRO*/
+/*Efecto de giro*/
+
+@keyframes giro {
+  0% {
+    opacity: 0;
+    transform: rotate(-200deg);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*SOMBRA MOVIL*/
+/*Efecto de sombra con caja que sube y baja*/
+
+@keyframes mover-caja {
+  50% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover-sombra {
+  50% {
+    opacity: 1;
+    transform: translateY(10px) scale(0.9);
+  }
+}
+
+/*FLECHA*/
+/*Efecto de flecha que sale, se gira y vuelve a entrar*/
+
+@keyframes flecha {
+  25% {
+    left: -9px;
+    transform: rotate(0deg);
+  }
+  65% {
+    left: -9px;
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/*EFECTO 3D*/
+/*Efecto de giro 3D sobre el eje X. Usamos la propiedad perspective para que haga efecto de perspectiva y el backface para ver la parte de atrás de la caja*/
+
+@keyframes efecto3d {
+  0% {
+    opacity: 0.5;
+    transform: perspective(200px) rotateX(90deg);
+  }
+  40% {
+    transform: perspective(200px) rotateX(-20deg);
+  }
+  70% {
+    transform: perspective(200px) rotateX(20deg);
+  }
+}
+
+/*TRANSLATEZ 3D*/
+/*Efecto de giro 3D sobre el eje Y usando el translateZ para dar sensación de aumento*/
+
+@keyframes translate-3d {
+  40% {
+    transform: perspective(300px) translateZ(120px) rotateY(170deg);
+  }
+  50% {
+    transform: perspective(300px) translateZ(120px) rotateY(190deg);
+  }
+  80% {
+    transform: perspective(300px) translateZ(0px) rotateY(360deg);
+  }
+  100% {
+    transform: perspective(300px) rotateY(360deg);
+  }
 }
 
 @keyframes mover-caja {
@@ -13,3 +401,274 @@
   }
 }
 
+/*::::::::::::::::::HOVERS::::::::::::::::::*/
+
+.h-flash {
+  &:hover {
+    animation: flash 0.5s 1;
+  }
+}
+
+.h-click {
+  &:hover {
+    animation: click 0.5s 1;
+  }
+}
+
+.h-chicle {
+  &:hover {
+    animation: chicle 1s 1;
+  }
+}
+
+.h-vibracion {
+  &:hover {
+    animation: vibracion 1s infinite;
+  }
+}
+
+.h-cartel {
+  &:hover {
+    animation: cartel 1s 1;
+    transform-origin: top center;
+  }
+}
+
+.h-balanceo {
+  &:hover {
+    animation: balanceo 1s 1;
+    transform-origin: top center;
+  }
+}
+
+.h-vaiven {
+  &:hover {
+    animation: vaiven 1s 1;
+  }
+}
+
+.h-descolgado {
+  &:hover {
+    animation: descolgado 1s 2;
+    transform-origin: top left;
+  }
+}
+
+.h-in_rotativo {
+  &:hover {
+    animation: in_rotativo 1s 2;
+  }
+}
+
+.h-out_rotativo {
+  &:hover {
+    animation: out_rotativo 1s 2;
+  }
+}
+
+.h-rebote {
+  &:hover {
+    animation: rebote 1s 2;
+  }
+}
+
+.h-rebote-in {
+  &:hover {
+    animation: rebote-in 1s 2;
+  }
+}
+
+.h-rebote-in-2 {
+  &:hover {
+    animation: rebote-in-2 1s 2;
+  }
+}
+
+.h-rebote-out {
+  &:hover {
+    animation: rebote-out 1s 2;
+  }
+}
+
+.h-rebote-out-2 {
+  &:hover {
+    animation: rebote-out-2 1s 2;
+  }
+}
+
+.h-fade-in {
+  &:hover {
+    animation: fade-in 2s 2;
+  }
+}
+
+.h-giro {
+  &:hover {
+    animation: 1s giro 1;
+    transform-origin: center;
+  }
+}
+.h-veloz-in {
+  &:hover {
+    animation: 0.5s veloz-in 1;
+  }
+}
+.h-veloz-out {
+  &:hover {
+    animation: 0.5s veloz-out 1;
+  }
+}
+.h-efecto-3d {
+  &:hover {
+    animation: efecto3d 1s 1;
+    backface-visibility: visible;
+  }
+}
+
+.h-translate-3d {
+  &:hover {
+    animation: translate-3d 1s 1;
+    backface-visibility: visible;
+  }
+}
+
+.sombra-movil {
+  &:hover {
+    transform: translateY(-6px);
+    transition-duration: 0.3s;
+    animation: 1.5s mover-caja infinite;
+
+    &:before {
+      content: "";
+      background: radial-gradient(
+        ellipse,
+        rgba(0, 0, 0, 0.35) 0%,
+        rgba(0, 0, 0, 0) 80%
+      );
+      width: 90%;
+      height: 20px;
+      top: 100%;
+      left: 5%;
+      position: absolute;
+      opacity: 0;
+    }
+    &:hover:before {
+      opacity: 1;
+      transform: translateY(6px);
+      transition-duration: 0.3s;
+      animation: 1.5s mover-sombra infinite;
+    }
+  }
+}
+
+.flecha {
+  &:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent $black transparent transparent;
+    border-style: solid;
+  }
+  &:hover:before {
+    animation: 1s flecha infinite;
+  }
+}
+
+/*::::::::::::::::::NORMAL::::::::::::::::::*/
+
+.flash {
+  animation: flash 0.5s 1;
+}
+
+.click {
+  animation: click 0.5s 1;
+}
+
+.chicle {
+  animation: chicle 1s 1;
+}
+
+.vibracion {
+  animation: vibracion 1s infinite;
+}
+
+.cartel {
+  animation: cartel 1s 1;
+  transform-origin: top center;
+}
+
+.balanceo {
+  animation: balanceo 1s 1;
+  transform-origin: top center;
+}
+
+.vaiven {
+  animation: vaiven 1s 1;
+}
+
+.descolgado {
+  animation: descolgado 1s 2;
+  transform-origin: top left;
+}
+
+.in_rotativo {
+  animation: in_rotativo 1s 2;
+}
+
+.out_rotativo {
+  animation: out_rotativo 1s 2;
+}
+.rebote {
+  animation: rebote 1s 2;
+}
+
+.rebote-in {
+  animation: rebote-in 1s 2;
+}
+.rebote-in-2 {
+  animation: rebote-in-2 1s 2;
+}
+.rebote-out {
+  animation: rebote-out 1s 2;
+}
+.rebote-out-2 {
+  animation: rebote-out-2 1s 2;
+}
+.fade-in {
+  animation: fade-in 2s 2;
+}
+
+.veloz-in {
+  animation: 0.5s veloz-in 1;
+}
+
+.veloz-out {
+  animation: 0.5s veloz-out 1;
+}
+
+.giro {
+  animation: 1s giro 1;
+  transform-origin: center;
+}
+
+.efecto-3d {
+  animation: efecto3d 1s 1;
+  backface-visibility: visible;
+}
+
+.translate-3d {
+  animation: translate-3d 1s 1;
+  backface-visibility: visible;
+}
+
+.rebote-5 {
+  transform: translateY(5%);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+  content: "";
+  opacity: 1;
+  transition-duration: 0.3s;
+}
