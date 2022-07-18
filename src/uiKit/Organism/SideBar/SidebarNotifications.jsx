@@ -16,7 +16,7 @@ const SidebarNotifications = (props) => {
           <h3 className="txt-black"> Notificaciones </h3>
         </div>
         <Button
-          classname="d-flex ai-center h-bg-red h-txt-white txt-black"
+          classname="d-flex ai-center btn-padding h-bg-red h-txt-white txt-black"
           onclick={() => setShowNotification(true)}
         >
           <Icon icon="ep:close-bold" className="font-m" />

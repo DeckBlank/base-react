@@ -75,10 +75,8 @@ class FormFilterEjm extends Component {
         <div>Selected option is : {this.state.selectedOption}</div>
         <br />
         <Button
-          hovertxtcolor="yellow"
           type="submit"
-          bgcolor="red"
-          txtcolor="white"
+          classname="btn-padding bg-red txt-white h-txt-yellow"
         >
           Enviar
         </Button>

@@ -60,7 +60,7 @@ const DocsBadge = () => {
         <div>
           <h3>BADGE ENCIMA DERECHA</h3>
           <br />
-          <Button bgcolor="silver" txtcolor="white" position="relative">
+          <Button classname="btn-padding p-relative" bgcolor="silver" txtcolor="white">
             red
             <Badge
               bgcolor="red"
@@ -76,7 +76,7 @@ const DocsBadge = () => {
         <div>
           <h3>BADGE ENCIMA IZQUIERDA</h3>
           <br />
-          <Button bgcolor="silver" txtcolor="white" position="relative">
+          <Button bgcolor="silver" txtcolor="white" classname="btn-padding p-relative">
             magenta
             <Badge
               bgcolor="magenta"
@@ -92,7 +92,7 @@ const DocsBadge = () => {
         <div>
           <h3>BADGE DEBAJO DERECHA</h3>
           <br />
-          <Button bgcolor="silver" txtcolor="white" position="relative">
+          <Button bgcolor="silver" txtcolor="white" classname="btn-padding p-relative">
             fuchsia
             <Badge
               bgcolor="fuchsia"
@@ -108,7 +108,7 @@ const DocsBadge = () => {
         <div>
           <h3>BADGE DEBAJO IZQUIERDA</h3>
           <br />
-          <Button bgcolor="silver" txtcolor="white" position="relative">
+          <Button bgcolor="silver" txtcolor="white" classname="btn-padding p-relative">
             turquoise
             <Badge
               bgcolor="turquoise"

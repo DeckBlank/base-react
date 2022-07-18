@@ -22,7 +22,7 @@ const SidebarFilter = (props) => {
           <h3 className="txt-gray"> Filtros </h3>
         </div>
         <Button
-          classname="d-flex ai-center h-bg-gray h-txt-white txt-gray"
+          classname="d-flex ai-center btn-padding h-bg-gray h-txt-white txt-gray"
           onclick={() => setShowFilter(false)}
         >
           <Icon icon="ep:close-bold" className="font-m" />

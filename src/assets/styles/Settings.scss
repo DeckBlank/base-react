@@ -12,7 +12,7 @@ $black: #0f0f0f;
 $fuchsia: #de0d45;
 $lightblue: #deebff;
 $silver: #c4c4c4;
-$lightsilver: #DEDEDE;
+$lightsilver: #dedede;
 $gray: #303c54;
 
 $din-round-pro: DIN Round Pro;
@@ -56,6 +56,11 @@ $sidebarNotification-width: 280px;
 $btn-border-radius: 15px;
 $btn-padding: 0.375rem 0.75rem;
 $btn-font-weight: bold;
+$btn-padding: 0.5rem 0.7rem;
+
+.btn-padding {
+  padding: 0.5rem 0.7rem;
+}
 
 /* :::DISPLAYS BLOCK & NONE::: */
 
@@ -67,8 +72,60 @@ $btn-font-weight: bold;
   display: block;
 }
 
+/* :::MODALS:: */
 
+.succes-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: $green;
+  color: $black;
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  .btn-close {
+    position: absolute;
+    right: 0.5rem;
+    top: 10%;
+  }
+  .icon-close {
+    font-size: small;
+  }
+  .icon-modal {
+    font-size: 2rem;
+  }
+  p {
+    font-size: small;
+    font-weight: bold;
+  }
+}
 
-
-
-
+.error-container {
+  position: relative;
+  width: 300px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: $red;
+  color: $black;
+  border-radius: 10px;
+  padding: 1rem 0.8rem;
+  .btn-close {
+    position: absolute;
+    right: 0.5rem;
+    top: 10%;
+  }
+  .icon-close {
+    font-size: small;
+  }
+  .icon-modal {
+    font-size: 2rem;
+  }
+  p {
+    font-size: small;
+    font-weight: bold;
+  }
+}

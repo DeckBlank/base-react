@@ -1,0 +1,15 @@
+.rebote-5 {
+  transform: translateY(5%);
+  transition-duration: 0.3s;
+  animation: 1.5s mover-caja infinite;
+  content: "";
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
+@keyframes mover-caja {
+  50% {
+    transform: translateY(-5%);
+  }
+}
+

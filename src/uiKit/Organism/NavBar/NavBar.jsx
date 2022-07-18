@@ -21,7 +21,7 @@ const NavBar = (props) => {
         <img className="nav-logo-img" src={logo} alt="Logo de MAB" />
         <div className="d-flex ai-center jc-center g-2 mr-1">
           <Button
-            classname="p-relative d-flex ai-center jc-center mt-02 txt-silver bg-white h-bg-yellow h-txt-black"
+            classname="p-relative d-flex ai-center jc-center btn-padding mt-02 txt-silver bg-white h-bg-yellow h-txt-black"
             onclick={onclickN}
           >
             <Icon icon="bxs:bell" className="notification-icon f-xxl" />

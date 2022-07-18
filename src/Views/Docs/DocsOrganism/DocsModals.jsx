@@ -2,7 +2,53 @@ import React from "react";
 import Button from "../../../uiKit/Atoms/Button/Button";
 import Title from "../../../uiKit/Atoms/Title/Title";
 import Swal from "sweetalert2";
+import { Icon } from "@iconify/react";
+import "../../../App.scss";
 // import withReactContent from 'sweetalert2-react-content'
+
+// PROTOTIPADO SEGÚN FIGMA
+
+const SuccesModal = (e) => {
+  e.preventDefault();
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
+
+  Toast.fire({
+    icon: "success",
+    title: "La clase fue agendada correctamente.",
+  });
+};
+
+const ErrorModal = (e) => {
+  e.preventDefault();
+
+  const Toast = Swal.mixin({
+    toast: true,
+    position: "top-end",
+    showConfirmButton: false,
+    timer: 2000,
+    timerProgressBar: true,
+    didOpen: (toast) => {
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
+
+  Toast.fire({
+    icon: "error",
+    title: "Te faltan ingresar algunos campos.",
+  });
+};
 
 // ICONS FOR MODALS
 
@@ -218,102 +264,102 @@ const TextInputAlert = (e) => {
 
 const EmailInputAlert = (e) => {
   e.preventDefault();
-  const { value: email } =  Swal.fire({
-    title: 'Input email address',
-    input: 'email',
-    inputLabel: 'Your email address',
-    inputPlaceholder: 'Enter your email address'
-  })
-  
+  const { value: email } = Swal.fire({
+    title: "Input email address",
+    input: "email",
+    inputLabel: "Your email address",
+    inputPlaceholder: "Enter your email address",
+  });
+
   if (email) {
-    Swal.fire(`Entered email: ${email}`)
+    Swal.fire(`Entered email: ${email}`);
   }
 };
 
 const UrlInputAlert = (e) => {
   e.preventDefault();
   const { value: url } = Swal.fire({
-    input: 'url',
-    inputLabel: 'URL address',
-    inputPlaceholder: 'Enter the URL'
-  })
-  
+    input: "url",
+    inputLabel: "URL address",
+    inputPlaceholder: "Enter the URL",
+  });
+
   if (url) {
-    Swal.fire(`Entered URL: ${url}`)
+    Swal.fire(`Entered URL: ${url}`);
   }
 };
 
 const PswInputAlert = (e) => {
   e.preventDefault();
   const { value: password } = Swal.fire({
-    title: 'Enter your password',
-    input: 'password',
-    inputLabel: 'Password',
-    inputPlaceholder: 'Enter your password',
+    title: "Enter your password",
+    input: "password",
+    inputLabel: "Password",
+    inputPlaceholder: "Enter your password",
     inputAttributes: {
       maxlength: 10,
-      autocapitalize: 'off',
-      autocorrect: 'off'
-    }
-  })
-  
+      autocapitalize: "off",
+      autocorrect: "off",
+    },
+  });
+
   if (password) {
-    Swal.fire(`Entered password: ${password}`)
+    Swal.fire(`Entered password: ${password}`);
   }
 };
 
 const TextareaInputAlert = (e) => {
   e.preventDefault();
   const { value: text } = Swal.fire({
-    input: 'textarea',
-    inputLabel: 'Message',
-    inputPlaceholder: 'Type your message here...',
+    input: "textarea",
+    inputLabel: "Message",
+    inputPlaceholder: "Type your message here...",
     inputAttributes: {
-      'aria-label': 'Type your message here'
+      "aria-label": "Type your message here",
     },
-    showCancelButton: true
-  })
-  
+    showCancelButton: true,
+  });
+
   if (text) {
-    Swal.fire(text)
+    Swal.fire(text);
   }
 };
 
 const SelectInputAlert = (e) => {
   e.preventDefault();
-    const { value: fruit } = Swal.fire({
-      title: 'Select field validation',
-      input: 'select',
-      inputOptions: {
-        'Fruits': {
-          apples: 'Apples',
-          bananas: 'Bananas',
-          grapes: 'Grapes',
-          oranges: 'Oranges'
-        },
-        'Vegetables': {
-          potato: 'Potato',
-          broccoli: 'Broccoli',
-          carrot: 'Carrot'
-        },
-        'icecream': 'Ice cream'
+  const { value: fruit } = Swal.fire({
+    title: "Select field validation",
+    input: "select",
+    inputOptions: {
+      Fruits: {
+        apples: "Apples",
+        bananas: "Bananas",
+        grapes: "Grapes",
+        oranges: "Oranges",
       },
-      inputPlaceholder: 'Select a fruit',
-      showCancelButton: true,
-      inputValidator: (value) => {
-        return new Promise((resolve) => {
-          if (value === 'oranges') {
-            resolve()
-          } else {
-            resolve('You need to select oranges :)')
-          }
-        })
-      }
-    })
-    
-    if (fruit) {
-      Swal.fire(`You selected: ${fruit}`)
-    }
+      Vegetables: {
+        potato: "Potato",
+        broccoli: "Broccoli",
+        carrot: "Carrot",
+      },
+      icecream: "Ice cream",
+    },
+    inputPlaceholder: "Select a fruit",
+    showCancelButton: true,
+    inputValidator: (value) => {
+      return new Promise((resolve) => {
+        if (value === "oranges") {
+          resolve();
+        } else {
+          resolve("You need to select oranges :)");
+        }
+      });
+    },
+  });
+
+  if (fruit) {
+    Swal.fire(`You selected: ${fruit}`);
+  }
 };
 
 const RadioInputAlert = (e) => {
@@ -321,109 +367,105 @@ const RadioInputAlert = (e) => {
   const inputOptions = new Promise((resolve) => {
     setTimeout(() => {
       resolve({
-        '#ff0000': 'Red',
-        '#00ff00': 'Green',
-        '#0000ff': 'Blue'
-      })
-    }, 1000)
-  })
-  
+        "#ff0000": "Red",
+        "#00ff00": "Green",
+        "#0000ff": "Blue",
+      });
+    }, 1000);
+  });
+
   const { value: color } = Swal.fire({
-    title: 'Select color',
-    input: 'radio',
+    title: "Select color",
+    input: "radio",
     inputOptions: inputOptions,
     inputValidator: (value) => {
       if (!value) {
-        return 'You need to choose something!'
+        return "You need to choose something!";
       }
-    }
-  })
-  
+    },
+  });
+
   if (color) {
-    Swal.fire({ html: `You selected: ${color}` })
+    Swal.fire({ html: `You selected: ${color}` });
   }
 };
 
 const CheckboxInputAlert = (e) => {
   e.preventDefault();
   const { value: accept } = Swal.fire({
-    title: 'Terms and conditions',
-    input: 'checkbox',
+    title: "Terms and conditions",
+    input: "checkbox",
     inputValue: 1,
-    inputPlaceholder:
-      'I agree with the terms and conditions',
-    confirmButtonText:
-      'Continue <i class="fa fa-arrow-right"></i>',
+    inputPlaceholder: "I agree with the terms and conditions",
+    confirmButtonText: 'Continue <i class="fa fa-arrow-right"></i>',
     inputValidator: (result) => {
-      return !result && 'You need to agree with T&C'
-    }
-  })
-  
+      return !result && "You need to agree with T&C";
+    },
+  });
+
   if (accept) {
-    Swal.fire('You agreed with T&C :)')
+    Swal.fire("You agreed with T&C :)");
   }
 };
 
 const FileInputAlert = (e) => {
   e.preventDefault();
   const { value: file } = Swal.fire({
-    title: 'Select image',
-    input: 'file',
+    title: "Select image",
+    input: "file",
     inputAttributes: {
-      'accept': 'image/*',
-      'aria-label': 'Upload your profile picture'
-    }
-  })
-  
+      accept: "image/*",
+      "aria-label": "Upload your profile picture",
+    },
+  });
+
   if (file) {
-    const reader = new FileReader()
+    const reader = new FileReader();
     reader.onload = (e) => {
       Swal.fire({
-        title: 'Your uploaded picture',
+        title: "Your uploaded picture",
         imageUrl: e.target.result,
-        imageAlt: 'The uploaded picture'
-      })
-    }
-    reader.readAsDataURL(file)
-    
-  };
+        imageAlt: "The uploaded picture",
+      });
+    };
+    reader.readAsDataURL(file);
+  }
 };
 
 const RangeInputAlert = (e) => {
   e.preventDefault();
   Swal.fire({
-    title: 'How old are you?',
-  icon: 'question',
-  input: 'range',
-  inputLabel: 'Your age',
-  inputAttributes: {
-    min: 8,
-    max: 120,
-    step: 1
-  },
-  inputValue: 25  
-    
+    title: "How old are you?",
+    icon: "question",
+    input: "range",
+    inputLabel: "Your age",
+    inputAttributes: {
+      min: 8,
+      max: 120,
+      step: 1,
+    },
+    inputValue: 25,
   });
 };
 
 const MultiplesInputAlert = (e) => {
   e.preventDefault();
   const { value: formValues } = Swal.fire({
-    title: 'Multiple inputs',
+    title: "Multiple inputs",
     html:
       '<input id="swal-input1" class="swal2-input">' +
       '<input id="swal-input2" class="swal2-input">',
     focusConfirm: false,
     preConfirm: () => {
       return [
-        document.getElementById('swal-input1').value,
-        document.getElementById('swal-input2').value
-      ]
-    }
-  })
-  
+        document.getElementById("swal-input1").value,
+        document.getElementById("swal-input2").value,
+      ];
+    },
+  });
+
   if (formValues) {
-    Swal.fire(JSON.stringify(formValues))
+    Swal.fire(JSON.stringify(formValues));
   }
 };
 
@@ -509,21 +551,20 @@ const MixInAlert = (e) => {
 
   const Toast = Swal.mixin({
     toast: true,
-    position: 'top-end',
+    position: "top-end",
     showConfirmButton: false,
     timer: 2000,
     timerProgressBar: true,
     didOpen: (toast) => {
-      toast.addEventListener('mouseenter', Swal.stopTimer)
-      toast.addEventListener('mouseleave', Swal.resumeTimer)
-    }
-  })
-  
-  Toast.fire({
-    icon: 'success',
-    title: 'Signed in successfully'
-  })
+      toast.addEventListener("mouseenter", Swal.stopTimer);
+      toast.addEventListener("mouseleave", Swal.resumeTimer);
+    },
+  });
 
+  Toast.fire({
+    icon: "success",
+    title: "Signed in successfully",
+  });
 };
 
 const DocsModals = () => {
@@ -537,22 +578,91 @@ const DocsModals = () => {
         <h2>SWEETALERT 2</h2>
         <br />
         <br />
+        <h3>PROTOTIPO DEL FIGMA</h3>
+        <br />
+        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
+          <article className="succes-container">
+            <Button classname="btn-close">
+              <Icon className="icon-close" icon="ep:close-bold" />
+            </Button>
+            <Icon className="icon-modal rebote-5 " icon="akar-icons:face-very-happy" />
+            <p>La clase fue agendada correctamente.</p>
+          </article>
+
+          <article className="error-container">
+            <Button classname="btn-close">
+              <Icon className="icon-close" icon="ep:close-bold" />
+            </Button>
+              <Icon
+                className="icon-modal rebote-5 "
+                icon="icon-park-outline:surprised-face-with-open-mouth"
+              />
+              <p>Te faltan ingresar algunos campos.</p>
+          </article>
+        </div>
+        <br />
+        <br />
+        <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
+          <Button
+            onclick={SuccesModal}
+            classname="btn-padding"
+            bgcolor="green"
+            txtcolor="white"
+          >
+            Mix In
+          </Button>
+          <Button
+            onclick={ErrorModal}
+            classname="btn-padding"
+            bgcolor="red"
+            txtcolor="white"
+          >
+            Top End
+          </Button>
+        </div>
+        <br />
+        <br />
         <h3>SYMBOLS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={SuccessAlert} bgcolor="green" txtcolor="white">
+          <Button
+            onclick={SuccessAlert}
+            classname="btn-padding"
+            bgcolor="green"
+            txtcolor="white"
+          >
             Success
           </Button>
-          <Button onclick={ErrorAlert} bgcolor="red" txtcolor="white">
+          <Button
+            onclick={ErrorAlert}
+            classname="btn-padding"
+            bgcolor="red"
+            txtcolor="white"
+          >
             Error
           </Button>
-          <Button onclick={WarningAlert} bgcolor="yellow" txtcolor="white">
+          <Button
+            onclick={WarningAlert}
+            classname="btn-padding"
+            bgcolor="yellow"
+            txtcolor="white"
+          >
             Warning
           </Button>
-          <Button onclick={InfoAlert} bgcolor="blue" txtcolor="white">
+          <Button
+            onclick={InfoAlert}
+            classname="btn-padding"
+            bgcolor="blue"
+            txtcolor="white"
+          >
             Info
           </Button>
-          <Button onclick={QuestionAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={QuestionAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Question
           </Button>
         </div>
@@ -561,16 +671,36 @@ const DocsModals = () => {
         <h3>OPTIONS BUTTONS / FOOTER LINKS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={SaveAlert} bgcolor="blue" txtcolor="white">
+          <Button
+            onclick={SaveAlert}
+            classname="btn-padding"
+            bgcolor="blue"
+            txtcolor="white"
+          >
             Save Button
           </Button>
-          <Button onclick={ConfirmAlert} bgcolor="blue" txtcolor="white">
+          <Button
+            onclick={ConfirmAlert}
+            classname="btn-padding"
+            bgcolor="blue"
+            txtcolor="white"
+          >
             Confirm and Cancel
           </Button>
-          <Button onclick={FooterAlert} bgcolor="blue" txtcolor="white">
+          <Button
+            onclick={FooterAlert}
+            classname="btn-padding"
+            bgcolor="blue"
+            txtcolor="white"
+          >
             With Footer
           </Button>
-          <Button onclick={LikeAlert} bgcolor="blue" txtcolor="white">
+          <Button
+            onclick={LikeAlert}
+            classname="btn-padding"
+            bgcolor="blue"
+            txtcolor="white"
+          >
             Like and Dislike
           </Button>
         </div>
@@ -579,37 +709,92 @@ const DocsModals = () => {
         <h3>OPTIONS INPUTS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={TextInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={TextInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Text
           </Button>
-          <Button onclick={EmailInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={EmailInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Email
           </Button>
-          <Button onclick={UrlInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={UrlInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Url
           </Button>
-          <Button onclick={PswInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={PswInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Password
           </Button>
-          <Button onclick={TextareaInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={TextareaInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Textarea
           </Button>
-          <Button onclick={SelectInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={SelectInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Select
           </Button>
-          <Button onclick={RadioInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={RadioInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Radio
           </Button>
-          <Button onclick={CheckboxInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={CheckboxInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Checkbox
           </Button>
-          <Button onclick={FileInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={FileInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             File
           </Button>
-          <Button onclick={RangeInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={RangeInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Range
           </Button>
-          <Button onclick={MultiplesInputAlert} bgcolor="gray" txtcolor="white">
+          <Button
+            onclick={MultiplesInputAlert}
+            classname="btn-padding"
+            bgcolor="gray"
+            txtcolor="white"
+          >
             Multiples
           </Button>
         </div>
@@ -618,13 +803,28 @@ const DocsModals = () => {
         <h3>OPTIONS LOADERS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={TimeLoaderAlert} bgcolor="green" txtcolor="white">
+          <Button
+            onclick={TimeLoaderAlert}
+            classname="btn-padding"
+            bgcolor="green"
+            txtcolor="white"
+          >
             Time Loader
           </Button>
-          <Button onclick={LoaderAlert} bgcolor="green" txtcolor="white">
+          <Button
+            onclick={LoaderAlert}
+            classname="btn-padding"
+            bgcolor="green"
+            txtcolor="white"
+          >
             Loader
           </Button>
-          <Button onclick={MixInAlert} bgcolor="green" txtcolor="white">
+          <Button
+            onclick={MixInAlert}
+            classname="btn-padding"
+            bgcolor="green"
+            txtcolor="white"
+          >
             Mix In
           </Button>
         </div>
@@ -633,16 +833,36 @@ const DocsModals = () => {
         <h3>POSITIONS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={TopEndAlert} bgcolor="orange" txtcolor="white">
+          <Button
+            onclick={TopEndAlert}
+            classname="btn-padding"
+            bgcolor="orange"
+            txtcolor="white"
+          >
             Top End
           </Button>
-          <Button onclick={TopStartAlert} bgcolor="orange" txtcolor="white">
+          <Button
+            onclick={TopStartAlert}
+            classname="btn-padding"
+            bgcolor="orange"
+            txtcolor="white"
+          >
             Top Start
           </Button>
-          <Button onclick={BottomEndAlert} bgcolor="orange" txtcolor="white">
+          <Button
+            onclick={BottomEndAlert}
+            classname="btn-padding"
+            bgcolor="orange"
+            txtcolor="white"
+          >
             Bottom End
           </Button>
-          <Button onclick={BottomStartAlert} bgcolor="orange" txtcolor="white">
+          <Button
+            onclick={BottomStartAlert}
+            classname="btn-padding"
+            bgcolor="orange"
+            txtcolor="white"
+          >
             Bottom Start
           </Button>
         </div>
@@ -651,10 +871,20 @@ const DocsModals = () => {
         <h3>OTHERS</h3>
         <br />
         <div className="d-grid g-1 gt-columns-200-1 ji-start ai-start ac-center">
-          <Button onclick={ImgAlert} bgcolor="black" txtcolor="white">
+          <Button
+            onclick={ImgAlert}
+            classname="btn-padding"
+            bgcolor="black"
+            txtcolor="white"
+          >
             With Image
           </Button>
-          <Button onclick={StyleAlert} bgcolor="black" txtcolor="white">
+          <Button
+            onclick={StyleAlert}
+            classname="btn-padding"
+            bgcolor="black"
+            txtcolor="white"
+          >
             Background
           </Button>
         </div>
