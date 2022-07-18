@@ -11,7 +11,8 @@ const LinkItem = (props) => {
     icon,
     route,
     text,
-    classnameLi
+    classnameLi,
+    onclick
   } = props;
 
   return (
@@ -19,6 +20,7 @@ const LinkItem = (props) => {
       <Link
         className={`d-flex ai-center jc-flex-start font-s ${classname}`}
         to={route}
+        onClick={onclick}
       >
         <i className="icon d-flex ai-center">
           <Icon icon={icon} />

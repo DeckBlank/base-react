@@ -12,7 +12,7 @@ import { useMainContext } from "../../../context/MainContext";
 import OptionsListGroupBtn from "../../../assets/Jsons/ItemsList/listgroup-list-icon-btn.json";
 
 const SidebarFilter = (props) => {
-  const { showFilter, setShowFilter } = useMainContext();
+  const { showFilter, setShowFilter, setActive, setIsActive } = useMainContext();
 
   return (
     <div className="h-100p bg-white" >
