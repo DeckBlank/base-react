@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 // COMPONENTS
 import LinkItem from "../../Atoms/LinkItem/LinkItem";
@@ -10,15 +10,9 @@ import Nav from "../../../assets/Jsons/Nav/Nav.json";
 import { useMainContext } from "../../../context/MainContext";
 // FUNCTIONS
 const SidebarLink = () => {
-  const { isIndexActive, setIsIndexActive } =
+  const { isIndexActive, buttonActive } =
     useMainContext();
 
-  const buttonActive = (index) => {
-    const indexActual = isIndexActive;
-    setIsIndexActive(index);
-    alert(indexActual);
-    alert(index);
-  };
 
   return (
     <div className="h-100p bg-gray">
