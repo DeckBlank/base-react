@@ -43,197 +43,143 @@
 /* :::COLORES DE TEXTO::: */
 
 .txt-white {
-  color: $white;
+  color: $white !important;
 }
 .txt-red {
-  color: $red;
+  color: $red !important;
 }
 .txt-turquoise {
-  color: $turquoise;
+  color: $turquoise !important;
 }
 .txt-blue {
-  color: $blue;
+  color: $blue !important;
 }
 .txt-yellow {
-  color: $yellow;
+  color: $yellow !important;
 }
 .txt-orange {
-  color: $orange;
+  color: $orange !important;
 }
 .txt-green {
-  color: $green;
+  color: $green !important;
 }
 .txt-magenta {
-  color: $magenta;
+  color: $magenta !important;
 }
 .txt-black {
-  color: $black;
+  color: $black !important;
 }
 .txt-fuchsia {
-  color: $fuchsia;
+  color: $fuchsia !important;
 }
 .txt-lightblue {
-  color: $lightblue;
+  color: $lightblue !important;
 }
 .txt-lightsilver {
-  color: $lightsilver;
+  color: $lightsilver !important;
 }
 .txt-silver {
-  color: $silver;
+  color: $silver !important;
 }
 .txt-gray {
-  color: $gray;
-}
-
-/* :::COLORES DE BOTONES::: */
-
-.btn-white {
-  background-color: $white;
-}
-
-.btn-red {
-  background-color: $red;
-}
-
-.btn-turquoise {
-  background-color: $turquoise;
-}
-
-.btn-blue {
-  background-color: $blue;
-}
-
-.btn-yellow {
-  background-color: $yellow;
-}
-
-.btn-orange {
-  background-color: $orange;
-}
-
-.btn-green {
-  background-color: $green;
-}
-
-.btn-magenta {
-  background-color: $magenta;
-}
-
-.btn-black {
-  background-color: $black;
-}
-
-.btn-fuchsia {
-  background-color: $fuchsia;
-}
-
-.btn-lightblue {
-  background-color: $lightblue;
-}
-
-.btn-silver {
-  background-color: $silver;
-}
-
-.btn-gray {
-  background-color: $gray;
+  color: $gray !important;
 }
 
 /* :::COLORES DE HOVERS PARA BACKGROUND::: */
 
 .h-bg-opacity0 {
   &:hover {
-    opacity: 0;
+    opacity: 0 !important;
   }
 }
 
 .h-bg-opacity4 {
   &:hover {
-    opacity: 0.4;
+    opacity: 0.4 !important;
   }
 }
 
 .h-bg-opacity8 {
   &:hover {
-    opacity: 0.8;
+    opacity: 0.8 !important;
   }
 }
 
 .h-bg-blue {
   &:hover {
-    background-color: $blue;
+    background-color: $blue !important;
   }
 }
 
 .h-bg-white {
   &:hover {
-    background-color: $white;
+    background-color: $white !important;
   }
 }
 
 .h-bg-red {
   &:hover {
-    background-color: $red;
+    background-color: $red !important;
   }
 }
 
 .h-bg-orange {
   &:hover {
-    background-color: $orange;
+    background-color: $orange !important;
   }
 }
 
 .h-bg-yellow {
   &:hover {
-    background-color: $yellow;
+    background-color: $yellow !important;
   }
 }
 
 .h-bg-fuchsia {
   &:hover {
-    background-color: $fuchsia;
+    background-color: $fuchsia !important;
   }
 }
 
 .h-bg-green {
   &:hover {
-    background-color: $green;
+    background-color: $green !important;
   }
 }
 
 .h-bg-turquoise {
   &:hover {
-    background-color: $turquoise;
+    background-color: $turquoise !important;
   }
 }
 
 .h-bg-gray {
   &:hover {
-    background-color: $gray;
+    background-color: $gray !important;
   }
 }
 
 .h-bg-silver {
   &:hover {
-    background-color: $silver;
+    background-color: $silver !important;
   }
 }
 
 .h-bg-lightblue {
   &:hover {
-    background-color: $lightblue;
+    background-color: $lightblue !important;
   }
 }
 
 .h-bg-black {
   &:hover {
-    background-color: $black;
+    background-color: $black !important;
   }
 }
 
 .h-bg-magenta {
   &:hover {
-    background-color: $magenta;
+    background-color: $magenta !important;
   }
 }
 
@@ -241,92 +187,92 @@
 
 .h-txt-white {
   &:hover {
-    color: $white;
-    font-weight: bold;
+    color: $white !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-red {
   &:hover {
-    color: $red;
-    font-weight: bold;
+    color: $red !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-orange {
   &:hover {
-    color: $orange;
-    font-weight: bold;
+    color: $orange !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-yellow {
   &:hover {
-    color: $yellow;
-    font-weight: bold;
+    color: $yellow !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-fuchsia {
   &:hover {
-    color: $fuchsia;
-    font-weight: bold;
+    color: $fuchsia !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-green {
   &:hover {
-    color: $green;
-    font-weight: bold;
+    color: $green !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-turquoise {
   &:hover {
-    color: $turquoise;
-    font-weight: bold;
+    color: $turquoise !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-gray {
   &:hover {
-    color: $gray;
-    font-weight: bold;
+    color: $gray !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-silver {
   &:hover {
-    color: $silver;
-    font-weight: bold;
+    color: $silver !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-lightblue {
   &:hover {
-    color: $lightblue;
-    font-weight: bold;
+    color: $lightblue !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-black {
   &:hover {
-    color: $black;
-    font-weight: bold;
+    color: $black !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-magenta {
   &:hover {
-    color: $magenta;
-    font-weight: bold;
+    color: $magenta !important;
+    font-weight: bold !important;
   }
 }
 
 .h-txt-blue {
   &:hover {
-    color: $blue;
-    font-weight: bold;
+    color: $blue !important;
+    font-weight: bold !important;
   }
 }
 
@@ -334,79 +280,79 @@
 
 .h-b-white {
   &:hover {
-    border: 1px solid $white;
+    border: 1px solid $white !important;
   }
 }
 
 .h-b-red {
   &:hover {
-    border: 1px solid $red;
+    border: 1px solid $red !important;
   }
 }
 
 .h-b-orange {
   &:hover {
-    border: 1px solid $orange;
+    border: 1px solid $orange !important;
   }
 }
 
 .h-b-yellow {
   &:hover {
-    border: 1px solid $yellow;
+    border: 1px solid $yellow !important;
   }
 }
 
 .h-b-fuchsia {
   &:hover {
-    border: 1px solid $fuchsia;
+    border: 1px solid $fuchsia !important;
   }
 }
 
 .h-b-green {
   &:hover {
-    border: 1px solid $green;
+    border: 1px solid $green !important;
   }
 }
 
 .h-b-turquoise {
   &:hover {
-    border: 1px solid $turquoise;
+    border: 1px solid $turquoise !important;
   }
 }
 
 .h-b-gray {
   &:hover {
-    border: 1px solid $gray;
+    border: 1px solid $gray !important;
   }
 }
 
 .h-b-silver {
   &:hover {
-    border: 1px solid $silver;
+    border: 1px solid $silver !important;
   }
 }
 
 .h-b-lightblue {
   &:hover {
-    border: 1px solid $lightblue;
+    border: 1px solid $lightblue !important;
   }
 }
 
 .h-b-black {
   &:hover {
-    border: 1px solid $black;
+    border: 1px solid $black !important;
   }
 }
 
 .h-b-magenta {
   &:hover {
-    border: 1px solid $magenta;
+    border: 1px solid $magenta !important;
   }
 }
 
 .h-b-blue {
   &:hover {
-    border: 1px solid $blue;
+    border: 1px solid $blue !important;
   }
 }
 
