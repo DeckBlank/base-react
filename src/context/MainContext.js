@@ -11,11 +11,23 @@ const MainContextProvider = (props) => {
   const [showFilter, setShowFilter] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
   const [showNotification, setShowNotification] = useState(true);
-  const [isIndexActive, setIsIndexActive] = useState(0);
 
-  // FUNCTIONS
+  const getIndexActive = () => {
+    const indexActive = localStorage.getItem("indexActive"); 
+    alert(indexActive);
+    const jsonIndexActive = JSON.parse(indexActive);
+    if(!jsonIndexActive) return 0;
+    return jsonIndexActive.indexActive;
+  };
+
+  const [isIndexActive, setIsIndexActive] = useState(getIndexActive());
+
+  alert(isIndexActive);
+  
   const buttonActive = (index) => {
-    setIsIndexActive(index);
+    // const indexActiveOld=
+    localStorage.setItem("indexActive", JSON.stringify(index));
+    setIsIndexActive(index);   
   };
 
   return (
@@ -29,7 +41,7 @@ const MainContextProvider = (props) => {
         setShowNotification,
         isIndexActive,
         setIsIndexActive,
-        buttonActive
+        buttonActive,
       }}
     >
       {props.children}

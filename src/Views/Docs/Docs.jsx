@@ -50,7 +50,6 @@ const Docs = (props) => {
     showSidebar,
     setShowSidebar,
     showFilter,
-    setShowFilter,
     showNotification,
     setShowNotification,
   } = useMainContext();
