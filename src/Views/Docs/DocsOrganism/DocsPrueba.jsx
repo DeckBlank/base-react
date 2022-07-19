@@ -19,7 +19,7 @@ const DocsPrueba = (props) => {
         <h2>PRUEBAS PARA EL SIDEBAR</h2>
         <br />
         <Button
-          classname="d-flex ai-center g-05 h-txt-black"
+          classname="btn-padding d-flex ai-center g-05 h-txt-black"
           bgcolor="fuchsia"
           txtcolor="white"
           onclick={() => setShowFilter(true)} 

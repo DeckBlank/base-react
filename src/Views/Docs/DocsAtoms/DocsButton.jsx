@@ -24,7 +24,7 @@ const DocsButton = () => {
         <h2>BUTTON ICON</h2>
         <br />
         <br />
-        <Button classname="btn-padding" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding d-flex ai-center" bgcolor="silver" txtcolor="white">
           <Icon icon="bx:cog" />
         </Button>
         <br />
@@ -32,7 +32,7 @@ const DocsButton = () => {
         <h2>BUTTON TEXT + ICON</h2>
         <br />
         <br />
-        <Button classname="d-flex ai-center" bgcolor="silver" txtcolor="white">
+        <Button classname="btn-padding d-flex ai-center" bgcolor="silver" txtcolor="white">
           <Icon icon="bx:cog" />
           Button Text + Icon
         </Button>
