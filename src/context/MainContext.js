@@ -10,7 +10,7 @@ const MainContextProvider = (props) => {
   const [showFilter, setShowFilter] = useState(false);
   const [showSidebar, setShowSidebar] = useState(true);
   const [showNotification, setShowNotification] = useState(true);
-  const [isActive, setIsActive] = useState(false);
+  const [isIndexActive, setIsIndexActive] = useState(0);
 
   return (
     <MainContext.Provider
@@ -21,8 +21,8 @@ const MainContextProvider = (props) => {
         setShowSidebar,
         showNotification,
         setShowNotification,
-        isActive,
-        setIsActive,
+        isIndexActive,
+        setIsIndexActive,
       }}
     >
       {props.children}
