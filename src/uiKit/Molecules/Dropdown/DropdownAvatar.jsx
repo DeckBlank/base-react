@@ -37,7 +37,7 @@ const DropdownAvatar = (props) => {
           data-bs-toggle="dropdown"
           ariaexpanded="false"
           onclick={showDropdown}
-          classname={`btn-padding d-flex ai-center w-100p zi-30 ${classbtn}`}
+          classname={`d-flex ai-center w-100p zi-30 ${classbtn}`}
         >
           <Avatar />
           <p>{text}</p>

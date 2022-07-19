@@ -25,7 +25,7 @@ const Dropdown = (props) => {
         data-bs-toggle="dropdown"
         ariaexpanded="false"
         onclick={showDropdown}
-        classname={`btn-padding d-flex ai-center w-100p zi-30 ${classbtn}`}
+        classname={`d-flex ai-center w-100p zi-30 ${classbtn}`}
       >
         <Icon icon={icon} />
         <p className={classtext}>{text}</p>        

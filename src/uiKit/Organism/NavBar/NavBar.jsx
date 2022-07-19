@@ -39,7 +39,7 @@ const NavBar = (props) => {
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Usuario 1"
-            classname="txt-silver br-15"
+            classname="btn-padding txt-silver br-15"
             classbtn="txt-black bg-transparent pr-2"
             iconarrow="eva:arrow-ios-downward-outline"
           >

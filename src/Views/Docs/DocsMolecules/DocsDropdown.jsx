@@ -38,6 +38,7 @@ const DocsDropdown = () => {
         <br />
         <div>
           <Dropdown2
+            classname="btn-padding"
             icon="bxs:bell"
             badge="12"
             contentData={notifications}
@@ -55,7 +56,7 @@ const DocsDropdown = () => {
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Hacia Abajo"
-            classname="bg-red txt-white br-15"
+            classname="btn-padding bg-red txt-white br-15"
             classbtn="txt-white bg-transparent"
           >
             <ListGroup classname="dropdown-group-list zi-50">
@@ -77,7 +78,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia Arriba"
-            classname="bg-blue txt-white br-15"
+            classname="btn-padding bg-blue txt-white br-15"
             classbtn="txt-white bg-transparent "
           >
             <ListGroup classname="dropdown-group-list zi-50">
@@ -99,7 +100,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia derecha"
-            classname="bg-green txt-white br-15"
+            classname="btn-padding bg-green txt-white br-15"
             classbtn="txt-white bg-transparent "
           >
             <ListGroup classname="dropdown-group-list zi-50">
@@ -121,7 +122,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia izquierda"
-            classname="bg-orange txt-white br-15"
+            classname="btn-padding bg-orange txt-white br-15"
             classbtn="txt-white bg-transparent "
           >
             <ListGroup classname="dropdown-group-list zi-50">
@@ -148,7 +149,7 @@ const DocsDropdown = () => {
             data-bs-toggle="dropdown"
             direction="dropdown"
             text="Hacia Abajo"
-            classname="bg-red txt-white br-15"
+            classname="btn-padding bg-red txt-white br-15"
             classbtn="txt-white bg-transparent pr-2"
             iconarrow="eva:arrow-ios-downward-outline"
           >
@@ -171,7 +172,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia Arriba"
-            classname="bg-blue txt-white br-15"
+            classname="btn-padding bg-blue txt-white br-15"
             classbtn="txt-white bg-transparent pr-2"
             iconarrow="eva:arrow-ios-upward-fill"
           >
@@ -194,7 +195,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia derecha"
-            classname="bg-orange txt-white br-15"
+            classname="btn-padding bg-orange txt-white br-15"
             classbtn="txt-white bg-transparent pr-2"
             iconarrow="eva:arrow-ios-forward-outline"
           >
@@ -217,7 +218,7 @@ const DocsDropdown = () => {
             id="idDropdown"
             data-bs-toggle="dropdown"
             text="Hacia izquierda"
-            classname="bg-green txt-white br-15"
+            classname="btn-padding bg-green txt-white br-15"
             classbtn="txt-white bg-transparent pr-2"
             iconarrow="eva:arrow-ios-back-outline"
           >
@@ -249,7 +250,7 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-          classname="txt-white br-15"
+          classname="btn-padding txt-white br-15"
           classbtn="txt-black bg-transparent "
         >
           <ListGroup classname="dropdown-group-list zi-50">
@@ -275,7 +276,7 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           direction="dropdown"
           text="Usuario 1"
-          classname="txt-white bg-gray br-15"
+          classname="btn-padding txt-white bg-gray br-15"
           classbtn="txt-white bg-transparent pr-2"
           iconarrow="eva:arrow-ios-downward-outline"
         >
@@ -302,7 +303,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           icon="entypo:dots-three-vertical"
-          classname="bg-white br-15"
+          classname="btn-padding bg-white br-15"
           classbtn="txt-black bg-transparent"
         >
           <ListGroup classname="dropdown-group-list zi-50">
@@ -329,7 +330,7 @@ const DocsDropdown = () => {
           data-bs-toggle="dropdown"
           icon="fluent:calculator-20-filled"
           iconarrow="eva:arrow-ios-forward-outline"
-          classname="txt-white bg-silver br-15"
+          classname="btn-padding txt-white bg-silver br-15"
           classbtn="txt-white bg-transparent pr-2"
         >
           <ListGroup classname="dropdown-group-list zi-50">
@@ -355,7 +356,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           text="Texto"
-          classname="bg-yellow txt-white br-15"
+          classname="btn-padding bg-yellow txt-white br-15"
           classbtn="txt-black bg-transparent "
         >
           <ListGroup classname="dropdown-group-list zi-50">
@@ -381,7 +382,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           text="Texto"
-          classname="txt-silver br-15"
+          classname="btn-padding txt-silver br-15"
           classbtn="txt-black bg-transparent pr-2"
           iconarrow="eva:arrow-ios-forward-outline"
         >
@@ -408,7 +409,7 @@ const DocsDropdown = () => {
           id="idDropdown"
           data-bs-toggle="dropdown"
           icon="fluent:calculator-20-filled"
-          classname="txt-silver br-15"
+          classname="btn-padding txt-silver br-15"
           classbtn="txt-black bg-transparent"
           text="Texto"
         >
@@ -437,7 +438,7 @@ const DocsDropdown = () => {
           icon="fluent:calculator-20-filled"
           iconarrow="eva:arrow-ios-forward-outline"
           text="Texto"
-          classname="bg-yellow txt-white br-15"
+          classname="btn-padding bg-yellow txt-white br-15"
           classbtn="txt-black bg-transparent pr-2"
         >
           <ListGroup classname="dropdown-group-list zi-50">
