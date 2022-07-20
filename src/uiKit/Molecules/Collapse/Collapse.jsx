@@ -5,11 +5,15 @@ import ButtonItem from "../../Atoms/ButtonItem/ButtonItem";
 
 const Collapse = (props) => {
 
-  let {icon, classname, text, iconarrowdown, iconarrowup} = props
+  let {icon, classname, text, iconarrowdown, iconarrowup, classnamecollapse} = props
 
-  const [sCollapse, setsCollapse] = useState(false);
-  const showCollapse = () => {
-    setsCollapse(!sCollapse);
+  const [sCollapse, setsCollapse] = useState(false);   
+  const [sCollapseActive, setsCollapseActive] = useState(classnamecollapse);   
+
+  const showCollapse = () => {      
+    if(sCollapseActive=="")
+    setsCollapse(!sCollapse);        
+    setsCollapseActive(""); 
   };
 
   return (
@@ -22,7 +26,11 @@ const Collapse = (props) => {
         iconarrowdown={iconarrowdown}
         iconarrowup={iconarrowup}
       />
-      <div className={`${sCollapse ? "block" : "none"}`} 
+      
+      <div className={`${
+              sCollapse ? "block" : "none"
+            } ${sCollapseActive}`
+            } 
       >
        {props.children}
       </div>

@@ -1,31 +1,37 @@
 [
     {
+        "id": 1,
         "text": "Documentation",
         "route": "/",
         "icon": "ant-design:home-filled",
         "snav": []
     },
     {    
+        "id": 2,
         "text": "Atoms",
         "route": "#",
         "icon": "clarity:list-solid",
         "snav": [
             {
+                "id": 21,
                 "text": "Badge / Title", 
                 "route": "/badge",
                 "icon": "bx:category-alt"
             },
             {
+                "id": 22,
                 "text": "Button",
                 "route": "/button",
                 "icon": "bx:user-pin"
             },
             {
+                "id": 23,
                 "text": "Input",
                 "route": "/input",
                 "icon": "bx:user-pin"
             },
             {
+                "id": 24,
                 "text": "Item",
                 "route": "/item",
                 "icon": "bx:package"
@@ -33,63 +39,75 @@
         ]
     },
     {    
+        "id": 3,
         "text": "Molecules",
         "route": "#",
         "icon": "clarity:list-solid",
         "snav": [
             {
+                "id": 31,
                 "text": "Dropdown",
                 "route": "/dropdown",
                 "icon": "bx:category-alt"
             },
             {
+                "id": 32,
                 "text": "Collapse / Details",
                 "route": "/collapse",
                 "icon": "bx:user-pin"
             },
             {
+                "id": 33,
                 "text": "Select",
                 "route": "/select",
                 "icon": "bx:user-pin"
             },
             {
+                "id": 34,
                 "text": "Table",
                 "route": "/table",
                 "icon": "bx:package"
             },
             {
+                "id": 35,
                 "text": "Slider",
                 "route": "/slider",
                 "icon": "bx:package"
             }
         ]
-    },
+    },    
     {    
+        "id": 4,
         "text": "Organism",
         "route": "#",
         "icon": "clarity:list-solid",
         "snav": [
             {
+                "id": 41,
                 "text": "FormFilter",
                 "route": "/formfilter",
                 "icon": "bx:category-alt"
             },
             {
+                "id": 42,
                 "text": "sidebar",
                 "route": "/sidebar",
                 "icon": "bx:user-pin"
             },
             {
+                "id": 43,
                 "text": "nav",
                 "route": "/nav",
                 "icon": "bx:package"
             },
             {
+                "id": 44,
                 "text": "modals",
                 "route": "/modals",
                 "icon": "bx:category-alt"
             },
             {
+                "id": 45,
                 "text": "prueba",
                 "route": "/prueba",
                 "icon": "bx:package"
@@ -97,12 +115,14 @@
         ]
     },
     {
+        "id": 5,
         "text": "Iconify",
         "route": "/iconify",
         "icon": "akar-icons:face-very-happy",
         "snav": []
     },
     {
+        "id": 6,
         "text": "Keyframes",
         "route": "/keyframes",
         "icon": "eos-icons:arrow-rotate",

@@ -12,22 +12,28 @@ const MainContextProvider = (props) => {
   const [showSidebar, setShowSidebar] = useState(true);
   const [showNotification, setShowNotification] = useState(true);
 
-  const getIndexActive = () => {
-    const indexActive = localStorage.getItem("indexActive"); 
-    alert(indexActive);
-    const jsonIndexActive = JSON.parse(indexActive);
-    if(!jsonIndexActive) return 0;
+  const getIndexActive = () => {    
+    const indexActive = localStorage.getItem("indexSideBarLink");   
+    const jsonIndexActive = JSON.parse(indexActive);    
+    if(!jsonIndexActive) return 1;
     return jsonIndexActive.indexActive;
   };
 
-  const [isIndexActive, setIsIndexActive] = useState(getIndexActive());
+  const getIndexCollpase = () => {    
+    const indexCollapse = localStorage.getItem("indexSideBarLink");   
+    const jsonIndexCollapse = JSON.parse(indexCollapse);    
+    if(!jsonIndexCollapse) return 0;
+    return jsonIndexCollapse.indexCollpse;
+  };
 
-  alert(isIndexActive);
+  const [isIndexActive, setIsIndexActive] = useState(getIndexActive());
+  const [isIndexCollapse, setIsIndexCollapse] = useState(getIndexCollpase());
   
-  const buttonActive = (index) => {
+  const buttonActive = (indexActive, indexCollpse) => {
     // const indexActiveOld=
-    localStorage.setItem("indexActive", JSON.stringify(index));
-    setIsIndexActive(index);   
+    localStorage.setItem("indexSideBarLink", '{"indexActive": '+indexActive+',"indexCollpse":'+indexCollpse+' }');
+    setIsIndexActive(indexActive);   
+    setIsIndexCollapse(indexCollpse);
   };
 
   return (
@@ -41,6 +47,8 @@ const MainContextProvider = (props) => {
         setShowNotification,
         isIndexActive,
         setIsIndexActive,
+        isIndexCollapse, 
+        setIsIndexCollapse,
         buttonActive,
       }}
     >

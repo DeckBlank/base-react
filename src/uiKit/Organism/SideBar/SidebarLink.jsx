@@ -10,26 +10,25 @@ import Nav from "../../../assets/Jsons/Nav/Nav.json";
 import { useMainContext } from "../../../context/MainContext";
 // FUNCTIONS
 const SidebarLink = () => {
-  const { isIndexActive, buttonActive } =
+  const { isIndexActive, isIndexCollapse,  buttonActive } =
     useMainContext();
-
 
   return (
     <div className="h-100p bg-gray">
-      {Nav.map((item, indexn) =>
+      {Nav.map((item) =>
+        
         item.route != "#" ? (
           <ListGroup
-            classname="uncollapse-sidebar li-items-sidebar"
-            key={indexn}
+            classname="uncollapse-sidebar li-items-sidebar"           
           >
             <LinkItem
               text={item.text}
               route={item.route}
               icon={item.icon}
               classname={`uncollapse-sidebar-item bb-1-white ${
-                isIndexActive === indexn ? "bg-fuchsia" : ""
+                isIndexActive == item.id ? "bg-fuchsia" : ""
               }`}
-              onclick={() => buttonActive(indexn)}
+              onclick={() => buttonActive(item.id, 0)}
             />
           </ListGroup>
         ) : (
@@ -38,20 +37,23 @@ const SidebarLink = () => {
             icon={item.icon}
             iconarrowdown="eva:arrow-ios-downward-outline"
             iconarrowup="eva:arrow-ios-upward-fill"
-            classname={`uncollapse-sidebar-item li-items-sidebar bb-1-white`}
-            key={indexn}
+            classname={`uncollapse-sidebar-item li-items-sidebar bb-1-white`}            
+            classnamecollapse={`${
+              isIndexCollapse == item.id ? "block" : ""
+            }`}            
+            key={item.id}
           >
             <ListGroup classname="collapse-sidebar">
-              {item.snav.map((item, index) => (
+              {item.snav.map((itemsn) => (
                 <LinkItem
-                  text={item.text}
-                  route={item.route}
-                  icon={item.icon}
+                  text={itemsn.text}
+                  route={itemsn.route}
+                  icon={itemsn.icon}
                   classname={`collapse-sidebar-item bb-1-white ${
-                    isIndexActive === index + '' + indexn ? "bg-fuchsia" : ""
+                    isIndexActive == itemsn.id ? "bg-fuchsia" : ""
                   }`}
-                  key={index + '' + indexn}
-                  onclick={() => buttonActive(index + '' + indexn)}
+                  key={itemsn.id}
+                  onclick={() => buttonActive(itemsn.id, item.id)}
                 />
               ))}
             </ListGroup>
